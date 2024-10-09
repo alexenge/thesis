@@ -1,0 +1,241 @@
+---
+title             : "Learning to see meaning in visual words and objects"
+shorttitle        : "Note: This page and the next should be removed"
+
+author: 
+  - name          : "Alexander Enge"
+
+bibliography      : "references.bib"
+
+floatsintext      : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : no
+mask              : no
+draft             : no
+numbersections    : true
+
+csl               : "apa.csl"
+documentclass     : "apa6"
+classoption       : "doc,11pt,twoside"
+output            :
+  papaja::apa6_pdf:
+    latex_engine  : "xelatex"
+
+header-includes:
+  - \geometry{a4paper,margin=25mm}
+  - \setcounter{tocdepth}{2}
+  - \raggedbottom
+  - \usepackage{ragged2e}
+  - \linespread{1.15}
+  - \fancyhead{}
+  - \fancyheadoffset[RO,LE]{0pt}
+  - \fancyhead[RO,LE]{\thepage}
+  - \fancyhead[LO]{Alexander Enge}
+  - \fancyhead[RE]{Learning to see meaning in visual words and objects}
+  - \renewcommand{\headrulewidth}{0.4pt}
+  - \usepackage{soul}
+  - \usepackage{setspace}
+  - \AtBeginEnvironment{tabular}{\doublespacing}
+  - \usepackage{makecell}
+  - \renewcommand{\cellset}{\renewcommand{\arraystretch}{0.7}}
+  - \captionsetup[table]{font={footnotesize,stretch=1.0},labelfont={bf,up},skip=5pt}
+  - \captionsetup[figure]{font={footnotesize,stretch=1.0},labelfont={bf,up},skip=5pt}
+  - \usepackage[all]{nowidow}
+  - \usepackage[bottom]{footmisc}
+  - \interfootnotelinepenalty=10000
+  - \usepackage{newcomputermodern}
+  - \usepackage{pdfpages}
+---
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
+\thispagestyle{empty}
+\begin{center}
+\vspace*{15mm}
+\textbf{Learning to see meaning in visual words and objects}\\
+\vspace*{10mm}
+\textbf{\textsc{\so{Dissertation}}}\\
+\vspace*{10mm}
+zur Erlangung des akademischen Grades \\
+Doctor rerum naturalium (Dr. rer. nat.)\\
+im Fach Psychologie\\
+\vspace*{10mm}
+eingereicht an der\\
+Lebenswissenschaftlichen Fakultät \\
+der Humboldt-Universität zu Berlin\\
+\vspace*{10mm}
+von\\
+\textbf{M.Sc. Alexander Enge}\\
+geboren am 09.11.1996 in Räckelwitz\\
+\vspace*{40mm}
+\end{center}
+\begin{flushleft}
+Präsidentin der Humboldt-Universität zu Berlin\\
+Prof. Dr. Julia von Blumenthal\\
+\vspace*{10mm}
+Dekan der Lebenswissenschaftlichen Fakultät der Humboldt-Universität zu Berlin\\
+Prof. Dr. Dr. Christian Ulrichs\\
+\vspace*{10mm}
+Gutachter*innen\\
+1. Prof. Dr. Rasha Abdel Rahman\\
+2. Prof. Dr. Gesa Hartwigsen\\
+3. Dr. Olaf Dimigen\\
+\vspace*{10mm}
+Tag der mündlichen Prüfung: XX.XX.XXXX
+\end{flushleft}
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
+\thispagestyle{empty}
+
+# Zusammenfassung {.unlisted .unnumbered}
+
+Elit exercitation Lorem esse et esse. Anim proident est cillum minim. Nisi sint veniam ex sit commodo nisi ex nulla. Et occaecat commodo exercitation eu commodo aute consequat ad excepteur. Pariatur esse ullamco tempor Lorem nostrud excepteur voluptate.
+
+Et mollit non consectetur do quis fugiat. Veniam occaecat laborum eiusmod non laboris. Consectetur sint consequat pariatur adipisicing veniam cupidatat officia reprehenderit deserunt proident pariatur voluptate laborum deserunt. Non incididunt dolore pariatur voluptate tempor dolore officia ut. Aliquip exercitation voluptate consectetur esse ea.
+
+Ipsum dolore cillum occaecat sunt ex ea laborum deserunt. Anim ex cillum et voluptate quis ad deserunt aliquip consectetur. In sint id sunt nisi veniam ea eiusmod excepteur.
+
+\newpage
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
+\thispagestyle{empty}
+
+# Abstract {.unlisted .unnumbered}
+
+Elit exercitation Lorem esse et esse. Anim proident est cillum minim. Nisi sint veniam ex sit commodo nisi ex nulla. Et occaecat commodo exercitation eu commodo aute consequat ad excepteur. Pariatur esse ullamco tempor Lorem nostrud excepteur voluptate.
+
+Et mollit non consectetur do quis fugiat. Veniam occaecat laborum eiusmod non laboris. Consectetur sint consequat pariatur adipisicing veniam cupidatat officia reprehenderit deserunt proident pariatur voluptate laborum deserunt. Non incididunt dolore pariatur voluptate tempor dolore officia ut. Aliquip exercitation voluptate consectetur esse ea.
+
+Ipsum dolore cillum occaecat sunt ex ea laborum deserunt. Anim ex cillum et voluptate quis ad deserunt aliquip consectetur. In sint id sunt nisi veniam ea eiusmod excepteur.
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
+\thispagestyle{empty}
+\begin{flushleft}
+{\setstretch{1.0}\tableofcontents}
+\end{flushleft}
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
+\setcounter{page}{1}
+
+# Introduction
+
+Reprehenderit eu sit Lorem duis nulla est ut ea labore aute est adipisicing ex ad. Culpa ut esse sunt elit et reprehenderit et exercitation et nisi commodo. Sint aliquip nulla id ipsum est consectetur do eiusmod dolor id nostrud reprehenderit. Aliqua enim adipisicing pariatur minim.
+
+Eiusmod laborum sint cupidatat sit. Sunt nulla elit duis labore amet est et voluptate excepteur. Enim ullamco elit in minim eiusmod nulla magna reprehenderit ad laboris voluptate magna. Dolor cillum cupidatat deserunt consequat ut aliquip ipsum sit dolor nostrud mollit. Culpa esse adipisicing ex cupidatat cupidatat mollit veniam nostrud non ipsum cillum irure commodo esse.
+
+Proident ut in amet aute commodo proident sunt consectetur. Deserunt in consequat pariatur nostrud dolor Lorem laborum eiusmod adipisicing velit et. Labore aute officia consectetur deserunt cillum et ut sit voluptate incididunt adipisicing officia est.
+
+Aliquip exercitation voluptate occaecat incididunt deserunt consectetur id est qui sint. Pariatur laborum ipsum veniam minim eiusmod commodo ad ad eu velit sint laborum qui. Labore ut dolor ea dolore ex aute magna mollit qui labore mollit. Fugiat fugiat mollit eu adipisicing non ea do. Nisi ut quis quis adipisicing ad ipsum laboris ullamco esse pariatur ex. Reprehenderit pariatur do ut eu sit ex laborum exercitation irure eu nostrud exercitation ad.
+
+Aute ut aliqua et officia quis labore commodo eiusmod mollit. Non est sit non dolore Lorem laborum excepteur officia officia cupidatat tempor non irure nostrud. Adipisicing incididunt ut tempor deserunt ipsum excepteur deserunt sit exercitation occaecat nisi. Deserunt sit culpa elit laboris tempor est aliquip qui sunt laborum anim. Quis in in sint tempor consectetur nostrud laborum officia duis occaecat minim velit dolor. Est sint sunt exercitation cillum aliquip duis in magna pariatur minim. Non ipsum culpa veniam nisi occaecat officia magna non fugiat.
+
+Ullamco sunt aute commodo cillum nisi commodo sint sit anim quis. Irure cupidatat et enim eiusmod eu dolor cillum culpa sit nisi commodo adipisicing irure. Non duis laboris nulla et sunt ut ea aliquip duis cillum et veniam laboris.
+
+\newpage
+
+# Summary of the present studies
+
+Sit sit incididunt ullamco voluptate nulla eu ex. Ipsum labore id dolor dolor aliqua esse veniam sint. Ipsum veniam commodo proident commodo ullamco officia nostrud. Commodo consectetur dolore sunt do exercitation ut quis occaecat do mollit. Dolor cupidatat id proident excepteur pariatur consequat ex dolor eiusmod sit amet Lorem. Laborum tempor labore minim officia et occaecat enim aliquip proident.
+
+Exercitation incididunt eiusmod cupidatat eiusmod sunt. Nisi enim sint aliqua aliqua officia proident et tempor consectetur id. Aute reprehenderit laboris excepteur quis. Ut do irure voluptate dolor id et nostrud ut exercitation.
+
+Duis nostrud ipsum commodo sit veniam occaecat ad Lorem ex culpa commodo occaecat laboris velit. Veniam proident qui officia aliquip dolor proident quis mollit et. Ex sit dolor cillum tempor duis officia cupidatat ipsum aliqua tempor nostrud.
+
+Ea mollit culpa aute cupidatat sit excepteur quis nulla anim quis sit. Excepteur irure eiusmod cillum commodo laborum ea enim laborum occaecat mollit sint cupidatat nulla sunt. Fugiat sint sunt cupidatat occaecat consequat laborum incididunt adipisicing. Mollit dolore labore consequat voluptate est ex anim adipisicing ullamco irure velit do.
+
+Mollit reprehenderit consectetur ea ex. Voluptate eu cillum consequat dolor aliquip in deserunt. Quis mollit veniam duis ex dolore quis. Quis deserunt aliqua velit occaecat occaecat sint cillum do occaecat. Commodo adipisicing et adipisicing commodo incididunt in labore veniam culpa do qui irure. Reprehenderit eiusmod exercitation proident amet minim qui in enim cupidatat ad elit.
+
+Sint magna cillum sint adipisicing eu nulla. Cupidatat ullamco culpa velit et ut minim eiusmod veniam nostrud commodo. Commodo commodo et velit officia sunt incididunt minim excepteur cillum velit ad. Eu quis ullamco officia reprehenderit. Ullamco et aute do magna laboris esse. Elit mollit magna cupidatat elit adipisicing sit qui cillum exercitation.
+
+\newpage
+
+# General discussion
+
+Duis non duis velit exercitation eu Lorem irure ad sunt occaecat culpa. Eu officia reprehenderit irure qui eiusmod aute ullamco eiusmod excepteur. Veniam officia in labore dolor cillum. Irure veniam consequat aliquip reprehenderit ut veniam nostrud ad in.
+
+Tempor proident dolore excepteur aliquip commodo. Excepteur labore reprehenderit nulla occaecat aliqua fugiat excepteur veniam. Esse eiusmod dolore occaecat ex ipsum ut. Ullamco proident ea esse non labore eiusmod deserunt amet. Dolore enim et ea nulla sit commodo enim reprehenderit excepteur consectetur id occaecat amet. Commodo occaecat dolor aliqua pariatur Lorem et. Dolore ipsum esse nostrud eiusmod velit esse irure fugiat consectetur incididunt consectetur fugiat cillum.
+
+Non occaecat elit non eu exercitation adipisicing Lorem esse minim magna ea ad. Pariatur cillum exercitation irure velit eiusmod do aliqua. Et reprehenderit sit id et reprehenderit. Cillum voluptate culpa aliqua laboris labore labore aliquip excepteur irure proident. Laboris qui minim eu mollit ex est.
+
+Do ut fugiat laboris culpa id nisi. Duis dolore voluptate ea nulla aute qui incididunt reprehenderit culpa ut. Ad veniam laborum duis cupidatat dolor velit.
+
+Aliquip velit dolor officia dolore. Pariatur nostrud culpa excepteur magna officia. Ipsum dolor officia eu enim magna tempor adipisicing elit sunt adipisicing tempor sunt enim commodo. Duis ad consequat aute ut sit proident aute cupidatat magna quis quis occaecat.
+
+Reprehenderit culpa est sint commodo enim consectetur ex quis tempor. Minim pariatur mollit ea pariatur. Sint incididunt Lorem do id consequat enim aliqua non ea voluptate laboris. Cupidatat consectetur labore quis anim officia culpa ullamco in non aute ex labore nisi magna. Quis mollit sint quis eu ad consequat cillum tempor esse ad. Sint qui fugiat dolor labore in nisi ex. Tempor sunt pariatur dolor officia non esse exercitation incididunt veniam.
+
+\newpage
+
+# References {.unnumbered}
+
+Bla bla bla.
+
+\newpage
+
+# Original research articles {.unnumbered}
+
+\noindent
+This dissertation is based on the following original research articles:
+
+1. **Enge, A.**, Abdel Rahman, R., & Skeide, M. A. (2021). A meta-analysis of fMRI studies of semantic cognition in children. *NeuroImage*, 241, 118436. <https://doi.org/10.1016/j.neuroimage.2021.118436>
+
+2. **Enge, A.**, Huettig, F., & Skeide, M. A. (2024). Leveraging dense-sampling fMRI to track the neural correlates of children’s learning read. Unpublished manuscript available from first author.
+
+3. **Enge, A.**, Süß, F., & Abdel Rahman, R. (2023). Instant effects of semantic information on visual perception. *Journal of Neuroscience*, 43(26), 4896–4906. <https://doi.org/10.1523/JNEUROSCI.2038-22.2023>
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{subsection}{A meta-analysis of fMRI studies of semantic cognition in children}
+\includepdf[pages=-,scale=.87,pagecommand={}]{papers/enge2021.pdf}
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Tracking the neural correlates of learning to read with dense-sampling fMRI}
+\includepdf[pages=-,scale=.88,pagecommand={}]{papers/enge2024.pdf}
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Instant effects of semantic information on visual perception}
+\includepdf[pages=-,scale=.88,pagecommand={}]{papers/enge2023.pdf}
+
+\newpage
+
+# Acknowledgements {.unnumbered}
+
+Dolore et nostrud ea dolore non irure ad amet elit. Cillum ea nisi Lorem qui nisi enim deserunt laboris cillum. Dolore anim adipisicing officia quis culpa nulla. Consectetur excepteur fugiat ullamco sit enim laboris non non ex. Esse incididunt culpa ut voluptate mollit consequat.
+
+Nisi occaecat in exercitation consectetur dolore consequat. Duis consequat dolor laborum labore officia consequat. Consectetur dolore commodo Lorem eiusmod sit id minim eu sunt consectetur. Irure dolore deserunt irure ea qui ipsum ullamco et excepteur occaecat laborum anim. Quis commodo consequat amet nostrud eu ad irure ea dolore aliqua tempor cupidatat mollit. Officia ullamco quis ex culpa exercitation excepteur eu ex ipsum est reprehenderit culpa aliqua ad.
+
+\newpage
+
+# Selbständigkeitserklärung {.unnumbered}
+
+\noindent Hiermit erkläre ich,
+
+* dass keine Zusammenarbeit mit gewerblichen Promotionsberatern stattfand,
+
+* dass ich die Dissertation auf der Grundlage der angegebenen Hilfsmittel und Hilfen selbstständig angefertigt habe,
+
+* dass ich mich nicht anderwärts um einen Doktorgrad beworben habe bzw. einen entsprechenden Doktorgrad besitze,
+
+* dass mir die dem angestrebten Verfahren zugrunde liegende Promotionsordnung der Lebenswissenschaftlichen Fakultät vom 05. März 2015, veröffentlicht im Amtlichen Mitteilungsblatt der Humboldt-Universität zu Berlin Nr. 12/2015 bekannt ist,
+
+* dass die Dissertation oder Teile davon nicht bereits bei einer anderen wissenschaftlichen Einrichtung eingereicht, angenommen oder abgelehnt wurden und
+
+* dass die Grundsätze der Humboldt-Universität zu Berlin zur Sicherung guter wissenschaftlicher Praxis eingehalten wurden.
+
+\noindent
+Alexander Enge\newline
+Berlin, den 8. November 2024
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage

@@ -1,0 +1,532 @@
+---
+title             :  |
+  | Tracking the neural correlates of
+  | learning to read with dense-sampling fMRI
+shorttitle        : "Learning to read and dense-sampling fMRI"
+
+author: 
+  - name          : "Alexander Enge"
+    affiliation   : "1,2"
+    corresponding : yes
+    address       : "Stephanstraße 1a, 04103 Leipzig, Germany"
+    email         : "alex_enge@web.de"
+  - name          : "Falk Huettig"
+    affiliation   : "3"
+  - name          : "Michael A. Skeide"
+    affiliation   : "1"
+
+affiliation:
+  - id            : "1"
+    institution   : "Max Planck Institute for Human Cognitive and Brain Sciences"
+  - id            : "2"
+    institution   : "Humboldt-Universität zu Berlin"
+  - id            : "3"
+    institution   : "Max Planck Institute for Psycholinguistics"
+
+authornote: |
+  The analysis code for this study is openly available at XXX.
+  
+  We have no conflict of interest to disclose.
+
+abstract: |
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  
+keywords          : "reading, literacy, learning, children, fMRI, neuroimaging"
+
+bibliography      : "references.bib"
+
+floatsintext      : yes
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : no
+mask              : no
+draft             : no
+numbersections    : false
+
+csl               : "../apa.csl"
+documentclass     : "apa6"
+classoption       : "jou,10pt,twoside"
+output            :
+  papaja::apa6_pdf:
+    latex_engine  : "lualatex"
+
+header-includes:
+  - \geometry{a4paper,margin=15mm}
+  - \raggedbottom
+  - \usepackage{ragged2e}
+  - \linespread{1.0}
+  - \usepackage{setspace}
+  - \AtBeginEnvironment{tabular}{\doublespacing}
+  - \usepackage{makecell}
+  - \renewcommand{\cellset}{\renewcommand{\arraystretch}{0.7}}
+  - \captionsetup[table]{font={scriptsize,stretch=1.0},labelfont={bf,up},skip=5pt}
+  - \captionsetup[figure]{font={scriptsize,stretch=1.0},labelfont={bf,up},skip=5pt}
+  - \usepackage[all]{nowidow}
+  - \usepackage[bottom]{footmisc}
+  - \interfootnotelinepenalty=10000
+  - \usepackage[export]{adjustbox}
+  - \usepackage{newcomputermodern}
+---
+
+```{r setup, include=FALSE}
+# Load R packages
+library("here")
+library("knitr")
+```
+
+# Introduction
+
+Eu adipisicing est aute adipisicing exercitation est minim veniam proident laborum veniam. In ullamco commodo eiusmod excepteur sint sunt aliquip consequat cupidatat mollit et. Quis duis excepteur ad duis laboris eiusmod dolore ullamco labore adipisicing. Consequat sint consectetur sit nostrud velit officia eu voluptate. Ex sit enim cillum nisi excepteur fugiat do. Quis occaecat eiusmod nostrud cupidatat sunt excepteur in sunt duis nostrud eu ea ipsum nisi. Id nostrud duis eiusmod proident reprehenderit Lorem tempor laboris sit exercitation et dolor veniam labore.
+
+Non velit exercitation occaecat eiusmod officia est ex excepteur aliquip. Deserunt est irure eiusmod aliqua et occaecat eu fugiat. Id incididunt culpa voluptate voluptate eiusmod officia amet occaecat consectetur nisi est minim labore. Laborum ullamco elit eiusmod commodo quis aute nulla id non. Nisi amet veniam incididunt esse anim labore eu est non laborum exercitation occaecat exercitation. Aute sit ipsum anim qui quis non dolor esse Lorem sunt dolore.
+
+Nulla ipsum proident Lorem culpa ut tempor. Exercitation consequat incididunt quis dolor duis commodo et id. Exercitation eiusmod in laborum et reprehenderit deserunt sunt aliquip exercitation laboris aliquip. Fugiat irure aliqua labore nisi labore eu laboris. Et enim mollit eiusmod officia dolore ut aute sunt excepteur id aute anim elit proident.
+
+# Methods
+
+## Participants
+
+We initially recruited a total of 32 children from the same village in the region of Uttar Pradesh, India, to participate in the reading intervention.
+In a neighboring village, we recruited an additional 25 children to participate in a mathematics intervention, serving as an active control group.
+However, data from these children was not analyzed for the purpose of the present manuscript.
+The two villages were selected in cooperation with a local non-governmental organization based on there being little to no access to primary school education due to geographic and socio-demographic constraints.
+All recruited children had to fulfil the following inclusion criteria:
+(1) age between 5 and 9 years at the beginning of the study,
+(2) not being able to decode letters and/or read words,
+(3) not attending school,
+(4) not fulfilling any contraindication for MRI scanning (e.g., no relevant implants or medication),
+(5) no hearing and/or vision impairment,
+(6) no language impairments, and
+(7) no attention deficits.
+The initial sample size of approximately 30 children per group was determined using an a priori power analysis based on a previous study [@dehaene-lambertz2018\; \textcolor{red}{see Supplementary Methods for details}].
+From the 32 children initially recruited for the reading intervention group, 17 children were excluded because they did not participate in at least two scanning sessions or because they did not meet our cutoff criterion for head motion (framewise displacement greater than 2.4 mm in less than 10% of fMRI volumes) in at least two scanning sessions.
+Therefore, the final sample size was $N$ = 15 children.
+Of those, 9 identified as female and 6 identified as male. The mean age at the beginning of the study was 7.13 years ($SD$ = 1.25 years, min = 5 years, max = 9 years).
+
+## Study design
+
+The children in this longitudinal study completed regular MRI scanning sessions while participating in a structured reading program (or mathematics program for the control group, not shown in this manuscript).
+The first scanning session took place at the beginning of the program and the next scanning sessions (mean = 5.07 sessions per child, $SD$ = 1.53 sessions, min = 2 sessions, max = 6 sessions) were spaced at intervals of approximately 2--3 months (mean = 79.9 days between sessions, $SD$ = 35.8 days, min = 20 days, max = 182 days; \textcolor{red}{see Figure 1}).
+Each scanning session consisted of one localizer scan, one functional MRI run (see experimental design and scanning parameters below), one structural MRI scan (see scanning parameters below), and a series of standardized behavioral tests outside of the scanner (see behavioral testing below).
+
+The structured intervention for the reading group focused on phonics (i.e., reading and writing the 46 primary Devanagari characters and their correspondence to sublexical consonant--vowel combinations), word decoding (i.e., reading and writing monosyllabic and more complex words), and sentence reading.
+The intervention was carried out by a local teacher and involved 2--4 hours of schooling on 5 days per week. Attendance of the classes was checked but not strictly enforced (mean = 3.74 days attended per week).
+
+## Experimental design
+
+At each MRI scanning session, children performed an in-scanner language task with a block design where they were presented with short blocks of stimuli from six different conditions (visual words, auditory words, visual pseudowords, auditory pseudowords, visual low-level controls, and auditory low-level controls).
+All words were nouns of masculine grammatical gender, consisting of one or two syllables and three to six phonemes, and belonging to the same semantic category (animals).
+Pseudowords were generated from these words by replacing the initial consonant and vowel of the word.
+The substituted consonants were within the same articulatory place as the original consonants and the substituted graphemes matched the shape of the original graphemes as closely as possible.
+The low-level visual controls were false fonts that were created by rearranging the line segments of each grapheme of a word while preserving the position of the graphemes.
+The low-level auditory controls were created by spectrally rotating and noise-vocoding the spoken words.
+This was achieved by low-pass filtering the speech signal, inverting its spectrum around a center frequency of 2 kHz, dividing the speech signal into two logarithmically spaced frequency bands, extracting the amplitude envelope in each frequency band, using this envelope to module noise in the same frequency band, and recombining the frequency bands.
+All visual stimuli were presented in the middle of the screen in black font on a white background.
+The screen was placed behind the scanner bore and projected to the participant via a mirror mounted inside of the scanner.
+All auditory stimuli were recorded by a male native Hindi speaker.
+
+In each of 108 blocks (18 per condition), 6 stimuli from the same condition were randomly presented with a duration of 1 s each.
+The order of blocks was random and not optimized for design efficiency.
+Between subsequent blocks, there was a random pause of 2.55, 3.82, or 5.09 s (equaling 1, 1.5, or 2 times the repetition time [TR]), during which a black fixation cross was presented in the middle of the screen.
+The total duration of the experiment was 17:40 min.
+To keep children attentive, they were asked to perform a simple target detection task.
+For this purpose, a target stimulus was inserted at a random location in 36 out of the 108 blocks.
+For visual blocks, this was the photograph of the face of a children’s movie character, and for auditory blocks a short snippet of child-friendly human laughter.
+Children were asked to press a button on a MR-compatible button box whenever they saw or heard the target stimulus.
+They received auditory feedback in the form of a positive sound (after pressing the button when a target stimulus had appeared) or a negative sound (after not pressing the button when a target stimulus had appeared or after pressing the button when no target stimulus had appeared).
+The experiment was programmed and presented using PsychoPy (Version 2021) in Python.
+The code and stimuli for the experiment can be accessed via <https://github.com/SkeideLab/SLANG-experiment/tree/main/scanner>.
+
+## Standardized behavioral testing
+
+\textcolor{red}{Bla bla blub.}
+
+## Scanning parameters
+
+All scanning was conducted on a GE SIGNA Architect 3T MRI machine with a 48 channel head coil.
+After a short head localizer scan, there was one functional run, during which children performed the language experiment described above, and one structural run, during which children watched a TV episode or video of their choice.
+
+The functional run was implemented using a gradient echo (GR) echo planar imaging (EPI) sequence with the following parameters: TE = 35 ms, TR = 2.547 s, flip angle = 88°, number of volumes = 420, field of view = 19.2 cm, in-plane matrix size = 80 × 80 voxels, slice thickness = 2.4 mm, gap between slices = 0.2 mm, voxel size = 2.4 × 2.4 × (2.4 + 0.2) mm, slice orientation = axial, phase encoding direction = anterior/posterior, slice order = interleaved/ascending, multiband acceleration (GE HyperBand) factor = 4.
+Slices covered the whole brain including the cerebellum.
+We did not collect any field maps and did not correct for potential inhomogeneity or spatial distortion.
+
+The structural run was implemented using a T1-weighted MPRAGE sequence with the following parameters: TE = 3.188 ms, TR = 2.30568 s, TI = 900 ms, flip angle = 8°, field of view = 22.4 cm, in-plane matrix size = 256 × 256 voxels, slice thickness = 0.9 mm, no gap between slices, voxel size = 0.875 × 0.875 × 0.9 mm, slice orientation = axial, phase encoding direction = right/left.
+
+## Preprocessing
+
+Results included in this manuscript come from preprocessing performed using *fMRIPrep* 24.0.1 [@fmriprep1; @fmriprep2, RRID:SCR_016216], which is based on *Nipype* 1.8.6 [@nipype1; @nipype2, RRID:SCR_002502].
+
+### Anatomical data preprocessing
+
+A total of 2--6 T1-weighted (T1w) images were found within the input BIDS dataset.
+Each T1w image was corrected for intensity non-uniformity (INU) with `N4BiasFieldCorrection` [@n4], distributed with ANTs 2.5.1 [@ants, RRID:SCR_004757].
+The T1w-reference was then skull-stripped with a *Nipype* implementation of the `antsBrainExtraction.sh` workflow (from ANTs), using OASIS30ANTs as target template.
+Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain-extracted T1w using `fast` [FSL, RRID:SCR_002823, @fsl_fast].
+An anatomical T1w-reference map was computed after registration of 2--6 T1w images (after INU-correction) using `mri_robust_template` [FreeSurfer 7.3.2, @fs_template].
+Brain surfaces were reconstructed using `recon-all` [FreeSurfer 7.3.2, RRID:SCR_001847, @fs_reconall], and the brain mask estimated previously was refined with a custom variation of the method to reconcile
+ANTs-derived and FreeSurfer-derived segmentations of the cortical gray-matter of Mindboggle [RRID:SCR_002438, @mindboggle].
+Volume-based spatial normalization to one standard space (MNI152NLin2009cAsym) was performed through nonlinear registration with `antsRegistration` (ANTs 2.5.1), using brain-extracted versions of both T1w reference and the T1w template.
+The following template was were selected for spatial normalization and accessed with *TemplateFlow* [24.2.0, @templateflow]:
+*ICBM 152 Nonlinear Asymmetrical template version 2009c* [@mni152nlin2009casym, RRID:SCR_008796\; TemplateFlow ID: MNI152NLin2009cAsym].
+
+### Functional data preprocessing
+
+For each of the 2--6 BOLD runs found per subject (across all tasks and sessions), the following preprocessing was performed.
+First, a reference volume was generated, using a custom methodology of *fMRIPrep*, for use in head motion correction.
+Head-motion parameters with respect to the BOLD reference (transformation matrices, and six corresponding rotation and translation parameters) are estimated before any spatiotemporal filtering using `mcflirt` [FSL, @mcflirt].
+The BOLD reference was then co-registered to the T1w reference using `bbregister` (FreeSurfer) which implements boundary-based registration [@bbr].
+Co-registration was configured with six degrees of freedom.
+Several confounding time-series were calculated based on the *preprocessed BOLD*: framewise displacement (FD), DVARS and three region-wise global signals.
+FD was computed using two formulations following Power (absolute sum of relative motions, @power_fd_dvars) and Jenkinson (relative root mean square displacement between affines, @mcflirt).
+FD and DVARS are calculated for each functional run, both using their implementations in *Nipype* [following the definitions by @power_fd_dvars].
+The three global signals are extracted within the CSF, the WM, and the whole-brain masks.
+Additionally, a set of physiological regressors were extracted to allow for component-based noise correction [*CompCor*, @compcor].
+Principal components are estimated after high-pass filtering the *preprocessed BOLD* time-series (using a discrete cosine filter with 128s cut-off) for the two *CompCor* variants: temporal (tCompCor) and anatomical (aCompCor).
+tCompCor components are then calculated from the top 2% variable voxels within the brain mask.
+For aCompCor, three probabilistic masks (CSF, WM and combined CSF+WM) are generated in anatomical space.
+The implementation differs from that of Behzadi et al. in that instead of eroding the masks by 2 pixels on BOLD space, a mask of pixels that likely contain a volume fraction of GM is subtracted from the aCompCor masks.
+This mask is obtained by dilating a GM mask extracted from the FreeSurfer's *aseg* segmentation, and it ensures components are not extracted from voxels containing a minimal fraction of GM.
+Finally, these masks are resampled into BOLD space and binarized by thresholding at 0.99 (as in the original implementation).
+Components are also calculated separately within the WM and CSF masks.
+For each CompCor decomposition, the *k* components with the largest singular values are retained, such that the retained components' time series are sufficient to explain 50 percent of variance across the nuisance mask (CSF, WM, combined, or temporal).
+The remaining components are dropped from consideration.
+The head-motion estimates calculated in the correction step were also placed within the corresponding confounds file.
+The confound time series derived from head motion estimates and global signals were expanded with the inclusion of temporal derivatives and quadratic terms for each [@confounds_satterthwaite_2013].
+Frames that exceeded a threshold of 0.5 mm FD or 1.5 standardized DVARS were annotated as motion outliers.
+Additional nuisance timeseries are calculated by means of principal components analysis of the signal found within a thin band (*crown*) of voxels around the edge of the brain, as proposed by [@patriat_improved_2017].
+The BOLD time-series were resampled onto the following surfaces (FreeSurfer reconstruction nomenclature): *fsnative*, *fsaverage5*.
+All resamplings can be performed with *a single interpolation step* by composing all the pertinent transformations (i.e. head-motion transform matrices, susceptibility distortion correction when available,
+and co-registrations to anatomical and output spaces).
+Gridded (volumetric) resamplings were performed using `nitransforms`, configured with cubic B-spline interpolation.
+Non-gridded (surface) resamplings were performed using `mri_vol2surf`
+(FreeSurfer).
+
+Many internal operations of *fMRIPrep* use *Nilearn* 0.10.4 [@nilearn, RRID:SCR_001362], mostly within the functional processing workflow.
+For more details of the pipeline, see the section corresponding to workflows in *fMRIPrep*'s documentation(<https://fmriprep.readthedocs.io/en/latest/workflows.html>).
+
+### Copyright Waiver
+
+The above boilerplate text was automatically generated by *fmriprep* with the express intention that users should copy and paste this text into their manuscripts *unchanged*.
+It is released under the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+### Additional preprocessing
+
+After running *fMRIPrep*, the preprocessed BOLD fMRI time series data was spatially smoothed with a Gaussian kernel (FWHM = 5.0 mm) and masked using the whole-brain mask computed per-participant by *fMRIPrep*.
+
+## Session-level analysis
+
+Separately for each participant and session, we modeled the preprocessed BOLD fMRI time series data using a mass-univariate general linear model (GLM) implemented in Nilearn [Version 0.10.4\; @nilearn] for Python [Version 3.9.19\; @vanrossum2009].
+At each voxel, the BOLD time series (420 time points) was predicted using a design matrix with the following columns:
+
+* A constant term (1 column).
+
+* One task regressor for each of the six experimental conditions, created by convolving the block design (condition on/off) with the canonical "SPM" hemodynamic response function (HRF) implemented in Nilearn (6 columns).
+  These were our regressors of interest.
+
+* The second and third derivatives of each of the task regressors (12 columns), to capture age- and participant-specific deviations from the canonical HRF. 
+
+* The head motions parameters (translations and rotations in three directions) estimated by *fMRIPrep* during head motion correction (6 columns).
+
+* Cosine regressors to high-pass filter the data at 128 s ($\approx$ 0.008 Hz), removing slow-frequency scanner drifts (15 columns).
+
+* The top six anatomical CompCor [@compcor] components estimated by *fMRIPrep* (6 columns).
+
+* Spike regressors for each non-steady state outlier volume at the beginning of the scan as flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
+
+* Spike regressors for each high-motion outlier volume, defined as framewise displacement > 0.5 mm and flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
+
+For details on how these regressors were computed, see the "Outputs/Confounds" section in *fMRIPrep*'s documentation (<https://fmriprep.org/en/stable/outputs.html#confounds>).
+
+From the fitted model, we computed an effect size map ("beta map") for each of the following contrasts, always reflecting the change in BOLD activation (in arbitrary units) between two experimental conditions:
+
+* Auditory low-level vs. baseline
+
+* Auditory pseudowords vs. baseline
+
+* Auditory pseudowords vs. low-level
+
+* Auditory words vs. baseline
+
+* Auditory words vs. low-level
+
+* Auditory words vs. pseudowords
+
+* Visual low-level vs. baseline
+
+* Visual pseudowords vs. baseline
+
+* Visual pseudowords vs. low-level
+
+* Visual words vs. baseline
+
+* Visual words vs. low-level
+
+* Visual words vs. pseudowords
+
+We refer to all contrasts involving the baseline as "baseline contrasts," which capture the difference in BOLD activity between each different experimental condition and the fixation baseline period between experimental blocks.
+Therefore, these contrasts capture not only BOLD activity related to linguistic (phonological and semantic) processing but also BOLD activity related to low-level sensory processing (e.g., visual and auditory processing of the stimuli).
+We refer to all other contrasts as "experimental contrasts," which capture the difference in BOLD activity between two different experimental conditions.
+The experimental contrasts comparing pseudowords to low-level controls capture BOLD activity related to phonological processing, since pseudowords but not low-level controls contain phonological information, while both do not contain any semantic information.
+The experimental contrasts comparing words to pseudowords capture BOLD activity related to semantic processing, since words but not pseudowords contain semantic information, while both contain phonological information.
+The experimental contrasts comparing words to low-level controls capture BOLD activity related to both phonological and semantic processing, since words but not low-level controls contain both phonological and semantic information.
+
+## Group-level analysis
+
+### BOLD activity amplitude
+
+To estimate reading related changes in BOLD activity amplitude, we fitted the beta maps from all participants and sessions using a linear mixed-effects model, separately for each contrast (see above).
+The dependent variable was the BOLD activation amplitude for a given participant and session, and the predictors were
+(1) a fixed intercept, implemented as a column of "1"s and reflecting the BOLD activity at the beginning of the study,
+(2) a fixed effect for linear time, implemented as the number of days elapsed since the beginning of the study and reflecting the linear change in BOLD activity due to the reading instruction,
+(3) a fixed effect for quadratic time, implemented as the square of linear time and reflecting the nonlinear ("u"-shaped or inverted "u"-shaped) change in BOLD activity due to the reading instruction,
+(4) a random intercept, reflecting individual participant’s deviation from the global BOLD activity at the beginning of the study, and random slopes for (5) linear and
+(6) quadratic time, reflecting individual participant’s deviations in the linear and nonlinear changes in BOLD activity due to the reading instruction. As is typical in frequentist linear mixed models, one parameter was estimated for each fixed effect (intercept, linear time, and quadratic time) and for each random effect (the standard deviation of the random intercepts and slopes for linear and quadratic time), as well as three correlation parameters between the three pairs of random effects.
+The mixed models (one for each contrast) were fitted separately at each voxel inside the brain mask in a mass-univariate fashion.
+Model fitting was performed in Julia [Version 1.10.4\; @bezanson2017] using the MixedModels package [Version 4.25.3\; @bates2024].
+
+To correct for multiple comparisons across the XXX voxels inside the brain mask, we used the parametric cluster correction algorithm suggested by @cox2017a and @cox2017.
+Specifically, we first estimated the spatial smoothness of noise in our dataset by extracting and storing the residual time series from the session-level models (see above), separately for each participant and session.
+We then used the `3dFWHMx` function (with the `-acf` option) in AFNI [Version 24.2.01\; @cox1996] to estimate a mixed Gaussian/mono-exponential spatial autocorrelation function with three parameters [@cox2017; @cox2017a\; see also <https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/afni_handouts/afni07_ETAC.pdf>].
+We averaged each of these three parameters across participants and sessions to obtain a single spatial autocorrelation function for the entire dataset. 
+This function was then fed into the `3dClustSim` function in AFNI to generate novel noise-only maps and estimate a null distribution of cluster sizes. 
+Using a cluster-forming voxel-level threshold of $p < .001$ and 10,000 iterations, this resulted in a final cluster-level extent threshold of XXX voxels to control the whole-brain family-wise error (FWE) rate at $p < .05$.
+We therefore deemed spatial clusters of BOLD activation statistically significant if they were larger than XXX voxels.
+To form clusters, neighboring voxels had to pass the cluster-forming voxel level threshold of $p < .001$ and touch each other with their faces (not just with their edges or nodes; the default "NN1" method in AFNI).
+
+### BOLD activity patterns
+
+We also estimated reading related changes in the between-condition similarity and within-condition stability of BOLD activity patterns using multivariate analysis methods.
+
+First, we investigated if the reading intervention made written word activity patterns more similar to those for spoken word activity patterns.
+For this, we used the beta maps from these two conditions and extracted the betas for different regions of interest (ROI; defined below).
+We then computed the linear correlation between these vectors and entered these (one value per subject and session) into a linear mixed-effects model, separately for each ROI.
+We specified the linear mixed-effects model in the same way as described above, with fixed and random effects for the intercept, the linear effect of time, and the quadratic effect of time.
+We repeated the same analysis for the correlation of activity patterns between written and spoken pseudowords.
+However, it is important to note at this point that with our block design, we are not comparing the activity patterns in response to individual items (e.g., the written word "monkey" and the spoken word "monkey"), but rather the general patterns of activity when processing written and spoken words.
+Though arguably more meaningful, the former comparison is not possible as our trials within each block were presented faster (1 s) than our TR (2.647 s), and we were therefore unable to obtain a beta map for each individual item.
+
+Second, we investigated if the reading intervention made written word activity more "stable," i.e., more consistent across repeated presentations of written words within the same session.
+For this, we re-estimated the session-level beta maps as described above but with separate task regressors for each block (108 columns) instead of each condition (6 columns).
+We then took the beta map for each written word block (18 maps) and extracted the betas for different ROIs (defined below).
+We then computed the linear correlation between each pair of blocks (153 pairs) and averaged these to obtain a single stability (correlation) value for each participant and session.
+We entered these values into a linear-mixed effects model, separately for each ROI and specified in the same way as described above.
+We repeated the same analysis for the stability of activity patterns for written pseudowords.
+We also performed this analysis for spoken words and spoken pseudowords but reported the results in the appendix as they do not directly pertain to our hypotheses.
+F
+or all multivariate analyses, we used the same set of anatomically and functionally defined regions of interest.
+The anatomically defined regions of interest were the posterior superior temporal sulcus (pSTS), defined as the union of regions STSda, STSdp, STSvp, and STSva from the @glasser2016 atlas, and the ventral occipto-temporal cortex (vOT), defined as the union of regions V8, FFC, and VVC from the @glasser2016 atlas.
+The functionally defined regions were different for each condition:
+For the similarity between written and spoken words, we used the visual clusters from the "Written words vs. baseline" contrast and the auditory clusters from the "Spoken words vs. baseline" clusters. 
+ikewise, for the similarity between written and spoken pseudowords, we used the visual clusters from the "Written pseudowords vs. baseline" contrast and the auditory clusters from the "Spoken pseudowords vs. baseline" clusters.
+For the within-condition pattern stability analysis, we used the visual or auditory clusters from that specific condition (e.g., for the stability analysis for written words, we used the visual clusters from the "Written words vs. baseline" contrast).
+
+# Results
+
+## BOLD activity amplitude
+
+### Auditory baseline contrasts
+
+At the beginning of the study (intercept), spoken low-level controls, spoken pseudowords, and spoken words elicited BOLD activity in the left and right auditory cortex (superior temporal gyrus) and in the left inferior frontal gyrus (see orange clusters in Figures \ref{fig:univariate-noise}A, \ref{fig:univariate-pseudo}A, and \ref{fig:univariate-words}A), as well as a few a BOLD deactivations in parietal and occipital areas (see blue clusters in Figures \ref{fig:univariate-noise}A, \ref{fig:univariate-pseudo}A, and \ref{fig:univariate-words}A).
+For spoken low-level controls, there was no linear change in BOLD activity over the course of the study (see Figure \ref{fig:univariate-noise}C) but positive quadratic (i.e., "u"-shaped) change in BOLD activity three small clusters in the right middle/inferior temporal lobe and in the right parietal lobe (see orange clusters in Figure \ref{fig:univariate-noise}E).
+For spoken pseudowords, there was both negative linear and positive quadratic (i.e., "u"-shaped) change in one small cluster in the right parietal lobe (see blue cluster in Figure \ref{fig:univariate-pseudo}C and orange cluster in Figure \ref{fig:univariate-pseudo}E).
+For spoken words, there was positive linear change in BOLD activity over the course of the study in one small cluster in the left inferior parietal lobe (see orange cluster in Figure \ref{fig:univariate-words}C), as well as positive quadratic change (i.e., "u"-shaped) change in one small cluster in the right superior parietal lobe (see orange cluster in Figure \ref{fig:univariate-words}E).
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_univariate.png}
+\caption{\label{fig:univariate-noise}\textbf{\emph{BOLD activity in response to low-level sensory controls.}}
+Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of low-level sensory control blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
+Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (noise-vocoded speech versus fixation basline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (false fonts versus fixation baseline).
+In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (low-level \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (low-level \textless{} baseline) are shown in blue.
+Clusters with higher voxel-level peak statistics are shown in brighter colors.
+Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_univariate.png}
+\caption{\label{fig:univariate-pseudo}\textbf{\emph{BOLD activity in response to pseudowords.}}
+Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
+Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken pseudowords versus fixation basline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written pseudowords versus fixation baseline).
+In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (pseudowords \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (pseudowords \textless{} baseline) are shown in blue.
+Clusters with higher voxel-level peak statistics are shown in brighter colors.
+Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_univariate.png}
+\caption{\label{fig:univariate-words}\textbf{\emph{BOLD activity in response to words.}}
+Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
+Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words versus fixation basline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words versus fixation baseline).
+In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (words \textless{} baseline) are shown in blue.
+Clusters with higher voxel-level peak statistics are shown in brighter colors.
+Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\end{figure*}
+
+### Visual baseline contrasts
+
+At the beginning of the study (intercept), written low-level controls, written pseudowords, and written words elicited BOLD activity in the left right occipital and inferior temporal cortices (see orange clusters in Figures \ref{fig:univariate-noise}B, \ref{fig:univariate-pseudo}B, and \ref{fig:univariate-words}B) as well as BOLD deactivations in the left and right medial occiptial lobes (see blue clusters in Figures \ref{fig:univariate-noise}B, \ref{fig:univariate-pseudo}B, and \ref{fig:univariate-words}B).
+For written low-level controls, there was no linear change in BOLD activity over the course of the study (see Figure \ref{fig:univariate-noise}D) but positive quadratic (i.e., "u"-shaped) change in BOLD activity two small clusters in the right occipital lobe (see orange clusters in Figure \ref{fig:univariate-noise}F).
+For written pseudowords, there was negative linear change in one small cluster in the left inferior frontal lobe (see left frontal blue cluster in Figure \ref{fig:univariate-pseudo}D) and both negative linear change and positive quadratic (i.e., "u"-shaped) change in one small cluster in the right occipital lobe (see posterior blue cluster in Figure \ref{fig:univariate-pseudo}D and orange cluster in Figure \ref{fig:univariate-pseudo}F).
+For written words, there was both negative linear and positive quadratic (i.e., "u"-shaped) change in one small cluster in the right occipital lobe (see small blue cluster in Figure \ref{fig:univariate-words}D and posterior orange cluster in Figure \ref{fig:univariate-words}F).
+Additionally, there was positive quadratic (i.e., "u"-shaped) change in one small cluster in the right parietal lobe (see anterior orange cluster in Figure \ref{fig:univariate-words}F).
+
+### Auditory experimental contrasts
+
+At the beginning of the study (intercept), the difference between spoken pseudowords and spoken low-level controls elicited widespread BOLD activity mainly in the left and right auditory cortex (superior temporal gyrus; see large orange clusters in Figure \ref{fig:univariate-pseudo-minus-noise}A).
+There was negative linear change in BOLD activity over the course of the study in one small cluster in the right anterior inferior parietal lobe (see small blue cluster in Figure \ref{fig:univariate-pseudo-minus-noise}C).
+There was positive quadratic change in BOLD activity over the course of the study in one small area in the left superior parietal lobe (see small blue orange in Figure \ref{fig:univariate-pseudo-minus-noise}E).
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_univariate.png}
+\caption{\label{fig:univariate-pseudo-minus-noise}\textbf{\emph{BOLD activity in response to pseudowords versus low-level controls.}}
+Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks versus low-level control blocks at the beginning of the study (intercept; time = 0 months).
+Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken pseudowords versus noise-vocoded speech) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written pseudowords versus false fonts).
+In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (pseudowords \textgreater{} low-level) are shown in orange and clusters with negative BOLD amplitude (pseudowords \textless{} low-level) are shown in blue.
+Clusters with higher voxel-level peak statistics are shown in brighter colors.
+Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\end{figure*}
+
+At the beginning of the study (intercept), the difference between spoken words and spoken low-level controls elicited widespread BOLD activity mainly in the left and right auditory cortex (superior temporal gyrus; see large orange clusters in Figures \ref{fig:univariate-words-minus-noise}A).
+There was no evidence for linear or quadratic change over the course of the study in any brain areas (see Figure \ref{fig:univariate-words-minus-noise}C and E).
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_univariate.png}
+\caption{\label{fig:univariate-words-minus-noise}\textbf{\emph{BOLD activity in response to words versus low-level controls.}}
+Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus low-level control blocks at the beginning of the study (intercept; time = 0 months).
+Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words versus noise-vocoded speech) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words versus false fonts).
+In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} low-level) are shown in orange and clusters with negative BOLD amplitude (words \textless{} low-level) are shown in blue.
+Clusters with higher voxel-level peak statistics are shown in brighter colors.
+Panel \textbf{G} shows individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant cluster in panel \textbf{F}, as indicated by the black asterisk (*) next to the cluster.}
+\end{figure*}
+
+The difference between spoken words and spoken pseudowords did not elicity any reliable BOLD activity at the beginning of the study and showed no evidence for change over the course of the study (see Figure \ref{fig:univariate-words-minus-pseudo}C and E).
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_univariate.png}
+\caption{\label{fig:univariate-words-minus-pseudo}\textbf{\emph{BOLD activity in response to words versus pseudowords.}}
+Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus pseudoword blocks at the beginning of the study (intercept; time = 0 months).
+Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words versus spoken pseudowords) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words versus written pseudowords).
+In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} pseudowords) are shown in orange and clusters with negative BOLD amplitude (words \textless{} pseudowords) are shown in blue.
+Clusters with higher voxel-level peak statistics are shown in brighter colors.}
+\end{figure*}
+
+### Visual experimental contrasts
+
+At the beginning of the study (intercept), the difference between written pseudowords and written low-level controls elicited BOLD activity in one cluster in the right dorso-lateral prefrontal cortex (see orange cluster in Figure \ref{fig:univariate-pseudo-minus-noise}B) and BOLD deactivation in one cluster in the right secondary visual cortex (see blue cluster in Figure \ref{fig:univariate-pseudo-minus-noise}B).
+There was negative linear change over the course of the study in the right dorso-lateral prefrontal cortex (see blue cluster in Figure \ref{fig:univariate-pseudo-minus-noise}D).
+
+The difference between written words and written low-level controls did not elicit any reliable BOLD activity at the beginning of the study (see Figure \ref{fig:univariate-words-minus-noise}B) but there was negative quadratic (inverted "u"-shaped) change over the course of the study in one cluster in the left posterior medial wall (near the ventral posterior cingulate cortex; see the blue cluster in Figure \ref{fig:univariate-words-minus-noise}F).
+
+The difference between written words and written pseudowords elicited BOLD deactivation in one cluster in the right dorso-lateral prefrontal cortex (see blue cluster in Figure \ref{fig:univariate-words-minus-pseudo}B).
+There was no evidence for linear or quadratic change over the course of the study (see Figure \ref{fig:univariate-words-minus-pseudo}D and F).
+
+## BOLD activity patterns
+
+### Audio-visual pattern similarity
+
+For all baseline contrasts (low-level vs. baseline, pseudowords vs. baseline, and words vs. baseline) and ROIs, the auditory and visual BOLD response patterns were correlated significantly at the beginning of the study (intercept; all $p\text{s} < .001$; see Figures \ref{fig:similarity-noise}--\ref{fig:similarity-words}), except for words in the left spoken word ROI ($p = 0.072$; see Figure \ref{fig:similarity-words}D).
+This is expected given that the exact same fixation baseline periods were used as the comparison condition for both the auditory and visual baseline contrasts.
+There was no evidence for linear change (all $p\text{s} > .059$) or quadratic change (all $p\text{s} > .128$) in pattern similarity over the course of the study for any contrast pair or ROI.
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_similarity.png}
+\caption{\label{fig:similarity-noise}\textbf{\emph{Audio-visual pattern similarity for low-level controls.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_similarity.png}
+\caption{\label{fig:similarity-pseudo}\textbf{\emph{Audio-visual pattern similarity for pseudowords.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_similarity.png}
+\caption{\label{fig:similarity-words}\textbf{\emph{Audio-visual pattern similarity for words.}}}
+\end{figure*}
+
+For all experimental contrasts (pseudowords vs. low-level, words vs. low-level, words vs. pseudowords) and ROIs, the auditory and visual BOLD response patterns were not significantly correlated at the beginning of the study (intercept; all $p\text{s} > .098$; see Figures \ref{fig:similarity-pseudo-minus-noise}--\ref{fig:similarity-words-minus-pseudo}).
+Likewise, there was no evidence for linear change (all $p\text{s} > .132$) or quadratic change (all $p\text{s} > .227$) in pattern similarity over the course of the study for any contrast pair or ROI.
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_similarity.png}
+\caption{\label{fig:similarity-pseudo-minus-noise}\textbf{\emph{Audio-visual pattern similarity for pseudowords versus low-level controls.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_similarity.png}
+\caption{\label{fig:similarity-words-minus-noise}\textbf{\emph{Audio-visual pattern similarity for words versus low-level controls.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_similarity.png}
+\caption{\label{fig:similarity-words-minus-pseudo}\textbf{\emph{Audio-visual pattern similarity for words versus pseudowords.}}}
+\end{figure*}
+
+### Within-condition pattern stability
+
+For almost all conditions and ROIs, blocks from the same condition were positively correlated at the beginning of the study (intercept; all $p\text{s} < .024$; see Figures \ref{fig:stability-audios-noise}--\ref{fig:stability-images-words}), except for spoken low-level controls in the right written low-level controls ROI ($p = 0.074$; see Figure \ref{fig:stability-audios-noise}E), for spoken pseudowords in the right written pseudoword ROI ($p = 0.074$; see Figure \ref{fig:stability-audios-pseudo}E), for spoken words in the right written word ROI ($p = 0.185$; see Figure \ref{fig:stability-audios-words}E), and for written words in the left spoken word ROI ($p = 0.061$; see Figure \ref{fig:stability-images-words}D).
+There was no evidence for linear change over the course of the study for any conditions and ROIs, except for written low-level controls in the left pSTS ROI ($b = -0.0018$, $p = .050$).
+Likewise, there was no evidence for quadratic change over the course of the study for any conditions and ROIs, except for written low-level controls in the right low-level controls ROI ($b = 0.0007$, $p = .043$).
+Note that we did not have any *a priori* hypothesis for longitudinal changes in the low-level control conditions but instead expected changes in pattern stability in the pseudoword and word conditions.
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-noise_stability.png}
+\caption{\label{fig:stability-audios-noise}\textbf{\emph{Pattern stability for spoken low-level contros.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-pseudo_stability.png}
+\caption{\label{fig:stability-audios-pseudo}\textbf{\emph{Pattern stability for spoken pseudowords.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-words_stability.png}
+\caption{\label{fig:stability-audios-words}\textbf{\emph{Pattern stability for spoken words.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-noise_stability.png}
+\caption{\label{fig:stability-images-noise}\textbf{\emph{Pattern stability for written low-level contros.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-pseudo_stability.png}
+\caption{\label{fig:stability-images-pseudo}\textbf{\emph{Pattern stability for written pseudowords.}}}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-words_stability.png}
+\caption{\label{fig:stability-images-words}\textbf{\emph{Pattern stability for written words.}}}
+\end{figure*}
+
+\newpage
+
+# References
+
+\raggedright
+\setlength{\cslhangindent}{0.25in}
+<div id="refs"></div>
+\justify
