@@ -77,11 +77,99 @@ library("knitr")
 
 # Introduction
 
-Eu adipisicing est aute adipisicing exercitation est minim veniam proident laborum veniam. In ullamco commodo eiusmod excepteur sint sunt aliquip consequat cupidatat mollit et. Quis duis excepteur ad duis laboris eiusmod dolore ullamco labore adipisicing. Consequat sint consectetur sit nostrud velit officia eu voluptate. Ex sit enim cillum nisi excepteur fugiat do. Quis occaecat eiusmod nostrud cupidatat sunt excepteur in sunt duis nostrud eu ea ipsum nisi. Id nostrud duis eiusmod proident reprehenderit Lorem tempor laboris sit exercitation et dolor veniam labore.
+Learning to read is a developmental milestone of lifelong importance.
+Reading and writing enables us to exchange messages across time and space, to remember things we would otherwise forget all too easily, to educate ourselves and others, or to get lost in fictional worlds whenever our own one seems a bit much.
+Without it, we would likely be missing out on many of humankind's greatest a achievements or, at the very least, you, our dear reader, would not be able to read this manuscript.
+It therefore seems fair to say that the process of learning to read, typically taking place through late kindergarten and early primary school education as well as through the help of parents and other caretakers, is a crucial step of children's education and cognitive development.
 
-Non velit exercitation occaecat eiusmod officia est ex excepteur aliquip. Deserunt est irure eiusmod aliqua et occaecat eu fugiat. Id incididunt culpa voluptate voluptate eiusmod officia amet occaecat consectetur nisi est minim labore. Laborum ullamco elit eiusmod commodo quis aute nulla id non. Nisi amet veniam incididunt esse anim labore eu est non laborum exercitation occaecat exercitation. Aute sit ipsum anim qui quis non dolor esse Lorem sunt dolore.
+Children typically pick up knowledge about their first letters informally, for example by being shown how their own name is written or by memorizing the logo of their favorite TV series or cereal brand.
+However, at this first, *logographic* stage of reading development [@frith1986; @ehri2005], children are typically not yet aware of the systematic correspondence between individual letters (graphemes) and speech sounds (phonemes), and therefore unable to pronounce or understand novel words.
+In this stage, written words are probably perceived similar to other types of visual objects, and novel words that were never encounter before do not elicit any phonological or semantic representation as they would for a trained reader.
 
-Nulla ipsum proident Lorem culpa ut tempor. Exercitation consequat incididunt quis dolor duis commodo et id. Exercitation eiusmod in laborum et reprehenderit deserunt sunt aliquip exercitation laboris aliquip. Fugiat irure aliqua labore nisi labore eu laboris. Et enim mollit eiusmod officia dolore ut aute sunt excepteur id aute anim elit proident.
+Through structured training in kindergarten, primary school, or at home, children advance to the second, *alphabetic* stage of reading development,^[Note, however, that as with any model of developmental "stages" or "phases," there typically is no hard and clear-cut boundary between one "stage" and the next, and there typically is large interindividual variation in the onsets and durations of the "stages."] where they are taught that individual letters are associated with individual speech sounds.
+This allows children to process the individual letters of a written word sequentially, convert them to their corresponding speech sounds, and combine those speech sounds to vocalize the entire word.
+Since most healthy children will have become proficient in spoken language comprehension long before learning to read (typically with < 3 years of age), they will also be able to access the meaning of the written word based on its assembled spoken word form.
+For this way of reading to be successful, children need to possess the understanding and skill to break down words into their constituent phonemes, typically referred to as "phonological awareness."
+It is therefore unsurprising that phonological skills first-letter naming, rhyming, and verbal short-term memory are among the best predictors of individual differences in future reading ability [e.g., @melby-lervag2012].
+However, this alphabetic form of reading remains somewhat slow and error-prone due to the sequential conversion of letters into speech sounds.
+
+Only in the third and final stage of reading development, the *orthographic* stage, children become able to read words as a whole and to access their meaning directly from the visual word form, without having to take the "detour" of phonological decoding.
+Presumably, it is the emergence of this shortcut that substantially reduces word reading times after approximately the first year of reading instruction [e.g., @hasenacker2017] and which makes adult reading so efficient and seemingly effortless.
+
+## Neural correlates of reading
+
+Reading as a cognitive function has to be implemented on a neuroanatomical and functional level in the brain.
+To probe which brain areas contribute to different aspects reading in proficient readers, cognitive-neuroscientific methods such as electroencephalography (EEG) and magnetic resonance imaging (MRI) can be used to measure brain activity while participants perform reading tasks.
+Due to its comparatively high spatial resolution (on the order of a few millimeters), functional magnetic resonance imaging (fMRI), which measures changes in blood oxygen level as a proxy of local neuronal activity, can be used to isolate which brain areas which are more active during reading than during other control tasks.
+
+One well-replicated finding using this methodology is that processing written words engages a relatively circumscribed region on the left ventral occipito-temporal (vOT) cortex.
+This region, typically referred to as the visual word form area [VWFA\; e.g., @cohen2000; @dehaene2002; @mccandliss2003; @dehaene2011], is thought to be a purely visual and pre-lexical area that identifies written words based on its lower-level visual shapes.
+There is converging evidence that anomalies in, damage to, and stimulation of the VWFA can cause reading difficulties [@hillis2005; @hirshorn2016; @brem2020; but see also @price2003].
+Furthermore, the VWFA is often described as a prime example of the neuronal recycling hypothesis [@dehaene2007], according to which "modern" cognitive functions such as reading,^[The first known scripts appeared approximately 3000--5000 B.C.E [e.g., @houston2004].] for which not enough evolutionary time has passed to develop dedicated brain circuitry, repurpose brain areas with similar but evolutionarily older functions.
+In the case of reading, the VWFA may reuse regions that had previously been specialized for recognizing other complex visual object categories such as faces, limbs, or tools [@dehaene2015; @kubota2024; @nordt2021; but see also @coltheart2014].
+
+The brain areas involved in reading beyond the early stages of visual word form recognition are less well understood, presumably owing to large differences in task design between studies.
+A meta-analysis of fMRI study [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonolical and semantic processing of spoken language.
+However, it remains an open question which brain areas serve as the interface between visual processing (word form recognition in the VWFA) and language processing (phonological and semantic processing in the left perisylvian language network) during reading.
+One candidate for the visual--phonological interface (linking written letters to speech sounds) is the left posterior supior temporal gyrus, as it has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, is its "new" skill of linking written letters to speech sounds may stem from its "original" skill to link lip movements to speech sounds.]
+One candidate for the visual--semantic interface is the left middle fusiform cortex (lmFFC), which lies anterior the high-level visual object recognition areas (including the VWFA) on the ventral surface of the occipital and temporal lobes.
+Using depth electrodes for recording and stimulation in epileptic patients,^[Unfortunately, the depth of this region and the associated signal dropout makes it hard to pick up BOLD activity changes in this region with fMRI.] it has been shown that this region is active for lexical retrieval from both auditory (spoken words) and visual (written words and object images) input [e.g., @forseth2018; @woolnough2020; @woolnough2022].
+
+## Neural correlates of reading development
+
+Compared to hundreds if not thousands of studies in proficient adult readers, there has been a lot less research on how the neural correlates of reading develop in beginning readers.
+There are multiple reasons for this:
+(a) It is much harder to recruit children (and their families) as compared to undergraduate students who depend on obtaining course credit or monetary compensation;
+(b) Children in the relevant age range (late kindergarten to early primary school; typically ~5--8 years of age) have a shorter attention spand and show more in-scanner head movement, leading to fewer usable scans, lower data quality in usable scans, and fewer data points per scan; and
+(c) Accurately tracking the development of brain structure and function in individual children requires a longitudinal study design, which is very costly and demanding for study participants, typically leading to small sample sizes.
+Nevertheless, a few studies exist that have managed to obtain multiple longitudinal scans of children's brain activity as they are learning to read.
+
+@dehaene-lambertz2018 scanned scanned ten 6-year-old children longitudinally throughout the first year of schooling (6--7 scans per child) and presented them with visual objects from different object categories, including written words.
+Behaviorally, they found that reading performance (knowledge of grapheme--phoneme relations and number of words read per minutes in a standardized reading test) increased sharply during the first months of schooling.
+In the fMRI, they found that selectivity for words in the VWFA was not present at the beginning of the study but quickly emerged within less than 6 months in most of the children.
+Interestingly, the activation strength in the VWFA and other word-selective areas appeared to follow a curvilinear inverted "u"-shaped pattern, with a quick rise in BOLD activation strength in the first half of the study followed by a slight decline in the second half.
+Such a pattern would be predicted by the "expansion and renormalization" model of brain plasticity [@wenger2017], according to which a novel skill initially requires more resources (in terms of number of voxels or BOLD activation amplitude) but later on becomes more efficient and automatized.
+Regarding the neuronal recycling hypothesis, @dehaene-lambertz2018 found that the voxels that would later form the VWFA in individual children were weakly tuned to a different object category at the beginning of the study, namely tools.
+However, a few shortcomings of this study need to be noted:
+(a) The sample size (both in terms of number of children and number of scans per child) was very small, therefore leading to low statistical power to detect all but very large effects [see also @button2013; @ioannidis2005; @szucs2017];
+(b) Their analysis of variance (ANOVA) model did not take into account the longitudinal nature of the data, with repeated measures of the same participants likely being positively correlated with one another;
+(c) It is unclear if the changes observed in this study were caused by reading instruction in particular or by other aspects of schooling or general cognitive development, since there was no non-reading control group (for obvious practical and ethical reasons); and
+(d) The study design captured only the very first stage of reading, namely visual word form recognition, while it remains an open question how visual word forms get linked to other aspects of (spoken) language comprehension, namely speech sounds (phonology) and word meaning (semantics).
+
+## Cultural biases in reading research
+
+Most of psychological and cognitive-neuroscientific research is carried out in countries of the Global North, especially in Western Europe and Northern America.
+Within these countries, study participants are not sampled at random, but typically come from economically and educationally priviledged social backgrounds (e.g., psychology students).
+This restriction of study samples can limit the generalizability of research findings, as even basic and presumably "universal" effects such as some perceptual illusions do not necessarily replicate in participants from different cultural and socio-economic backgrounds [@blasi2022; @henrich2010].
+
+In reading research, this problem is potentiated by the fact that different cultures developed---sometimes radically---different writing systems.
+Due to the concentration of research funds and technology in the Global North, research on reading, its development, and its neural correlates has almost exclusively been carried out in languages with *alphabetic* writing systems such as English, German, or French.
+In these writing systems, there is a corresponends^[Though the tightness/reliability of this correpsondence differing between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French] between individual units of written language (graphemes) and very small units of spoken language (phonemes).
+On the other end of the spectrum are *logographic* writing systems (such Chinese), in which individual graphemes correspond to large units of spoken languages, namely entire words or concepts (morphemes).
+In between these two extreems sit *syllabic* writing systems, in which individual graphemes correspond to intermediate units of spoken languages, namely sublexical consonant--vowel combinations (syllables).
+A special case are *alphasyllabic* languages (also "abugidas"; such as the Hindi writing system Devanagari), in which individual graphemes correspond to consonants with added diacritical marks above, below, or next to the letter for vowels.
+
+There is an abundance of research findings on different aspects of reading and its neural correlates in alphabetic languages,^[Unfortunately, most studies implicitly claim generalizability/universitality of their findings by not explicitly mentioning the writing system in the title, abstract, or conclusion of the paper.] but only very few studies that used logographic writing systems (typically Chinese) and next to none that used syllabic or alphasyllabic writing systems.
+These biases clearly limit the scope of empirical findings and current theories on reading and its development to a small set of regions and languages [@frost2012; @share2008; @share2014; @share2021].
+
+## The present study
+
+Our goal here was to capture the developmental changes in brain activity related to written word processing as children are learning to read.
+To this end, we conducted a longitudinal fMRI study with children at 5--9 years of age who received explicit reading instruction for approximately 1.5 years.
+Children were scanned at relatively short intervals of approximately 2--3 months for a total of up to 6 scanning sessions per child.
+At each scanning session, children were presented with spoken and written words, pseudowords, and low-level sensory control stimuli.
+This allowed us to capture intra-individual changes in BOLD activity (as a proxy for local neuronal activity) in response to stimuli that differed in their sensory, phonological, and semantic content.
+To overcome the bias towards study participants from the Global North and alphabetic writing systems, we worked with children from socio-economically disadvantaged backgrounds in India who received reading instruction in their native language (Hindi) and alphasyllabic writing system (Devanagari).
+Our hypotheses were as follows:
+
+* We expected that BOLD activity in response to written (pseudo-)words would increase as chilren are learning to read, either in a linear or quadratic (inverted "u"-shaped) pattern.
+  This was based on previous findings [e.g., @dehaene-lambertz2018] demonstrating the quick emergence of word selectivity in higher-level visual cortex.
+
+* We expected that in audio-visual integration areas (especially the pSTS and vOT cortex), multi-voxel BOLD activity patterns would become more similar between written and spoken (pseudo-)words as children are learning to read.
+  This was based on the intuition that only over the course of the study, children would become able to access the phonological and semantic content of written words.
+
+* We expected that multi-voxel BOLD activity patterns for written (pseudo-)words would become more "stable," i.e., show less session-to-session variation as children are learning to read.
+  This was based on the intuition that acitvity in reading-related areas should become more finely tuned and less noisy towards written words as children become able to decode and comprehend them.
 
 # Methods
 
