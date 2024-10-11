@@ -21,7 +21,7 @@ documentclass     : "apa6"
 classoption       : "doc,11pt,twoside"
 output            :
   papaja::apa6_pdf:
-    latex_engine  : "xelatex"
+    latex_engine  : "lualatex"
 
 header-includes:
   - \geometry{a4paper,margin=25mm}

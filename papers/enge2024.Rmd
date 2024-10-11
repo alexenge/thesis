@@ -284,7 +284,7 @@ Gridded (volumetric) resamplings were performed using `nitransforms`, configured
 Non-gridded (surface) resamplings were performed using `mri_vol2surf`
 (FreeSurfer).
 
-Many internal operations of *fMRIPrep* use *Nilearn* 0.10.4 [@nilearn, RRID:SCR_001362], mostly within the functional processing workflow.
+Many internal operations of *fMRIPrep* use *Nilearn* 0.10.4 [@abraham2014, RRID:SCR_001362], mostly within the functional processing workflow.
 For more details of the pipeline, see the section corresponding to workflows in *fMRIPrep*'s documentation(<https://fmriprep.readthedocs.io/en/latest/workflows.html>).
 
 ### Copyright Waiver
@@ -298,7 +298,7 @@ After running *fMRIPrep*, the preprocessed BOLD fMRI time series data was spatia
 
 ## Session-level analysis
 
-Separately for each participant and session, we modeled the preprocessed BOLD fMRI time series data using a mass-univariate general linear model (GLM) implemented in Nilearn [Version 0.10.4\; @nilearn] for Python [Version 3.9.19\; @vanrossum2009].
+Separately for each participant and session, we modeled the preprocessed BOLD fMRI time series data using a mass-univariate general linear model (GLM) implemented in Nilearn [Version 0.10.4\; @abraham2014] for Python [Version 3.9.19\; @vanrossum2009].
 At each voxel, the BOLD time series (420 time points) was predicted using a design matrix with the following columns:
 
 * A constant term (1 column).
@@ -416,7 +416,7 @@ For spoken words, there was positive linear change in BOLD activity over the cou
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_univariate.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_clusters.pdf}
 \caption{\label{fig:univariate-noise}\textbf{\emph{BOLD activity in response to low-level sensory controls.}}
 Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of low-level sensory control blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
 Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
@@ -428,7 +428,7 @@ Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD am
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_univariate.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_clusters.pdf}
 \caption{\label{fig:univariate-pseudo}\textbf{\emph{BOLD activity in response to pseudowords.}}
 Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
 Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
@@ -440,7 +440,7 @@ Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD am
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_univariate.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_clusters.pdf}
 \caption{\label{fig:univariate-words}\textbf{\emph{BOLD activity in response to words.}}
 Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
 Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
@@ -466,7 +466,7 @@ There was positive quadratic change in BOLD activity over the course of the stud
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_univariate.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_clusters.pdf}
 \caption{\label{fig:univariate-pseudo-minus-noise}\textbf{\emph{BOLD activity in response to pseudowords versus low-level controls.}}
 Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks versus low-level control blocks at the beginning of the study (intercept; time = 0 months).
 Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
@@ -481,7 +481,7 @@ There was no evidence for linear or quadratic change over the course of the stud
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_univariate.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_clusters.pdf}
 \caption{\label{fig:univariate-words-minus-noise}\textbf{\emph{BOLD activity in response to words versus low-level controls.}}
 Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus low-level control blocks at the beginning of the study (intercept; time = 0 months).
 Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
@@ -495,7 +495,7 @@ The difference between spoken words and spoken pseudowords did not elicity any r
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_univariate.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_clusters.pdf}
 \caption{\label{fig:univariate-words-minus-pseudo}\textbf{\emph{BOLD activity in response to words versus pseudowords.}}
 Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus pseudoword blocks at the beginning of the study (intercept; time = 0 months).
 Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
@@ -524,19 +524,19 @@ There was no evidence for linear change (all $p\text{s} > .059$) or quadratic ch
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_similarity.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_similarity.pdf}
 \caption{\label{fig:similarity-noise}\textbf{\emph{Audio-visual pattern similarity for low-level controls.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_similarity.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_similarity.pdf}
 \caption{\label{fig:similarity-pseudo}\textbf{\emph{Audio-visual pattern similarity for pseudowords.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_similarity.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_similarity.pdf}
 \caption{\label{fig:similarity-words}\textbf{\emph{Audio-visual pattern similarity for words.}}}
 \end{figure*}
 
@@ -545,19 +545,19 @@ Likewise, there was no evidence for linear change (all $p\text{s} > .132$) or qu
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_similarity.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_similarity.pdf}
 \caption{\label{fig:similarity-pseudo-minus-noise}\textbf{\emph{Audio-visual pattern similarity for pseudowords versus low-level controls.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_similarity.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_similarity.pdf}
 \caption{\label{fig:similarity-words-minus-noise}\textbf{\emph{Audio-visual pattern similarity for words versus low-level controls.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_similarity.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_similarity.pdf}
 \caption{\label{fig:similarity-words-minus-pseudo}\textbf{\emph{Audio-visual pattern similarity for words versus pseudowords.}}}
 \end{figure*}
 
@@ -570,37 +570,37 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-noise_stability.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-noise_stability.pdf}
 \caption{\label{fig:stability-audios-noise}\textbf{\emph{Pattern stability for spoken low-level contros.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-pseudo_stability.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-pseudo_stability.pdf}
 \caption{\label{fig:stability-audios-pseudo}\textbf{\emph{Pattern stability for spoken pseudowords.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-words_stability.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-words_stability.pdf}
 \caption{\label{fig:stability-audios-words}\textbf{\emph{Pattern stability for spoken words.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-noise_stability.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-noise_stability.pdf}
 \caption{\label{fig:stability-images-noise}\textbf{\emph{Pattern stability for written low-level contros.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-pseudo_stability.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-pseudo_stability.pdf}
 \caption{\label{fig:stability-images-pseudo}\textbf{\emph{Pattern stability for written pseudowords.}}}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-words_stability.png}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-words_stability.pdf}
 \caption{\label{fig:stability-images-words}\textbf{\emph{Pattern stability for written words.}}}
 \end{figure*}
 
