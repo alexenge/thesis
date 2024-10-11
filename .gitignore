@@ -1,7 +1,10 @@
+*.aux
 *.log
+*.knit.md
 *.pdf
 *.png
 *.pxd
 *.tex
+*.toc
 
 !/papers/enge2024.pdf
