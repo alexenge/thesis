@@ -59,8 +59,6 @@ header-includes:
   - \captionsetup[table]{font={scriptsize,stretch=1.0},labelfont={bf,up},skip=5pt}
   - \captionsetup[figure]{font={scriptsize,stretch=1.0},labelfont={bf,up},skip=5pt}
   - \usepackage[all]{nowidow}
-  - \usepackage[bottom]{footmisc}
-  - \interfootnotelinepenalty=10000
   - \usepackage[export]{adjustbox}
   - \usepackage{newcomputermodern}
 ---
