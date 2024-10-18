@@ -7,4 +7,6 @@
 *.tex
 *.toc
 
+.vscode/
+
 !/papers/enge2024.pdf
