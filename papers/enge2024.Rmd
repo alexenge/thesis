@@ -25,7 +25,7 @@ authornote: |
   We have no conflict of interest to disclose.
 
 abstract: |
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  Bla bla bla.
   
 keywords          : "reading, literacy, learning, children, fMRI, neuroimaging"
 
@@ -100,21 +100,21 @@ One well-replicated finding using this methodology is that processing written wo
 This region, typically referred to as the visual word form area [VWFA\; e.g., @cohen2000; @dehaene2002; @mccandliss2003; @dehaene2011], is thought to be a purely visual and pre-lexical area that identifies written words based on its lower-level visual shapes.
 There is converging evidence that anomalies in, damage to, and stimulation of the VWFA can cause reading difficulties [@hillis2005; @hirshorn2016; @brem2020; but see also @price2003].
 Furthermore, the VWFA is often described as a prime example of the neuronal recycling hypothesis [@dehaene2007], according to which "modern" cognitive functions such as reading,^[The first known scripts appeared approximately 3000--5000 B.C.E [e.g., @houston2004].] for which not enough evolutionary time has passed to develop dedicated brain circuitry, repurpose brain areas with similar but evolutionarily older functions.
-In the case of reading, the VWFA may reuse regions that had previously been specialized for recognizing other complex visual object categories such as faces, limbs, or tools [@dehaene2015; @kubota2024; @nordt2021; but see also @coltheart2014].
+In the case of reading, the VWFA may reuse regions that had previously been specialized for recognizing other complex visual object categories such as faces, limbs, or tools [@dehaene2015; @kubota2023; @nordt2021; but see also @coltheart2014].
 
 The brain areas involved in reading beyond the early stages of visual word form recognition are less well understood, presumably owing to large differences in task design between studies.
-A meta-analysis of fMRI study [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonolical and semantic processing of spoken language.
+A meta-analysis of fMRI study [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonological and semantic processing of spoken language.
 However, it remains an open question which brain areas serve as the interface between visual processing (word form recognition in the VWFA) and language processing (phonological and semantic processing in the left perisylvian language network) during reading.
-One candidate for the visual--phonological interface (linking written letters to speech sounds) is the left posterior supior temporal gyrus, as it has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, is its "new" skill of linking written letters to speech sounds may stem from its "original" skill to link lip movements to speech sounds.]
+One candidate for the visual--phonological interface (linking written letters to speech sounds) is the left posterior superior temporal gyrus (pSTS), as it has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, is its "new" skill of linking written letters to speech sounds may stem from its "original" skill to link lip movements to speech sounds.]
 One candidate for the visual--semantic interface is the left middle fusiform cortex (lmFFC), which lies anterior the high-level visual object recognition areas (including the VWFA) on the ventral surface of the occipital and temporal lobes.
 Using depth electrodes for recording and stimulation in epileptic patients,^[Unfortunately, the depth of this region and the associated signal dropout makes it hard to pick up BOLD activity changes in this region with fMRI.] it has been shown that this region is active for lexical retrieval from both auditory (spoken words) and visual (written words and object images) input [e.g., @forseth2018; @woolnough2020; @woolnough2022].
 
-## Neural correlates of reading development
+## Neural correlates of learning to read
 
 Compared to hundreds if not thousands of studies in proficient adult readers, there has been a lot less research on how the neural correlates of reading develop in beginning readers.
 There are multiple reasons for this:
 (a) It is much harder to recruit children (and their families) as compared to undergraduate students who depend on obtaining course credit or monetary compensation;
-(b) Children in the relevant age range (late kindergarten to early primary school; typically ~5--8 years of age) have a shorter attention spand and show more in-scanner head movement, leading to fewer usable scans, lower data quality in usable scans, and fewer data points per scan; and
+(b) Children in the relevant age range (late kindergarten to early primary school; typically ~5--8 years of age) have a shorter attention span and show more in-scanner head movement, leading to fewer usable scans, lower data quality in usable scans, and fewer data points per scan; and
 (c) Accurately tracking the development of brain structure and function in individual children requires a longitudinal study design, which is very costly and demanding for study participants, typically leading to small sample sizes.
 Nevertheless, a few studies exist that have managed to obtain multiple longitudinal scans of children's brain activity as they are learning to read.
 
@@ -133,17 +133,17 @@ However, a few shortcomings of this study need to be noted:
 ## Cultural biases in reading research
 
 Most of psychological and cognitive-neuroscientific research is carried out in countries of the Global North, especially in Western Europe and Northern America.
-Within these countries, study participants are not sampled at random, but typically come from economically and educationally priviledged social backgrounds (e.g., psychology students).
+Within these countries, study participants are not sampled at random, but typically come from economically and educationally privileged social backgrounds (e.g., psychology students).
 This restriction of study samples can limit the generalizability of research findings, as even basic and presumably "universal" effects such as some perceptual illusions do not necessarily replicate in participants from different cultural and socio-economic backgrounds [@blasi2022; @henrich2010].
 
 In reading research, this problem is potentiated by the fact that different cultures developed---sometimes radically---different writing systems.
 Due to the concentration of research funds and technology in the Global North, research on reading, its development, and its neural correlates has almost exclusively been carried out in languages with *alphabetic* writing systems such as English, German, or French.
-In these writing systems, there is a corresponends^[Though the tightness/reliability of this correpsondence differing between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French] between individual units of written language (graphemes) and very small units of spoken language (phonemes).
+In these writing systems, there is a corresponds^[Though the tightness/reliability of this correspondence differing between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French] between individual units of written language (graphemes) and very small units of spoken language (phonemes).
 On the other end of the spectrum are *logographic* writing systems (such Chinese), in which individual graphemes correspond to large units of spoken languages, namely entire words or concepts (morphemes).
-In between these two extreems sit *syllabic* writing systems, in which individual graphemes correspond to intermediate units of spoken languages, namely sublexical consonant--vowel combinations (syllables).
+In between these two extremes sit *syllabic* writing systems, in which individual graphemes correspond to intermediate units of spoken languages, namely sublexical consonant--vowel combinations (syllables).
 A special case are *alphasyllabic* languages (also "abugidas"; such as the Hindi writing system Devanagari), in which individual graphemes correspond to consonants with added diacritical marks above, below, or next to the letter for vowels.
 
-There is an abundance of research findings on different aspects of reading and its neural correlates in alphabetic languages,^[Unfortunately, most studies implicitly claim generalizability/universitality of their findings by not explicitly mentioning the writing system in the title, abstract, or conclusion of the paper.] but only very few studies that used logographic writing systems (typically Chinese) and next to none that used syllabic or alphasyllabic writing systems.
+There is an abundance of research findings on different aspects of reading and its neural correlates in alphabetic languages,^[Unfortunately, most studies implicitly claim generalizability/universality of their findings by not explicitly mentioning the writing system in the title, abstract, or conclusion of the paper.] but only very few studies that used logographic writing systems (typically Chinese) and next to none that used syllabic or alphasyllabic writing systems.
 These biases clearly limit the scope of empirical findings and current theories on reading and its development to a small set of regions and languages [@frost2012; @share2008; @share2014; @share2021].
 
 ## The present study
@@ -156,14 +156,14 @@ This allowed us to capture intra-individual changes in BOLD activity (as a proxy
 To overcome the bias towards study participants from the Global North and alphabetic writing systems, we worked with children from socio-economically disadvantaged backgrounds in India who received reading instruction in their native language (Hindi) and alphasyllabic writing system (Devanagari).
 Our hypotheses were as follows:
 
-* We expected that BOLD activity in response to written (pseudo-)words would increase as chilren are learning to read, either in a linear or quadratic (inverted "u"-shaped) pattern.
+* We expected that BOLD activity in response to written (pseudo-)words would increase as children are learning to read, either in a linear or quadratic (inverted "u"-shaped) pattern.
   This was based on previous findings [e.g., @dehaene-lambertz2018] demonstrating the quick emergence of word selectivity in higher-level visual cortex.
 
 * We expected that in audio-visual integration areas (especially the pSTS and vOT cortex), multi-voxel BOLD activity patterns would become more similar between written and spoken (pseudo-)words as children are learning to read.
   This was based on the intuition that only over the course of the study, children would become able to access the phonological and semantic content of written words.
 
 * We expected that multi-voxel BOLD activity patterns for written (pseudo-)words would become more "stable," i.e., show less session-to-session variation as children are learning to read.
-  This was based on the intuition that acitvity in reading-related areas should become more finely tuned and less noisy towards written words as children become able to decode and comprehend them.
+  This was based on the intuition that activity in reading-related areas should become more finely tuned and less noisy towards written words as children become able to decode and comprehend them.
 
 # Methods
 
@@ -189,8 +189,22 @@ Of those, 9 identified as female and 6 identified as male. The mean age at the b
 ## Study design
 
 The children in this longitudinal study completed regular MRI scanning sessions while participating in a structured reading program (or mathematics program for the control group, not shown in this manuscript).
-The first scanning session took place at the beginning of the program and the next scanning sessions (mean = 5.07 sessions per child, $SD$ = 1.53 sessions, min = 2 sessions, max = 6 sessions) were spaced at intervals of approximately 2--3 months (mean = 79.9 days between sessions, $SD$ = 35.8 days, min = 20 days, max = 182 days; \textcolor{red}{see Figure 1}).
+The first scanning session took place at the beginning of the program and the next scanning sessions (mean = 5.07 sessions per child, $SD$ = 1.53 sessions, min = 2 sessions, max = 6 sessions) were spaced at intervals of approximately 2--3 months (mean = 79.9 days between sessions, $SD$ = 35.8 days, min = 20 days, max = 182 days; see Figure \ref{fig:sessions}).
 Each scanning session consisted of one localizer scan, one functional MRI run (see experimental design and scanning parameters below), one structural MRI scan (see scanning parameters below), and a series of standardized behavioral tests outside of the scanner (see behavioral testing below).
+
+\begin{figure}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_sessions.pdf}
+\caption{
+  \label{fig:sessions}\textbf{\emph{Longitudinal data acquisition schedule.}}
+  Colored dots represent data acquisition points (MRI and behavioral tests) for children from the reading intervention group (participants ``sub-SA01'' to ``sub-SA32'').
+  Gray dots represent data acquisition points (MRI and behavioral tests) from the mathematics control group (participants ``sub-SO01'' to ``sub-SO25''; not reported in this manuscript).
+  Gray crosses (``$\times$'') indicate sessions for which MRI data was acquired but was excluded from all further analyses because it exceeded the head motion cutoff (\textgreater 25\% of fMRI volumes with \textgreater 0.5 mm framewise displacement).}
+\end{figure}
+
+Colored dots represent data acquisition points (MRI + behavioral tests) for children from the reading intervention group (participants "sub-SA01" to "sub-SA32").
+Gray dots represent data acquisition points (MRI + behavioral tests) from the mathematics control group (participants "sub-SO01" to "sub-SO25"; not reported in this manuscript).
+Gray crosses ("\times") indicate sessions for which MRI data was acquired but was excluded from all further analyses because it exceeded the head motion cutoff (\textgreater 25% of fMRI volumes with \textgreater 0.5 mm framewise displacement).
 
 The structured intervention for the reading group focused on phonics (i.e., reading and writing the 46 primary Devanagari characters and their correspondence to sublexical consonant--vowel combinations), word decoding (i.e., reading and writing monosyllabic and more complex words), and sentence reading.
 The intervention was carried out by a local teacher and involved 2--4 hours of schooling on 5 days per week. Attendance of the classes was checked but not strictly enforced (mean = 3.74 days attended per week).
@@ -220,11 +234,45 @@ They received auditory feedback in the form of a positive sound (after pressing 
 The experiment was programmed and presented using PsychoPy (Version 2021) in Python.
 The code and stimuli for the experiment can be accessed via <https://github.com/SkeideLab/SLANG-experiment/tree/main/scanner>.
 
-## Standardized behavioral testing
+## Behavioral testing
 
-\textcolor{red}{Bla bla blub.}
+At each session, directly before or after MRI scanning, children completed a set of behavioral tests (together with one of two local research assistants), assessing their reading skills, mathematics skills, working memory, and general cognitive ability.
 
-## Scanning parameters
+For reading skills, we used the Middle Screening Tool (MST) version of the Dyslexia Assessment for Languages of India (DALI) test [@rao2015a; @rao2021], with the following subtests:
+
+* Rapid picture naming (time to name 50 object pictures)
+
+* Word reading (number of correct Hindi words read and time taken [50 words])
+
+* Rhyming (number of correctly identified rhyme pairs [12 items with three words each])
+
+* Phoneme replacement (number of correct Hindi words generated by replacing one phoneme [10 items])
+
+* Semantic fluency (number of Hindi words generated from two semantic categories [vegetables and animals] in one minute)
+
+* Verbal fluency (number of Hindi words generated from two initial consonants in one minute)
+
+* Pseudoword reading (number of correctly pronounced pseudowords and time taken [30 pseudowords])
+
+* Reading comprehension (time taken to read a paragraph of text in Hindi + correct responses to comprehension questions [6 items])
+
+* Dictation (number of Hindi words spelled correctly [20 words])
+
+For mathematics skills, we used the Wide Range Achievement Test, Fifth Edition -- India [WRAT5 -- INDIA\; @wilkinson2017a], with the following subtests:
+
+* Oral math (number of questions answered correctly [15 items])
+
+* Math computation (number of math problems solved correctly [40 items])
+
+For working memory, we used the following tests:
+
+* Corsi block-tapping test forward and backward [longest correctly repeated sequence\; @corsi1972; @kessels2000]
+
+* Digit span test forward and backward [longest correctly repeated sequence\; @miller1956]
+
+For general cognitive ability, we used Raven's Colored Progressive Matrices [CPM/CVS India\; 36 items\; @raven2003].
+
+## MRI scanning parameters
 
 All scanning was conducted on a GE SIGNA Architect 3T MRI machine with a 48 channel head coil.
 After a short head localizer scan, there was one functional run, during which children performed the language experiment described above, and one structural run, during which children watched a TV episode or video of their choice.
@@ -285,7 +333,7 @@ Non-gridded (surface) resamplings were performed using `mri_vol2surf`
 (FreeSurfer).
 
 Many internal operations of *fMRIPrep* use *Nilearn* 0.10.4 [@abraham2014, RRID:SCR_001362], mostly within the functional processing workflow.
-For more details of the pipeline, see the section corresponding to workflows in *fMRIPrep*'s documentation(<https://fmriprep.readthedocs.io/en/latest/workflows.html>).
+For more details of the pipeline, see the section corresponding to workflows in *fMRIPrep*'s documentation (<https://fmriprep.readthedocs.io/en/latest/workflows.html>).
 
 ### Copyright Waiver
 
@@ -316,7 +364,7 @@ At each voxel, the BOLD time series (420 time points) was predicted using a desi
 
 * Spike regressors for each non-steady state outlier volume at the beginning of the scan as flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
 
-* Spike regressors for each high-motion outlier volume, defined as framewise displacement > 0.5 mm and flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
+* Spike regressors for each high-motion outlier volume, defined as framewise displacement \textgreater 0.5 mm and flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
 
 For details on how these regressors were computed, see the "Outputs/Confounds" section in *fMRIPrep*'s documentation (<https://fmriprep.org/en/stable/outputs.html#confounds>).
 
@@ -395,15 +443,36 @@ We then computed the linear correlation between each pair of blocks (153 pairs) 
 We entered these values into a linear-mixed effects model, separately for each ROI and specified in the same way as described above.
 We repeated the same analysis for the stability of activity patterns for written pseudowords.
 We also performed this analysis for spoken words and spoken pseudowords but reported the results in the appendix as they do not directly pertain to our hypotheses.
-F
-or all multivariate analyses, we used the same set of anatomically and functionally defined regions of interest.
+For all multivariate analyses, we used the same set of anatomically and functionally defined regions of interest.
 The anatomically defined regions of interest were the posterior superior temporal sulcus (pSTS), defined as the union of regions STSda, STSdp, STSvp, and STSva from the @glasser2016 atlas, and the ventral occipto-temporal cortex (vOT), defined as the union of regions V8, FFC, and VVC from the @glasser2016 atlas.
 The functionally defined regions were different for each condition:
 For the similarity between written and spoken words, we used the visual clusters from the "Written words vs. baseline" contrast and the auditory clusters from the "Spoken words vs. baseline" clusters. 
-ikewise, for the similarity between written and spoken pseudowords, we used the visual clusters from the "Written pseudowords vs. baseline" contrast and the auditory clusters from the "Spoken pseudowords vs. baseline" clusters.
+Likewise, for the similarity between written and spoken pseudowords, we used the visual clusters from the "Written pseudowords vs. baseline" contrast and the auditory clusters from the "Spoken pseudowords vs. baseline" clusters.
 For the within-condition pattern stability analysis, we used the visual or auditory clusters from that specific condition (e.g., for the stability analysis for written words, we used the visual clusters from the "Written words vs. baseline" contrast).
 
 # Results
+
+## Behavioral testing
+
+At each session throughout the study, children completed a set of behavioral tests to assess their reading skills, mathematics skills, working memory, and general cognitive ability (see Figure \ref{fig:behavior}).
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_behavior.pdf}
+\caption{
+  \label{fig:behavior}\textbf{\emph{Results from behavioral tests of reading skills, mathematics skills, working memory, and general cognitive ability.}}
+  Each subplot shows the results (raw scores) from one subtest.
+  Colored dots and lines show the results from individual children over the course of the study.
+  Note that for subtests where the score is the number (\#) of correct responses, higher values are considered better, whereas for subtests where the score is the number of seconds (s) taken to complete the test, lower values are considered better.
+  DALI = Dyslexia Assessment for Languages of India,
+  WRAT = Wide Range Achievement Test,
+  WM = working memory (Corsi block test),
+  CPM = Raven's Colored Progressive Matrices.}
+\end{figure*}
+
+There was little evidence for longitudinal change in reading skills, except for a few subtests, namely a decrease in word reading times, an increase in semantic fluency (i.e., generating words from semantic categories), an increase in verbal fluency (i.e., generating words from an initial phoneme), and a decrease in pseudoword reading times.
+Mathematics skills (oral math and computation) showed a slight increase over time whereas working memory and general cognitive ability were relatively stable.
+For all tests, there was large interindividual variation between children, both in their initial scores as well as in their longitudinal change over time.
 
 ## BOLD activity amplitude
 
@@ -416,38 +485,41 @@ For spoken words, there was positive linear change in BOLD activity over the cou
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_clusters.pdf}
-\caption{\label{fig:univariate-noise}\textbf{\emph{BOLD activity in response to low-level sensory controls.}}
-Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of low-level sensory control blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
-Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
-Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (noise-vocoded speech versus fixation basline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (false fonts versus fixation baseline).
-In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (low-level \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (low-level \textless{} baseline) are shown in blue.
-Clusters with higher voxel-level peak statistics are shown in brighter colors.
-Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_univariate.pdf}
+\caption{
+  \label{fig:univariate-noise}\textbf{\emph{BOLD activity in response to low-level sensory controls.}}
+  Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of low-level sensory control blocks vs. fixation baseline at the beginning of the study (intercept; time = 0 months).
+  Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+  Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (noise-vocoded speech vs. fixation baseline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (false fonts vs. fixation baseline).
+  In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (low-level \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (low-level \textless{} baseline) are shown in blue.
+  Clusters with higher voxel-level peak statistics are shown in brighter colors.
+  Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_clusters.pdf}
-\caption{\label{fig:univariate-pseudo}\textbf{\emph{BOLD activity in response to pseudowords.}}
-Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
-Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
-Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken pseudowords versus fixation basline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written pseudowords versus fixation baseline).
-In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (pseudowords \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (pseudowords \textless{} baseline) are shown in blue.
-Clusters with higher voxel-level peak statistics are shown in brighter colors.
-Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_univariate.pdf}
+\caption{
+  \label{fig:univariate-pseudo}\textbf{\emph{BOLD activity in response to pseudowords.}}
+  Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks vs. fixation baseline at the beginning of the study (intercept; time = 0 months).
+  Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+  Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken pseudowords vs. fixation baseline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written pseudowords vs. fixation baseline).
+  In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (pseudowords \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (pseudowords \textless{} baseline) are shown in blue.
+  Clusters with higher voxel-level peak statistics are shown in brighter colors.
+  Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
 \end{figure*}
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_clusters.pdf}
-\caption{\label{fig:univariate-words}\textbf{\emph{BOLD activity in response to words.}}
-Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus fixation baseline at the beginning of the study (intercept; time = 0 months).
-Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
-Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words versus fixation basline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words versus fixation baseline).
-In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (words \textless{} baseline) are shown in blue.
-Clusters with higher voxel-level peak statistics are shown in brighter colors.
-Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_univariate.pdf}
+\caption{
+  \label{fig:univariate-words}\textbf{\emph{BOLD activity in response to words.}}
+  Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks vs. fixation baseline at the beginning of the study (intercept; time = 0 months).
+  Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+  Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words vs. fixation baseline) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words vs. fixation baseline).
+  In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} baseline) are shown in orange and clusters with negative BOLD amplitude (words \textless{} baseline) are shown in blue.
+  Clusters with higher voxel-level peak statistics are shown in brighter colors.
+ Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
 \end{figure*}
 
 ### Visual baseline contrasts
@@ -466,14 +538,15 @@ There was positive quadratic change in BOLD activity over the course of the stud
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_clusters.pdf}
-\caption{\label{fig:univariate-pseudo-minus-noise}\textbf{\emph{BOLD activity in response to pseudowords versus low-level controls.}}
-Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks versus low-level control blocks at the beginning of the study (intercept; time = 0 months).
-Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
-Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken pseudowords versus noise-vocoded speech) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written pseudowords versus false fonts).
-In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (pseudowords \textgreater{} low-level) are shown in orange and clusters with negative BOLD amplitude (pseudowords \textless{} low-level) are shown in blue.
-Clusters with higher voxel-level peak statistics are shown in brighter colors.
-Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_univariate.pdf}
+\caption{
+  \label{fig:univariate-pseudo-minus-noise}\textbf{\emph{BOLD activity in response to pseudowords vs. low-level controls.}}
+  Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of pseudoword blocks vs. low-level control blocks at the beginning of the study (intercept; time = 0 months).
+  Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+  Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken pseudowords vs. noise-vocoded speech) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written pseudowords vs. false fonts).
+  In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (pseudowords \textgreater{} low-level) are shown in orange and clusters with negative BOLD amplitude (pseudowords \textless{} low-level) are shown in blue.
+  Clusters with higher voxel-level peak statistics are shown in brighter colors.
+  Panels \textbf{G} and \textbf{H} show individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant clusters in panels \textbf{E} and \textbf{F}, respectively, as indicated by the black asterisk (*) next to the cluster.}
 \end{figure*}
 
 At the beginning of the study (intercept), the difference between spoken words and spoken low-level controls elicited widespread BOLD activity mainly in the left and right auditory cortex (superior temporal gyrus; see large orange clusters in Figures \ref{fig:univariate-words-minus-noise}A).
@@ -481,27 +554,29 @@ There was no evidence for linear or quadratic change over the course of the stud
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_clusters.pdf}
-\caption{\label{fig:univariate-words-minus-noise}\textbf{\emph{BOLD activity in response to words versus low-level controls.}}
-Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus low-level control blocks at the beginning of the study (intercept; time = 0 months).
-Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
-Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words versus noise-vocoded speech) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words versus false fonts).
-In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} low-level) are shown in orange and clusters with negative BOLD amplitude (words \textless{} low-level) are shown in blue.
-Clusters with higher voxel-level peak statistics are shown in brighter colors.
-Panel \textbf{G} shows individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant cluster in panel \textbf{F}, as indicated by the black asterisk (*) next to the cluster.}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_univariate.pdf}
+\caption{
+  \label{fig:univariate-words-minus-noise}\textbf{\emph{BOLD activity in response to words vs. low-level controls.}}
+  Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks vs. low-level control blocks at the beginning of the study (intercept; time = 0 months).
+  Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+  Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words vs. noise-vocoded speech) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words vs. false fonts).
+  In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} low-level) are shown in orange and clusters with negative BOLD amplitude (words \textless{} low-level) are shown in blue.
+  Clusters with higher voxel-level peak statistics are shown in brighter colors.
+  Panel \textbf{G} shows individual participants' change in BOLD amplitude over time (colored dots and lines) as well as the best fitting linear mixed model (dashed black line) for the largest significant cluster in panel \textbf{F}, as indicated by the black asterisk (*) next to the cluster.}
 \end{figure*}
 
-The difference between spoken words and spoken pseudowords did not elicity any reliable BOLD activity at the beginning of the study and showed no evidence for change over the course of the study (see Figure \ref{fig:univariate-words-minus-pseudo}C and E).
+The difference between spoken words and spoken pseudowords did not elicit any reliable BOLD activity at the beginning of the study and showed no evidence for change over the course of the study (see Figure \ref{fig:univariate-words-minus-pseudo}C and E).
 
 \begin{figure*}
 \centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_clusters.pdf}
-\caption{\label{fig:univariate-words-minus-pseudo}\textbf{\emph{BOLD activity in response to words versus pseudowords.}}
-Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks versus pseudoword blocks at the beginning of the study (intercept; time = 0 months).
-Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
-Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words versus spoken pseudowords) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words versus written pseudowords).
-In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} pseudowords) are shown in orange and clusters with negative BOLD amplitude (words \textless{} pseudowords) are shown in blue.
-Clusters with higher voxel-level peak statistics are shown in brighter colors.}
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_univariate.pdf}
+\caption{
+  \label{fig:univariate-words-minus-pseudo}\textbf{\emph{BOLD activity in response to words vs. pseudowords.}}
+  Panels \textbf{A} and \textbf{B} show statistically significant clusters (cluster-forming voxel threshold \(p < .001\), uncorrected; cluster size threshold \(p < .05\), FWE-corrected) for the contrast of word blocks vs. pseudoword blocks at the beginning of the study (intercept; time = 0 months).
+  Panels \textbf{C} and \textbf{D} show statistically significant clusters for the linear change in BOLD activity for the same contrast over the course of the study and panels \textbf{E} and \textbf{F} show statistically significant clusters for the quadratic change in BOLD activity for the same contrast over the course of the study.
+  Panels \textbf{A}, \textbf{C}, and \textbf{E} show the auditory modality (spoken words vs. spoken pseudowords) and panels \textbf{B}, \textbf{D}, and \textbf{F} show the visual modality (written words vs. written pseudowords).
+  In all panels \textbf{A}--\textbf{F}, clusters with positive BOLD amplitude (words \textgreater{} pseudowords) are shown in orange and clusters with negative BOLD amplitude (words \textless{} pseudowords) are shown in blue.
+  Clusters with higher voxel-level peak statistics are shown in brighter colors.}
 \end{figure*}
 
 ### Visual experimental contrasts
@@ -525,19 +600,35 @@ There was no evidence for linear change (all $p\text{s} > .059$) or quadratic ch
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-noise_similarity.pdf}
-\caption{\label{fig:similarity-noise}\textbf{\emph{Audio-visual pattern similarity for low-level controls.}}}
+\caption{
+  \label{fig:similarity-noise}\textbf{\emph{Audio-visual pattern similarity for low-level controls.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of audio-visual pattern similarity for the contrast of low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Audio-visual pattern similarity was computed by correlating the beta weights of all voxels inside the ROI for the auditory contrast (noise-vocoded speech vs. fixation baseline) with those for the visual condition (false fonts vs. fixation baseline).
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-noise}).
+  Colored dots and lines indicate the pattern similarities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo_similarity.pdf}
-\caption{\label{fig:similarity-pseudo}\textbf{\emph{Audio-visual pattern similarity for pseudowords.}}}
+\caption{\label{fig:similarity-pseudo}\textbf{\emph{Audio-visual pattern similarity for pseudowords.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of audio-visual pattern similarity for the contrast of pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Audio-visual pattern similarity was computed by correlating the beta weights of all voxels inside the ROI for the auditory contrast (spoken pseudowords vs. fixation baseline) with those for the visual condition (written pseudowords vs. fixation baseline).
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-pseudo}).
+  Colored dots and lines indicate the pattern similarities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words_similarity.pdf}
-\caption{\label{fig:similarity-words}\textbf{\emph{Audio-visual pattern similarity for words.}}}
+\caption{\label{fig:similarity-words}\textbf{\emph{Audio-visual pattern similarity for words.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of audio-visual pattern similarity for the contrast of word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Audio-visual pattern similarity was computed by correlating the beta weights of all voxels inside the ROI for the auditory contrast (spoken words vs. fixation baseline) with those for the visual condition (written words vs. fixation baseline).
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-words}).
+  Colored dots and lines indicate the pattern similarities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 For all experimental contrasts (pseudowords vs. low-level, words vs. low-level, words vs. pseudowords) and ROIs, the auditory and visual BOLD response patterns were not significantly correlated at the beginning of the study (intercept; all $p\text{s} > .098$; see Figures \ref{fig:similarity-pseudo-minus-noise}--\ref{fig:similarity-words-minus-pseudo}).
@@ -546,19 +637,34 @@ Likewise, there was no evidence for linear change (all $p\text{s} > .132$) or qu
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-pseudo-minus-noise_similarity.pdf}
-\caption{\label{fig:similarity-pseudo-minus-noise}\textbf{\emph{Audio-visual pattern similarity for pseudowords versus low-level controls.}}}
+\caption{\label{fig:similarity-pseudo-minus-noise}\textbf{\emph{Audio-visual pattern similarity for pseudowords vs. low-level controls.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of audio-visual pattern similarity for the contrast of pseudoword blocks vs. low-level sensory control blocks over the course of the study in one region of interest (ROI).
+  Audio-visual pattern similarity was computed by correlating the beta weights of all voxels inside the ROI for the auditory contrast (spoken pseudowords vs. noise-vocoded speech) with those for the visual condition (written pseudowords false fonts).
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-pseudo-minus-noise}).
+  Colored dots and lines indicate the pattern similarities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-noise_similarity.pdf}
-\caption{\label{fig:similarity-words-minus-noise}\textbf{\emph{Audio-visual pattern similarity for words versus low-level controls.}}}
+\caption{\label{fig:similarity-words-minus-noise}\textbf{\emph{Audio-visual pattern similarity for words vs. low-level controls.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of audio-visual pattern similarity for the contrast of word blocks vs. low-level sensory control blocks over the course of the study in one region of interest (ROI).
+  Audio-visual pattern similarity was computed by correlating the beta weights of all voxels inside the ROI for the auditory contrast (spoken words vs. noise-vocoded speech) with those for the visual condition (written words false fonts).
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-words-minus-noise}).
+  Colored dots and lines indicate the pattern similarities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-words-minus-pseudo_similarity.pdf}
-\caption{\label{fig:similarity-words-minus-pseudo}\textbf{\emph{Audio-visual pattern similarity for words versus pseudowords.}}}
+\caption{\label{fig:similarity-words-minus-pseudo}\textbf{\emph{Audio-visual pattern similarity for words vs. pseudowords.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of audio-visual pattern similarity for the contrast of words blocks vs. pseudoword blocks over the course of the study in one region of interest (ROI).
+  Audio-visual pattern similarity was computed by correlating the beta weights of all voxels inside the ROI for the auditory contrast (spoken words vs. spoken pseudowords) with those for the visual condition (written words written pseudowords).
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-words-minus-pseudo}).
+  Colored dots and lines indicate the pattern similarities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 ### Within-condition pattern stability
@@ -571,38 +677,158 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-noise_stability.pdf}
-\caption{\label{fig:stability-audios-noise}\textbf{\emph{Pattern stability for spoken low-level contros.}}}
-\end{figure*}
-
-\begin{figure*}
-\centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-pseudo_stability.pdf}
-\caption{\label{fig:stability-audios-pseudo}\textbf{\emph{Pattern stability for spoken pseudowords.}}}
-\end{figure*}
-
-\begin{figure*}
-\centering
-\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-words_stability.pdf}
-\caption{\label{fig:stability-audios-words}\textbf{\emph{Pattern stability for spoken words.}}}
+\caption{
+  \label{fig:stability-audios-noise}\textbf{\emph{Pattern stability for spoken low-level controls.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of spoken low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Pattern stability was computed by estimating beta weights separately for each spoken low-level sensory control block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-noise}).
+  Colored dots and lines indicate the pattern stabilities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-noise_stability.pdf}
-\caption{\label{fig:stability-images-noise}\textbf{\emph{Pattern stability for written low-level contros.}}}
+\caption{\label{fig:stability-images-noise}\textbf{\emph{Pattern stability for written low-level controls.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of written low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Pattern stability was computed by estimating beta weights separately for each written low-level sensory control block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-noise}).
+  Colored dots and lines indicate the pattern stabilities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-pseudo_stability.pdf}
+\caption{\label{fig:stability-audios-pseudo}\textbf{\emph{Pattern stability for spoken pseudowords.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of spoken pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Pattern stability was computed by estimating beta weights separately for each spoken pseudoword block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-pseudo}).
+  Colored dots and lines indicate the pattern stabilities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-pseudo_stability.pdf}
-\caption{\label{fig:stability-images-pseudo}\textbf{\emph{Pattern stability for written pseudowords.}}}
+\caption{\label{fig:stability-images-pseudo}\textbf{\emph{Pattern stability for written pseudowords.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of written pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Pattern stability was computed by estimating beta weights separately for each written pseudoword block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-pseudo}).
+  Colored dots and lines indicate the pattern stabilities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
+\end{figure*}
+
+\begin{figure*}
+\centering
+\includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-words_stability.pdf}
+\caption{\label{fig:stability-audios-words}\textbf{\emph{Pattern stability for spoken words.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of spoken word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Pattern stability was computed by estimating beta weights separately for each spoken word block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-words}).
+  Colored dots and lines indicate the pattern stabilities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
 
 \begin{figure*}
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-words_stability.pdf}
-\caption{\label{fig:stability-images-words}\textbf{\emph{Pattern stability for written words.}}}
+\caption{\label{fig:stability-images-words}\textbf{\emph{Pattern stability for written words.}}
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of written word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Pattern stability was computed by estimating beta weights separately for each written word block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
+  ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure \ref{fig:univariate-words}).
+  Colored dots and lines indicate the pattern stabilities of individual participants over time.
+  The black dashed line indicates the fit of a linear mixed-effects model to these data.}
 \end{figure*}
+
+# Discussion
+
+We used dense-sampling fMRI to longitudinally measure changes in children's brain activity as they are learning to read.
+Seventeen children received reading instruction in their native language (Hindi) and alphabet (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
+In this sample, we found
+(a) no systematic increase in reading performance based on standardized reading skill tests,
+(b) limited evidence for longitudinal increases (linear or non-linear) in BOLD activity in response to spoken and written words, and
+(c) no evidence for longitudinal increases in audio-visual BOLD response pattern similarity or word-related BOLD response pattern stability.
+We will discuss each of these findings in turn as well as the limitations and research implications of the present study.
+
+## No systematic change in behavioral test scores
+
+## Limited change in BOLD activity amplitude
+
+We had hypothesized that learning to read would lead to an increase in pseudoword- and word-related BOLD activity amplitude in areas that are associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
+We had expected this change to be either linear, that is, increasing from the beginning to the end of the study, negative quadratic (inverted "u"-shaped), that is, increasing in the beginning of the study and then decreasing towards the end of the study.
+We did not observe such a pattern for any experimental contrast or brain region, except for the contrast between written words and low-level visual controls (false fonts; see Figure \ref{fig:univariate-words-minus-noise}); however, this effect was located at the medial wall of the brain (next to the posterior cingulate cortex), an area that has not typically been described as relevant for reading.
+For different contrasts, areas showed evidence for linear and/or quadratic change over the course of the study, but this change typically did not follow the expected pattern (e.g., negative linear change or positive quadratic change) and did not occur in areas that relevant for reading or audiovisual integration.
+Most importantly, most effects were observed for the baseline contrasts (contrasting one experimental condition against the fixation baseline; see Figures \ref{fig:univariate-noise} to \ref{fig:univariate-words}).
+These contrasts are difficult to interpret as they capture not only higher-level (e.g., orthographic, phonological, and semantic) processing, but also low-level sensory processing.
+The experimental contrasts (contrasting different word-like stimuli with different levels of phonological and semantic information, e.g., written words vs. pseudowords) showed little to no reliable longitudinal change in BOLD activity (see Figures \ref{fig:univariate-pseudo-minus-noise} to \ref{fig:univariate-words-minus-pseudo})
+There are several reasons that could explain these null effects, including the low sample size in our study, an intervention that was too short or too weak, or a lack of sufficient high-quality data per participant and session.
+Each of these limitations will be discussed in more detail below.
+
+## No systematic change in BOLD activity patterns
+
+We had hypothesized that learning to read would lead BOLD activity patterns to become more similar in response to written and spoken (pseudo-)words, especially in areas associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
+However, we did not observe any reliable longitudinal change (linear or quadratic) in audio-visual BOLD activity pattern similarity (see Figures \ref{fig:similarity-noise} to \ref{fig:similarity-words-minus-pseudo}).
+Beyond the limitations mentioned above (and discussed in detail below), it is important to mention that our study design was not ideal for capturing similarities in BOLD activity patterns.
+This is because we used a block design with which it was not possible to estimate activity patterns for individual stimuli (e.g., the written word "monkey") but only for experimental conditions (i.e., written words in general).
+Assuming that different stimuli elicit different BOLD activity patterns (e.g., depending on their individual phonology and semantics), we would have needed to use an event-related design to accurately capture these patterns and their potential increase between different sensory input modalities.
+However, it may also be that our initial hypothesis was wrong and that written and spoken words are processed in completely separate processing streams, converging only at some very abstract semantic level (likely situated in a region that was not captured by any of our ROIs).
+While audio-visual integration regions like the pSTS have been shown to respond strongly to input from both modalities [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018], they may not be engaged in tasks where stimuli are always presented in one modality at a time (either spoken or written) and do not need to be evaluated for audio-visual congruence.
+Finally, it may also be that automatic audio-visual processing of written words ony develops only relatively late after starting to learn to read, and that this developmental change therefore was not captured during the duration of our study.
+
+## Limitations
+
+Every empirical research study has limitations and this one is definitely not an exception.
+First and foremost, the sample size of this study was extremely small, both in terms of the number of participants ($N = 15$ in the reading intervention group) and in terms of the number of longitudinal sessions per participant ($T = 6$ for most participants).
+With this small sample size, statistical power for detecting effects is very low, which can lead to (a) undetected true effects (false negatives), (b) potentially unreplicable obtained effects (low positive predictive value), and (c) potentially inflated effect sizes for obtained effects [ @button2013; @ioannidis2005; @szucs2017].
+BOLD signal changes for higher-level (non-sensory) experimental manipulations (e.g., words vs. pseudowords) are typically subtle in size compared to the neural, thermal, and scanner-induced noise of fMRI data.
+When wanting to track changes longitudinally from session to session, the effects of interest can be presumed to be even smaller (since one is interested in the manipulation \times time interaction rather than in the main effect of the manipulation).
+These problems of small sample size, small effect size, and  low statistical power are potentiated when scanning children as their shorter attention span and increased head motion lead to both shorter scanning sessions (i.e., less trials/volumes) and lower data quality (i.e., higher framewise displacement and signal intensity changes).
+To reliably answer the research questions posed in the Introduction, one would presumably need a sample size that is at least 10 times larger than ours in terms of participants and ideally also significantly larger in terms of the number of sessions per participant, both of which we failed to acquire due to monetary and time constraints.
+
+Second, the reading intervention employed in the present study might not have been very effective, as we were unable to closely monitor the quantity and quality of the teaching sessions.
+While the behavioral test scores (see Figure \ref{fig:behavior}) indicate some improvement on relevant subtests of reading ability for some children, we by and large cannot be sure how many children became significantly better readers over the course of the study.
+Therefore, it is not surprising that we found little to no reliable change in word-related BOLD activity amplitudes and patterns.
+On a similar note, the duration of our intervention (approx. 16 months) might not have been long enough for children to become relatively proficient readers, especially since the Devanagari alphabet contains a relatively large number of visually complex letters.
+Our study design therefore was not ideal to capture the full process of learning to read and might have missed especially the late, *orthographic* stage of reading development (see Introduction).
+
+Finally, there were minor issues in our experimental design that could be improved in the future, including
+(a) relatively long blocks, which might have induced tiredness and additional head motion for some participants,
+(b) relatively short baseline intervals between blocks, which lead to overlap of BOLD activity from one block to the next,
+(c) no optimization of the order of blocks with regards to the efficiency of the experimental design [@henson2004], and
+(d) individual stimuli being shorter (1 s) than the TR (2.55 s), which precluded any item-level analysis (e.g., with regards to BOLD pattern similarity and stability).
+
+## Implications for future research
+
+Based on the limitations mentioned directly above, we advise the reader not to draw any strong conclusions from the empirical effects reported in this paper (or any lack thereof).
+However, we still believe that this study can stimulate and facilitate future research in at least two important ways.
+
+First, our overall study design can be seen as a proof of principle for overcoming geographic and cultural biases in developmental cognitive neuroscience.
+Most previous research on learning to read and its neural correlates has been carried out with participants from the Global North and in languages with alphabetic writing systems.
+In the future, it will be crucial to test if the empirical findings and theories derived from these populations will generalize to different cultures and writing system, or if those require novel hypotheses and theories [@frost2012; @share2008; @share2014; @share2021].
+We have shown that it is indeed possible---though certainly challenging---to collect relatively high-quality neuroimaging data in geographic areas and from socio-economic strata that have traditionally been neglected in cognitive neuroscience [@blasi2022; @henrich2010].
+In the context of learning to read and other learning interventions, such population can indeed offer unique advantages, e.g., because illiteracy or lack of public schooling can allow for targeted and controlled learning interventions for limited periods of time, as we attempted in the present study^[Note that in collaboration with a local non-governmental organization, we ensured that participants in our study would get enrolled at a public primary school after the conclusion of the study, something they would otherwise most likely never have gotten the opportunity to.]
+We therefore encourage more researchers to engage in cross-cultural collaboration projects, to test the generalizability of empirical findings and theories across different geographic and socio-economic settings, or to at the very least explicitly acknowledge the somewhat limited epistemic scope of findings obtained solely from convenience samples in the Global North.
+
+Second, we developed a novel computational approach for analyzing longitudinal fMRI data with whole-brain linear mixed-effects models.
+Compared to traditional statistical models for group-level fMRI analysis (typically variants of $t$-tests an analyses of variance [ANOVAs]), linear mixed-effects models come with a number of advantages:
+
+* They can adequately control for multiple repeated measures obtained from the same participants.
+
+* They can model longitudinal time as a continuous predictions variable instead of requiring discrete "sessions".
+
+* They do not require a balanced study design (e.g., the same number of sessions for all participants), and are therefore better able to handle dropout and missing data.
+
+* They can be used to include multiple predictor variables of different type (e.g., linear time, quadratic time, group membership, gender, ...).
+
+* They can be used to relate within-individual fMRI effects to between-individual characteristics [i.e., brain--behavior associations\; but note that this typically requires large sample sizes\; @marek2022].
+
+There have been previous implementations of whole-brain linear mixed-effects models, typically using the R programming language [@chen2013a; @madhyastha2018].
+We believe that our implementation using the Julia programming [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in mass univariate fashion.
+We combined this with a recently established method for whole-brain multiple comparison correction that is compatible with the outputs of the linear mixed-effects models to control the whole-brain family-wise error rate [@cox2017a; @cox2017].
+We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/derivatives_template_code/blob/SLANG/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
+
+## Conclusion
 
 \newpage
 
