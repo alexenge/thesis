@@ -25,8 +25,18 @@ authornote: |
   We have no conflict of interest to disclose.
 
 abstract: |
-  Bla bla bla.
-  
+  Learning to read is a developmental milestone of lifelong importance.
+  While many studies have demonstrated the neural correlates of reading in proficient adult readers, neuroimaging studies of learning to read during childhood are relatively scarce, and have not managed to disentangle effects specific to reading instruction from effects of general cognitive development and schooling.
+  Furthermore, previous reading research has almost exclusively focused on participants and languages in the Global North.
+  To overcome these limitations, we conducted a dense-sampling longitudinal fMRI study with children from a socio-economically disadvantaged background ($N = 15$; age = 5--9 years) who participated in approximately 16 months of reading instruction in their native language (Hindi/Devanagari).
+  During each of up to six fMRI scanning sessions, spaced at intervals of approximately 2--3 months, children were presented with spoken and written word-like stimuli, including low-level sensory control stimuli (noise-vocoded speech and false fonts), pseudowords, and words.
+  We estimated longitudinal change in BOLD activity amplitude and BOLD activity patterns using linear mixed-effects models.
+  We found evidence for some change (both linear and non-linear) in BOLD activity amplitudes for different contrasts and brain areas, including an inverted "u"-shaped pattern of activity increase and decrease for written words compared to visual low-level control stimuli.
+  However, none of these changes ocurred in anatomically plausible areas based on previous neuroimaging studies.
+  We also did not find any evidence for changes in audio-visual BOLD pattern similarity or BOLD pattern stabilities in any of the regions of interest that we examined.
+  This lack of findings may be due to limitations in our study design, including a very small sample size and an reading intervention that might have been to short or too weak.
+  Nevertheless, we hope that our rationale for this study as well as our whole-brain longitudinal analysis pipeline will inspire future cognitive-neuroscientific research.
+
 keywords          : "reading, literacy, learning, children, fMRI, neuroimaging"
 
 bibliography      : "references.bib"
@@ -272,6 +282,10 @@ For working memory, we used the following tests:
 
 For general cognitive ability, we used Raven's Colored Progressive Matrices [CPM/CVS India\; 36 items\; @raven2003].
 
+We analyzed the data from each behavioral (sub-)test with a linear mixed-effects model using the MixedModels package [Version 4.25.3\; @bates2024] in Julia [Version 1.10.4\; @bezanson2017].
+Each model predicted the raw (sub-)test scores using a fixed intercepts (reflecting the test score at the beginning of the study), a fixed effect of time (number of months since the beginning of the study), a by-participant random intercept and random slope for the effect of time, and their correlation.
+We interpreted $p$ values smaller than $.05$ for the fixed effect of time as a statistically significant increase (or decrease) in behavioral test performance.
+
 ## MRI scanning parameters
 
 All scanning was conducted on a GE SIGNA Architect 3T MRI machine with a 48 channel head coil.
@@ -470,9 +484,28 @@ At each session throughout the study, children completed a set of behavioral tes
   CPM = Raven's Colored Progressive Matrices.}
 \end{figure*}
 
-There was little evidence for longitudinal change in reading skills, except for a few subtests, namely a decrease in word reading times, an increase in semantic fluency (i.e., generating words from semantic categories), an increase in verbal fluency (i.e., generating words from an initial phoneme), and a decrease in pseudoword reading times.
-Mathematics skills (oral math and computation) showed a slight increase over time whereas working memory and general cognitive ability were relatively stable.
-For all tests, there was large interindividual variation between children, both in their initial scores as well as in their longitudinal change over time.
+The following (sub-)test showed a significant change in test scores over the course of the study:
+
+* Word reading accuracy ($b = 0.42$ more correct words per month, $p = .025$)
+
+* Phoneme replacement ($b = 0.18$ more items correct per month, $p = 0.011$)
+
+* Semantic fluency ($b = 0.26$ more generated words per month, $p = 0.015$)
+
+* Pseudoword reading ($b = 0.20$ more correct pseudowords per month, $p = 0.042$)
+
+* Reading comprehension ($b = 0.06$ more questions answered correctly per month, $p = 0.042$)
+
+* Dictation ($b = 0.27$ more correctly spelled words per month, $p = 0.032$)
+
+* Oral math ($b = 0.07$ more items solved correctly per month, $p = 0.017$)
+
+* Math computation ($b = 0.30$ more items solved correctly per month, $p = 0.018$)
+
+* Digit span forward ($b = 0.08$ more digits per month, $p = 0.017$)
+
+All other (sub-)tests (picture naming, word reading time, rhyming, verbal fluency, pseudoword reading time, passage reading time, Corsi block forward and backward, digit span backward, Raven's Colored Progressive Matrices) showed no statistically significant change over the course of the study (all $p$s > .072).
+For all (sub-)tests, there was large interindividual variation between children, both in their initial scores as well as in their longitudinal change over time (see Figure \ref{fig:behavior}).
 
 ## BOLD activity amplitude
 
@@ -746,12 +779,16 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 We used dense-sampling fMRI to longitudinally measure changes in children's brain activity as they are learning to read.
 Seventeen children received reading instruction in their native language (Hindi) and alphabet (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
 In this sample, we found
-(a) no systematic increase in reading performance based on standardized reading skill tests,
+(a) some evidence for an improvement in reading performance based on standardized reading skill tests,
 (b) limited evidence for longitudinal increases (linear or non-linear) in BOLD activity in response to spoken and written words, and
 (c) no evidence for longitudinal increases in audio-visual BOLD response pattern similarity or word-related BOLD response pattern stability.
 We will discuss each of these findings in turn as well as the limitations and research implications of the present study.
 
-## No systematic change in behavioral test scores
+## Some evidence for change in behavioral test scores
+
+As would be expected from approximately 1.5 years of systematic reading instruction, children's test scores on various aspects of reading performance improved over the course of the study.
+This included correctly reading real Hindi words and pseudowords as well as language skills closely related to reading, such as phoneme replacement and semantic fluency.
+We additionally observed improvements in some non-reading related tests (maths and working memory), which may be the consequence of general cognitive development and/or informal schooling from parents or siblings.
 
 ## Limited change in BOLD activity amplitude
 
