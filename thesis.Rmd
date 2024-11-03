@@ -113,6 +113,77 @@ Tag der mündlichen Prüfung: XX.XX.XXXX
 
 # Introduction
 
+## Anecdote
+
+## Overview of the present thesis
+
+In this thesis, I present three empirical studies on how humans learn to see meaning in visual words and objects.
+This question may seem like a very broad one and, as you will see and as is so often the case in science, I cannot claim that I have found a clear and meaningful answer.
+Instead, I invite you to view these studies as three very different examples of how visual-semantic development can be studied.
+In fact, the three studies are so different from one another that I will not try to pretend that they were planned to build up on or logically follow from one another, because that simply was not the case.
+Instead, I have personally always been interested in how our brain makes sense of the raw visual input that it gets, and how in turn this understanding might feed back into how we see the world around us.
+This has led me to pursue different research projects on different aspects of visual-semantic development throughout the course of my dissertation period.
+In this thesis, I present the outcomes of these different projects in the form of the original research articles as well as an introduction and discussion in which I provide an overview of the context of the different studies and how their results may inform one another as well as future research.
+
+The thesis is structured as follows: In this Introduction, I will start out by introducing the cognitive-neuroscientific methods that are typically used to study visual and semantic processing non-invasively in humans.
+I will the briefly review common knowledge about the visual and semantic systems in the human brain as well as how the may interact with one another.
+I will then introduce to specific examples of visual-semantic development, namely learning to understand written words and learning to understand visual objects.
+My review of the brain's semantic system forms the basis of the first original research study included in this thesis, whereas the two examples of learning to understand written words and visual objects forms the basis of the second and third original research study, respectively.
+
+Following the Introduction, I provide a brief summary of each of the three studies, including their theoretical background, research question, methods, and results.
+Finally, in the Discussion, I will summarize the main results of this thesis and how they interact with one another.
+I will also point out future research directions based on each of the different projects as well as their interaction.
+I will close with some more speculative questions about if and how we can gain a deeper understanding about how the brain learns to make sense of the visual world.
+
+Following the main text, the reader will find the reference section, a reprint of the three original papers as well as an acknowledgment of the people who have supported me while working on this dissertation.
+
+## Cognitive-neuroscientific methods
+
+Studying how the brain solves the task of making sense of visual information requires methods to measure brain activity while humans engage in tasks that require visual-semantic processing.
+This is not straightforward: For centuries, all that philosophers and scientists had access to was the input (What does a person see?) and the output (What does the person say or how to they behave?), whereas the actual processing inside the skull used to be a black box.^[An exception to this was the *post mortem* analysis of brain lesions and their association with certain behavioral particularities.]
+This changed in the last century, and especially in the last three decades, with the advent of non-invasive recording and imaging techniques, especially electroencephalography (EEG) and magnetic resonance imaging (MRI).
+
+In EEG, electrodes are placed on the head of a human participant and connected to their scalp using an electroconductive gel.
+These electrodes are then able to pick the electric fields created by the postsynaptic potentials of large neuronal populations along the cortical sheet of the brain.
+These measured amplitudes, which are typically on the order of a few microvolts, are a direct measure of neural activity (plus noise from the recording environment).
+Most crucially, modern EEG devices can sample these amplitudes at a frequency of 500--2000 Hz (i.e., one sample every 2 to 0.5 ms), which is as high or higher as the timing of the postsynaptic potentials themselves, allowing researchers to track cortical information processing in real time.
+The two major downsides of EEG recordings are (a) that they are very noisy, therefore making it necessary to collect and average a large number of trials to extract the signal of interest from background noise, and (b) the low spatial specificity, as the voltage measured at any specific electrode is a complex mixture of signals that could come from different remote areas of the brain (the "inverse problem"), due volume conduction and different orientation of source dipoles due to the folding of the cortical sheet.
+It is therefore difficult to impossible to link the EEG signal measured on the scalp to the specific neuronal population (or populations) having generated it.
+Nevertheless, EEG is an excellent tool to study the temporal sequence of cognitive processing in comparatively cheap and non-invasive fashion.
+
+In MRI, the human participant is lying in an MRI scanner with a strong static magnetic field (typically on the order of 1.5--7 Tesla) which aligns the spins of Hydrogen protons in the brain.
+Then, a radio-frequency (RF) pulse is sent to push the protons into a higher level of magnetization.
+Once the RF pulse is turned off, the protons fall back into their original level ("relaxation"), emitting energy that gets picked up by a metal coil around the head.
+The timing of the relaxation depends on properties of the tissue, while specific additional magnetic gradients are used to encode the location of the signal being measured.
+This makes it possible to reconstruct an image of the local structural or functional properties of the brain based on the signal measured from each spatial unit ("voxel") encoded via the magnetic field.
+In structural MRI (sMRI), the scanning sequence is created such that it measures differences in T1 or T2 relaxation times, therefore creating an image in which the intensity of the voxels depends on their fat content, which differs between gray matter (i.e., neuronal cell bodies), white matter (i.e., neuronal fibres), and cerebro-spinal fluid (CSF), thus providing a high-resolution static anatomical image of the brain.
+In functional MRI (fMRI), the scanning sequence measures the T2* relaxation time, which is sensitive to the blood oxygenation of the tissue.
+Since local neuronal activity requires oxygen, active brain areas receive an increase in blood flow and blood volume, which increases the local amount of oxyhemoglobin and decreases the amount of local deoxyhemoglobin, in turn leading to an increase in the measured T2* signal.
+By tracking the signal intensity at every voxel over time, that is, by reading out a whole-brain image of the T2* star signal every couple of seconds, one can track the relative change in blood oxygenation (the "blood oxygen level dependent" [BOLD] effect) over time and interpret this as a measure of which brain areas are comparatively more or less active and how this activity co-varies with a certain experimental manipulation (e.g., which brain areas show an increase in BOLD activity when processing faces as compared to houses).
+However, it is important to keep in mind that BOLD activity measures changes in local blood oxygenation and is therefore only an indirect proxy of neuronal activity.
+Furthermore, the temporal resolution of fMRI is much worse than that of EEG, both because it typically takes approximately 2 s to sample every location in the brain and because the haemodynamic response, that is, the increase in blood flow following an increase in local neuronal activity, takes approximately a couple of seconds to unfold, even though the underlying neuronal activity happens on the order of microseconds.
+The spatial resolution, on the other hand, is much better than EEG, as fMRI measures each individual voxel inside the brain and therefore does not suffer from the inverse problem.
+Still, a typically voxel in fMRI is 8 to 27 mm^3^ in size and therefore contains at least multiple hundreds of thousands neurons [@shapson-coe2024], making it impossible to gain an inside to any neuronal circuit level processing.
+Instead, fMRI can be used to identify which cognitive functions reliably engage which larger brain areas [think of the Brodmann areas or more modern whole-brain atlases, e.g., @destrieux2010; @glasser2016; @schaefer2018; @yeo2011] relative to some control condition.^[Note, however, that the fact that brain area *A* shows a significant change in BOLD activity while area *B* did not, this cannot be interpreted as area *A* being more active than area *B* without explicitly testing the *task* by *area* interaction effect [@nieuwenhuis2011].]
+
+## The visual system
+
+## The semantic system
+
+### The localized semantic system
+
+### The distributed semantics
+
+## The interface between the visual and semantic systems
+
+### Is semantics just high-level vision?
+
+### Studying visual-semantic development
+
+## Learning to read: Seeing meaning in written letters
+
+## What do I do with this?: Seeing meaning in visual objects
+
 \newpage
 
 # Summary of the present studies
@@ -340,7 +411,7 @@ This dissertation is based on the following original research articles:
 *Published under the terms of the [Creative Commons CC-BY license](https://creativecommons.org/licenses/by/4.0/).*
 
 \noindent
-Additional articles published during the dissertation period but not included in this thesis (in chronological order):
+Additional articles published during the dissertation period but not included in this thesis:
 
 * Eiserbeck, A., **Enge, A.**, Rabovsky, M., & Abdel Rahman, R. (2021). Electrophysiological chronometry of graded consciousness during the attentional blink. *Cerebral Cortex*, bhab289. <https://doi.org/10.1093/cercor/bhab289>
 
@@ -350,7 +421,7 @@ Additional articles published during the dissertation period but not included in
 
 * Eiserbeck, A., **Enge, A.**, Rabovsky, M., & Abdel Rahman, R. (2024). Distrust before first sight? Examining knowledge- and appearance-based effects of trustworthiness on the visual consciousness of faces. *Consciousness and Cognition*, 117, 103629. <https://doi.org/10.1016/j.concog.2023.103629>
 
-* Kessler, R., **Enge, A.**, & Skeide, M. A. (2024). How EEG preprocessing shapes decoding performance (arXiv:2410.14453). arXiv. https://doi.org/10.48550/arXiv.2410.14453
+* Kessler, R., Enge, A., & Skeide, M. A. (2024). How EEG preprocessing shapes decoding performance. *arXiv*. <https://doi.org/10.48550/arXiv.2410.14453>
 
 \newpage
 
@@ -375,14 +446,17 @@ Additional articles published during the dissertation period but not included in
 
 # Acknowledgements {.unnumbered}
 
-Thank you to my PhD supervisors, Michael Skeide and Rasha Abdel Rahman, for encouraging me to pursue a doctoral degree and for your continuing academic and emotional support.
-Your trust and guidance throughout my academic journey have been a great honor, and you have helped me to learn not only a few things about the human mind and brain, but also many things about myself.
+Thank you to my PhD supervisors, Michael Skeide and Rasha Abdel Rahman, for encouraging me to pursue a doctoral degree and for your continued academic and emotional support.
+Your trust and guidance throughout my academic career have been a great honor, and you have helped me to learn not only a few things about the human mind and brain, but also many things about myself.
 You are great mentors and I wish you continued success and joy in your research and beyond.
 
-Thank you to the lab members of the Research Group "Learning in Early Childhood" at the MPI CBS, especially to Anne-Sophie and Roman, and to the lab members of the Neurocognitive Psychology Lab at HU Berlin, especially to Julia, Martin, and Kirsten.
-Your support and the time that we have spent together discussing research, methods, and everything else under the sun has made my PhD journey so much easier and so much more enjoyable.
+Thank you to the lab members of the Research Group "Learning in Early Childhood" at the MPI CBS, especially to Anne-Sophie and Roman, and to the lab members of the Neurocognitive Psychology Lab at HU Berlin, especially to Julia, Kirsten, and Martin.
+Your support and our countless chats and discussions have made my PhD journey so much easier and so much more enjoyable.
+Should you decide to continue on this path, cognitive neuroscience has a great future ahead with scientists like you.
 
 Thank you to all participants who dedicated their time and energy to participate in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
+
+Thank you to Gesa Hartwigsen, Sebastian Markett, Rasha Abdel Rahman, XXX, and XXX for dedicating their time and energy to serve on my dissertation committee.
 
 But most of all, thank you to my family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
 Without your love, none of this would have any meaning.
