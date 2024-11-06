@@ -49,6 +49,19 @@ header-includes:
   - \usepackage{pdfpages}
 ---
 
+```{r, setup, include=FALSE}
+library("here")
+library("knitr")
+
+opts_chunk$set(
+  fig.align = "center",
+  fig.pos = "tbp",
+  message = FALSE,
+  out.width = "100%",
+  warning = FALSE
+)
+```
+
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
 
 \thispagestyle{empty}
@@ -159,16 +172,87 @@ This makes it possible to reconstruct an image of the local structural or functi
 In structural MRI (sMRI), the scanning sequence is created such that it measures differences in T1 or T2 relaxation times, therefore creating an image in which the intensity of the voxels depends on their fat content, which differs between gray matter (i.e., neuronal cell bodies), white matter (i.e., neuronal fibres), and cerebro-spinal fluid (CSF), thus providing a high-resolution static anatomical image of the brain.
 In functional MRI (fMRI), the scanning sequence measures the T2* relaxation time, which is sensitive to the blood oxygenation of the tissue.
 Since local neuronal activity requires oxygen, active brain areas receive an increase in blood flow and blood volume, which increases the local amount of oxyhemoglobin and decreases the amount of local deoxyhemoglobin, in turn leading to an increase in the measured T2* signal.
-By tracking the signal intensity at every voxel over time, that is, by reading out a whole-brain image of the T2* star signal every couple of seconds, one can track the relative change in blood oxygenation (the "blood oxygen level dependent" [BOLD] effect) over time and interpret this as a measure of which brain areas are comparatively more or less active and how this activity co-varies with a certain experimental manipulation (e.g., which brain areas show an increase in BOLD activity when processing faces as compared to houses).
+By tracking the signal intensity at every voxel over time, that is, by reading out a whole-brain image of the T2* signal every couple of seconds, one can track the relative change in blood oxygenation (the "blood oxygen level dependent" [BOLD] effect) over time and interpret this as a measure of which brain areas are comparatively more or less active and how this activity co-varies with a certain experimental manipulation (e.g., which brain areas show an increase in BOLD activity when processing faces as compared to houses).
 However, it is important to keep in mind that BOLD activity measures changes in local blood oxygenation and is therefore only an indirect proxy of neuronal activity.
 Furthermore, the temporal resolution of fMRI is much worse than that of EEG, both because it typically takes approximately 2 s to sample every location in the brain and because the haemodynamic response, that is, the increase in blood flow following an increase in local neuronal activity, takes approximately a couple of seconds to unfold, even though the underlying neuronal activity happens on the order of microseconds.
 The spatial resolution, on the other hand, is much better than EEG, as fMRI measures each individual voxel inside the brain and therefore does not suffer from the inverse problem.
 Still, a typically voxel in fMRI is 8 to 27 mm^3^ in size and therefore contains at least multiple hundreds of thousands neurons [@shapson-coe2024], making it impossible to gain an inside to any neuronal circuit level processing.
-Instead, fMRI can be used to identify which cognitive functions reliably engage which larger brain areas [think of the Brodmann areas or more modern whole-brain atlases, e.g., @destrieux2010; @glasser2016; @schaefer2018; @yeo2011] relative to some control condition.^[Note, however, that the fact that brain area *A* shows a significant change in BOLD activity while area *B* did not, this cannot be interpreted as area *A* being more active than area *B* without explicitly testing the *task* by *area* interaction effect [@nieuwenhuis2011].]
+Instead, fMRI can be used to identify which cognitive functions reliably engage which larger brain areas [think of the Brodmann areas or more modern whole-brain atlases, e.g., @destrieux2010; @glasser2016; @schaefer2018; @yeo2011] relative to some control condition.^[Note, however, that the fact that brain area *A* shows a significant change in BOLD activity while area *B* did not, this cannot be interpreted as area *A* being more active than area *B* without explicitly testing the \textit{task} \texttimes \textit{area} interaction effect [@nieuwenhuis2011].]
 
 ## The visual system
 
+Vision is widely believed to be the most important sensory input modality in humans [@enoch2019; @winter2018a] and occupies approximately one quarter of the human brain's cortical surface, more than all other sensory modalities combined [@vanessen2003].
+The visual system processes the neural signals coming from the retinae of both eyes in a hierarchical sequence of subcortical and cortical areas, starting with Lateral Geniculate Nucleus (LGN) in the Thalamus and continuing in the visual cortex in the occipital lobe of the brain [see Figure\ \ref{fig:vision}A\; @felleman1991].
+There, Visual Areas 1 and 2 (V1 and V2) represent the visual field in a retinotopic fashion, with the firing rate of nearby cortical columns coding for the visual input in nearby locations in visual space.
+From V1 and V2, the input is passed on to two distinct but interacting processing streams, the dorsal stream, including areas V3, V5/IT, and parts of the parietal cortex, and the ventral stream, including areas V4 and parts of the ventral and lateral occipto-temporal cortex [e.g., the visual word form area [VWFA], the parahippocampal place area [PPA], and the fusiform face area [FFA]\; see Figure\ \ref{fig:vision}B\; @cohen2000; @epstein1999; @kanwisher1997].
+The dorsal stream predominantly codes for object location and object-related action guidance, whereas the the ventral stream predominantly codes for object identity and categorization [@farivar2009; @mishkin1982].
+
+```{r, vision, fig.cap="(ref:vision-caption)"}
+include_graphics(here("figures", "vision.png"))
+```
+
+(ref:vision-caption) ***Visual processing areas in the human brain.***
+**A** Schematic of the most important anatomical areas involved in visual processing in humans.
+The visual input from the retina is passed to the lateral geniculate nucleus (LGN) in the thalamus and then to areas V1 and V2 in the occipital lobe.
+From there, the dorsal ("where/how") and ventral ("what") visual streams represent the visual input in an increasingly abstract fashion.
+IPL = inferior parietal lobule,
+IT = inferior temporal cortex,
+MST = medial superior temporal area,
+MT = middle temporal area,
+SPL = superior parietal lobule.
+Adapted from @yamasaki2018 under the terms of the Creative Commons Attribution (CC BY) License.
+**B** Object category-selective regions in the human brain.
+In the ventral and lateral occipito-temporal cortex, patches of fMRI voxels respond preferentially to certain object category, including the fusiform face area for faces, the visual word form area (VWFA) for written words, the lateral occipital area (LO) for visual objects, the parahippocampal place area (PPA) for scenes, and the extrastriate body area (EBA) for bodies and body parts.
+Adapted from @behrmann2020 under the terms of the CC BY License.
+
+Within the ventral stream, subsequent areas have increasingly larger receptive field sizes, that is, they respond to increasingly large areas of real-world visual space.
+They also contain increasingly abstract representations of visual stimuli, disregarding low-level visual features such as size, luminance, or orientation, allowing the brain to classify a visual stimulus as a certain type of object and pass this information on to other neural systems for further processing and appropriate action selection.
+This process of "core object recognition" [@dicarlo2012] is often described as taking place fast (within less than 200 ms) and in a largely feed-forward fashion, progressing from LGN to early visual areas (V1 and V2) to higher-level visual areas [e.g., VWFA, PPA, FFA\; @dicarlo2012; @felleman1991; @marr1982; @zhaoping2014].
+However, the visual system is highly interconnected and contains not only feed-forward axonal connections from earlier to later visual areas, but also horizontal connections within visual areas and feedback connections from later to earlier visual areas [@lamme1998; @lamme2000].
+These feedback connections help to improve visual perception especially under challenging conditions [e.g., occlusion and ambiguity\; @hupe1998; @williams2008a; @wyatte2014].
+Furthermore, recent evidence from human behavioral, EEG, and fMRI studies suggests that even early visual processing is modulated by non-visual information such as semantic knowledge, linguistic structures, and emotions [e.g., @abdelrahman2008; @boutonnet2015; @clarke2016; @hsieh2010; @phelps2016; @slivac2021; @teufel2018].
+Thus, while the understanding of bottom-up hierarchical visual processing has been one of the huge success stories of neuroscience [e.g., @hubel1962], and has successfully inspired advances in computer vision and artificial intelligence [e.g., @he2015; @krizhevsky2012], it is clear that the visual system cannot be viewed in isolation, as its representations feed into other cognitive systems (e.g., the semantic or motor system) and are in turn influenced by them [@churchland1994].
+
 ## The semantic system
+
+Semantic processing refers to the storage, modification, and retrieval of knowledge about the world, including the meaning of spoken and written words, the significance and functions of objects, and abstract ideas or facts (e.g., that Paris is the capital of France).
+Humans can reason routinely about the taxonomic belonging of concepts to categories (e.g., a mouse is a mammal) and about the similarities and dissimilarities between different concepts (e.g., badminton is like tennis but without the ball touching the ground) to a degree that other animal species or machines seem unable to.^[For non-human animals, some view the uniquely human advantage in having *language* rather than *semantics* [e.g., @friederici2017] but this seems difficult to disentangle given that the two concepts are so tightly interlinked and correlated across phylogeny and ontogeny. For machines, semantic processing that would satisfy or impress us as humans seemed impossible just a few years before I started to write this thesis. Now, however, large language models based on the transformer architecture and huge training data sets can emulate or even outperform human semantic knowledge, although the degree to which they are able to "reason" or "understand" remains a source of fierce debate [e.g., @lewis2024; @sun2024; @wu2024].]
+However, it is important to note that semantic processing and related termini (e.g., "meaning", "concept") are often used somewhat vaguely and with different connotations in different scientific disciplines [e.g., philosophy, psychology, and linguistics\; but see @reilly2024].
+Here I will focus on representations of semantic knowledge and their neural correlates in humans as studied in psychology and cognitive neuroscience.
+
+```{r, semantics, fig.cap="(ref:semantics-caption)"}
+include_graphics(here("figures", "semantics.png"))
+```
+
+(ref:semantics-caption) ***Theories of semantic representations.***
+**A** Categorical theories assume that the sensory input is assigned to one of a set of discrete semantic objects categories or concepts.
+**B** Feature-based theories assume that concepts are defined by the presence or absence of certain semantic features.
+**C** Dimensional theories assume that concepts exists as points in an abstract, high-dimensional semantic space, the geometry of which needs not be humanly interpretable but still represents the semantic similarity and dissimilarity of objects. 
+Adapted from @frisby2023 under the terms of the CC BY License.
+
+Broadly speaking, there are three different types of theories about the organization of semantic information in the human mind and brain [see Figure\ \ref{fig:semantics}\; @frisby2023]:
+
+* *Categorical* theories assume that exemplars (e.g., the written word "bird" or the picture or sound of a bird) are assigned to one of a set of discrete basic-level object categories or concepts (in this case, *bird*).
+The categories (e.g., *bird* versus *tree*) are typically mutually exclusive and defined by certain criteria (e.g., *has wings*) or via similarity to prototypical examples.
+On this view, concepts may be represented as vectors in a high-dimensional space, where each dimension is one category.
+In this space, each concept is a binary vector with a value of one on the category to which it belongs and zeros elsewhere.
+Concepts are then considered similar or dissimilar if they belong to the same versus different categories.
+
+* *Feature-based* theories assume that exemplars are recognized via the presence or absence of certain features.
+For instance, the concept of a bird is defined by the presence of features such as *lives*, *has wings*, *lays eggs*, etc., and these features get activated whenever a specific instance of the concept (e.g., the written word "bird" or the picture or sound of a bird) is encountered.
+Features can be binary (e.g., an animal *has wings* or not) or continuous (e.g., an animal *runs slow* versus *fast* versus *very fast* etc.), but they must be interpretable.
+On this view, the high-dimensional semantic space is formed by features instead of categories, and each concept is a vector that codes the presence or absence (for binary features) or the degree to which it possesses a certain feature (for continuous features).
+Concepts are then considered similar or dissimilar if they show large versus little overlap in the presence/absence or degree of semantic features.
+
+* *Dimensional* are like feature-based theories in that they assume concepts to be points in a high-dimensional semantic space and that the concept vectors may contain multiple non-zero values, coding for the degree to which a concept concurs with a certain dimension.
+Unlike for feature-based theories, however, the dimensions need not be interpretable by humans in the same way a certain binary or continuous semantic feature like *has wings* is.
+Instead, the dimensions are typically learned by some computational model from a large set of input data, such as language models trained on large corpora of text from the internet or computer vision models trained on a large set of natural images.
+Even though the dimensions are not interpretable, the model captures the similarity and dissimilarity of concepts based on how near versus far away their distance in the high-dimensional semantic space is.
+
+For each type, there are many different instantiations of specific theories (e.g., classical versus prototype-based categorical theories, dimensional theories based on word embeddings versus neural networks), and multiple of these theories may be implemented in the brain and used depending on the specific goal, task context, sensory input and output modality, and cognitive resource availability.
+It is important to note that the different theories often result in different experimental designs and analyses choices that are able to discover behavioral and neural effects of semantic processing [@frisby2023].
+For instance, a categorical model is easily tested by running a highly controlled lab experiment that requires participants to make category judgments on visually presented words or images, and then look for differences in behavior or brain activity between different categories or objects [while ideally controlling as best as possible for differences in their low-level sensory features, e.g., @alizadeh2017; @rice2014].
+Dimensional models, on the other hand, are best tested by presenting a large volume of naturalistic input, such as natural speech or movies, and then use encoding models or decoding models to test which brain responses covary with the embedding vectors of a computational model trained on the same input [e.g., @caucheteux2022; @huth2012; @huth2016].
 
 ### The localized semantic system
 
@@ -190,7 +274,7 @@ Instead, fMRI can be used to identify which cognitive functions reliably engage 
 
 ## A meta-analysis of fMRI studies of semantic cognition in children
 
-In this first study [@enge2021], we provide a quantitative synthesis of the brain areas involved during semantic processing children.
+In this first^[Note that order in which the studies are presented in this thesis was based on their content and logical flow, not on their chronological order of publication.] study [@enge2021], we provide a quantitative synthesis of the brain areas involved during semantic processing children.
 To this end, we conducted a meta-analysis of all available fMRI studies in children that probed different aspects of semantic cognition, including semantic knowledge (e.g., naming an object after hearing a verbal description), semantic relations (e.g., deciding if pairs of words belong together or not), and visual object categorization (e.g., viewing object images from different semantic categories).
 
 Meta-analyses are a useful tool to synthesize the research literature within a relatively narrow domain [@glass1976; @hedges1985; @harrer2021].
@@ -211,7 +295,7 @@ In total, these experiments included data from 1,018 children with a mean age of
 The experiments reported 687 peak coordinates from statistically significant clusters associated with semantic cognition in children.
 Using the activation likelihood estimate (ALE) algorithm [@eickhoff2009; @eickhoff2012; @turkeltaub2002] implemented in the NiMARE software package [@salo2023], these peaks were convolved with a Gaussian smoothing function, integrated into a meta-analytic map, and thresholded using a permutation-based family-wise error correction for multiple comparisons at the whole-brain level [@eickhoff2012; @eickhoff2016].
 For general semantic cognition, combined across all three task types, there was reliable BOLD activity across experiments in eight clusters, namely in the left inferior frontal gyrus (pars triangularis; two clusters), the bilateral supplementary motor area, the left fusiform gyrus, the right insula, the left middle temporal gyrus, the right inferior occipital gyrus, and the right fusiform gyrus.
-Broken down by task category, three clusters (left inferior frontal gyrus, bilateral supplementary motor area, and right insula) were activated for both semantic world knowledge experiments and semantic relatedness experiments, whereas the left middle temporal gyrus was only activated for semantic relatedness experiments and the left and right fusiform and occipital clusters were only activated for semantic object categorization experiments.^[However, note that this *difference in statistical significance* does not automatically imply a *statistically significant difference* [@gelman2006; @nieuwenhuis2011]. For a formal statistical comparison of the different task types, see Figure 6 and Table 4 in the original paper.]
+Broken down by task category, three clusters (left inferior frontal gyrus, bilateral supplementary motor area, and right insula) were activated for both semantic world knowledge experiments and semantic relatedness experiments, whereas the left middle temporal gyrus was only activated for semantic relatedness experiments and the left and right fusiform and occipital clusters were only activated for semantic object categorization experiments.^[However, note that this *difference in statistical significance* does not automatically imply a *statistically significant difference* [@gelman2006; @nieuwenhuis2011]. For a formal statistical comparison of the different task types, see Figure\ 6 and Table\ 4 in the original paper.]
 
 We validated our results from the ALE analysis using a second meta-analytic approach [seed-based *d* mapping\; @albajes-eizagirre2019; @albajes-eizagirre2019a], which gave qualitatively similar results and also allowed us to control for various experiment-level covariates (e.g., language, sensory modality, response modality).
 
@@ -226,9 +310,9 @@ Taken together, our meta-analysis is the first of fMRI experiments on semantic c
 We found that experiments with linguistic materials (semantic world knowledge and relatedness judgments) reliably activated the same regions in the left inferior frontal and bilateral premotor cortices, whereas visual object categorization experiments activated a distinct set of regions in posterior brain areas (bilateral fusiform and right occipital cortices).^[Potentially casting doubt on our decision to lump the latter type of experiments together with the former into one meta-analysis, as visual object category processing may be based purely on differences in lower-level visual features and may not necessarily engage higher-level semantic processing].
 Despite the large overlap between our meta-analytic results and previous meta-analytic results in adults [@jackson2021], there were a few reliable differences.
 The most striking of these was that there was significantly less reliable activation in children in the anterior part of the left temporal lobe, an area associated with very high-level and amodal semantic processing in adults [e.g., @lambonralph2017; @patterson2007].
-This difference may point to the fact that this semantic "hub" may not yet be fully developed in children at the typical age included in our meta-analysis (mostly 8--12 years; see Figure 3 in the original paper).
+This difference may point to the fact that this semantic "hub" may not yet be fully developed in children at the typical age included in our meta-analysis (mostly 8--12 years; see Figure~3 in the original paper).
 
-We have shared the data and analysis code of our meta-analysis on the Open Science Framework (<https://osf.io/34ry2>) and on GitHub (<https://github.com/SkeideLab/meta_semantics>) so that they can be scrutinized and reused.^[At the time of writing, three new meta-analyses on completely different topics have acknowledged reusing our scripts [@bortolini2024, @cui2022, @yang2024].]
+We have shared the data and analysis code of our meta-analysis on the Open Science Framework (<https://osf.io/34ry2>) and on GitHub (<https://github.com/SkeideLab/meta_semantics>) so that they can be scrutinized and reused.^[At the time of writing, three new meta-analyses on completely different topics have acknowledged reusing our scripts [@bortolini2024; @cui2022; @yang2024].]
 
 ## Tracking the neural correlates of learning to read with dense-sampling fMRI
 
@@ -287,7 +371,7 @@ We nevertheless hope that some of our findings can be replicated and that our ge
 
 ## Instant effects of semantic information on visual perception
 
-In this third and final study [@enge2023a],^[Note that order in which the studies are presented in this thesis was based on their content and logical flow, not on their chronological order of publication.] we switched our focus from the development of visual-semantic processing during childhood to the learning visual-semantic information in adults.
+In this third and final study [@enge2023a], we switched our focus from the development of visual-semantic processing during childhood to the learning visual-semantic information in adults.
 Although most of our learning of the meaning of visual objects takes place during infancy (e.g., by learning to differentiate high-level visual object categories) and childhood (e.g., by learning to associate abstract visual shapes with meaning during learning to read), this capacity luckily remains available as we age---or otherwise we would not be able to understand much at all in a world where we are presented with novel gadgets and icons almost on a daily basis.
 
 Our goal was to capture the moment during which we learn to understand the function of a previously unknown visual object, as well as to test if this understanding changes the way in which we perceive the object visually.
