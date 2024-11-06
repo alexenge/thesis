@@ -222,17 +222,17 @@ Humans can reason routinely about the taxonomic belonging of concepts to categor
 However, it is important to note that semantic processing and related termini (e.g., "meaning", "concept") are often used somewhat vaguely and with different connotations in different scientific disciplines [e.g., philosophy, psychology, and linguistics\; but see @reilly2024].
 Here I will focus on representations of semantic knowledge and their neural correlates in humans as studied in psychology and cognitive neuroscience.
 
-```{r, semantics, fig.cap="(ref:semantics-caption)"}
-include_graphics(here("figures", "semantics.png"))
+```{r, semantic-theories, fig.cap="(ref:semantic-theories-caption)"}
+include_graphics(here("figures", "semantic-theories.png"))
 ```
 
-(ref:semantics-caption) ***Theories of semantic representations.***
+(ref:semantic-theories-caption) ***Theories of semantic representations.***
 **A** Categorical theories assume that the sensory input is assigned to one of a set of discrete semantic objects categories or concepts.
 **B** Feature-based theories assume that concepts are defined by the presence or absence of certain semantic features.
 **C** Dimensional theories assume that concepts exists as points in an abstract, high-dimensional semantic space, the geometry of which needs not be humanly interpretable but still represents the semantic similarity and dissimilarity of objects. 
 Adapted from @frisby2023 under the terms of the CC BY License.
 
-Broadly speaking, there are three different types of theories about the organization of semantic information in the human mind and brain [see Figure\ \ref{fig:semantics}\; @frisby2023]:
+Broadly speaking, there are three different types of theories about the organization of semantic information in the human mind and brain [see Figure\ \ref{fig:semantic-theories}\; @frisby2023]:
 
 * *Categorical* theories assume that exemplars (e.g., the written word "bird" or the picture or sound of a bird) are assigned to one of a set of discrete basic-level object categories or concepts (in this case, *bird*).
 The categories (e.g., *bird* versus *tree*) are typically mutually exclusive and defined by certain criteria (e.g., *has wings*) or via similarity to prototypical examples.
@@ -258,19 +258,40 @@ Dimensional models, on the other hand, are best tested by presenting a large vol
 
 Traditionally, the neural correlates of semantic processing in humans have been studied using univariate fMRI techniques, that is, by examining the difference in BOLD activity amplitude between to or more conditions that are similar in their lower-level (e.g., sensory, phonological, orthographic) processing demands but differ in their semantic processing demands (e.g., reading words versus pseudowords).
 In addition to equating low-level processing, it also important to equate task difficulty and working memory demands between the different semantic conditions [@binder2009].
-Many individual studies and meta-analyses [e.g., @binder2009; @jackson2021; @rodd2015] have shown that these "semantic contrasts" reliably engage a relatively circumscribed, left-lateralized set of cortical regions, consisting of the inferior parietal lobe (especially the angular gyrus), lateral temporal cortex (especially the middle and inferior temporal gyrus), the ventral temporal cortex (fusiform and parahippocampal gyri), the dorso-medial prefrontal cortex, and the inferior frontal gyrus (especially the *pars orbitalis*).
+Many individual studies and meta-analyses [e.g., @binder2009; @jackson2021; @rodd2015] have shown that these "semantic contrasts" reliably engage a relatively circumscribed, left-lateralized set of cortical regions (see Figure\ \ref{fig:semantic-brains}A), consisting of the inferior parietal lobe (especially the angular gyrus), lateral temporal cortex (especially the middle and inferior temporal gyrus), the ventral temporal cortex (fusiform and parahippocampal gyri), the dorso-medial prefrontal cortex, and the inferior frontal gyrus (especially the *pars orbitalis*).
 Additionally, the middle fusiform cortex and anterior temporal lobe [@forseth2018; @jackson2015; @visser2010; @woolnough2020] are reliably activated by semantic contrasts but are difficult to measure with fMRI due to the low signal-to-noise ratio in this area [@embleton2010; @liu2016a].
+In the first empirical research article presented in this thesis (see Section \ref{a-meta-analysis-of-fmri-studies-of-semantic-cognition-in-children}), we investigated the development of this "localized" semantic system, that is, which brain areas are reliably activated by different types of semantic fMRI tasks in children and if these are similar or dissimilar to those in adults.
 
-More recently, studies have emerged that tried to track semantic processing under more naturalistic circumstances, e.g., by scanning participants while viewing movies or listening to audio books or radio programmes.
+```{r, semantic-brains, fig.cap="(ref:semantic-brains-caption)"}
+include_graphics(here("figures", "semantic-brains.png"))
+```
+
+(ref:semantic-brains-caption) ***Semantic processing in the human brain.***
+**A** Brain areas reliably activated by semantic task contrasts, based on an activation likelihood estimation (ALE) meta-analysis of 415 fMRI studies [for details, see @enge2021, and Section \ref{a-meta-analysis-of-fmri-studies-of-semantic-cognition-in-children}]. Original data provided by @jackson2021.
+**B** Brain areas representing specific semantic dimensions in a naturalistic task (story listening), estimated by fitting an encoding model of high-dimensional semantic representations of the words in the story to the time series of each voxel [for details, see @huth2016]. 
+Adapted from @deniz2019 under the terms of the CC BY License.
+
+More recently, studies have emerged that moved beyond simple semantic task contrasts and tried to track semantic processing under more naturalistic circumstances, e.g., by scanning participants while viewing movies or listening to audio books or radio programmes.
 One can then label the objects or words at each time point in the movie or audio stream, represent these concepts as vectors in a high-dimensional semantic space (e.g., from a word embedding or neural network model), and correlate the timeseries of these dimensions with the time series of the measured brain activity [e.g., @deniz2019; @huth2012; @huth2016].
-Variants of these techniques usually show a very different picture from the univariate semantic contrasts described above, with different concepts and semantic dimensions being scattered across almost the entire cortex, including areas that have typically not been thought to be engaged in semantic processing.
+Variants of these techniques usually show a very different picture from the univariate semantic contrasts described above, with different concepts and semantic dimensions being scattered across almost the entire cortex, including areas that have typically not been thought to be engaged in semantic processing (see Figure\ \ref{fig:semantic-brains}B).
 While these different results clearly stem from the vastly different experimental designs and analysis choices [for a systematic discussion, see @frisby2023], there is as of yet not a clear path for integrating these different lines of research into an overarching theory of semantic processing in the human brain.
 
 ## Visual--semantic interfaces
 
+The visual and semantic systems need to interact with one another in order to make sense of what we see and act accordingly.
+These interactions can be bidirectional:
+On the one hand, the visual system will feed its output (a high-level, feature invariant representation of the retinal input) into the semantic system, allowing us, among many other options, to name visual objects, assess their usefulness to us, or relate them to other aspects of our cognition (e.g., our memory or current emotional state).
+On the other hand, the semantic system may modulate different stages of visual processing in a top-down fashion.
+This can be useful to predict visual input based on prior experience [as stipulated in predictive coding theories of the brain, e.g., @clark2013; @friston2009; @rao1999] and to improve accuracy under the oftentimes challenging conditions in real-world vision [@hupe1998; @williams2008a; @wyatte2014].
+
+These bidirectional links between vision and semantics likely exist from very early stages of brain development onwards, allowing young infants to develop their first pieces of world knowledge based on their visual input.
+However, the ability to associate previously unknown visual shapes and objects with semantic information remains a crucial cognitive skill throughout our lifetime---or otherwise we would be lost whenever we try to understand any sign or gadget that we have never seen before.
+In the following, I will briefly introduce two examples of learning novel visual--semantic associations, namely children's learning to read and adults' learning to understand previously unknown visual objects.
+These two examples are examined more closely in the second and third empirical research articles presented in this thesis, respectively (see Sections \ref{tracking-the-neural-correlates-of-learning-to-read-with-dense-sampling-fmri} and \ref{instant-effects-of-semantic-information-on-visual-perception}).
+
 ### Learning to read: Seeing meaning in written letters
 
-### What do I do with this?: Seeing meaning in visual objects
+### What do I do with this? Seeing meaning in visual objects
 
 \newpage
 
