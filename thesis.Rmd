@@ -91,7 +91,7 @@ Prof. Dr. Julia von Blumenthal\\
 Dekan der Lebenswissenschaftlichen Fakultät der Humboldt-Universität zu Berlin\\
 Prof. Dr. Dr. Christian Ulrichs\\
 \vspace*{10mm}
-Gutachter*innen\\
+Gutachter:innen\\
 1. Prof. Dr. Rasha Abdel Rahman\\
 2. Prof. Dr. Gesa Hartwigsen\\
 3. Dr. Olaf Dimigen\\
@@ -126,7 +126,9 @@ Tag der mündlichen Prüfung: XX.XX.XXXX
 
 # Introduction
 
-## Anecdote
+Cupidatat pariatur sunt ea est cupidatat consequat et do pariatur aute cillum cillum laborum. Deserunt nostrud quis aliqua irure ut culpa ullamco magna mollit dolor sit consectetur. Id deserunt in proident magna irure laborum non ipsum in tempor. Laborum labore voluptate dolor cillum sit duis eu in sint deserunt voluptate ea ipsum.
+Est reprehenderit dolore fugiat adipisicing occaecat voluptate ex qui ullamco ut consequat amet quis ipsum. Lorem labore labore culpa consequat minim. Laborum est mollit esse exercitation esse eiusmod irure voluptate veniam ex adipisicing ex qui. Enim est laborum magna ex Lorem amet ea pariatur elit laborum elit ullamco exercitation. Irure veniam ut ad ut minim magna veniam do sint esse irure pariatur eu. In Lorem fugiat anim minim fugiat laboris ipsum proident.
+Lorem ad nostrud excepteur voluptate pariatur nostrud mollit velit irure aliquip cupidatat eiusmod eu. Ut elit quis eiusmod dolore non exercitation veniam. Ad pariatur nulla reprehenderit eiusmod irure aliquip. Ut ullamco velit labore mollit id anim enim magna. Sit velit nulla cupidatat esse eiusmod pariatur sunt labore tempor quis laborum. Fugiat officia tempor ullamco minim nulla laborum nulla enim.
 
 ## Overview of the present thesis
 
@@ -252,21 +254,23 @@ Even though the dimensions are not interpretable, the model captures the similar
 For each type, there are many different instantiations of specific theories (e.g., classical versus prototype-based categorical theories, dimensional theories based on word embeddings versus neural networks), and multiple of these theories may be implemented in the brain and used depending on the specific goal, task context, sensory input and output modality, and cognitive resource availability.
 It is important to note that the different theories often result in different experimental designs and analyses choices that are able to discover behavioral and neural effects of semantic processing [@frisby2023].
 For instance, a categorical model is easily tested by running a highly controlled lab experiment that requires participants to make category judgments on visually presented words or images, and then look for differences in behavior or brain activity between different categories or objects [while ideally controlling as best as possible for differences in their low-level sensory features, e.g., @alizadeh2017; @rice2014].
-Dimensional models, on the other hand, are best tested by presenting a large volume of naturalistic input, such as natural speech or movies, and then use encoding models or decoding models to test which brain responses covary with the embedding vectors of a computational model trained on the same input [e.g., @caucheteux2022; @huth2012; @huth2016].
+Dimensional models, on the other hand, are best tested by presenting a large volume of naturalistic input, such as natural speech or movies, and then use encoding models or decoding models to test which brain responses covary with the embedding vectors of a computational model trained on the same input [e.g., @huth2012; @huth2016].
 
-### The localized semantic system
+Traditionally, the neural correlates of semantic processing in humans have been studied using univariate fMRI techniques, that is, by examining the difference in BOLD activity amplitude between to or more conditions that are similar in their lower-level (e.g., sensory, phonological, orthographic) processing demands but differ in their semantic processing demands (e.g., reading words versus pseudowords).
+In addition to equating low-level processing, it also important to equate task difficulty and working memory demands between the different semantic conditions [@binder2009].
+Many individual studies and meta-analyses [e.g., @binder2009; @jackson2021; @rodd2015] have shown that these "semantic contrasts" reliably engage a relatively circumscribed, left-lateralized set of cortical regions, consisting of the inferior parietal lobe (especially the angular gyrus), lateral temporal cortex (especially the middle and inferior temporal gyrus), the ventral temporal cortex (fusiform and parahippocampal gyri), the dorso-medial prefrontal cortex, and the inferior frontal gyrus (especially the *pars orbitalis*).
+Additionally, the middle fusiform cortex and anterior temporal lobe [@forseth2018; @jackson2015; @visser2010; @woolnough2020] are reliably activated by semantic contrasts but are difficult to measure with fMRI due to the low signal-to-noise ratio in this area [@embleton2010; @liu2016a].
 
-### The distributed semantics
+More recently, studies have emerged that tried to track semantic processing under more naturalistic circumstances, e.g., by scanning participants while viewing movies or listening to audio books or radio programmes.
+One can then label the objects or words at each time point in the movie or audio stream, represent these concepts as vectors in a high-dimensional semantic space (e.g., from a word embedding or neural network model), and correlate the timeseries of these dimensions with the time series of the measured brain activity [e.g., @deniz2019; @huth2012; @huth2016].
+Variants of these techniques usually show a very different picture from the univariate semantic contrasts described above, with different concepts and semantic dimensions being scattered across almost the entire cortex, including areas that have typically not been thought to be engaged in semantic processing.
+While these different results clearly stem from the vastly different experimental designs and analysis choices [for a systematic discussion, see @frisby2023], there is as of yet not a clear path for integrating these different lines of research into an overarching theory of semantic processing in the human brain.
 
-## The interface between the visual and semantic systems
+## Visual--semantic interfaces
 
-### Is semantics just high-level vision?
+### Learning to read: Seeing meaning in written letters
 
-### Studying visual-semantic development
-
-## Learning to read: Seeing meaning in written letters
-
-## What do I do with this?: Seeing meaning in visual objects
+### What do I do with this?: Seeing meaning in visual objects
 
 \newpage
 
@@ -540,9 +544,9 @@ Should you decide to continue on this path, cognitive neuroscience has a great f
 
 Thank you to all participants who dedicated their time and energy to participate in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
 
-Thank you to Gesa Hartwigsen, Sebastian Markett, Rasha Abdel Rahman, XXX, and XXX for dedicating their time and energy to serve on my dissertation committee.
+Thank you to Gesa Hartwigsen, Sebastian Markett, Rasha Abdel Rahman, XXX, and XXX for dedicating their time and energy to serve on my dissertation committee and to Gesa Hartwigsen, Rasha Abdel Rahman, and XXX for providing reviews on the written thesis.
 
-But most of all, thank you to my family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
+But most of all, thank you to my truely wonderful family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
 Without your love, none of this would have any meaning.
 
 \newpage
