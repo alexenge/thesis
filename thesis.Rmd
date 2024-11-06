@@ -18,7 +18,7 @@ numbersections    : true
 
 csl               : "apa.csl"
 documentclass     : "apa6"
-classoption       : "doc,11pt,twoside"
+classoption       : "doc,10pt,twoside"
 output            :
   papaja::apa6_pdf:
     latex_engine  : "lualatex"
@@ -66,7 +66,7 @@ opts_chunk$set(
 
 \thispagestyle{empty}
 \begin{center}
-\vspace*{15mm}
+\vspace*{25mm}
 \textbf{Learning to see meaning in visual words and objects}\\
 \vspace*{10mm}
 \textbf{\textsc{\so{Dissertation}}}\\
@@ -82,7 +82,7 @@ der Humboldt-Universität zu Berlin\\
 von\\
 \textbf{M.Sc. Alexander Enge}\\
 geboren am 09.11.1996 in Räckelwitz\\
-\vspace*{40mm}
+\vspace*{45mm}
 \end{center}
 \begin{flushleft}
 Präsidentin der Humboldt-Universität zu Berlin\\
