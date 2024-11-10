@@ -130,7 +130,7 @@ Cupidatat pariatur sunt ea est cupidatat consequat et do pariatur aute cillum ci
 Est reprehenderit dolore fugiat adipisicing occaecat voluptate ex qui ullamco ut consequat amet quis ipsum. Lorem labore labore culpa consequat minim. Laborum est mollit esse exercitation esse eiusmod irure voluptate veniam ex adipisicing ex qui. Enim est laborum magna ex Lorem amet ea pariatur elit laborum elit ullamco exercitation. Irure veniam ut ad ut minim magna veniam do sint esse irure pariatur eu. In Lorem fugiat anim minim fugiat laboris ipsum proident.
 Lorem ad nostrud excepteur voluptate pariatur nostrud mollit velit irure aliquip cupidatat eiusmod eu. Ut elit quis eiusmod dolore non exercitation veniam. Ad pariatur nulla reprehenderit eiusmod irure aliquip. Ut ullamco velit labore mollit id anim enim magna. Sit velit nulla cupidatat esse eiusmod pariatur sunt labore tempor quis laborum. Fugiat officia tempor ullamco minim nulla laborum nulla enim.
 
-## Overview of the present thesis
+## Overview
 
 In this thesis, I present three empirical studies on how humans learn to see meaning in visual words and objects.
 This question may seem like a very broad one and, as you will see and as is so often the case in science, I cannot claim that I have found a clear and meaningful answer.
@@ -289,9 +289,61 @@ However, the ability to associate previously unknown visual shapes and objects w
 In the following, I will briefly introduce two examples of learning novel visual--semantic associations, namely children's learning to read and adults' learning to understand previously unknown visual objects.
 These two examples are examined more closely in the second and third empirical research articles presented in this thesis, respectively (see Sections \ref{tracking-the-neural-correlates-of-learning-to-read-with-dense-sampling-fmri} and \ref{instant-effects-of-semantic-information-on-visual-perception}).
 
-### Learning to read: Seeing meaning in written letters
+```{r, task, fig.cap="(ref:task-caption)"}
+include_graphics(here("figures", "task.png"))
+```
 
-### What do I do with this? Seeing meaning in visual objects
+(ref:task-caption) ***Seeing without (much) meaning.***
+**A** How do these words sound and what do they mean?
+**B** What can be seen in this image?
+**C** Do you know what kind of object this is or what one can do with it? See Figure\ \ref{fig:solution} for solutions as well as image rights and permissions.
+
+### Learning to see meaning in written letters
+
+For most readers of this thesis, the black curves and lines displayed in Figure\ \ref{fig:task}A will not bear much meaning.
+Your visual system will process them just fine, representing the visual input from each location in the retina into one coherent percept of black squiggles on a gray background.
+You may even guess correctly that these are strings of letters, and therefore you may get some none-zero response in your visual word form area (VWFA), which is tuned to recognize written words (see Section\ \ref{the-visual-system} and Figure\ \ref{fig:vision}).
+However, when asked to read these letter strings aloud, decide if they are words or non-words, or decide if they are related to one another or not, you would very likely be puzzled (unless you happen to know Hindi).
+This is because most readers will have been trained to read in a different writting system, most likely the Latin alphabet, which they can use effortlessly to convert written letters into spoken language and vice versa, as you will see when looking at the English translation of the Hindi words, shown in Figure\ \ref{fig:solution}A.
+
+When looking at the Hindi words in Figure\ \ref{fig:task}A, you of course find yourself in a similar situation as most beginning readers for their "native" script.
+Most children are explicitly taught how to read by their teachers and parents starting at approximately 5--6 years of age, which is much later than when most children pick up how to comprehend and produce spoken language [for review, see @skeide2016].
+Before that, children might have picked up some purely visual familiarity with letters from their own script, and might recognize some words that are especially important to them (e.g., their own name).
+But by and large, strings of written letters such as the ones presented in Figure\ \ref{fig:solution}A will not be understandable for them and, while surely engaging the visual system, will not elicit any reliable activation in language areas or in the semantic system.
+The process of learning to read can be thought of as fine-tuning the visual system towards the recognition of written letters [e.g., @dehaene-lambertz2018], but even more so as connecting the visual system to the language and semantic systems, such that a previously meaningless letter string can be converted into speech sound (e.g., during reading aloud) and word meaning (e.g., during lexical decision or text comprehension).
+Early during this process, beginning readers will rely more heavily on converting individual letters into speech sounds and merging these speech sounds into a spoken word form, the meaning of which they can then access based on their already fully developed spoken language capacity [@ehri2005; @frith1986; @skeide2016].
+After gaining more reading experience, children learn to skip the detour via this phonological/alphabetic route and become able to read in an orthographic fahsion, that is, process familiar words as a whole and access their meaning from the mental lexicon directly, without having to engage into individual grapheme--phoneme conversion.^[Note that these two "routes" of reading, that is, an indirect connection from vision via phonology to semantics and a direct route from vision to semantics, are also part of computational cognitive models of reading [e.g., @coltheart2001; @perry2007; @perry2010; @perry2013; @seidenberg1989].]
+In the second study included in this thesis (see Sections \ref{tracking-the-neural-correlates-of-learning-to-read-with-dense-sampling-fmri} and the original research article), we tracked this process of visual--phonological and visual--semantic development by repeatedly measuring fMRI responses to spoken and written words in sample of children that underwent approximately 1.5 years of reading instruction.
+
+### Learning to see meaning in visual objects
+
+Our capacity to learn to connect previously meaningless visual information with semantic concepts luckily does not end during childhood.
+Instead, we remain able to form new links between the visual and semantic systems for our entire lives, allowing us to understand what kind of object or visual seen we are seeing, a link from vision to semantics, and to see the visual word around us differently based on what we expect or know to be true, a link from semantics to vision.
+As an example of this, take a look at Figure\ \ref{fig:task}B.
+Can you tell what is displayed in this black and white image?
+If you cannot, take a look at Figure\ \ref{fig:solution}B, which shows the original image from which the black and white image was created [using a binarization technique\; see @mooney1957; @reining2024].
+Once you return to the black and white image, you most likely cannot "unsee" the central object of the image anymore---your prior experience and knowledge of what is displayed has changed your perception, even though the visual input is the same as before [see @samaha2018 and @teufel2018 for formal studies of this phenomenon using the same kind of stimuli].
+
+Another example of such feedback effects from semantic cognition to visual perception, and one that might bear more real-world applicability than the previous one, is the processing of visual objects and tools based on their function.
+We learn the names and functions of most visual objects as children but, in our ever more technology-driven world, are also frequently presented with tools and gadgets that we might have never seen before^[You may want to pause for a second to reflect on when you first saw a fidget spinner, Theragun, or smart watch].
+Learning what these objects are for or how to use them often makes them appear in a different light:
+We may get a kind of "aha" experience from understand what we see and this may change how we perceive the objects and its visual features.
+For example, most people will not have encountered the object in Figure\ \ref{fig:task}C at any point in their life, and many people will not have an intuition what this object is for or how to use it.
+However, after being informed about the function of the object (e.g., by taking a look at Figure\ \ref{fig:solution}C), some of the visual features of the object and their configuration start to make sense.
+I would argue that, as in the previous example of the black and white image, we cannot "unsee" the meaning (i.e., function or usage) of this objects after we have discovered it.
+That is, learning the semantic meaning of a previously unfamiliar object might change our visual perception of the object, both while we are learning it (i.e., the "aha" experience) and after we have learnt it (i.e., when we re-encounter the visual object later on).
+In the third studies included in this thesis (see Sections \ref{instant-effects-of-semantic-information-on-visual-perception} and the original research article), we tested this idea empirically by presenting human adults with previously unfamiliar objects (as in the example above) and measuring their EEG response to the object before, during, and after they learnt about the their functional meaning.
+
+```{r, solution, fig.cap="(ref:solution-caption)"}
+include_graphics(here("figures", "solution.png"))
+```
+
+(ref:solution-caption) ***Seeing with meaning.***
+**A** English translation of the Hindi/Devanagari words displayed in Figure\ \ref{fig:task}A.
+**B** Original image from which the binarized "Mooney" image [see @mooney1957] in Figure\ \ref{fig:task}B was generated.
+The binary image was adapted from @reining2024 under the terms of the CC BY License.
+The original image is from the THINGS database [@hebart2019] under the terms of the CC BY License.
+**C** Functional description of the object displayed in Figure\ \ref{fig:task}C, which was adapted with permission from Tim Daniels, <https://poultrykeeper.com>.
 
 \newpage
 
