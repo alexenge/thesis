@@ -276,7 +276,7 @@ One can then label the objects or words at each time point in the movie or audio
 Variants of these techniques usually show a very different picture from the univariate semantic contrasts described above, with different concepts and semantic dimensions being scattered across almost the entire cortex, including areas that have typically not been thought to be engaged in semantic processing (see Figure\ \ref{fig:semantic-brains}B).
 While these different results clearly stem from the vastly different experimental designs and analysis choices [for a systematic discussion, see @frisby2023], there is as of yet not a clear path for integrating these different lines of research into an overarching theory of semantic processing in the human brain.
 
-## Visual--semantic interfaces
+## Visual-semantic interfaces
 
 The visual and semantic systems need to interact with one another in order to make sense of what we see and act accordingly.
 These interactions can be bidirectional:
@@ -286,7 +286,7 @@ This can be useful to predict visual input based on prior experience [as stipula
 
 These bidirectional links between vision and semantics likely exist from very early stages of brain development onwards, allowing young infants to develop their first pieces of world knowledge based on their visual input.
 However, the ability to associate previously unknown visual shapes and objects with semantic information remains a crucial cognitive skill throughout our lifetime---or otherwise we would be lost whenever we try to understand any sign or gadget that we have never seen before.
-In the following, I will briefly introduce two examples of learning novel visual--semantic associations, namely children's learning to read and adults' learning to understand previously unknown visual objects.
+In the following, I will briefly introduce two examples of learning novel visual-semantic associations, namely children's learning to read and adults' learning to understand previously unknown visual objects.
 These two examples are examined more closely in the second and third empirical research articles presented in this thesis, respectively (see Sections \ref{tracking-the-neural-correlates-of-learning-to-read-with-dense-sampling-fmri} and \ref{instant-effects-of-semantic-information-on-visual-perception}).
 
 ```{r, task, fig.cap="(ref:task-caption)"}
@@ -313,7 +313,7 @@ But by and large, strings of written letters such as the ones presented in Figur
 The process of learning to read can be thought of as fine-tuning the visual system towards the recognition of written letters [e.g., @dehaene-lambertz2018], but even more so as connecting the visual system to the language and semantic systems, such that a previously meaningless letter string can be converted into speech sound (e.g., during reading aloud) and word meaning (e.g., during lexical decision or text comprehension).
 Early during this process, beginning readers will rely more heavily on converting individual letters into speech sounds and merging these speech sounds into a spoken word form, the meaning of which they can then access based on their already fully developed spoken language capacity [@ehri2005; @frith1986; @skeide2016].
 After gaining more reading experience, children learn to skip the detour via this phonological/alphabetic route and become able to read in an orthographic fahsion, that is, process familiar words as a whole and access their meaning from the mental lexicon directly, without having to engage into individual grapheme--phoneme conversion.^[Note that these two "routes" of reading, that is, an indirect connection from vision via phonology to semantics and a direct route from vision to semantics, are also part of computational cognitive models of reading [e.g., @coltheart2001; @perry2007; @perry2010; @perry2013; @seidenberg1989].]
-In the second study included in this thesis (see Sections \ref{tracking-the-neural-correlates-of-learning-to-read-with-dense-sampling-fmri} and the original research article), we tracked this process of visual--phonological and visual--semantic development by repeatedly measuring fMRI responses to spoken and written words in sample of children that underwent approximately 1.5 years of reading instruction.
+In the second study included in this thesis (see Sections \ref{tracking-the-neural-correlates-of-learning-to-read-with-dense-sampling-fmri} and the original research article), we tracked this process of visual-phonological and visual-semantic development by repeatedly measuring fMRI responses to spoken and written words in sample of children that underwent approximately 1.5 years of reading instruction.
 
 ### Learning to see meaning in visual objects
 
@@ -540,6 +540,104 @@ Any questions, problems, or improvements to the package can be suggested via the
 \newpage
 
 # General discussion
+
+In this thesis, I presented three empirical articles on the development of semantic cognition and its connections to the visual system.
+In the first study, we conducted a meta-analysis of fMRI studies to identify the brain areas involved in semantic cognition in children and their similarity or dissimilarity to the adult semantic system.
+In the second study, we tested how learning to read during childhood, that is, learning to associate previously meaningless visual shapes with phonological and semantic information, changes amplitudes and patterns of brain activity in response to written and spoken words.
+In the third study, we tested if learning semantic information about previously unfamiliar visual objects changes early perception-related brain activity in response to these objects in adults.
+As mentioned in the introduction, these three studies had not been designed to strictly build up on each other and they are rather diverse in terms of their participant population, study design, and methods used to probe brain activity.
+Nevertheless, in this discussion I will try briefly to lay out some connections between our main findings and how they may or may not inform future research as wall as everyday life applications.
+
+## Visual-semantic procesing in reading and object recognition
+
+The interactions between the visual system and the semantic system of the human brain are clearly experience dependent:
+From the moment we are born, we are bombarded with visual experiences, but it is only over time that we learn to understand what they mean.
+We learn which faces are important to remember and what to expect from them, what can be done with different kinds of visual objects, and, eventually, how to extract meaning from written letters and other visual symbols.
+The visual system itself of course also develops further after birth [for review, see, e.g., @murphy2024; @siu2018], and part of this may be driven by non-visual influences [e.g., from language and semantics\; see, e.g., @clarke2016; @dehaene2015; @lupyan2020].
+However, given that our semantics is much more dependent on our local environment, language, and culture, and is much more different from our evoultionary ancestors and cousins, the semantic system and the visual-semantic connections are likely to develop a lot more radically over the course of human development.
+Given this hypothesis, it was surprising to find very strong convergence between the adult semantic system and the semantic system in children in our meta-analysis of fMRI studies [see Section\ \ref{a-meta-analysis-of-fmri-studies-of-semantic-cognition-in-children} and @enge2021].
+We found that virtually all regions active during semantic processing in adults are already active in children, except potentially the more anterior parts of the left temporal lobe (ATL).
+The ATL  is often viewed as an amodal semantic "hub" that dynamically integrates the specific, modal information from the sensory and motor systems [e.g., @chiou2019; @lambonralph2017; @patterson2007].
+The fact that its activity level does not yet seem to be fully developed in the groups of children included in our meta-analysis sugests that this region, unlike other parts of the semantic network, develops relatively late and might continue to do so throughout adolescence.
+
+However, one should also be cautios not to over-interpret any group difference or lack thereof in our meta-analysis, for a number of reasons.
+First, the tasks used to assess semantic processing in adults and children often differ from each other in systematic ways [e.g., it is more typically to use tasks with written rather than spoken materials in adults as compared to children\; for an extended discussion of semantic task effects in meta-analyses, see @binder2009].
+These systematically different tasks might then lead to systematically different results at the meta-analytic level.
+Second, the activation likelihood estimation (ALE) procedure used in our and most other MRI-based meta-analyses only uses the *location* of reported peaks of fMRI activation from the original studies, not their *activation strength* (i.e., effect size).
+The meta-analytic maps than show where there is statistically significant overlap of reported fMRI activations regardless of their strength, meaning that a very weakly but consistently activated region might show up in the meta-analysis, whereas a strongly active region witha more variable location across studies might not.
+Any group differences between children and adults therefore reflect group differences in consistency or reliability of activation, not necessarily of activation strength.
+Third, regions may differ in their internal processing (e.g., which algorithms are run or how quickly information is processed) in ways that cannot be picked up using fMRI, which means that they will be missed by any individual fMRI study as well as by our meta-analysis.
+Finally, the studies included in our meta-analysis mostly tested older children and young adolescents (grand mean age = 10.1 years, range of mean ages = 5.5--12.8 years, total age range 4--15 years).
+This may be the case because older children are easier to recruit and more compliant inside the MRI scanner, therefore making it easier to obtain sufficiently high-quality data.
+Once more fMRI studies on semantic processing in younger children become available, it would be worthwile to extend our meta-analysis to check if the semantic system in younger children differs from that in older children and adults.
+
+In the meta-analysis, we identified brain regions that are involved in semantic processing (at least to the degree that can be measured using BOLD fMRI), and we found that this set of regions is largely similar to that observed in adults [e.g., @binder2009; @jackson2021; @rodd2015].
+This of course does not speak to the question of *what* these regions are doing computationally and *how* they contribute to making sense of visual or other sensory information.
+To that end, I also presented two original research studies that focused on two example cases of learning visual-semantic information, namely children's learning to read and adults' learning the function of unfamiliar visual objects.
+
+In the study on learning to read, we used fMRI to track longitudinal changes in BOLD activity amplitude and BOLD activity patterns in response to written words.
+Children received reading instruction for approximately 1.5 years, during which they learnt to associate written letters (in the Hindi/Devanagari alphabet) with speech sounds and word meaning.
+The design of our fMRI experiment included a comparison between real words, which carry both phonological and semantic information, and pseudowords, which carry the same amount of phonological information but do not carry any semantic information.
+This contrast between words and pseudowords, which is indeed often used to isolate semantic processing [see the adult meta-analysis by @binder2009 and our developmental analysis by @enge2021], did not elicit any reliable BOLD activation in any brain area.
+This is in contrast with our meta-analytic results, which showed a reliable network of regions (e.g., left MTG, left IFG, and bilateral dmPFC/pre-SMA) for this type of task.
+We presented all of our stimuli in two modalities (auditory/spoken and visual/written).
+The lack of semantic activation for *written* words versus pseudowords may be explained by the fact that within the 16 months of reading intervention, the children might not have become proficient enough to read and unerstand most of the words in the short period of time for which they were presented.
+However, we also did not observe any semantic activation for *spoken* words versus pseudowords, even though children at this age have typically fully developed spoken language comprehensin skills [see, e.g., @skeide2016].
+Therefore, these null effects might rather be driven by a lack of statistical power or low data quality in our fMRI dataset.
+
+While we did not obtain any evidence for purely semantic activation (as defined by the words versus pseudowords contrast), we did find that learning to read led to changes in BOLD activity for other contrasts, including written words versus false fonts.
+Like pseudowords, false fonts are visually similar to written words, but they do not contain any phonological or semantic information, as their constituent "letters" do not exist in the writing system and are therefore not associated with any speech sounds or word meanings.
+The longitudinal changes in BOLD activity *amplitude* that we observed for this contrast therefore may reflect phonological processing, semantic processing, or a mixture of the two.
+For the same contrast, we also observed that BOLD activity *patterns* in response to spoken and written stimuli in the left ventral occipito-temporal (vOT) cortex became more similar over the course of the study.
+This may indicate that, as children are learning, the vOT starts to respond to spoken and written words in a similar fashion.
+This may be either because the vOT is already responsive to spoken words since early childhood, and learns to access similar information from written words, or because it develops sensitivity to spoken and written words from scrath during reading acquisition.
+Either way, it is again difficult to pinpoint if the vOT is engaged in phonological processing, semantic processing, or both, as this contrast (written words versus false fonts) may capture both kinds of processes.
+
+In out third study, ...
+
+* Common processing principles in VWFA and LOC/IT?
+
+* Visual shapes in reading are incindental, visual shapes in objects are diagnostic
+
+* Reading is evolutionarily young; must reuse principles from visual object recognition
+
+* Reading requires (at least initially) access to phonology, object vision not
+
+* Top down semantic effects on reading during visual perception?
+
+## Implications for future research
+
+Each of the present studies as well as their intersections provides ample room for additional research.
+
+* Natural reading in children to map semantic space and its shift over time (Deniz et al.)
+
+## Implications for real world applications
+
+* Let's be honest, there are none
+
+## Need for better methods, questions, and theories
+
+* High temporal resolution, spatial resolution, *and* coverage
+
+* Nature/mechanisms of top-down effects completely unclear
+
+* Theories of semantic cognition from linguistics not readily applicable to vision research (?)
+
+* Genereal lack of theory (van Rooij; Meehl) and integration of research findings ("chaos in the brickyard")
+
+* Low replicability in psych and cog neuro
+
+* Need for more explicit assumptions, measurement issues (Scheel)
+
+* Lack of generalizability (Yarkoni)
+
+## Conclusion
+
+* Hope to contribute some insights and stimulate further research
+
+* Methods are re-applicable in different projects (code for meta-analysis, esp. robustness checks, whole-brain LMMs, pipeline)
+
+* Some anecdote about importance of findings (reading, visual objects)?
 
 \newpage
 
