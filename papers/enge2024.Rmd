@@ -192,7 +192,6 @@ All recruited children had to fulfil the following inclusion criteria:
 (5) no hearing and/or vision impairment,
 (6) no language impairments, and
 (7) no attention deficits.
-The initial sample size of approximately 30 children per group was determined using an a priori power analysis based on a previous study [@dehaene-lambertz2018\; \textcolor{red}{see Supplementary Methods for details}].
 From the 32 children initially recruited for the reading intervention group, 17 children were excluded because they did not participate in at least two scanning sessions or because they did not meet our cutoff criterion for head motion (framewise displacement greater than 2.4 mm in less than 10% of fMRI volumes) in at least two scanning sessions.
 Therefore, the final sample size was $N$ = 15 children.
 Of those, 9 identified as female and 6 identified as male. The mean age at the beginning of the study was 7.13 years ($SD$ = 1.25 years, min = 5 years, max = 9 years).
@@ -456,7 +455,7 @@ We then took the beta map for each written word block (18 maps) and extracted th
 We then computed the linear correlation between each pair of blocks (153 pairs) and averaged these to obtain a single stability (correlation) value for each participant and session.
 We entered these values into a linear-mixed effects model, separately for each ROI and specified in the same way as described above.
 We repeated the same analysis for the stability of activity patterns for written pseudowords.
-We also performed this analysis for spoken words and spoken pseudowords but reported the results in the appendix as they do not directly pertain to our hypotheses.
+We also performed this analysis for spoken words and spoken pseudowords even though they do not directly pertain to our hypotheses.
 For all multivariate analyses, we used the same set of anatomically and functionally defined regions of interest.
 The anatomically defined regions of interest were the posterior superior temporal sulcus (pSTS), defined as the union of regions STSda, STSdp, STSvp, and STSva from the @glasser2016 atlas, and the ventral occipto-temporal cortex (vOT), defined as the union of regions V8, FFC, and VVC from the @glasser2016 atlas.
 The functionally defined regions were different for each condition:
