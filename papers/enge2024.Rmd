@@ -20,7 +20,7 @@ affiliation:
     institution   : "Humboldt-Universität zu Berlin"
 
 authornote: |
-  The analysis code for this study is openly available at XXX.
+  The analysis code for this study is openly available at <https://github.com/SkeideLab/SLANG>.
   
   We have no conflict of interest to disclose.
 
