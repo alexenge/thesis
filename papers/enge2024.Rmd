@@ -376,9 +376,9 @@ At each voxel, the BOLD time series (420 time points) was predicted using a desi
 
 * The top six anatomical CompCor [@compcor] components estimated by *fMRIPrep* (6 columns).
 
-* Spike regressors for each non-steady state outlier volume at the beginning of the scan as flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
+* Spike regressors for each non-steady state outlier volume at the beginning of the scan as flagged by *fMRIPrep* (0--3 columns, mean = 2.0 columns).
 
-* Spike regressors for each high-motion outlier volume, defined as framewise displacement \textgreater 0.5 mm and flagged by *fMRIPrep* (XXX–XXX columns, mean = XXX columns).
+* Spike regressors for each high-motion outlier volume, defined as framewise displacement \textgreater 0.5 mm and flagged by *fMRIPrep* (0--103 columns, mean = 22.8 columns).
 
 For details on how these regressors were computed, see the "Outputs/Confounds" section in *fMRIPrep*'s documentation (<https://fmriprep.org/en/stable/outputs.html#confounds>).
 
@@ -429,13 +429,13 @@ The dependent variable was the BOLD activation amplitude for a given participant
 The mixed models (one for each contrast) were fitted separately at each voxel inside the brain mask in a mass-univariate fashion.
 Model fitting was performed in Julia [Version 1.10.4\; @bezanson2017] using the MixedModels package [Version 4.25.3\; @bates2024].
 
-To correct for multiple comparisons across the XXX voxels inside the brain mask, we used the parametric cluster correction algorithm suggested by @cox2017a and @cox2017.
+To correct for multiple comparisons across the 132,215 voxels inside the brain mask, we used the parametric cluster correction algorithm suggested by @cox2017a and @cox2017.
 Specifically, we first estimated the spatial smoothness of noise in our dataset by extracting and storing the residual time series from the session-level models (see above), separately for each participant and session.
 We then used the `3dFWHMx` function (with the `-acf` option) in AFNI [Version 24.2.01\; @cox1996] to estimate a mixed Gaussian/mono-exponential spatial autocorrelation function with three parameters [@cox2017; @cox2017a\; see also <https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/afni_handouts/afni07_ETAC.pdf>].
 We averaged each of these three parameters across participants and sessions to obtain a single spatial autocorrelation function for the entire dataset. 
 This function was then fed into the `3dClustSim` function in AFNI to generate novel noise-only maps and estimate a null distribution of cluster sizes. 
-Using a cluster-forming voxel-level threshold of $p < .001$ and 10,000 iterations, this resulted in a final cluster-level extent threshold of XXX voxels to control the whole-brain family-wise error (FWE) rate at $p < .05$.
-We therefore deemed spatial clusters of BOLD activation statistically significant if they were larger than XXX voxels.
+Using a cluster-forming voxel-level threshold of $p < .001$ and 10,000 iterations, this resulted in a final cluster-level extent threshold of 19 voxels to control the whole-brain family-wise error (FWE) rate at $p < .05$.
+We therefore deemed spatial clusters of BOLD activation statistically significant if they were larger than 19 voxels.
 To form clusters, neighboring voxels had to pass the cluster-forming voxel level threshold of $p < .001$ and touch each other with their faces (not just with their edges or nodes; the default "NN1" method in AFNI).
 
 ### BOLD activity patterns
