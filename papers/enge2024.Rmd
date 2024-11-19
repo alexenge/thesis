@@ -243,7 +243,6 @@ For visual blocks, this was the photograph of the face of a children’s movie c
 Children were asked to press a button on a MR-compatible button box whenever they saw or heard the target stimulus.
 They received auditory feedback in the form of a positive sound (after pressing the button when a target stimulus had appeared) or a negative sound (after not pressing the button when a target stimulus had appeared or after pressing the button when no target stimulus had appeared).
 The experiment was programmed and presented using PsychoPy (Version 2021) in Python.
-The code and stimuli for the experiment can be accessed via <https://github.com/SkeideLab/SLANG-experiment/tree/main/scanner>.
 
 ## Behavioral testing
 
@@ -464,6 +463,11 @@ The functionally defined regions were different for each condition:
 For the similarity between written and spoken words, we used the visual clusters from the "Written words vs. baseline" contrast and the auditory clusters from the "Spoken words vs. baseline" clusters. 
 Likewise, for the similarity between written and spoken pseudowords, we used the visual clusters from the "Written pseudowords vs. baseline" contrast and the auditory clusters from the "Spoken pseudowords vs. baseline" clusters.
 For the within-condition pattern stability analysis, we used the visual or auditory clusters from that specific condition (e.g., for the stability analysis for written words, we used the visual clusters from the "Written words vs. baseline" contrast).
+
+## Data and code availability
+
+The data from this study are available upon request from the last author.
+The code for the experiment, preprocessing, and statistical analysis are available at <https://github.com/SkeideLab/SLANG>.
 
 # Results
 
@@ -869,7 +873,7 @@ Compared to traditional statistical models for group-level fMRI analysis (typica
 There have been previous implementations of whole-brain linear mixed-effects models, typically using the R programming language [@chen2013a; @madhyastha2018].
 We believe that our implementation using the Julia programming [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in mass univariate fashion.
 We combined this with a recently established method for whole-brain multiple comparison correction that is compatible with the outputs of the linear mixed-effects models to control the whole-brain family-wise error rate [@cox2017a; @cox2017].
-We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/derivatives_template_code/blob/SLANG/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
+We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/SLANG-analysis/blob/main/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
 
 ## Conclusion
 
