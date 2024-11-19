@@ -593,27 +593,63 @@ This may indicate that, as children are learning, the vOT starts to respond to s
 This may be either because the vOT is already responsive to spoken words since early childhood, and learns to access similar information from written words, or because it develops sensitivity to spoken and written words from scrath during reading acquisition.
 Either way, it is again difficult to pinpoint if the vOT is engaged in phonological processing, semantic processing, or both, as this contrast (written words versus false fonts) may capture both kinds of processes.
 
-In out third study, ...
+In out third study, we investigated a different example case of learning visual-semantic information, namely learning the function of previously unfamiliar real-world objects.
+We found that discovering the function of an object, as compared to viewing it without knowing its function, affected cortical processing within the first 200 ms after seeing the object, indicating that semantic information influences even relatively early stages of visual perception.
+Of note, these top-down effects of semantics on visual perception could be observed immediately, that is, on the very same trial that the information has been learned as well as one trial later.
+This extends previous findings on top-down effects [e.g., @abdelrahman2008; @boutonnet2015; @maier2019; @samaha2018; @weller2019], which used an extensive learning period before testing for any learning-related effects.
 
-* Common processing principles in VWFA and LOC/IT?
+The cognitive functions of reading and visual obejct recognition are highly similar in many ways:
+Both rely on visual input from the retina that is projected via the LGN in the thalamus to early visual cortex and from there along the ventral visual stream until the word or object is recognized (see Figure\ \ref{fig:vision}A in the Introduction).
+Higher-level visual regions in the ventral stream, located on the lateral and ventral side of the occipito-temporal cortex, then contain clusters that respond preferentially to specific categories, including visual words (the visual word form area; VWFA) and visual objects (the lateral occipital complex\; LO\; see Figure\ \ref{fig:vision}B in the Introduction).
+This led to the proposal of the neural recycling hypothesis, namely that during learning to read, the brain learns to "reuse" patches of visual cortex that had originally evolved for recognizing other types of visual stimuli [e.g., faces or body parts\; @cohen2000; @dehaene-lambertz2018; @dehaene2007; @dehaene2011; @kubota2023; @nordt2021].
+Furthermore, both reading and visual object recognition are compositional, in that smaller visual units (e.g., individual letters of a word or the characteristic visual features of a face) need to be arranged in a certain way such that our brain is able to make sense of the stimuli as a whole. 
 
-* Visual shapes in reading are incindental, visual shapes in objects are diagnostic
+Nevertheless, there are also a number of important differences between reading and visual object recognition:
+First, reading and writing began relatively late in our evolutionary history [approximately 5000--7000 years ago\; e.g., @houston2004], whereas visual object recognition as been a core function of the primate brain for a much longer period of time, likely leading to more specialized cortical circuitry.
+This explains why learning to read is relatively effortful and requires explicit instruction at a relatively late age, whereas recognizing different types of objects and learning their function occurs relatively effortlessly from the first months of infancy onward.
+Second, the correlation between visual and semantic information is different:
+In reading, visual shapes (typically straight and curved black line segments on a black background) are arbitrarily related to the meaning of the word^[For example, the words *cat* and *car* are visually more similar than *cat* and *dog*, even though the latter to are much more closely related semantically.], whereas in visual object recognition, visual shapes and features are highly diagnostic of the category and function of an object.
+Finally, reading---at least initially---requires access to the language network in order to recode the written letters into phonemes and assemble the phonemes into an auditory word form, the meaning of which can then be retrieved from the mental lexicon.
+This does not seem necessary in order to understand most visual objects and act appropriately on them.
+However, more proficient readers rely less on this process of phonological recoding and are able to read visual words as a whole, likely treating them more similar to other visual objects that one has acquired expertise through repeated presentation and reliable association between visual and semantic information.
 
-* Reading is evolutionarily young; must reuse principles from visual object recognition
-
-* Reading requires (at least initially) access to phonology, object vision not
-
-* Top down semantic effects on reading during visual perception?
+In our EEG study on object recognition, we found that learning semantic information, namely the function of the object, altered event-related potentials that are associated with visual perception of the object.
+Similar top-down effects of semantic knowledge [e.g., @abdelrahman2008; @maier2019; @samaha2018; @weller2019] and other kinds of non-visual information [e.g., language and emotion\; @boutonnet2015; @eiserbeck2024; @lupyan2020; @phelps2016; @thierry2016] are well established by now and speak for an interactive interplay between visual and higher-level cognitive functions [e.g., @ahissar2004; @churchland1994; @clark2013; @lupyan2015].
+In reading research, on the other hand, the contrast between pseudowords and words is often used to isolate semantic processing, but it remains unknown if similar top-down effects exist, that is if the visual perception of a word changes depending on knowing versus not knowing its meaning.
 
 ## Implications for future research
 
 Each of the present studies as well as their intersections provides ample room for additional research.
+Some of this research would already be possible today, whereas other projects would depend on the development of better data acquisition methods, computational models, and substantive theories (as elaborated on in Section\ \ref{need-for-better-methods-questions-and-theories}).
 
-* Natural reading in children to map semantic space and its shift over time (Deniz et al.)
+Our meta-analysis of fMRI studies on semantic cognition in children provides an overview of the developing semantic system based on the current state of the literature.
+Although already based on a relatively large number of experiments ($N = 50$), adding even more experiments as they get published would definitely make the analysis stronger, as it would reduce the false positive and false negative error rate [see, e.g., @eickhoff2016].
+This is especially true given that older fMRI experiments (average year of publication in our meta-analysis = 2010) tend to have smaller sample sizes [@szucs2020] and therefore lead to greater uncertainty in the meta-analysis [@eickhoff2009; @eickhoff2012; @turkeltaub2002].
+Including additional (future) studies would also help to conduct more meaningful and sensitive sub-analyses, including the differences between different semantic task types and especially the difference between different age groups, both of which we attempted but were limited by the relatively low sample sizes of the sub-groups.
+Additionally, our classification of experiments into three different categories of semantic tasks (semantic world knowledge, semantic relatedness judgments, and object categorization) was created *ad hoc* based on the currently available studies.
+A more theory- and/or data-driven taxonomy of task types with finer-grained categories would certainly enhance meaningfulness of a future meta-analysis [see @poldrack2011; @poldrack2016 for an attempt at classifying cognitive tasks and concepts].
+
+Our fMRI study on learning to read could be improved and built up upon in many different ways, most of which are mentioned in the Limitations section of the original paper, including a larger sample size, a longer and more structured reading intervention, and an event-related fMRI task design that reduces head motion and allows for stimulus-level analyses (e.g., representational similarity analysis).
+Two of the main novelties of our studies were (a) probing the influence of learning to read on the phonological and semantic processes, not just visual processes [as in previous longitudinal studies\; e.g., @dehaene-lambertz2018], and (b) studying learning to read in a socio-economic setting and writing system (Hindi/Devanagari) that has traditionally been neglected in developmental cognitive neuroscience.
+We believe that both of these characteristics should be carried forward in future longitudinal studies, while at the same time keeping in mind the high risk associated with longitudinal studies in general and cross-cultural work in particular.
+Ideally, future studies would even try to directly compare learning to read and its neural correlates in different writing systems (e.g., alphabetic versus syllabic versus logographic) to test the degree to which the brain uses similar or dissimilar brain areas for mapping graphemes to phonemes and word meaning.
+To reach adequate levels of statistical power and guard against false-positive and false-negative findings, future studies should try to obtain a larger sample size, both in terms of the number of participants and in terms of the number of time points per participants, since both of these variables will determine the likelihood of accurately capturing change over time.
+Should it turn out to be practically infeasible to obtain both, it might be worthwile to test either a large number of children a few times (e.g., 100 children at baseline, 1 year, and 2 years of learning to read) or a small number of children many times (e.g., 3--5 children every two weeks).
+The former dataset could be analyzed using group statistics, as we did in the present study (but with much larger statistical power), whereas the latter dataset could be analyzed using single-participant statistics, as is common practice, e.g., in the non-human primate literature [e.g., @fries2022; @ince2021; @schwarzkopf2024].
+Regarding the experimental paradigm, future studies could try to move beyond the artificial conditions of single word reading and implement more natural reading tasks.
+In adults, it has recently been shown that naturalistc reading of stories activates semantic representations across large areas of association cortex and that this semantic space is shared with the one activated during listening to stories [@deniz2019].
+It would be interesting to track the development of this semantic space longitudinally, both during learning spoken language comprehension during early childhood as well as during learning to read and becoming a proficient reader in late childhood and adolescence.
+
+Our third study demonstrated top-down effects of semantic knowledge on visual object perception but leaves open the mechanisms by which this happens and the brain areas that are involved.
+Methods with better spatial resolution (e.g., magnetoencephalography; MEG) combined with structural MRI images and source modeling [e.g., @knosche2022] or high-field fMRI with layer-specific resolution [e.g., @bandettini2021; @finn2021; @huber2021] could be used to investigate which semantic areas in association cortex influence which perceptual areas along the ventral visual stream.
+Additionally, and relating this third study back to the developmental aspect of the first and second study, it would be worthwile to adapt a similar experimental paradigm in children to assess if their learning of everyday object functions (e.g., what to do with a pencil sharpener or bottle opener) shows similar electrophysiological effects as the ones observed in adults learning the function of rare real-world objects in our study.
+If that turns out to be the case, one may also include other types of visual stimuli for which visual-semantic associations can be learned, including drawings, symbols, and written words, to test if their are general principles for learning visual-semantic information or if this is tied to specific class of visual stimulus.
 
 ## Implications for real world applications
 
-* Let's be honest, there are none
+All three studies presented in this thesis are firmly within the realm of basic research and, from my personal point of view, do not entail any real world applications.
+In theory, longitudinal studies of learning to read would be able to identify interindividual variation in reading-related brain activity that can serve as markers for reading problems and could be used to develop targeted interventions [e.g., using neurofeedback approaches\; @taylor2023].
+However, this would require a much larger sample size, highly reliable behavioral measures, and very sensitive analysis approaches (e.g., based on machine learning), all of which was not possible to implement in our longitudinal study.
 
 ## Need for better methods, questions, and theories
 
@@ -715,9 +751,9 @@ Should you decide to continue on this path, cognitive neuroscience has a great f
 
 Thank you to all participants who dedicated their time and energy to participate in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
 
-Thank you to Gesa Hartwigsen, Sebastian Markett, Rasha Abdel Rahman, XXX, and XXX for dedicating their time and energy to serve on my dissertation committee and to Gesa Hartwigsen, Rasha Abdel Rahman, and XXX for providing reviews on the written thesis.
+Thank you to Gesa Hartwigsen, Gesa Schaadt, Rasha Abdel Rahman, Sebastian Markett, and XXX for dedicating their time and energy to serve on my dissertation committee and to Gesa Hartwigsen, Gesa Schaadt, and Rasha Abdel Rahman for providing reviews on the written thesis.
 
-But most of all, thank you to my truely wonderful family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
+But most of all, thank you to my family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
 Without your love, none of this would have any meaning.
 
 \newpage
@@ -740,7 +776,7 @@ Without your love, none of this would have any meaning.
 
 \noindent
 Alexander Enge\newline
-Berlin, den 8. November 2024
+Berlin, den XX. December 2024
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
 
