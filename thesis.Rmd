@@ -94,7 +94,7 @@ Prof. Dr. Dr. Christian Ulrichs\\
 Gutachter:innen\\
 1. Prof. Dr. Rasha Abdel Rahman\\
 2. Prof. Dr. Gesa Hartwigsen\\
-3. Dr. Olaf Dimigen\\
+3. Prof. Dr. Gesa Schaadt\\
 \vspace*{10mm}
 Tag der mündlichen Prüfung: XX.XX.XXXX
 \end{flushleft}
@@ -130,7 +130,7 @@ Cupidatat pariatur sunt ea est cupidatat consequat et do pariatur aute cillum ci
 Est reprehenderit dolore fugiat adipisicing occaecat voluptate ex qui ullamco ut consequat amet quis ipsum. Lorem labore labore culpa consequat minim. Laborum est mollit esse exercitation esse eiusmod irure voluptate veniam ex adipisicing ex qui. Enim est laborum magna ex Lorem amet ea pariatur elit laborum elit ullamco exercitation. Irure veniam ut ad ut minim magna veniam do sint esse irure pariatur eu. In Lorem fugiat anim minim fugiat laboris ipsum proident.
 Lorem ad nostrud excepteur voluptate pariatur nostrud mollit velit irure aliquip cupidatat eiusmod eu. Ut elit quis eiusmod dolore non exercitation veniam. Ad pariatur nulla reprehenderit eiusmod irure aliquip. Ut ullamco velit labore mollit id anim enim magna. Sit velit nulla cupidatat esse eiusmod pariatur sunt labore tempor quis laborum. Fugiat officia tempor ullamco minim nulla laborum nulla enim.
 
-## Overview
+## Overview of the thesis
 
 In this thesis, I present three empirical studies on how humans learn to see meaning in visual words and objects.
 This question may seem like a very broad one and, as you will see and as is so often the case in science, I cannot claim that I have found a clear and meaningful answer.
@@ -511,7 +511,7 @@ Compared to averaging and using a GLM, modeling the single trial data with LMMs 
 
 The @fromer2018 pipeline implemented this procedure of standard EEG preprocessing plus single trial LMMs as a collection of scripts in the MATLAB language (The MathWorks Inc., Natick, Massachusetts) using the EEGLAB toolbox [@delorme2004].
 However, a few disadvantages of this implementations are that (a) MATLAB is a commercial software, which costs up to $1000 per user and is therefore not readily usable outside of well-funded research institutions, (b) psychologists are typically not trained in using the MATLAB language, and (c) the code for the pipeline was not structured, documented, and version-controlled following current best practices in research software development [e.g., @barker2022; @scheliga2019].
-In the Python re-implementation which I created for the @enge2023a paper and subsequently published as a standalone Python package at <https://github.com/alexenge/hu-neuro-pipeline>, I tried to overcome these limitations and make some further improvements by:
+In the Python re-implementation which I created for the @enge2023a paper and subsequently published as a standalone Python package (available at <https://github.com/alexenge/hu-neuro-pipeline>), I tried to overcome these limitations and make some further improvements by:
 
 (1) using a widely used open-source (Python) instead of proprietary (MATLAB) software language,
 
@@ -716,7 +716,7 @@ Additional articles published during the dissertation period but not included in
 
 * Eiserbeck, A., **Enge, A.**, Rabovsky, M., & Abdel Rahman, R. (2024). Distrust before first sight? Examining knowledge- and appearance-based effects of trustworthiness on the visual consciousness of faces. *Consciousness and Cognition*, 117, 103629. <https://doi.org/10.1016/j.concog.2023.103629>
 
-* Kessler, R., Enge, A., & Skeide, M. A. (2024). How EEG preprocessing shapes decoding performance. *arXiv*. <https://doi.org/10.48550/arXiv.2410.14453>
+* Kessler, R., **Enge, A.**, & Skeide, M. A. (2024). How EEG preprocessing shapes decoding performance. *arXiv*. <https://doi.org/10.48550/arXiv.2410.14453>
 
 \newpage
 
@@ -741,17 +741,17 @@ Additional articles published during the dissertation period but not included in
 
 # Acknowledgements {.unnumbered}
 
-Thank you to my PhD supervisors, Michael Skeide and Rasha Abdel Rahman, for encouraging me to pursue a doctoral degree and for your continued academic and emotional support.
-Your trust and guidance throughout my academic career have been a great honor, and you have helped me to learn not only a few things about the human mind and brain, but also many things about myself.
+Thank you to my PhD supervisors, Rasha Abdel Rahman and Michael Skeide, for encouraging me to pursue a doctoral degree and for your continued academic and emotional support.
+Your trust and guidance throughout my academic career have been a great honor, and you have helped me to learn not only a few little things about the human brain, but also many things about myself.
 You are great mentors and I wish you continued success and joy in your research and beyond.
 
-Thank you to the lab members of the Research Group "Learning in Early Childhood" at the MPI CBS, especially to Anne-Sophie and Roman, and to the lab members of the Neurocognitive Psychology Lab at HU Berlin, especially to Julia, Kirsten, and Martin.
+Thank you to the lab members of the Research Group "Learning in Early Childhood" at the Max Planck Institute for Human Cognitive and Brain Sciences, especially to Anne-Sophie and Roman, and to the lab members of the Neurocognitive Psychology Lab at Humboldt-Universität zu Berlin, especially to Julia, Kirsten, and Martin.
 Your support and our countless chats and discussions have made my PhD journey so much easier and so much more enjoyable.
 Should you decide to continue on this path, cognitive neuroscience has a great future ahead with scientists like you.
 
-Thank you to all participants who dedicated their time and energy to participate in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
+Thank you to all participants who dedicated their time and energy to take part in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
 
-Thank you to Gesa Hartwigsen, Gesa Schaadt, Rasha Abdel Rahman, Sebastian Markett, and XXX for dedicating their time and energy to serve on my dissertation committee and to Gesa Hartwigsen, Gesa Schaadt, and Rasha Abdel Rahman for providing reviews on the written thesis.
+Thank you to Rasha Abdel Rahman, Gesa Hartwigsen, Sebastian Markett, Gesa Schaadt, and Peter Weller for dedicating their time and energy to serve on my dissertation committee, and to Rasha Abdel Rahman, Gesa Hartwigsen, and Gesa Schaadt for reviewing the written thesis.
 
 But most of all, thank you to my family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
 Without your love, none of this would have any meaning.
@@ -777,7 +777,5 @@ Without your love, none of this would have any meaning.
 \noindent
 Alexander Enge\newline
 Berlin, den XX. December 2024
-
-\clearpage\mbox{}\thispagestyle{empty}\clearpage
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
