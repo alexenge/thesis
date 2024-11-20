@@ -620,7 +620,7 @@ In reading research, on the other hand, the contrast between pseudowords and wor
 ## Implications for future research
 
 Each of the present studies as well as their intersections provides ample room for additional research.
-Some of this research would already be possible today, whereas other projects would depend on the development of better data acquisition methods, computational models, and substantive theories (as elaborated on in Section\ \ref{need-for-better-methods-questions-and-theories}).
+Some of this research would already be possible today, whereas other projects would depend on the development of better data acquisition methods, computational models, and substantive theories (as elaborated on in Section\ \ref{a-need-for-better-methods-questions-and-theories}).
 
 Our meta-analysis of fMRI studies on semantic cognition in children provides an overview of the developing semantic system based on the current state of the literature.
 Although already based on a relatively large number of experiments ($N = 50$), adding even more experiments as they get published would definitely make the analysis stronger, as it would reduce the false positive and false negative error rate [see, e.g., @eickhoff2016].
@@ -648,32 +648,44 @@ If that turns out to be the case, one may also include other types of visual sti
 ## Implications for real world applications
 
 All three studies presented in this thesis are firmly within the realm of basic research and, from my personal point of view, do not entail any real world applications.
-In theory, longitudinal studies of learning to read would be able to identify interindividual variation in reading-related brain activity that can serve as markers for reading problems and could be used to develop targeted interventions [e.g., using neurofeedback approaches\; @taylor2023].
+The first and third study were designed to answer principled research questions (*Does the areas involved in semantic cognition in children differ from those in adults?* and *Can semantic information about influence visual perception of objects?*) and without any direct real-world applicability in mind [see also @mook1983].
+Regarding the second study, in theory, longitudinal studies of learning to read would be able to identify interindividual variation in reading-related brain activity that can serve as markers for reading problems and could be used to develop targeted interventions [e.g., using neurofeedback approaches\; @taylor2023].
 However, this would require a much larger sample size, highly reliable behavioral measures, and very sensitive analysis approaches (e.g., based on machine learning), all of which was not possible to implement in our longitudinal study.
 
-## Need for better methods, questions, and theories
+## A need for better methods, questions, and theories
 
-* High temporal resolution, spatial resolution, *and* coverage
+Our current cognitive-scientific research methods are sufficient to establish how certain aspects of brain activity covary with different kinds of experimental manipulation, e.g., which ERP components are sensitive to semantic information when perceiving a visual object.
+However, we are still far away from understanding the *mechanisms* by which the brain processes semantic information and how it interacts with sensory processing.
 
-* Nature/mechanisms of top-down effects completely unclear
+In part, this is driven by the limitations of non-invasive measurement techniques available in human cognitive neuroscience.
+While EEG offers excellent temporal resolution, it is only sensitive to the postsynaptic activity of large groups of cortical pyramidal neurons, and even these cannot be precisely localized due to the inverse problem.
+MEG, while offering greater spatial specificity and signal-to-noise ratio, still suffers from the inverse problem and only picks up magnetic fields from neuronal populations close to the skull and with a certain spatial orientation.
+Finally, fMRI relies on blood flow as an indirect proxy of neuronal activity and therefore lacks the temporal resolution to track information processing in real time, while offering a spatial resolution that is much greater than EEG and MEG but still on the order of multiple hundreds of thousands to millions of neurons.
+Invasive recordings (e.g., electrocorticography [ECoG] with grid or depth electrodes) can directly measure local field potentials (LFPs) and therefore offer the best temporal and spatial resolution, but their use is restricted to certain spatial cases (e.g., presurgical eppilepsy patients) and a very limited number of recording sites.
+It is therefore unsurprising that the study of higher-level cognitive functions such as language and semantic processing are not as well developed as, for instance, the study of the visual system [@felleman1991; @vanessen2003], which are somewhat easier to study invasively using animal models.
 
-* Theories of semantic cognition from linguistics not readily applicable to vision research (?)
+Three additional obstacles that seem to hamper scientific progress not only in research on visual-semantic processing but in all of cognitive neuroscience are a general lack of theory, the low replicability of research findings, and their limited generalizability.
 
-* Genereal lack of theory (van Rooij; Meehl) and integration of research findings ("chaos in the brickyard")
+First, most studies in cognitive neuroscience---and psychological science more broadly---start out with relatively weak predictions that are derived *ad hoc* based on heuristics or in analogy to previous studies, instead of deriving predictions from formal theories [@cummins2000; @vanrooij2020; @vanrooij2021].
+Without formal theories or explicit computational models, and with the limitations of non-invasive brain recordings mentioned above, the best one can usually do is to predict that a certain experimental manipulation will affect brain activity to some unknown degree.^[Note that in fMRI, one is typically interested in an *increase* in local BOLD activity, whereas in EEG, even the polarity of an effect can oftentimes not be predicted *a priori*, as it depends on many un-measurable influence such as cortical folding. In both cases, however, there are little to no studies that make more risky (and therefore scientifically more interesting) predictions of point estimates or ranges of effect sizes.]
+Combined with the pitfalls of null hypothesis significance testing and the "crud factor"^[The notion that in complex systems like the human mind and brain, everything tends to be correlated with everything else to some unknown degree, and that therefore the null hypothesis taken *literally* will always be false with sufficient statistical power.] [e.g., @orben2020], as well as publication bias that favors the publication of "positive" (i.e., statistically significant) effects, this leads to a literature of many individual "islands" of knowledge that are difficult to integrate into a bigger picture across labs, experimental paradigms, and imaging modalities [see also @forscher1963 and @meehl1978].
 
-* Low replicability in psych and cog neuro
+Second, the last 10--15 years have shown that in the field psychology, results from individual studies cannot be taken at face value, since a substantial proportion of effects (typically > 50%) does not replicate when re-running the same study with a similar or larger sample size [@camerer2018; @opensciencecollaboration2015].
+This is due to a variety of reasons including small sample sizes [@button2013; @ioannidis2005], publication bias [@kuhberger2014; @rosenthal1979], and questionable research practices [@kerr1998; @simmons2011].
+Unfortunately, there have not been any attempts at systematically testing the replicability of findings in cognitive neuroscience [but see @pavlov2021 for an ongoing attempt in EEG research], even though (a) cognitive neuroscience is a directly neighbouring discipline of psychology, (b) sample sizes are even lower in cognitive neuroscience than in psychology [@button2013; @szucs2017; @szucs2020], likely due to higher costs and efforts during data acquisition, and (c) analysis pipelines in cognitive neuroscience are typically highly complex, leading to highly variable results even when the exact same dataset is analyzed by different teams of researchers [@botvinik-nezer2020; @yucel2024].
+It would therefore be an important step to turn direct replication of EEG and fMRI studies into a common practice, in addition to improving the quality of original studies, e.g., by pre-registering study hypotheses and analysis plans [@nosek2018; @paul2021; @peikert2023], explicating and testing hidden assumptions about tasks and measurements [@elliott2020; @kragel2021; @noble2019; @scheel2021a], increasing sample sizes [@marek2022; @szucs2017], and sharing analysis code and data [@gorgolewski2016; @markiewicz2021; @wilkinson2016].
 
-* Need for more explicit assumptions, measurement issues (Scheel)
-
-* Lack of generalizability (Yarkoni)
+Finally, most studies in cognitive neuroscience are conducted at research institutions in the Global North that can afford the relevant financial and technological resources, and with very selective convenience samples of participants (typically highly educated young adults).
+Especially when studying higher-level cognitive functions, it would be important to show that findings translate to different sets of participants, stimuli, cultures, languages, and socio-economic strata [e.g., @henrich2010; @share2021; @yarkoni2020], or the limitations of findings in these regards should be reflected in the titles and texts of research papers [but see @mook1983 for an argument that generalizable findings are not always a goal in basic research].
 
 ## Conclusion
 
-* Hope to contribute some insights and stimulate further research
-
-* Methods are re-applicable in different projects (code for meta-analysis, esp. robustness checks, whole-brain LMMs, pipeline)
-
-* Some anecdote about importance of findings (reading, visual objects)?
+In this thesis, I provided different perspectives on how the human brain learns to associate visual information with meaning as well as how semantic information may feed back into visual perception.
+I provided a developmental perspective of the human cortical semantic system, showing that fMRI studies of semantic cognition in children largely engage the same network of regions as known from adults.
+I then used learning to read as an example where children learn to associate previously meaningless visual shapes (letters) with speech sounds and meaning, showing that this leads to local changes in word-related BOLD activity amplitudes and response patterns.
+Finally, I showed that adults can rapidly learn the meaning (i.e., function) of previously unknown real-world objects, and that this learning affects early brain responses to these objects, indicating that semantic knowledge can rapidly affect visual perception.
+Even though I was not able to integrate these findings into an overarching theory of visual-semantic development, I hope that they stimulate future research towards that goal.
+I also hope that some of the methods developed for these projects (e.g., our implementation of bias assessment for MRI-based meta-analysis, our implementation of whole-brain linear mixed-effects models for longitudinal fMRI analysis, and our single trial EEG preprocessing pipeline) can be reused for future projects on these and other topics in the mind and brain sciences.
 
 \newpage
 
