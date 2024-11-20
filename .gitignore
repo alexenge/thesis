@@ -9,4 +9,6 @@
 
 .vscode/
 
+/admin/
+
 !/papers/enge2024.pdf
