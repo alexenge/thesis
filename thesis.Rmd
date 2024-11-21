@@ -790,6 +790,8 @@ Without your love, none of this would have any meaning.
 
 \newpage
 
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
+
 # Selbständigkeitserklärung {.unnumbered}
 
 \noindent Hiermit erkläre ich,
