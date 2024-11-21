@@ -105,6 +105,21 @@ Tag der mündlichen Prüfung: XX.XX.XXXX
 
 # Zusammenfassung {.unlisted .unnumbered}
 
+Wie schafft es unser Gehirn zu verstehen, was unsere Augen sehen?
+Wir nehmen unsere Umwelt nicht nur als einen Mix aus Formen und Farben war, sondern sehe unterschiedliche Objekte mit bestimmten Namen und Funktionen.
+Wir können schwarze Linien in einer bestimmten Anordnung, auf Papier gedruckt oder auf einen Bildschirm angezeigt, benutzen, um Informationen über Zeit und Raum hinweg zu übertragen, wie zum Beispiel diese Worte, die Sie gerade lesen.
+In dieser Dissertation präsentiere ich drei Studien, die sich mit verschiedenen Aspekten des Lernens visuell-semantischer Information beschäftigen, also damit, wie wir Bedeutung aus visuellem Input extrahieren und wie diese Bedeutung wiederum die visuelle Wahrnehmung beeinflusst.
+Ich gebe einen Überblick über das visuelle und semantische System im menschlichen Gehirn bei Erwachsenen und stelle eine Meta-Analyse von Studien vor, welche mittels funktioneller Magnetresonanztomographie (fMRT) die Hirnaktivität bei semantischer Verarbeitung bei Kindern gemessen hat.
+Dabei zeigte sich, dass bei semantischer Verarbeitung bei Kindern und Erwachsenen größtenteils dieselben Hirnareale aktiv sind und sich also das semantische Netzwerk im Gehirn vom Kindes- zum Erwachsenenalter nur wenig zu verändern scheint.
+Danach präsentiere ich zwei experimentelle Studien zum Lernen neuer visuell-semantischer Information.
+In der ersten dieser Studien haben mir mittels fMRT untersucht, wie sich die Hirnaktivität bei der Verarbeitung geschriebener und gesprochener Worte verändert, während Kinder lesen lernen.
+Dabei fanden wir Evidenz für nicht-lineare Veränderungen in der Hirnaktivität in verschiedenen Arealen des Neokortex sowie Hinweise auf eine Angleichung von visueller und auditiver Aktivität im ventralen okzipital-temporalen Kortex.
+In der letzten Studie haben wir untersucht, ob Erwachsene schnell die Funktion von zuvor unbekannten visuellen Objekten erlernen können und ob dieses semantische Wissen beeinflusst, wie die Objekte visuell wahrgenommen werden.
+Wir fanden (mittels Elektroenzephalographie; EEG), dass das Verständnis für die Funktion eines Objekts nicht nur spätere, kognitive Prozesse (N400-Komponente) beeinflusst, sondern auch frühe Prozesse innerhalb der ersten 200 ms nach Präsentation des Objekts (P1- und N170-Komponente).
+Dies deutet darauf hin, dass semantische Information unmittelbar auf das visuelle System zurückwirken kann.
+Neben den Ergebnissen beschreibe ich die Methoden, welche für die hier beschriebenen Studien neu entwickelt wurden, in der Hoffnung, dass diese auch in zukünftigen Projekten benutzt werden können.
+Abschließend diskutiere ich die Bedeutung der vorliegenden Ergebnisse sowie die Limitationen meiner Studien und der Forschung in diesem Bereich der kogntiiven Neurowissenschaften im Allgemeinen.
+
 \newpage
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
@@ -112,6 +127,17 @@ Tag der mündlichen Prüfung: XX.XX.XXXX
 \thispagestyle{empty}
 
 # Abstract {.unlisted .unnumbered}
+
+How does our brain make sense if what we see?
+We perceive the visual world around us not just as a mix of shape and colors but as discrete objects that have names and functions.
+We can even use black lines and curves printed on paper or displayed on a computer screen to transmit meaningful information, as you are experiencing right now while reading these words.
+In this thesis, I present three studies that deal with different aspects of visual-semantic development, that is, how we process meaning based on visual input and how this semantic information feeds back to alter our visual perception.
+I review the visual and semantic system in adults and present a meta-analysis of functional magnetic resonance imaging (fMRI) studies of semantic cognition in children, showing that the semantic system seems to change relatively little between childhood and adulthood.
+I then present two experimental studies as examples of learning visual-semantic information.
+In the first of these, we longitdunally tracked brain activity (as measured using fMRI) in response to written and spoken words as children were learning to read, finding evidence for non-linear change in brain activity in different cortical areas and for an increase in audio-visual word processing in the left ventral occipito-temporal cortex.
+In the final study, we tested if adults can quickly learn the function of previously unfamiliar visual objects and if this semantic knowledge affects how these objects are perceived visually.
+We found that understanding the function of an object immediately affects visual brain responses (as measured using electroencephalography; EEG) within 200 ms after the presentation of the object (P1 and N170 components), as well as later higher-level processing (N400 component), indicating that semantic information rapidly feeds back into the visual system.
+I also provide details on some of the analysis methods developed for the present studies, with hope of making them reusable for future projects, and I discuss the implications of my findings as well as limitations of the present studies and obstacles for scientific progress in this domain more broadly. 
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
 
@@ -125,12 +151,6 @@ Tag der mündlichen Prüfung: XX.XX.XXXX
 \setcounter{page}{1}
 
 # Introduction
-
-Cupidatat pariatur sunt ea est cupidatat consequat et do pariatur aute cillum cillum laborum. Deserunt nostrud quis aliqua irure ut culpa ullamco magna mollit dolor sit consectetur. Id deserunt in proident magna irure laborum non ipsum in tempor. Laborum labore voluptate dolor cillum sit duis eu in sint deserunt voluptate ea ipsum.
-Est reprehenderit dolore fugiat adipisicing occaecat voluptate ex qui ullamco ut consequat amet quis ipsum. Lorem labore labore culpa consequat minim. Laborum est mollit esse exercitation esse eiusmod irure voluptate veniam ex adipisicing ex qui. Enim est laborum magna ex Lorem amet ea pariatur elit laborum elit ullamco exercitation. Irure veniam ut ad ut minim magna veniam do sint esse irure pariatur eu. In Lorem fugiat anim minim fugiat laboris ipsum proident.
-Lorem ad nostrud excepteur voluptate pariatur nostrud mollit velit irure aliquip cupidatat eiusmod eu. Ut elit quis eiusmod dolore non exercitation veniam. Ad pariatur nulla reprehenderit eiusmod irure aliquip. Ut ullamco velit labore mollit id anim enim magna. Sit velit nulla cupidatat esse eiusmod pariatur sunt labore tempor quis laborum. Fugiat officia tempor ullamco minim nulla laborum nulla enim.
-
-## Overview of the thesis
 
 In this thesis, I present three empirical studies on how humans learn to see meaning in visual words and objects.
 This question may seem like a very broad one and, as you will see and as is so often the case in science, I cannot claim that I have found a clear and meaningful answer.
@@ -324,16 +344,6 @@ Can you tell what is displayed in this black and white image?
 If you cannot, take a look at Figure\ \ref{fig:solution}B, which shows the original image from which the black and white image was created [using a binarization technique\; see @mooney1957; @reining2024].
 Once you return to the black and white image, you most likely cannot "unsee" the central object of the image anymore---your prior experience and knowledge of what is displayed has changed your perception, even though the visual input is the same as before [see @samaha2018 and @teufel2018 for formal studies of this phenomenon using the same kind of stimuli].
 
-Another example of such feedback effects from semantic cognition to visual perception, and one that might bear more real-world applicability than the previous one, is the processing of visual objects and tools based on their function.
-We learn the names and functions of most visual objects as children but, in our ever more technology-driven world, are also frequently presented with tools and gadgets that we might have never seen before^[You may want to pause for a second to reflect on when you first saw a fidget spinner, Theragun, or smart watch].
-Learning what these objects are for or how to use them often makes them appear in a different light:
-We may get a kind of "aha" experience from understand what we see and this may change how we perceive the objects and its visual features.
-For example, most people will not have encountered the object in Figure\ \ref{fig:task}C at any point in their life, and many people will not have an intuition what this object is for or how to use it.
-However, after being informed about the function of the object (e.g., by taking a look at Figure\ \ref{fig:solution}C), some of the visual features of the object and their configuration start to make sense.
-I would argue that, as in the previous example of the black and white image, we cannot "unsee" the meaning (i.e., function or usage) of this objects after we have discovered it.
-That is, learning the semantic meaning of a previously unfamiliar object might change our visual perception of the object, both while we are learning it (i.e., the "aha" experience) and after we have learnt it (i.e., when we re-encounter the visual object later on).
-In the third studies included in this thesis (see Sections \ref{instant-effects-of-semantic-information-on-visual-perception} and the original research article), we tested this idea empirically by presenting human adults with previously unfamiliar objects (as in the example above) and measuring their EEG response to the object before, during, and after they learnt about the their functional meaning.
-
 ```{r, solution, fig.cap="(ref:solution-caption)"}
 include_graphics(here("figures", "solution.png"))
 ```
@@ -344,6 +354,16 @@ include_graphics(here("figures", "solution.png"))
 The binary image was adapted from @reining2024 under the terms of the CC BY License.
 The original image is from the THINGS database [@hebart2019] under the terms of the CC BY License.
 **C** Functional description of the object displayed in Figure\ \ref{fig:task}C, which was adapted with permission from Tim Daniels, <https://poultrykeeper.com>.
+
+Another example of such feedback effects from semantic cognition to visual perception, and one that might bear more real-world applicability than the previous one, is the processing of visual objects and tools based on their function.
+We learn the names and functions of most visual objects as children but, in our ever more technology-driven world, are also frequently presented with tools and gadgets that we might have never seen before^[You may want to pause for a second to reflect on when you first saw a fidget spinner, Theragun, or smart watch].
+Learning what these objects are for or how to use them often makes them appear in a different light:
+We may get a kind of "aha" experience from understand what we see and this may change how we perceive the objects and its visual features.
+For example, most people will not have encountered the object in Figure\ \ref{fig:task}C at any point in their life, and many people will not have an intuition what this object is for or how to use it.
+However, after being informed about the function of the object (e.g., by taking a look at Figure\ \ref{fig:solution}C), some of the visual features of the object and their configuration start to make sense.
+I would argue that, as in the previous example of the black and white image, we cannot "unsee" the meaning (i.e., function or usage) of this objects after we have discovered it.
+That is, learning the semantic meaning of a previously unfamiliar object might change our visual perception of the object, both while we are learning it (i.e., the "aha" experience) and after we have learnt it (i.e., when we re-encounter the visual object later on).
+In the third studies included in this thesis (see Sections \ref{instant-effects-of-semantic-information-on-visual-perception} and the original research article), we tested this idea empirically by presenting human adults with previously unfamiliar objects (as in the example above) and measuring their EEG response to the object before, during, and after they learnt about the their functional meaning.
 
 \newpage
 
@@ -759,7 +779,7 @@ You are great mentors and I wish you continued success and joy in your research 
 
 Thank you to the lab members of the Research Group "Learning in Early Childhood" at the Max Planck Institute for Human Cognitive and Brain Sciences, especially to Anne-Sophie and Roman, and to the lab members of the Neurocognitive Psychology Lab at Humboldt-Universität zu Berlin, especially to Julia, Kirsten, and Martin.
 Your support and our countless chats and discussions have made my PhD journey so much easier and so much more enjoyable.
-Should you decide to continue on this path, cognitive neuroscience has a great future ahead with scientists like you.
+Should you decide to continue on this path, cognitive neuroscience has a bright future ahead with scientists like you.
 
 Thank you to all participants who dedicated their time and energy to take part in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
 
