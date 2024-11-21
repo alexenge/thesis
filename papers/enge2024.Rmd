@@ -876,6 +876,12 @@ We hope that this analysis approach and our code (available at <https://github.c
 
 ## Conclusion
 
+In this longitudinal fMRI studies, we repeatedly measured children's brain activity in response to written and spoken words as they learnt to read.
+We found some evidence for non-linear changes in word-related BOLD activity amplitude but not in the direction or anatomical locations that we had hypothesized.
+We also found some evidence that learning to read leads to more similar BOLD activity patterns for visual and auditory stimuli in ventral occipito-temporal cortex.
+We found no evidence that learning to read leads to more stable BOLD activity response pattern in response to words to pseudowords.
+While this study had a number of limitations, including a very small sample size, future studies might want to reuse our overall study design, including the focus on a participant population and writing system typically neglected in developmental cognitive neuroscience, as well as our analysis methods for longitudinal whole-brain fMRI analysis.
+
 \newpage
 
 # References
