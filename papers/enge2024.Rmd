@@ -872,7 +872,7 @@ Compared to traditional statistical models for group-level fMRI analysis (typica
 There have been previous implementations of whole-brain linear mixed-effects models, typically using the R programming language [@chen2013a; @madhyastha2018].
 We believe that our implementation using the Julia programming [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in mass univariate fashion.
 We combined this with a recently established method for whole-brain multiple comparison correction that is compatible with the outputs of the linear mixed-effects models to control the whole-brain family-wise error rate [@cox2017a; @cox2017].
-We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/SLANG-analysis/blob/main/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
+We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/SLANG-analysis/blob/SLANG/scripts/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
 
 ## Conclusion
 
