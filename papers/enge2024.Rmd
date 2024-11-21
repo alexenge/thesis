@@ -784,17 +784,17 @@ We used dense-sampling fMRI to longitudinally measure changes in children's brai
 Seventeen children received reading instruction in their native language (Hindi) and alphabet (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
 In this sample, we found
 (a) some evidence for an improvement in reading performance based on standardized reading skill tests,
-(b) limited evidence for longitudinal increases (linear or non-linear) in BOLD activity in response to spoken and written words, and
+(b) limited evidence for longitudinal increases (linear and non-linear) in BOLD activity in response to spoken and written words, and
 (c) limited evidence for longitudinal increases in word-related audiovisual BOLD pattern similarity.
 We will discuss each of these findings in turn as well as the limitations and research implications of the present study.
 
-## Some evidence for change in behavioral test scores
+## Changes in behavioral test scores
 
 As would be expected from approximately 1.5 years of systematic reading instruction, children's test scores on various aspects of reading performance improved over the course of the study.
 This included correctly reading real Hindi words and pseudowords as well as language skills closely related to reading, such as phoneme replacement and semantic fluency.
 We additionally observed improvements in some non-reading related tests (maths and working memory), which may be the consequence of general cognitive development and/or informal schooling from parents or siblings.
 
-## Limited change in BOLD activity amplitude
+## Non-linear change in BOLD activity amplitude
 
 We had hypothesized that learning to read would lead to an increase in pseudoword- and word-related BOLD activity amplitude in areas that are associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
 We had expected this change to be either linear, that is, increasing from the beginning to the end of the study, negative quadratic (inverted "u"-shaped), that is, increasing in the beginning of the study and then decreasing towards the end of the study.
@@ -806,7 +806,7 @@ The experimental contrasts (contrasting different word-like stimuli with differe
 There are several reasons that could explain these null effects, including the low sample size in our study, an intervention that was too short or too weak, or a lack of sufficient high-quality data per participant and session.
 These limitations will be discussed in more detail below.
 
-## No systematic change in BOLD activity patterns
+## Increase in audio-visual pattern similarity
 
 We had hypothesized that learning to read would lead BOLD activity patterns to become more similar in response to written and spoken (pseudo-)words, especially in areas associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
 Indeed, we did find an increase in audio-visual multi-voxel BOLD pattern similarity, as responses for written words (versus written low-level controls) became more similar over time to the responses to spoken words (versus spoken low-level controls) in the left ventral occipito-temporal cortex (see Figures \ref{fig:similarity-words-minus-noise}C).
