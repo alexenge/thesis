@@ -27,15 +27,15 @@ authornote: |
 abstract: |
   Learning to read is a developmental milestone of lifelong importance.
   While many studies have demonstrated the neural correlates of reading in proficient adult readers, neuroimaging studies of learning to read during childhood are relatively scarce, and have not managed to disentangle effects specific to reading instruction from effects of general cognitive development and schooling.
-  Furthermore, previous reading research has almost exclusively focused on participants and languages in the Global North.
+  Furthermore, previous reading research has almost exclusively focused on participants and writing systems in the Global North.
   To overcome these limitations, we conducted a dense-sampling longitudinal fMRI study with children from a socio-economically disadvantaged background ($N = 15$; age = 5--9 years) who participated in approximately 16 months of reading instruction in their native language (Hindi/Devanagari).
   During each of up to six fMRI scanning sessions, spaced at intervals of approximately 2--3 months, children were presented with spoken and written word-like stimuli, including low-level sensory control stimuli (noise-vocoded speech and false fonts), pseudowords, and words.
   We estimated longitudinal change in BOLD activity amplitude and BOLD activity patterns using linear mixed-effects models.
-  We found some changes (both linear and non-linear) in BOLD activity amplitudes for different contrasts and brain areas, including an inverted "u"-shaped pattern of activity increase and decrease for written words compared to visual low-level control stimuli.
+  We found few changes (both linear and non-linear) in BOLD activity amplitudes for different contrasts and brain areas, including an inverted "u"-shaped pattern of activity increase and decrease for written words compared to visual low-level control stimuli.
   However, none of these changes ocurred in anatomically plausible areas based on previous neuroimaging studies.
   We also found an increase in audio-visual multi-voxel pattern similarity for written words as compared low-level sensory controls in the left ventral occipito-temporal (vOT) cortex.
   There were no reliable changes in word- or pseudoword-related multi-voxel pattern stability.
-  These relatively modest findings may be due to limitations in our study design, including a very small sample size and an reading intervention that might have been to short or too weak.
+  These relatively modest findings may be due to limitations in our study design, including a very small sample size and a reading intervention that might have been to short or too weak.
   Nevertheless, we hope that our rationale for this study as well as our whole-brain longitudinal analysis pipeline will inspire future cognitive-neuroscientific research.
 
 keywords          : "reading, literacy, learning, children, fMRI, neuroimaging"
@@ -74,57 +74,51 @@ header-includes:
   - \usepackage{newcomputermodern}
 ---
 
-```{r setup, include=FALSE}
-# Load R packages
-library("here")
-library("knitr")
-```
-
 # Introduction
 
 Learning to read is a developmental milestone of lifelong importance.
-Reading and writing enables us to exchange messages across time and space, to remember things we would otherwise forget all too easily, to educate ourselves and others, or to get lost in fictional worlds whenever our own one seems a bit much.
-Without it, we would likely be missing out on many of humankind's greatest a achievements or, at the very least, you, our dear reader, would not be able to read this manuscript.
-It therefore seems fair to say that the process of learning to read, typically taking place through late kindergarten and early primary school education as well as through the help of parents and other caretakers, is a crucial step of children's education and cognitive development.
+Reading and writing enable us to exchange messages across time and space, to remember things we would otherwise forget, to educate ourselves and others, and to enjoy fictional stories.
+Without it, we would likely be missing out on many of humankind's greatest a achievements, including science and technology.
+It therefore seems fair to say that the process of learning to read, typically taking place during late kindergarten and early primary school education as well as through the help of parents and other caretakers, is a crucial step in children's education and cognitive development.
 
 Children typically pick up knowledge about their first letters informally, for example by being shown how their own name is written or by memorizing the logo of their favorite TV series or cereal brand.
 However, at this first, *logographic* stage of reading development [@frith1986; @ehri2005], children are typically not yet aware of the systematic correspondence between individual letters (graphemes) and speech sounds (phonemes), and therefore unable to pronounce or understand novel words.
-In this stage, written words are probably perceived similar to other types of visual objects, and novel words that were never encounter before do not elicit any phonological or semantic representation as they would for a trained reader.
+In this stage, written words are probably perceived similar to other types of visual objects, and novel words that have never been encountered before do not elicit any phonological or semantic representation, as they would for a trained reader.
 
-Through structured training in kindergarten, primary school, or at home, children advance to the second, *alphabetic* stage of reading development,^[Note, however, that as with any model of developmental "stages" or "phases," there typically is no hard and clear-cut boundary between one "stage" and the next, and there typically is large interindividual variation in the onsets and durations of the "stages."] where they are taught that individual letters are associated with individual speech sounds.
+Through structured training in kindergarten, primary school, or at home, children advance to the second, *alphabetic* stage of reading development,^[Note, however, that as with any model of developmental "stages" or "phases," there typically is no hard and clear-cut boundary between one stage and the next, and there is typically large interindividual variation in the onsets and durations of the stages.] where they are taught that individual letters are associated with individual speech sounds.
 This allows children to process the individual letters of a written word sequentially, convert them to their corresponding speech sounds, and combine those speech sounds to vocalize the entire word.
 Since most healthy children will have become proficient in spoken language comprehension long before learning to read (typically with < 3 years of age), they will also be able to access the meaning of the written word based on its assembled spoken word form.
 For this way of reading to be successful, children need to possess the understanding and skill to break down words into their constituent phonemes, typically referred to as "phonological awareness."
-It is therefore unsurprising that phonological skills first-letter naming, rhyming, and verbal short-term memory are among the best predictors of individual differences in future reading ability [e.g., @melby-lervag2012].
+It is therefore unsurprising that phonological skills like first-letter naming, rhyming, and verbal short-term memory are among the best predictors of individual differences in future reading ability [e.g., @melby-lervag2012].
 However, this alphabetic form of reading remains somewhat slow and error-prone due to the sequential conversion of letters into speech sounds.
 
-Only in the third and final stage of reading development, the *orthographic* stage, children become able to read words as a whole and to access their meaning directly from the visual word form, without having to take the "detour" of phonological decoding.
+Only in the third and final stage of reading development, the *orthographic* stage, children become able to read words as a whole and to access their meaning directly from the visual word form, without having to take the detour of phonological decoding.
 Presumably, it is the emergence of this shortcut that substantially reduces word reading times after approximately the first year of reading instruction [e.g., @hasenacker2017] and which makes adult reading so efficient and seemingly effortless.
 
 ## Neural correlates of reading
 
 Reading as a cognitive function has to be implemented on a neuroanatomical and functional level in the brain.
 To probe which brain areas contribute to different aspects reading in proficient readers, cognitive-neuroscientific methods such as electroencephalography (EEG) and magnetic resonance imaging (MRI) can be used to measure brain activity while participants perform reading tasks.
-Due to its comparatively high spatial resolution (on the order of a few millimeters), functional magnetic resonance imaging (fMRI), which measures changes in blood oxygen level as a proxy of local neuronal activity, can be used to isolate which brain areas which are more active during reading than during other control tasks.
+Due to its comparatively high spatial resolution (on the order of a few millimeters), functional magnetic resonance imaging (fMRI), which measures changes in blood oxygen level as a proxy of local neuronal activity, can be used to isolate which brain areas are more active during reading than during other control tasks.
 
 One well-replicated finding using this methodology is that processing written words engages a relatively circumscribed region on the left ventral occipito-temporal (vOT) cortex.
 This region, typically referred to as the visual word form area [VWFA\; e.g., @cohen2000; @dehaene2002; @mccandliss2003; @dehaene2011], is thought to be a purely visual and pre-lexical area that identifies written words based on its lower-level visual shapes.
 There is converging evidence that anomalies in, damage to, and stimulation of the VWFA can cause reading difficulties [@hillis2005; @hirshorn2016; @brem2020; but see also @price2003].
-Furthermore, the VWFA is often described as a prime example of the neuronal recycling hypothesis [@dehaene2007], according to which "modern" cognitive functions such as reading,^[The first known scripts appeared approximately 3000--5000 B.C.E [e.g., @houston2004].] for which not enough evolutionary time has passed to develop dedicated brain circuitry, repurpose brain areas with similar but evolutionarily older functions.
+Furthermore, the VWFA is often described as a prime example of the neuronal recycling hypothesis [@dehaene2007], according to which "modern" cognitive functions such as reading,^[The first known scripts appeared approximately 3000--5000 B.C.E,[e.g., @houston2004].] for which not enough evolutionary time has passed to develop dedicated brain circuitry, repurpose brain areas with similar but evolutionarily older functions.
 In the case of reading, the VWFA may reuse regions that had previously been specialized for recognizing other complex visual object categories such as faces, limbs, or tools [@dehaene2015; @kubota2023; @nordt2021; but see also @coltheart2014].
 
 The brain areas involved in reading beyond the early stages of visual word form recognition are less well understood, presumably owing to large differences in task design between studies.
 A meta-analysis of fMRI study [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonological and semantic processing of spoken language.
 However, it remains an open question which brain areas serve as the interface between visual processing (word form recognition in the VWFA) and language processing (phonological and semantic processing in the left perisylvian language network) during reading.
-One candidate for the visual--phonological interface (linking written letters to speech sounds) is the left posterior superior temporal gyrus (pSTS), as it has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, is its "new" skill of linking written letters to speech sounds may stem from its "original" skill to link lip movements to speech sounds.]
-One candidate for the visual--semantic interface is the left middle fusiform cortex (lmFFC), which lies anterior the high-level visual object recognition areas (including the VWFA) on the ventral surface of the occipital and temporal lobes.
-Using depth electrodes for recording and stimulation in epileptic patients,^[Unfortunately, the depth of this region and the associated signal dropout makes it hard to pick up BOLD activity changes in this region with fMRI [@embleton2010; @liu2016a].] it has been shown that this region is active for lexical retrieval from both auditory (spoken words) and visual (written words and object images) input [e.g., @forseth2018; @woolnough2020; @woolnough2022].
+One candidate for the visual--phonological interface (linking written letters to speech sounds) is the left posterior superior temporal gyrus (pSTS), as it has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, since its "new" skill of linking written letters to speech sounds may stem from its "original" skill of linking lip movements to speech sounds.]
+One candidate for the visual--semantic interface is the left middle fusiform cortex (lmFFC), which lies anterior to the high-level visual object recognition areas (including the VWFA) on the ventral surface of the occipital and temporal lobes.
+Using depth electrodes for recording and stimulation in epileptic patients,^[Unfortunately, the depth of this region and the associated signal dropout makes it hard to pick up BOLD activity changes with fMRI [@embleton2010; @liu2016a].] it has been shown that this region is active for lexical retrieval from both auditory (spoken words) and visual (written words and object images) input [e.g., @forseth2018; @woolnough2020; @woolnough2022].
 
 ## Neural correlates of learning to read
 
 Compared to hundreds if not thousands of studies in proficient adult readers, there has been a lot less research on how the neural correlates of reading develop in beginning readers.
 There are multiple reasons for this:
-(a) It is much harder to recruit children (and their families) as compared to undergraduate students who depend on obtaining course credit or monetary compensation;
+(a) It is much harder to recruit children (and their families), as compared to undergraduate students, who depend on obtaining course credit or monetary compensation;
 (b) Children in the relevant age range (late kindergarten to early primary school; typically ~5--8 years of age) have a shorter attention span and show more in-scanner head movement, leading to fewer usable scans, lower data quality in usable scans, and fewer data points per scan; and
 (c) Accurately tracking the development of brain structure and function in individual children requires a longitudinal study design, which is very costly and demanding for study participants, typically leading to small sample sizes.
 Nevertheless, a few studies exist that have managed to obtain multiple longitudinal scans of children's brain activity as they are learning to read.
@@ -133,7 +127,7 @@ Nevertheless, a few studies exist that have managed to obtain multiple longitudi
 Behaviorally, they found that reading performance (knowledge of grapheme--phoneme relations and number of words read per minutes in a standardized reading test) increased sharply during the first months of schooling.
 In the fMRI, they found that selectivity for words in the VWFA was not present at the beginning of the study but quickly emerged within less than 6 months in most of the children.
 Interestingly, the activation strength in the VWFA and other word-selective areas appeared to follow a curvilinear inverted "u"-shaped pattern, with a quick rise in BOLD activation strength in the first half of the study followed by a slight decline in the second half.
-Such a pattern would be predicted by the "expansion and renormalization" model of brain plasticity [@wenger2017], according to which a novel skill initially requires more resources (in terms of number of voxels or BOLD activation amplitude) but later on becomes more efficient and automatized.
+Such a pattern would be predicted by the *expansion and renormalization* model of brain plasticity [@wenger2017], according to which a novel skill initially requires more resources (in terms of number of voxels or BOLD activation amplitude) but later on becomes more efficient and automatized.
 Regarding the neuronal recycling hypothesis, @dehaene-lambertz2018 found that the voxels that would later form the VWFA in individual children were weakly tuned to a different object category at the beginning of the study, namely tools.
 However, a few shortcomings of this study need to be noted:
 (a) The sample size (both in terms of number of children and number of scans per child) was very small, therefore leading to low statistical power to detect all but very large effects [see also @button2013; @ioannidis2005; @szucs2017];
@@ -149,7 +143,7 @@ This restriction of study samples can limit the generalizability of research fin
 
 In reading research, this problem is potentiated by the fact that different cultures developed---sometimes radically---different writing systems.
 Due to the concentration of research funds and technology in the Global North, research on reading, its development, and its neural correlates has almost exclusively been carried out in languages with *alphabetic* writing systems such as English, German, or French.
-In these writing systems, there is a corresponds^[Though the tightness/reliability of this correspondence differing between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French] between individual units of written language (graphemes) and very small units of spoken language (phonemes).
+In these writing systems, there is a corresponds between individual units of written language (graphemes) and very small units of spoken language (phonemes).^[Though the tightness/reliability of this correspondence differs between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French.]
 On the other end of the spectrum are *logographic* writing systems (such Chinese), in which individual graphemes correspond to large units of spoken languages, namely entire words or concepts (morphemes).
 In between these two extremes sit *syllabic* writing systems, in which individual graphemes correspond to intermediate units of spoken languages, namely sublexical consonant--vowel combinations (syllables).
 A special case are *alphasyllabic* languages (also "abugidas"; such as the Hindi writing system Devanagari), in which individual graphemes correspond to consonants with added diacritical marks above, below, or next to the letter for vowels.
@@ -173,17 +167,17 @@ Our hypotheses were as follows:
 * We expected that in audio-visual integration areas (especially the pSTS and vOT cortex), multi-voxel BOLD activity patterns would become more similar between written and spoken (pseudo-)words as children are learning to read.
   This was based on the intuition that only over the course of the study, children would become able to access the phonological and semantic content of written words.
 
-* We expected that multi-voxel BOLD activity patterns for written (pseudo-)words would become more "stable," i.e., show less session-to-session variation as children are learning to read.
+* We expected that multi-voxel BOLD activity patterns for written (pseudo-)words would become more "stable," i.e., show less stimulus-to-stimulus variation as children are learning to read.
   This was based on the intuition that activity in reading-related areas should become more finely tuned and less noisy towards written words as children become able to decode and comprehend them.
 
 # Methods
 
 ## Participants
 
-We initially recruited a total of 32 children from the same village in the region of Uttar Pradesh, India, to participate in the reading intervention.
+We initially recruited a total of 32 children from a small village in the region of Uttar Pradesh, India, to participate in the reading intervention.
 In a neighboring village, we recruited an additional 25 children to participate in a mathematics intervention, serving as an active control group.
 However, data from these children was not analyzed for the purpose of the present manuscript.
-The two villages were selected in cooperation with a local non-governmental organization based on there being little to no access to primary school education due to geographic and socio-demographic constraints.
+The two villages were selected in cooperation with a local non-governmental organization, based on there being little to no access to primary school education due to geographic and socio-demographic constraints.
 All recruited children had to fulfil the following inclusion criteria:
 (1) age between 5 and 9 years at the beginning of the study,
 (2) not being able to decode letters and/or read words,
@@ -192,15 +186,16 @@ All recruited children had to fulfil the following inclusion criteria:
 (5) no hearing and/or vision impairment,
 (6) no language impairments, and
 (7) no attention deficits.
-From the 32 children initially recruited for the reading intervention group, 17 children were excluded because they did not participate in at least two scanning sessions or because they did not meet our cutoff criterion for head motion (framewise displacement greater than 2.4 mm in less than 10% of fMRI volumes) in at least two scanning sessions.
+From the 32 children initially recruited for the reading intervention group, 17 children were excluded because they did not participate in at least two scanning sessions or because they did not meet our cutoff criterion for head motion (framewise displacement greater than 0.5 mm in less than 25% of fMRI volumes) in at least two scanning sessions.
 Therefore, the final sample size was $N$ = 15 children.
-Of those, 9 identified as female and 6 identified as male. The mean age at the beginning of the study was 7.13 years ($SD$ = 1.25 years, min = 5 years, max = 9 years).
+Of those, 9 identified as female and 6 identified as male.
+The mean age at the beginning of the study was 7.13 years ($SD$ = 1.25 years, min = 5 years, max = 9 years).
 
 ## Study design
 
-The children in this longitudinal study completed regular MRI scanning sessions while participating in a structured reading program (or mathematics program for the control group, not shown in this manuscript).
+The children in this longitudinal study completed regular MRI scanning sessions while participating in a structured reading program (or mathematics program for the control group, not included in this manuscript).
 The first scanning session took place at the beginning of the program and the next scanning sessions (mean = 5.07 sessions per child, $SD$ = 1.53 sessions, min = 2 sessions, max = 6 sessions) were spaced at intervals of approximately 2--3 months (mean = 79.9 days between sessions, $SD$ = 35.8 days, min = 20 days, max = 182 days; see Figure\ \ref{fig:sessions}).
-Each scanning session consisted of one localizer scan, one functional MRI run (see experimental design and scanning parameters below), one structural MRI scan (see scanning parameters below), and a series of standardized behavioral tests outside of the scanner (see behavioral testing below).
+Each scanning session consisted of one localizer scan, one functional MRI scan (see experimental design and scanning parameters below), one structural MRI scan (see scanning parameters below), and a series of standardized behavioral tests outside of the scanner (see behavioral testing below).
 
 \begin{figure}
 \centering
@@ -212,22 +207,19 @@ Each scanning session consisted of one localizer scan, one functional MRI run (s
   Gray crosses (``$\times$'') indicate sessions for which MRI data was acquired but was excluded from all further analyses because it exceeded the head motion cutoff (\textgreater 25\% of fMRI volumes with \textgreater 0.5 mm framewise displacement).}
 \end{figure}
 
-Colored dots represent data acquisition points (MRI + behavioral tests) for children from the reading intervention group (participants "sub-SA01" to "sub-SA32").
-Gray dots represent data acquisition points (MRI + behavioral tests) from the mathematics control group (participants "sub-SO01" to "sub-SO25"; not reported in this manuscript).
-Gray crosses ("\times") indicate sessions for which MRI data was acquired but was excluded from all further analyses because it exceeded the head motion cutoff (\textgreater 25% of fMRI volumes with \textgreater 0.5 mm framewise displacement).
-
 The structured intervention for the reading group focused on phonics (i.e., reading and writing the 46 primary Devanagari characters and their correspondence to sublexical consonant--vowel combinations), word decoding (i.e., reading and writing monosyllabic and more complex words), and sentence reading.
-The intervention was carried out by a local teacher and involved 2--4 hours of schooling on 5 days per week. Attendance of the classes was checked but not strictly enforced (mean = 3.74 days attended per week).
+The intervention was carried out by a local teacher and involved 2--4 hours of schooling on 5 days per week.
+Attendance of the classes was checked but not strictly enforced (mean = 3.74 days attended per week).
 
 ## Experimental design
 
-At each MRI scanning session, children performed an in-scanner language task with a block design where they were presented with short blocks of stimuli from six different conditions (visual words, auditory words, visual pseudowords, auditory pseudowords, visual low-level controls, and auditory low-level controls).
+At each MRI scanning session, children performed an in-scanner language task with a block design consisting of short blocks of stimuli from six different conditions (visual words, auditory words, visual pseudowords, auditory pseudowords, visual low-level controls, and auditory low-level controls).
 All words were nouns of masculine grammatical gender, consisting of one or two syllables and three to six phonemes, and belonging to the same semantic category (animals).
 Pseudowords were generated from these words by replacing the initial consonant and vowel of the word.
 The substituted consonants were within the same articulatory place as the original consonants and the substituted graphemes matched the shape of the original graphemes as closely as possible.
 The low-level visual controls were false fonts that were created by rearranging the line segments of each grapheme of a word while preserving the position of the graphemes.
 The low-level auditory controls were created by spectrally rotating and noise-vocoding the spoken words.
-This was achieved by low-pass filtering the speech signal, inverting its spectrum around a center frequency of 2 kHz, dividing the speech signal into two logarithmically spaced frequency bands, extracting the amplitude envelope in each frequency band, using this envelope to module noise in the same frequency band, and recombining the frequency bands.
+This was achieved by low-pass filtering the speech signal, inverting its spectrum around a center frequency of 2 kHz, dividing the speech signal into two logarithmically spaced frequency bands, extracting the amplitude envelope in each frequency band, using this envelope to modulate noise in the same frequency band, and recombining the frequency bands.
 All visual stimuli were presented in the middle of the screen in black font on a white background.
 The screen was placed behind the scanner bore and projected to the participant via a mirror mounted inside of the scanner.
 All auditory stimuli were recorded by a male native Hindi speaker.
@@ -238,14 +230,14 @@ Between subsequent blocks, there was a random pause of 2.55, 3.82, or 5.09 s (eq
 The total duration of the experiment was 17:40 min.
 To keep children attentive, they were asked to perform a simple target detection task.
 For this purpose, a target stimulus was inserted at a random location in 36 out of the 108 blocks.
-For visual blocks, this was the photograph of the face of a children’s movie character, and for auditory blocks a short snippet of child-friendly human laughter.
+For visual blocks, this was the photograph of the face of a children's movie character, and for auditory blocks a short snippet of child-friendly human laughter.
 Children were asked to press a button on a MR-compatible button box whenever they saw or heard the target stimulus.
 They received auditory feedback in the form of a positive sound (after pressing the button when a target stimulus had appeared) or a negative sound (after not pressing the button when a target stimulus had appeared or after pressing the button when no target stimulus had appeared).
 The experiment was programmed and presented using PsychoPy (Version 2021) in Python.
 
 ## Behavioral testing
 
-At each session, directly before or after MRI scanning, children completed a set of behavioral tests (together with one of two local research assistants), assessing their reading skills, mathematics skills, working memory, and general cognitive ability.
+At each session, either before or after MRI scanning, children completed a set of behavioral tests (together with one of two local research assistants), assessing their reading skills, mathematics skills, working memory, and general cognitive ability.
 
 For reading skills, we used the Middle Screening Tool (MST) version of the Dyslexia Assessment for Languages of India (DALI) test [@rao2015a; @rao2021], with the following subtests:
 
@@ -282,19 +274,19 @@ For working memory, we used the following tests:
 For general cognitive ability, we used Raven's Colored Progressive Matrices [CPM/CVS India\; 36 items\; @raven2003].
 
 We analyzed the data from each behavioral (sub-)test with a linear mixed-effects model using the MixedModels package [Version 4.25.3\; @bates2024] in Julia [Version 1.10.4\; @bezanson2017].
-Each model predicted the raw (sub-)test scores using a fixed intercepts (reflecting the test score at the beginning of the study), a fixed effect of time (number of months since the beginning of the study), a by-participant random intercept and random slope for the effect of time, and their correlation.
+Each model predicted the raw (sub-)test scores using a fixed intercept (reflecting the average test score at the beginning of the study), a fixed effect of time (number of months since the beginning of the study), a by-participant random intercept and random slope for the effect of time, and their correlation.
 We interpreted $p$ values smaller than $.05$ for the fixed effect of time as a statistically significant increase (or decrease) in behavioral test performance.
 
 ## MRI scanning parameters
 
 All scanning was conducted on a GE SIGNA Architect 3T MRI machine with a 48 channel head coil.
-After a short head localizer scan, there was one functional run, during which children performed the language experiment described above, and one structural run, during which children watched a TV episode or video of their choice.
+After a short head localizer scan, there was one functional scan, during which children performed the language experiment described above, and one structural scan, during which children watched a TV episode or video of their choice.
 
-The functional run was implemented using a gradient echo (GR) echo planar imaging (EPI) sequence with the following parameters: TE = 35 ms, TR = 2.547 s, flip angle = 88°, number of volumes = 420, field of view = 19.2 cm, in-plane matrix size = 80 × 80 voxels, slice thickness = 2.4 mm, gap between slices = 0.2 mm, voxel size = 2.4 × 2.4 × (2.4 + 0.2) mm, slice orientation = axial, phase encoding direction = anterior/posterior, slice order = interleaved/ascending, multiband acceleration (GE HyperBand) factor = 4.
+The functional scan was implemented using a gradient echo (GR) echo planar imaging (EPI) sequence with the following parameters: TE = 35 ms, TR = 2.547 s, flip angle = 88°, number of volumes = 420, field of view = 19.2 cm, in-plane matrix size = 80 × 80 voxels, slice thickness = 2.4 mm, gap between slices = 0.2 mm, voxel size = 2.4 × 2.4 × 2.6 mm, slice orientation = axial, phase encoding direction = anterior/posterior, slice order = interleaved/ascending, multiband acceleration (GE HyperBand) factor = 4.
 Slices covered the whole brain including the cerebellum.
 We did not collect any field maps and did not correct for potential inhomogeneity or spatial distortion.
 
-The structural run was implemented using a T1-weighted MPRAGE sequence with the following parameters: TE = 3.188 ms, TR = 2.30568 s, TI = 900 ms, flip angle = 8°, field of view = 22.4 cm, in-plane matrix size = 256 × 256 voxels, slice thickness = 0.9 mm, no gap between slices, voxel size = 0.875 × 0.875 × 0.9 mm, slice orientation = axial, phase encoding direction = right/left.
+The structural scan was implemented using a T1-weighted MPRAGE sequence with the following parameters: TE = 3.188 ms, TR = 2.30568 s, TI = 900 ms, flip angle = 8°, field of view = 22.4 cm, in-plane matrix size = 256 × 256 voxels, slice thickness = 0.9 mm, no gap between slices, voxel size = 0.875 × 0.875 × 0.9 mm, slice orientation = axial, phase encoding direction = right/left.
 
 ## Preprocessing
 
@@ -310,7 +302,7 @@ An anatomical T1w-reference map was computed after registration of 2--6 T1w imag
 Brain surfaces were reconstructed using `recon-all` [FreeSurfer 7.3.2, RRID:SCR_001847, @fs_reconall], and the brain mask estimated previously was refined with a custom variation of the method to reconcile
 ANTs-derived and FreeSurfer-derived segmentations of the cortical gray-matter of Mindboggle [RRID:SCR_002438, @mindboggle].
 Volume-based spatial normalization to one standard space (MNI152NLin2009cAsym) was performed through nonlinear registration with `antsRegistration` (ANTs 2.5.1), using brain-extracted versions of both T1w reference and the T1w template.
-The following template was were selected for spatial normalization and accessed with *TemplateFlow* [24.2.0, @templateflow]:
+The following template was selected for spatial normalization and accessed with *TemplateFlow* [24.2.0, @templateflow]:
 *ICBM 152 Nonlinear Asymmetrical template version 2009c* [@mni152nlin2009casym, RRID:SCR_008796\; TemplateFlow ID: MNI152NLin2009cAsym].
 
 ### Functional data preprocessing
@@ -321,7 +313,7 @@ Head-motion parameters with respect to the BOLD reference (transformation matric
 The BOLD reference was then co-registered to the T1w reference using `bbregister` (FreeSurfer) which implements boundary-based registration [@bbr].
 Co-registration was configured with six degrees of freedom.
 Several confounding time-series were calculated based on the *preprocessed BOLD*: framewise displacement (FD), DVARS and three region-wise global signals.
-FD was computed using two formulations following Power (absolute sum of relative motions, @power_fd_dvars) and Jenkinson (relative root mean square displacement between affines, @mcflirt).
+FD was computed using two formulations following Power (absolute sum of relative motions, @power_fd_dvars) and Jenkinson [relative root mean square displacement between affines, @mcflirt].
 FD and DVARS are calculated for each functional run, both using their implementations in *Nipype* [following the definitions by @power_fd_dvars].
 The three global signals are extracted within the CSF, the WM, and the whole-brain masks.
 Additionally, a set of physiological regressors were extracted to allow for component-based noise correction [*CompCor*, @compcor].
@@ -336,9 +328,8 @@ For each CompCor decomposition, the *k* components with the largest singular val
 The remaining components are dropped from consideration.
 The head-motion estimates calculated in the correction step were also placed within the corresponding confounds file.
 The confound time series derived from head motion estimates and global signals were expanded with the inclusion of temporal derivatives and quadratic terms for each [@confounds_satterthwaite_2013].
-Frames that exceeded a threshold of 0.5 mm FD or 1.5 standardized DVARS were annotated as motion outliers.
+Frames that exceeded a threshold of 0.5 mm FD were annotated as motion outliers.
 Additional nuisance timeseries are calculated by means of principal components analysis of the signal found within a thin band (*crown*) of voxels around the edge of the brain, as proposed by [@patriat_improved_2017].
-The BOLD time-series were resampled onto the following surfaces (FreeSurfer reconstruction nomenclature): *fsnative*, *fsaverage5*.
 All resamplings can be performed with *a single interpolation step* by composing all the pertinent transformations (i.e. head-motion transform matrices, susceptibility distortion correction when available,
 and co-registrations to anatomical and output spaces).
 Gridded (volumetric) resamplings were performed using `nitransforms`, configured with cubic B-spline interpolation.
@@ -407,7 +398,7 @@ From the fitted model, we computed an effect size map ("beta map") for each of t
 
 * Visual words vs. pseudowords
 
-We refer to all contrasts involving the baseline as "baseline contrasts," which capture the difference in BOLD activity between each different experimental condition and the fixation baseline period between experimental blocks.
+We refer to all contrasts involving the baseline as "baseline contrasts," which capture the difference in BOLD activity between each experimental condition and the fixation baseline period between experimental blocks.
 Therefore, these contrasts capture not only BOLD activity related to linguistic (phonological and semantic) processing but also BOLD activity related to low-level sensory processing (e.g., visual and auditory processing of the stimuli).
 We refer to all other contrasts as "experimental contrasts," which capture the difference in BOLD activity between two different experimental conditions.
 The experimental contrasts comparing pseudowords to low-level controls capture BOLD activity related to phonological processing, since pseudowords but not low-level controls contain phonological information, while both do not contain any semantic information.
@@ -418,21 +409,23 @@ The experimental contrasts comparing words to low-level controls capture BOLD ac
 
 ### BOLD activity amplitude
 
-To estimate reading related changes in BOLD activity amplitude, we fitted the beta maps from all participants and sessions using a linear mixed-effects model, separately for each contrast (see above).
+To estimate reading-related changes in BOLD activity amplitude, we fitted the beta maps from all participants and sessions using a linear mixed-effects model, separately for each contrast (see above).
 The dependent variable was the BOLD activation amplitude for a given participant and session, and the predictors were
 (1) a fixed intercept, implemented as a column of "1"s and reflecting the BOLD activity at the beginning of the study,
-(2) a fixed effect for linear time, implemented as the number of days elapsed since the beginning of the study and reflecting the linear change in BOLD activity due to the reading instruction,
+(2) a fixed effect for linear time, implemented as the number of months elapsed since the beginning of the study and reflecting the linear change in BOLD activity due to the reading instruction,
 (3) a fixed effect for quadratic time, implemented as the square of linear time and reflecting the nonlinear ("u"-shaped or inverted "u"-shaped) change in BOLD activity due to the reading instruction,
-(4) a random intercept, reflecting individual participant’s deviation from the global BOLD activity at the beginning of the study, and random slopes for (5) linear and
-(6) quadratic time, reflecting individual participant’s deviations in the linear and nonlinear changes in BOLD activity due to the reading instruction. As is typical in frequentist linear mixed models, one parameter was estimated for each fixed effect (intercept, linear time, and quadratic time) and for each random effect (the standard deviation of the random intercepts and slopes for linear and quadratic time), as well as three correlation parameters between the three pairs of random effects.
+(4) a random intercept, reflecting individual participant’s deviation from the global BOLD activity at the beginning of the study, and random slopes for
+(5) linear and
+(6) quadratic time, reflecting individual participant’s deviations in the linear and nonlinear changes in BOLD activity due to the reading instruction.
+As is typical in frequentist linear mixed models, one parameter was estimated for each fixed effect (intercept, linear time, and quadratic time) and for each random effect (the standard deviation of the random intercepts and slopes for linear and quadratic time), as well as three correlation parameters between the three pairs of random effects.
 The mixed models (one for each contrast) were fitted separately at each voxel inside the brain mask in a mass-univariate fashion.
 Model fitting was performed in Julia [Version 1.10.4\; @bezanson2017] using the MixedModels package [Version 4.25.3\; @bates2024].
 
 To correct for multiple comparisons across the 132,215 voxels inside the brain mask, we used the parametric cluster correction algorithm suggested by @cox2017a and @cox2017.
 Specifically, we first estimated the spatial smoothness of noise in our dataset by extracting and storing the residual time series from the session-level models (see above), separately for each participant and session.
-We then used the `3dFWHMx` function (with the `-acf` option) in AFNI [Version 24.2.01\; @cox1996] to estimate a mixed Gaussian/mono-exponential spatial autocorrelation function with three parameters [@cox2017; @cox2017a\; see also <https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/afni_handouts/afni07_ETAC.pdf>].
+We then used the `3dFWHMx` program (with the `-acf` option) in AFNI [Version 24.2.01\; @cox1996] to estimate a mixed Gaussian/mono-exponential spatial autocorrelation function with three parameters [@cox2017; @cox2017a\; see also <https://afni.nimh.nih.gov/pub/dist/edu/data/CD.expanded/afni_handouts/afni07_ETAC.pdf>].
 We averaged each of these three parameters across participants and sessions to obtain a single spatial autocorrelation function for the entire dataset. 
-This function was then fed into the `3dClustSim` function in AFNI to generate novel noise-only maps and estimate a null distribution of cluster sizes. 
+This function was then fed into the `3dClustSim` program in AFNI to generate novel noise-only maps and estimate a null distribution of cluster sizes. 
 Using a cluster-forming voxel-level threshold of $p < .001$ and 10,000 iterations, this resulted in a final cluster-level extent threshold of 19 voxels to control the whole-brain family-wise error (FWE) rate at $p < .05$.
 We therefore deemed spatial clusters of BOLD activation statistically significant if they were larger than 19 voxels.
 To form clusters, neighboring voxels had to pass the cluster-forming voxel level threshold of $p < .001$ and touch each other with their faces (not just with their edges or nodes; the default "NN1" method in AFNI).
@@ -443,19 +436,20 @@ We also estimated reading related changes in the between-condition similarity an
 
 First, we investigated if the reading intervention made written word activity patterns more similar to those for spoken word activity patterns.
 For this, we used the beta maps from these two conditions and extracted the betas for different regions of interest (ROI; defined below).
-We then computed the linear correlation between these vectors and entered these (one value per subject and session) into a linear mixed-effects model, separately for each ROI.
+We then computed the linear correlation between these vectors and entered these correlations (one value per subject and session) into a linear mixed-effects model, separately for each ROI.
 We specified the linear mixed-effects model in the same way as described above, with fixed and random effects for the intercept, the linear effect of time, and the quadratic effect of time.
-We repeated the same analysis for the correlation of activity patterns between written and spoken pseudowords.
+We repeated the same analysis for the correlation of activity patterns between written and spoken pseudowords and between written and spoken low-level controls (both baseline contrasts and experimental contrasts).
 However, it is important to note at this point that with our block design, we are not comparing the activity patterns in response to individual items (e.g., the written word "monkey" and the spoken word "monkey"), but rather the general patterns of activity when processing written and spoken words.
-Though arguably more meaningful, the former comparison is not possible as our trials within each block were presented faster (1 s) than our TR (2.647 s), and we were therefore unable to obtain a beta map for each individual item.
+Though arguably more meaningful, the former comparison was not possible because our stimuli within each block were presented faster (1 s) than our TR (2.647 s), and we were therefore unable to obtain a beta map for each individual stimulus.
 
 Second, we investigated if the reading intervention made written word activity more "stable," i.e., more consistent across repeated presentations of written words within the same session.
 For this, we re-estimated the session-level beta maps as described above but with separate task regressors for each block (108 columns) instead of each condition (6 columns).
 We then took the beta map for each written word block (18 maps) and extracted the betas for different ROIs (defined below).
 We then computed the linear correlation between each pair of blocks (153 pairs) and averaged these to obtain a single stability (correlation) value for each participant and session.
 We entered these values into a linear-mixed effects model, separately for each ROI and specified in the same way as described above.
-We repeated the same analysis for the stability of activity patterns for written pseudowords.
-We also performed this analysis for spoken words and spoken pseudowords even though they do not directly pertain to our hypotheses.
+We repeated the same analysis for the stability of activity patterns for written pseudowords and written low-level controls.
+We also performed this analysis for spoken words, spoken pseudowords, and spoken low-level controls, even though they do not directly pertain to our hypotheses.
+
 For all multivariate analyses, we used the same set of anatomically and functionally defined regions of interest.
 The anatomically defined regions of interest were the posterior superior temporal sulcus (pSTS), defined as the union of regions STSda, STSdp, STSvp, and STSva from the @glasser2016 atlas, and the ventral occipto-temporal cortex (vOT), defined as the union of regions V8, FFC, and VVC from the @glasser2016 atlas.
 The functionally defined regions were different for each condition:
@@ -465,8 +459,8 @@ For the within-condition pattern stability analysis, we used the visual or audit
 
 ## Data and code availability
 
-The data from this study are available upon request from the last author.
-The code for the experiment, preprocessing, and statistical analysis are available at <https://github.com/SkeideLab/SLANG>.
+The data from this study are available upon request from the last author of the paper.
+The code for the experiment, preprocessing, and statistical analysis is available at <https://github.com/SkeideLab/SLANG>.
 
 # Results
 
@@ -561,7 +555,7 @@ For spoken words, there was positive linear change in BOLD activity over the cou
 
 ### Visual baseline contrasts
 
-At the beginning of the study (intercept), written low-level controls, written pseudowords, and written words elicited BOLD activity in the left right occipital and inferior temporal cortices (see orange clusters in Figures \ref{fig:univariate-noise}B, \ref{fig:univariate-pseudo}B, and \ref{fig:univariate-words}B) as well as BOLD deactivations in the left and right medial occiptial lobes (see blue clusters in Figures \ref{fig:univariate-noise}B, \ref{fig:univariate-pseudo}B, and \ref{fig:univariate-words}B).
+At the beginning of the study (intercept), written low-level controls, written pseudowords, and written words elicited BOLD activity in the left and right occipital and inferior temporal cortices (see orange clusters in Figures \ref{fig:univariate-noise}B, \ref{fig:univariate-pseudo}B, and \ref{fig:univariate-words}B), as well as BOLD deactivations in the left and right medial occiptial lobes (see blue clusters in Figures \ref{fig:univariate-noise}B, \ref{fig:univariate-pseudo}B, and \ref{fig:univariate-words}B).
 For written low-level controls, there was no linear change in BOLD activity over the course of the study (see Figure\ \ref{fig:univariate-noise}D) but positive quadratic (i.e., "u"-shaped) change in BOLD activity two small clusters in the right occipital lobe (see orange clusters in Figure\ \ref{fig:univariate-noise}F).
 For written pseudowords, there was negative linear change in one small cluster in the left inferior frontal lobe (see left frontal blue cluster in Figure\ \ref{fig:univariate-pseudo}D) and both negative linear change and positive quadratic (i.e., "u"-shaped) change in one small cluster in the right occipital lobe (see posterior blue cluster in Figure\ \ref{fig:univariate-pseudo}D and orange cluster in Figure\ \ref{fig:univariate-pseudo}F).
 For written words, there was both negative linear and positive quadratic (i.e., "u"-shaped) change in one small cluster in the right occipital lobe (see small blue cluster in Figure\ \ref{fig:univariate-words}D and posterior orange cluster in Figure\ \ref{fig:univariate-words}F).
@@ -716,7 +710,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-noise_stability.pdf}
 \caption{
   \label{fig:stability-audios-noise}\textbf{\emph{Pattern stability for spoken low-level controls.}}
-  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of spoken low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern stability for the contrast of spoken low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
   Pattern stability was computed by estimating beta weights separately for each spoken low-level sensory control block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
   ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure\ \ref{fig:univariate-noise}).
   Colored dots and lines indicate the pattern stabilities of individual participants over time.
@@ -727,7 +721,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-noise_stability.pdf}
 \caption{\label{fig:stability-images-noise}\textbf{\emph{Pattern stability for written low-level controls.}}
-  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of written low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern stability for the contrast of written low-level sensory control blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
   Pattern stability was computed by estimating beta weights separately for each written low-level sensory control block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
   ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure\ \ref{fig:univariate-noise}).
   Colored dots and lines indicate the pattern stabilities of individual participants over time.
@@ -738,7 +732,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-pseudo_stability.pdf}
 \caption{\label{fig:stability-audios-pseudo}\textbf{\emph{Pattern stability for spoken pseudowords.}}
-  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of spoken pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern stability for the contrast of spoken pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
   Pattern stability was computed by estimating beta weights separately for each spoken pseudoword block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
   ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure\ \ref{fig:univariate-pseudo}).
   Colored dots and lines indicate the pattern stabilities of individual participants over time.
@@ -749,7 +743,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-pseudo_stability.pdf}
 \caption{\label{fig:stability-images-pseudo}\textbf{\emph{Pattern stability for written pseudowords.}}
-  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of written pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern stability for the contrast of written pseudoword blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
   Pattern stability was computed by estimating beta weights separately for each written pseudoword block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
   ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure\ \ref{fig:univariate-pseudo}).
   Colored dots and lines indicate the pattern stabilities of individual participants over time.
@@ -760,7 +754,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-audios-words_stability.pdf}
 \caption{\label{fig:stability-audios-words}\textbf{\emph{Pattern stability for spoken words.}}
-  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of spoken word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern stability for the contrast of spoken word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
   Pattern stability was computed by estimating beta weights separately for each spoken word block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
   ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure\ \ref{fig:univariate-words}).
   Colored dots and lines indicate the pattern stabilities of individual participants over time.
@@ -771,7 +765,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 \centering
 \includegraphics{figures/task-language_space-MNI152NLin2009cAsym_desc-images-words_stability.pdf}
 \caption{\label{fig:stability-images-words}\textbf{\emph{Pattern stability for written words.}}
-  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern similarity for the contrast of written word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
+  Each panel \textbf{A}--\textbf{H} shows the development of within-condition pattern stability for the contrast of written word blocks vs. fixation baseline over the course of the study in one region of interest (ROI).
   Pattern stability was computed by estimating beta weights separately for each written word block in the experiment, then computing all pairwise correlations of these beta weights inside the ROI, and then averaging all of these pairwise correlations to obtain a single correlation value for each participant and session.
   ROIs were defined either anatomically (posterior superior temporal sulcus [STS] and ventral occipito-temporal cortex [vOT]) or functionally from the significant clusters observed for the relevant baseline contrasts in the BOLD activity amplitude analysis (see Figure\ \ref{fig:univariate-words}).
   Colored dots and lines indicate the pattern stabilities of individual participants over time.
@@ -780,8 +774,8 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 
 # Discussion
 
-We used dense-sampling fMRI to longitudinally measure changes in children's brain activity as they are learning to read.
-Seventeen children received reading instruction in their native language (Hindi) and alphabet (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
+We used dense-sampling fMRI to longitudinally measure changes in children's brain activity as they were learning to read.
+Seventeen children received reading instruction in their native language (Hindi) and writing system (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
 In this sample, we found
 (a) some evidence for an improvement in reading performance based on standardized reading skill tests,
 (b) limited evidence for longitudinal increases (linear and non-linear) in BOLD activity in response to spoken and written words, and
@@ -797,52 +791,53 @@ We additionally observed improvements in some non-reading related tests (maths a
 ## Non-linear change in BOLD activity amplitude
 
 We had hypothesized that learning to read would lead to an increase in pseudoword- and word-related BOLD activity amplitude in areas that are associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
-We had expected this change to be either linear, that is, increasing from the beginning to the end of the study, negative quadratic (inverted "u"-shaped), that is, increasing in the beginning of the study and then decreasing towards the end of the study.
-We did not observe such a pattern for any experimental contrast or brain region, except for the contrast between written words and low-level visual controls (false fonts; see Figure\ \ref{fig:univariate-words-minus-noise}); however, this effect was located at the medial wall of the brain (next to the posterior cingulate cortex), an area that has not typically been described as relevant for reading.
-For different contrasts, areas showed evidence for linear and/or quadratic change over the course of the study, but this change typically did not follow the expected pattern (e.g., negative linear change or positive quadratic change) and did not occur in areas that relevant for reading or audiovisual integration.
+We had expected this change to be either linear, that is, increasing from the beginning to the end of the study, or negative quadratic (inverted "u"-shaped), that is, increasing in the beginning of the study and then decreasing towards the end of the study.
+We did not observe such a pattern for any experimental contrast or brain region, except for the contrast between written words and false fonts (see Figure\ \ref{fig:univariate-words-minus-noise}); however, this effect was located at the medial wall of the brain (next to the posterior cingulate cortex), an area that has not typically been described as relevant for reading.
+For some of the other contrasts, a few areas showed evidence for linear and/or quadratic change over the course of the study, but this change typically did not follow the expected pattern (e.g., negative linear change or positive quadratic change) and did not occur in areas that are relevant for reading or audiovisual integration.
 Most importantly, most effects were observed for the baseline contrasts (contrasting one experimental condition against the fixation baseline; see Figures \ref{fig:univariate-noise} to \ref{fig:univariate-words}).
 These contrasts are difficult to interpret as they capture not only higher-level (e.g., orthographic, phonological, and semantic) processing, but also low-level sensory processing.
-The experimental contrasts (contrasting different word-like stimuli with different levels of phonological and semantic information, e.g., written words vs. pseudowords) showed little to no reliable longitudinal change in BOLD activity (see Figures \ref{fig:univariate-pseudo-minus-noise} to \ref{fig:univariate-words-minus-pseudo})
-There are several reasons that could explain these null effects, including the low sample size in our study, an intervention that was too short or too weak, or a lack of sufficient high-quality data per participant and session.
-These limitations will be discussed in more detail below.
+The experimental contrasts (contrasting word-like stimuli with different levels of phonological and semantic information, e.g., written words vs. pseudowords) showed little to no reliable longitudinal change in BOLD activity (see Figures \ref{fig:univariate-pseudo-minus-noise} to \ref{fig:univariate-words-minus-pseudo}).
+There are several factors that could explain these null effects, including the low sample size in our study, an intervention that was too short or too weak, or a lack of sufficient high-quality data per participant and session.
+These limitations will be discussed in more detail further below.
 
 ## Increase in audio-visual pattern similarity
 
 We had hypothesized that learning to read would lead BOLD activity patterns to become more similar in response to written and spoken (pseudo-)words, especially in areas associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
-Indeed, we did find an increase in audio-visual multi-voxel BOLD pattern similarity, as responses for written words (versus written low-level controls) became more similar over time to the responses to spoken words (versus spoken low-level controls) in the left ventral occipito-temporal cortex (see Figures \ref{fig:similarity-words-minus-noise}C).
+Indeed, we did find an increase in audio-visual multi-voxel BOLD pattern similarity:
+Responses for written words (versus written low-level controls) became more similar over time to the responses to spoken words (versus spoken low-level controls) in the left ventral occipito-temporal cortex (see Figures \ref{fig:similarity-words-minus-noise}C).
 However, beyond the limitations mentioned above (and discussed in detail below), it is important to mention that our study design was not ideal for capturing similarities in BOLD activity patterns.
-This is because we used a block design with which it was not possible to estimate activity patterns for individual stimuli (e.g., the written word "monkey") but only for experimental conditions (i.e., written words in general).
-Assuming that different stimuli elicit different BOLD activity patterns (e.g., depending on their individual phonology and semantics), we would have needed to use an event-related design to accurately capture these patterns and their potential increase between different sensory input modalities.
+This is because we had used a block design which did not allow us to estimate activity patterns for individual stimuli (e.g., the written word "monkey") but only for experimental conditions (i.e., written words in general).
+Assuming that different stimuli elicit different BOLD activity patterns (e.g., depending on their individual phonology and semantics), we would have needed to use an event-related design to accurately capture these patterns and their potential increase in similarity between different sensory input modalities.
 However, it may also be that our initial hypothesis was wrong and that written and spoken words are processed in completely separate processing streams, converging only at some very abstract semantic level (likely situated in a region that was not captured by any of our ROIs).
-While audio-visual integration regions like the pSTS have been shown to respond strongly to input from both modalities [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018], they may not be engaged in tasks where stimuli are always presented in one modality at a time (either spoken or written) and do not need to be evaluated for audio-visual congruence.
-Finally, it may also be that automatic audio-visual processing of written words ony develops only relatively late after starting to learn to read, and that this developmental change therefore was not captured during the duration of our study.
+While audio-visual integration regions like the pSTS have been shown to respond strongly to input from both modalities [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018], they may not be engaged in tasks where stimuli are presented in only one modality at a time (either spoken or written), and where they do not need to be evaluated for audio-visual congruence.
+Finally, it may also be that automatic audio-visual processing of written words ony develops relatively late after starting to learn to read, and that this developmental change therefore was not captured during the duration of our study.
 
 Finally, we also tested for longitudinal increases in multi-voxel BOLD response pattern stability, that is, if response patterns to repeated presentations of the same category of stimuli (e.g., written words) became more similar to one another as children learnt to read.
-We did find some evidence for a longitudinal changes in pattern stability, but only spoken pseudowords and words in the bilateral STS.
+We did find some evidence for longitudinal changes in pattern stability, but only for spoken pseudowords and spoken words in the bilateral STS.
 Of note, pattern stability for these conditions and areas *decreased* rather than *increased* over the course of the study.
-Since we did not predict any change in pattern stability for the spoken conditions, we prefer to refrain from interpreting these findings.
+Since we did not predict any change in pattern stability for these auditory conditions, we prefer to refrain from interpreting these findings.
 
 ## Limitations
 
-Every empirical research study has limitations and this one is definitely not an exception.
+Almost every empirical research study has limitations and this one is definitely no exception.
 First and foremost, the sample size of this study was extremely small, both in terms of the number of participants ($N = 15$ in the reading intervention group) and in terms of the number of longitudinal sessions per participant ($T = 6$ for most participants).
-With this small sample size, statistical power for detecting effects is very low, which can lead to (a) undetected true effects (false negatives), (b) potentially unreplicable obtained effects (low positive predictive value), and (c) potentially inflated effect sizes for obtained effects [ @button2013; @ioannidis2005; @szucs2017].
-BOLD signal changes for higher-level (non-sensory) experimental manipulations (e.g., words vs. pseudowords) are typically subtle in size compared to the neural, thermal, and scanner-induced noise of fMRI data.
+With this small sample size, statistical power for detecting effects is very low, which can lead to (a) undetected true effects (false negatives), (b) potentially unreplicable obtained effects (low positive predictive value), and (c) potentially inflated effect sizes for obtained effects [@button2013; @ioannidis2005; @szucs2017].
+Unfortunately, BOLD signal changes for higher-level (i.e., non-sensory) experimental manipulations (e.g., words vs. pseudowords) are typically subtle in size compared to the neural, thermal, and scanner-induced noise of fMRI data.
 When wanting to track changes longitudinally from session to session, the effects of interest can be presumed to be even smaller (since one is interested in the manipulation \times time interaction rather than in the main effect of the manipulation).
-These problems of small sample size, small effect size, and  low statistical power are potentiated when scanning children as their shorter attention span and increased head motion lead to both shorter scanning sessions (i.e., less trials/volumes) and lower data quality (i.e., higher framewise displacement and signal intensity changes).
-To reliably answer the research questions posed in the Introduction, one would presumably need a sample size that is at least 10 times larger than ours in terms of participants and ideally also significantly larger in terms of the number of sessions per participant, both of which we failed to acquire due to monetary and time constraints.
+These problems of small sample size, small effect size, and  low statistical power are potentiated when scanning children because their short attention span and high head motion lead to both shorter scanning sessions (i.e., less trials/volumes) and lower data quality (i.e., higher framewise displacement and signal intensity changes).
+To reliably answer the research questions posed in the Introduction, one would presumably need a sample size at least 10 times larger than ours in terms of participants and ideally also significantly larger in terms of the number of sessions per participant, both of which we failed to acquire due to monetary and time constraints.
 
 Second, the reading intervention employed in the present study might not have been very effective, as we were unable to closely monitor the quantity and quality of the teaching sessions.
-While the behavioral test scores (see Figure\ \ref{fig:behavior}) indicate some improvement on relevant subtests of reading ability for some children, we by and large cannot be sure how many children became significantly better readers over the course of the study.
+While the behavioral test scores (see Figure\ \ref{fig:behavior}) indicated some improvement on relevant subtests of reading ability for some children, we by and large cannot be sure how many children became significantly better readers over the course of the study.
 Therefore, it is not surprising that we found little to no reliable change in word-related BOLD activity amplitudes and patterns.
-On a similar note, the duration of our intervention (approx. 16 months) might not have been long enough for children to become relatively proficient readers, especially since the Devanagari alphabet contains a relatively large number of visually complex letters.
+On a similar note, the duration of our intervention (approx. 16 months) might not have been long enough for children to become sufficiently proficient readers, especially since the Devanagari script contains a relatively large number of visually complex letters.
 Our study design therefore was not ideal to capture the full process of learning to read and might have missed especially the late, *orthographic* stage of reading development (see Introduction).
 
-Finally, there were minor issues in our experimental design that could be improved in the future, including
-(a) relatively long blocks, which might have induced tiredness and additional head motion for some participants,
-(b) relatively short baseline intervals between blocks, which lead to overlap of BOLD activity from one block to the next,
+Finally, there were minor issues in our experimental design that could have been improved, including
+(a) a relatively long fMRI scanning run, which might have induced tiredness and additional head motion for some participants,
+(b) relatively short baseline intervals between blocks, which might have led to overlap of BOLD activity from one block to the next,
 (c) no optimization of the order of blocks with regards to the efficiency of the experimental design [@henson2004], and
-(d) individual stimuli being shorter (1 s) than the TR (2.55 s), which precluded any item-level analysis (e.g., with regards to BOLD pattern similarity and stability).
+(d) individual stimuli being shorter (1 s) than the TR (2.55 s), which precluded any stimulus-level analysis (e.g., with regards to BOLD pattern similarity and stability).
 
 ## Implications for future research
 
@@ -851,35 +846,35 @@ However, we still believe that this study can stimulate and facilitate future re
 
 First, our overall study design can be seen as a proof of principle for overcoming geographic and cultural biases in developmental cognitive neuroscience.
 Most previous research on learning to read and its neural correlates has been carried out with participants from the Global North and in languages with alphabetic writing systems.
-In the future, it will be crucial to test if the empirical findings and theories derived from these populations will generalize to different cultures and writing system, or if those require novel hypotheses and theories [@frost2012; @share2008; @share2014; @share2021].
+In the future, it will be crucial to test if the empirical findings and theories derived from these populations will generalize to different cultures and writing system, or if these require novel hypotheses and theories [@frost2012; @share2008; @share2014; @share2021].
 We have shown that it is indeed possible---though certainly challenging---to collect relatively high-quality neuroimaging data in geographic areas and from socio-economic strata that have traditionally been neglected in cognitive neuroscience [@blasi2022; @henrich2010].
-In the context of learning to read and other learning interventions, such population can indeed offer unique advantages, e.g., because illiteracy or lack of public schooling can allow for targeted and controlled learning interventions for limited periods of time, as we attempted in the present study^[Note that in collaboration with a local non-governmental organization, we ensured that participants in our study would get enrolled at a public primary school after the conclusion of the study, something they would otherwise most likely never have gotten the opportunity to.]
-We therefore encourage more researchers to engage in cross-cultural collaboration projects, to test the generalizability of empirical findings and theories across different geographic and socio-economic settings, or to at the very least explicitly acknowledge the somewhat limited epistemic scope of findings obtained solely from convenience samples in the Global North.
+In the context of learning to read and other learning interventions, such populations can even offer unique advantages, e.g., because illiteracy or lack of public schooling can allow for targeted and controled learning interventions for limited periods of time, as we attempted in the present study^[Note that in collaboration with a local non-governmental organization, we ensured that participants in our study would get enrolled at a public primary school after the conclusion of the study, something they would otherwise most likely never have gotten the opportunity to.]
+We therefore encourage more researchers to engage in cross-cultural collaboration projects, to test the generalizability of empirical findings and theories across different geographic and socio-economic settings, or at the very least to explicitly acknowledge the somewhat limited epistemic scope of findings obtained solely from convenience samples in the Global North.
 
 Second, we developed a novel computational approach for analyzing longitudinal fMRI data with whole-brain linear mixed-effects models.
 Compared to traditional statistical models for group-level fMRI analysis (typically variants of $t$-tests an analyses of variance [ANOVAs]), linear mixed-effects models come with a number of advantages:
 
 * They can adequately control for multiple repeated measures obtained from the same participants.
 
-* They can model longitudinal time as a continuous predictions variable instead of requiring discrete "sessions".
+* They can model longitudinal time as a continuous predictor variable instead of requiring discrete "sessions."
 
 * They do not require a balanced study design (e.g., the same number of sessions for all participants), and are therefore better able to handle dropout and missing data.
 
-* They can be used to include multiple predictor variables of different type (e.g., linear time, quadratic time, group membership, gender, ...).
+* They can be used to include multiple predictor variables of different type (e.g., linear time, quadratic time, group membership, gender).
 
 * They can be used to relate within-individual fMRI effects to between-individual characteristics [i.e., brain--behavior associations\; but note that this typically requires large sample sizes\; @marek2022].
 
 There have been previous implementations of whole-brain linear mixed-effects models, typically using the R programming language [@chen2013a; @madhyastha2018].
-We believe that our implementation using the Julia programming [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in mass univariate fashion.
+We believe that our implementation using the Julia programming language [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in a mass univariate fashion.
 We combined this with a recently established method for whole-brain multiple comparison correction that is compatible with the outputs of the linear mixed-effects models to control the whole-brain family-wise error rate [@cox2017a; @cox2017].
 We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/SLANG-analysis/blob/SLANG/scripts/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
 
 ## Conclusion
 
-In this longitudinal fMRI studies, we repeatedly measured children's brain activity in response to written and spoken words as they learnt to read.
+In this longitudinal fMRI study, we repeatedly measured children's brain activity in response to written and spoken words as they were learning to read.
 We found some evidence for non-linear changes in word-related BOLD activity amplitude but not in the direction or anatomical locations that we had hypothesized.
 We also found some evidence that learning to read leads to more similar BOLD activity patterns for visual and auditory stimuli in ventral occipito-temporal cortex.
-We found no evidence that learning to read leads to more stable BOLD activity response pattern in response to words to pseudowords.
+We found no evidence that learning to read leads to more stable BOLD activity response patterns in response to words to pseudowords.
 While this study had a number of limitations, including a very small sample size, future studies might want to reuse our overall study design, including the focus on a participant population and writing system typically neglected in developmental cognitive neuroscience, as well as our analysis methods for longitudinal whole-brain fMRI analysis.
 
 \newpage
