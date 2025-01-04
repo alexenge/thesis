@@ -357,7 +357,7 @@ The original image is from the THINGS database [@hebart2019] under the terms of 
 **C** Functional description of the object displayed in Figure\ \ref{fig:task}C, which was adapted with personal permission from Tim Daniels, <https://poultrykeeper.com>.
 
 Another example of such feedback effects from semantic cognition to visual perception, and one that might bear more real-world applicability than the previous one, is the processing of visual objects and tools based on their function.
-We learn the names and functions of most visual objects as children but, in our ever more technology-driven world, continue to be frequently presented with tools and gadgets that we might have never seen before^[Just think about fidget spinners, smart watches, or massage guns].
+We learn the names and functions of most visual objects as children but, in our ever more technology-driven world, continue to be frequently presented with tools and gadgets that we might have never seen before^[Just think about fidget spinners, smart watches, or massage guns.].
 Learning what these objects are for or how to use them often makes them appear in a different light:
 We may get a kind of "aha" experience from understanding what we see and this may change how we perceive the objects and their visual features.
 For example, most people will not have encountered the object in Figure\ \ref{fig:task}C at any point in their life, and will not have an intuition what this object is for or how to use it.
