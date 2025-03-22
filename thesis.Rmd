@@ -63,6 +63,7 @@ opts_chunk$set(
 ```
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
 
 \thispagestyle{empty}
 \begin{center}
@@ -103,6 +104,8 @@ Tag der mündlichen Prüfung: XX.XX.XXXX
 
 \thispagestyle{empty}
 
+\setlength\parindent{0pt}
+
 # Zusammenfassung {.unlisted .unnumbered}
 
 Wie schafft es unser Gehirn die Dinge zu verstehen, die unsere Augen sehen?
@@ -110,12 +113,12 @@ Wir nehmen unsere Umwelt nicht nur als einen Mix aus Formen und Farben war, sond
 Außerdem können wir Schriftzeichen, auf Papier gedruckt oder auf einen Bildschirm angezeigt, benutzen, um Informationen über Zeit und Raum hinweg zu übertragen, wie zum Beispiel diese Worte, die Sie gerade lesen.
 In dieser Dissertation präsentiere ich drei Studien, die sich mit verschiedenen Aspekten des Lernens visuell-semantischer Information beschäftigen, also damit, wie wir Bedeutung aus visuellem Input extrahieren, und wie diese Bedeutung wiederum die visuelle Wahrnehmung beeinflusst.
 Ich gebe einen Überblick über das visuelle und semantische System im menschlichen Gehirn bei Erwachsenen und stelle eine Meta-Analyse von Studien vor, welche mittels funktioneller Magnetresonanztomographie (fMRT) die Hirnaktivität bei semantischer Verarbeitung bei Kindern gemessen haben.
-Dabei zeigte sich, dass bei semantischer Verarbeitung bei Kindern und Erwachsenen größtenteils dieselben Hirnareale aktiv sind und sich also das semantische Netzwerk im Gehirn vom Kindes- zum Erwachsenenalter nur wenig zu verändern scheint.
-Danach präsentiere ich zwei experimentelle Studien zum Lernen neuer visuell-semantischer Information.
+Dabei zeigte sich, dass bei semantischer Verarbeitung bei Kindern und Erwachsenen größtenteils dieselben Hirnareale aktiv sind und sich somit das semantische Netzwerk im Gehirn vom Kindes- zum Erwachsenenalter nur wenig zu verändern scheint.
+Danach präsentiere ich zwei experimentelle Studien über das Erlernen neuer visuell-semantischer Information.
 In der ersten dieser Studien haben mir mittels fMRT untersucht, wie sich die Hirnaktivität bei der Verarbeitung geschriebener und gesprochener Worte verändert, während Kinder lesen lernen.
 Dabei fanden wir Evidenz für nicht-lineare Veränderungen in der Hirnaktivität in verschiedenen Arealen des Neokortex sowie Hinweise auf eine Angleichung von visueller und auditiver Aktivität im ventralen okzipital-temporalen Kortex.
 In der letzten Studie haben wir untersucht, ob Erwachsene schnell die Funktion von zuvor unbekannten visuellen Objekten erlernen können und ob dieses semantische Wissen beeinflusst, wie die Objekte visuell wahrgenommen werden.
-Wir fanden (mittels Elektroenzephalographie; EEG), dass das Verständnis für die Funktion eines Objekts nicht nur spätere, kognitive Prozesse (N400-Komponente) beeinflusst, sondern auch frühe Prozesse innerhalb der ersten 200 ms nach Präsentation des Objekts (P1- und N170-Komponente).
+Mittels Elektroenzephalographie (EEG) fanden wir heraus, dass das Verständnis für die Funktion eines Objekts nicht nur spätere, kognitive Prozesse (N400-Komponente) beeinflusst, sondern auch frühe Prozesse innerhalb der ersten 200 ms nach Präsentation des Objekts (P1- und N170-Komponente).
 Dies deutet darauf hin, dass semantische Information unmittelbar auf das visuelle System zurückwirken kann.
 Neben den Ergebnissen beschreibe ich die Methoden, welche für die hier beschriebenen Studien neu entwickelt wurden, in der Hoffnung, dass diese auch in zukünftigen Projekten nachgenutzt werden können.
 Abschließend diskutiere ich die Bedeutung der vorliegenden Ergebnisse sowie die Limitationen meiner Studien und der Forschung in diesem Bereich der kogntiiven Neurowissenschaften im Allgemeinen.
@@ -152,39 +155,41 @@ I also provide details on some of the analysis methods developed for the present
 
 # Introduction
 
-In this thesis, I present three empirical studies on how humans learn to see meaning in visual words and objects.
+In this thesis, I present three empirical studies on how humans learn to extract meaning from written words and visual objects.
 This question may seem like a very broad one and, as you will see, and as is so often the case in science, I cannot claim that I have found a clear and meaningful answer.
-Instead, I invite you to view these studies as three very different examples of how visual-semantic development can be studied.
-In fact, the three studies are so different from one another that I will not try to pretend that they were planned to build up on or logically follow from one another, because that simply was not the case.
-Instead, I have personally always been interested in how our brain makes sense of the raw visual input that it gets, and how in turn this understanding might feed back into how we see the world around us.
+Instead, I invite you to view these studies as three different examples of how visual-semantic development can be studied.
+In fact, the three studies are so different from one another that I cannot pretend that they were planned to build up on each other or logically follow from one another.
+Instead, I have always been interested in how our brain makes sense of the raw visual input that it gets, and how in turn this understanding might feed back into how we see the world around us.
 This has led me to pursue different research projects on different aspects of visual-semantic development throughout the course of my dissertation period.
 In this thesis, I present the outcomes of these different projects in the form of the original research articles as well as an introduction and discussion in which I provide an overview of the context of the different studies and how their results may inform one another as well as future research.
 
 The thesis is structured as follows: In this Introduction, I will start out by introducing the cognitive-neuroscientific methods that are typically used to study visual and semantic processing non-invasively in humans.
 I will then briefly review common knowledge about the visual and semantic systems in the human brain as well as how they may interact with one another.
 I will then introduce two specific examples of visual-semantic development, namely learning to understand written words and learning to understand visual objects.
-My review of the brain's semantic system forms the basis of the first original research study included in this thesis, whereas the two examples of learning to understand written words and visual objects form the basis of the second and third original research study, respectively.
+My review of the brain's semantic system forms the basis of the first research study included in this thesis, whereas the two examples of learning to understand written words and visual objects form the basis of the second and third research study, respectively.
 
 Following the Introduction, I provide a brief summary of each of the three studies, including their theoretical background, research question, methods, and results.
 Finally, in the Discussion, I will summarize the main results of this thesis and how they interact with one another.
 I will also point out future research directions based on each of the different projects as well as their interactions.
 I will close with some more speculative remarks about what currently hampers us from gaining a deeper understanding about how the brain learns to make sense of the visual world.
 
-Following the main text, the reader will find the reference section, a reprint of the three original papers, as well as an acknowledgment of the people who have supported me while working on this dissertation.
+Following the main text, the reader will find the reference section, a reprint of the three research studies, as well as an acknowledgment of the people who have supported me while working on this dissertation.
 
 ## Cognitive-neuroscientific methods
 
 Studying how the brain solves the task of making sense of visual information requires methods to measure brain activity while humans engage in tasks that require visual-semantic processing.
 This is not straightforward:
 For centuries, all that philosophers and scientists had access to was the input (What does a person see?) and the output (What does the person say or how do they behave?), whereas the actual processing inside the skull used to be a black box.^[An exception to this was the *post mortem* analysis of brain lesions and their association with certain behavioral particularities.]
-This changed in the last century, and especially in the last three decades, with the advent of non-invasive recording and imaging techniques, especially electroencephalography (EEG) and magnetic resonance imaging (MRI).
+This changed in the last century, and especially in the last few decades, with the advent of non-invasive recording and imaging techniques, especially electroencephalography (EEG) and magnetic resonance imaging (MRI).
 
 In EEG, electrodes are placed on the head of a human participant and connected to their scalp using an electroconductive gel.
 These electrodes are then able to pick up the electric fields created by the postsynaptic potentials of large neuronal populations along the cortical sheet of the brain.
 These measured amplitudes, which are typically on the order of a few microvolts, are a direct measure of neural activity (plus noise from the recording environment).
 Most crucially, modern EEG devices can sample these amplitudes at a frequency of 500--2000 Hz (i.e., one sample every 2 to 0.5 ms), which is as high or higher than the timing of the postsynaptic potentials themselves, allowing researchers to track cortical information processing in real time.
-The two major downsides of EEG recordings are (a) that they are very noisy, therefore making it necessary to collect and average a large number of trials to extract the signal of interest from background noise, and (b) the low spatial specificity, since the voltage measured at any specific electrode is a complex mixture of signals that come from different areas of the brain (the "inverse problem"), due to volume conduction and different orientations of source dipoles depending on the folding of the neocortex.
-It is therefore difficult to impossible to link the EEG signal measured on the scalp to the specific neuronal population (or populations) having generated it.
+However, there are two major downsides of EEG recordings.
+The first is that they are very noisy, therefore making it necessary to collect and average a large number of trials to extract the signal of interest from background noise.
+The second is the low spatial specificity, since the voltage measured at any specific electrode is a complex mixture of signals that come from different areas of the brain (the "inverse problem"), due to volume conduction and different orientations of source dipoles depending on the folding of the neocortex.
+It is therefore difficult to impossible to link the EEG signal measured on the scalp to the specific neuronal populations having generated it.
 Nevertheless, EEG is an excellent tool to study the temporal sequence of cognitive processing in a comparatively low-cost and non-invasive fashion.
 
 In MRI, the human participant is lying in an MRI scanner with a strong static magnetic field (typically on the order of 1.5--7 Tesla), which aligns the spins of Hydrogen protons in the brain.
@@ -192,14 +197,16 @@ Then, a radio-frequency (RF) pulse is sent to push the protons into a higher lev
 Once the RF pulse is turned off, the protons fall back into their original level ("relaxation"), emitting energy that gets picked up by a metal coil around the head.
 The timing of the relaxation depends on properties of the tissue, while specific additional magnetic gradients are used to encode the location of the signal being measured.
 This makes it possible to reconstruct an image of the local structural or functional properties of the brain based on the signal measured from each spatial unit ("voxel") encoded via the magnetic field.
-In structural MRI (sMRI), the scanning sequence is created such that it measures differences in T1 or T2 relaxation times, therefore creating an image in which the intensity of the voxels depends on their fat content, which differs between gray matter (i.e., neuronal cell bodies), white matter (i.e., neuronal fibres), and cerebro-spinal fluid (CSF), thus providing a static high-resolution anatomical image of the brain.
+In structural MRI (sMRI), the scanning sequence is created such that it measures differences in T1 or T2 relaxation times.
+This creates an image in which the intensity of the voxels depends on their fat content, which differs between gray matter (i.e., neuronal cell bodies), white matter (i.e., neuronal fibres), and cerebro-spinal fluid (CSF), thus providing a static high-resolution anatomical image of the brain.
 In functional MRI (fMRI), the scanning sequence measures the T2* relaxation time, which is sensitive to the blood oxygenation of the tissue.
 Since local neuronal activity requires oxygen, active brain areas receive an increase in blood flow and blood volume, which increases the local amount of oxyhemoglobin and decreases the amount of local deoxyhemoglobin, in turn leading to an increase in the measured T2* signal.
-By tracking the signal intensity at every voxel over time, that is, by reading out a whole-brain image of the T2* signal every couple of seconds, one can track the relative change in blood oxygenation (the "blood oxygen level dependent" [BOLD] effect) over time and interpret this as a measure of which brain areas are comparatively more or less active and how this activity co-varies with a certain experimental manipulation (e.g., which brain areas show an increase in BOLD activity when processing faces as compared to houses).
+By tracking the signal intensity at every voxel over time, that is, by reading out a whole-brain image of the T2* signal every couple of seconds, one can track the relative change in blood oxygenation over time, which is referred to as the blood oxygen level dependent (BOLD) effect.
+The BOLD effect is often interpreted as a measure of which brain areas are comparatively more or less active and how this activity co-varies with a certain experimental manipulation (e.g., which brain areas show an increase in BOLD activity when processing faces as compared to houses).
 However, it is important to keep in mind that BOLD activity measures changes in local blood oxygenation and is therefore only an indirect proxy of neuronal activity.
 Furthermore, the temporal resolution of fMRI is much worse than that of EEG, (a) because it typically takes approximately 2 s to sample every location in the brain and (b) because the haemodynamic response, that is, the increase in blood flow following an increase in local neuronal activity, takes a couple of seconds to unfold, even though the underlying neuronal activity happens on the order of microseconds.
 The spatial resolution, on the other hand, is much better than in EEG, as fMRI measures each individual voxel inside the brain and therefore does not suffer from the inverse problem.
-Still, a typical voxel in fMRI is 8 to 27 mm^3^ in size and therefore contains at least multiple hundreds of thousands neurons [@shapson-coe2024], making it impossible to gain an insight into any neuronal circuit level processing.
+Still, a typical voxel in fMRI is 8 to 27 mm^3^ in size and therefore contains at least multiple hundreds of thousands of neurons [@shapson-coe2024], making it impossible to gain an insight into any neuronal circuit-level processing.
 Instead, fMRI can be used to identify which cognitive functions reliably engage which larger brain areas [think of the Brodmann areas or more modern whole-brain atlases, e.g., @destrieux2010; @glasser2016; @schaefer2018; @yeo2011] relative to some control condition.^[Note, however, the common pitfall that when brain area *A* shows a significant change in BOLD activity while area *B* does not, this cannot be interpreted as area *A* being more active than area *B* without explicitly testing the \textit{task} \texttimes \textit{area} interaction effect [@nieuwenhuis2011].]
 
 ## The visual system
@@ -292,10 +299,10 @@ include_graphics(here("figures", "semantic-brains.png"))
 **B** Brain areas representing specific semantic dimensions in a naturalistic task (story listening), estimated by fitting an encoding model of high-dimensional semantic representations of the words in the story to the time series of each voxel [for details, see @huth2016]. 
 Adapted from @deniz2019 under the terms of the CC BY License.
 
-More recently, studies have emerged that moved beyond simple semantic task contrasts and tried to track semantic processing under more naturalistic circumstances, e.g., by scanning participants while viewing movies or listening to audio books or radio programmes.
-One can then label the objects or words at each time point in the movie or audio stream, represent these concepts as vectors in a high-dimensional semantic space (e.g., from a word embedding or neural network model), and correlate the timeseries of these dimensions with the time series of the measured brain activity [e.g., @deniz2019; @huth2012; @huth2016].
+More recently, studies have emerged that moved beyond simple semantic task contrasts and tried to track semantic processing under more naturalistic circumstances, e.g., by scanning participants while viewing movies or listening to audio books or radio programmes [e.g., @deniz2019; @huth2012; @huth2016].
+One can then label the objects or words at each time point in the movie or audio stream, represent these concepts as vectors in a high-dimensional semantic space (e.g., from a word embedding or neural network model), and correlate the timeseries of these dimensions with the time series of the measured brain activity.
 Variants of these techniques usually show a somewhat different picture from the univariate semantic contrasts described above, with different concepts and semantic dimensions being scattered across almost the entire cortex, including areas that have typically not been thought to be engaged in semantic processing (see Figure\ \ref{fig:semantic-brains}B).
-While these different results clearly stem from the vastly different experimental designs and analysis choices [for a systematic discussion, see @frisby2023], there is as of yet not a clear path for integrating these different lines of research into an overarching theory of semantic processing in the human brain.
+While these different results clearly stem from the vastly different experimental designs and analysis choices [for a systematic discussion, see @frisby2023], there is not yet a clear path for integrating these different lines of research into an overarching theory of semantic processing in the human brain.
 
 ## Visual-semantic interfaces
 
@@ -323,8 +330,8 @@ include_graphics(here("figures", "task.png"))
 
 For most readers of this thesis, the black curves and lines displayed in Figure\ \ref{fig:task}A will not bear much meaning.
 Your visual system will process them just fine, representing the visual input from each location in the retina into one coherent percept of black squiggles on a gray background.
-You may even guess correctly that these are strings of letters, and therefore you may get some none-zero response in your visual word form area (VWFA), which is tuned to recognize written words (see Section\ \ref{the-visual-system} and Figure\ \ref{fig:vision}).
-However, when asked to read these letter strings aloud, decide if they are words or non-words, or decide if they are related to one another or not, you would very likely be puzzled (unless you happen to know Hindi).
+You may even guess correctly that these are strings of letters, and therefore you may get some non-zero response in your visual word form area (VWFA), which is tuned to recognize written words (see Section\ \ref{the-visual-system} and Figure\ \ref{fig:vision}).
+However, when asked to read these letter strings aloud, decide if they are words or non-words, or decide if they are related to one another or not, you would very likely be puzzled unless you happen to know Hindi.
 This is because most readers will have been trained to read in a different writing system, most likely the Latin alphabet, which they can use effortlessly to convert written letters into spoken language and vice versa, as you will see when looking at the English translation of the Hindi words, shown in Figure\ \ref{fig:solution}A.
 
 When looking at the Hindi words in Figure\ \ref{fig:task}A, you find yourself in a similar situation as most beginning readers for their "native" script.
@@ -372,7 +379,7 @@ In the third study included in this thesis (see Sections \ref{instant-effects-of
 
 ## A meta-analysis of fMRI studies of semantic cognition in children
 
-In this first^[Note that order in which the studies are presented in this thesis was based on their content and logical flow, not on their chronological order of publication.] study [@enge2021], we provide a quantitative synthesis of the brain areas involved in semantic processing children.
+In this first^[Note that order in which the studies are presented in this thesis was based on their content and logical flow, not on their chronological order of publication.] study [@enge2021], we provide a quantitative synthesis of the brain areas involved in semantic processing in children.
 To this end, we conducted a meta-analysis of all available fMRI studies in children that probed different aspects of semantic cognition, including semantic knowledge (e.g., naming an object after hearing a verbal description), semantic relations (e.g., deciding if a pair of words belong together or not), and visual object categorization (e.g., viewing object images from different semantic categories).
 
 Meta-analysis is a useful tool to synthesize the research literature within a relatively narrow domain [@glass1976; @hedges1985; @harrer2021].
@@ -381,9 +388,11 @@ To get a slightly more reliable and balanced view of the research outcomes in a 
 By doing so, a meta-analysis can (a) show which effects reported in the original papers are likely to be robust and replicable, thereby reducing the number of false positives, and (b) identify novel effects that individual original papers might not have had the statistical power to detect, thereby reducing the number of false negatives [@schmidt2015].
 
 In the fMRI literature, the evidential status of the results of individual papers is especially doubtful.
-This is because, compared to behavioral studies and neuroscientific studies using "cheaper" methods (e.g., EEG), data collection is at least an order of magnitude more costly and depends on the availability of specialized hardware and expertise.
+This is because, compared to behavioral and neuroscientific studies using "cheaper" methods (e.g., EEG), data collection is at least an order of magnitude more costly and depends on the availability of specialized hardware and expertise.
+This typically leads to smaller sample sizes and, therefore, lower statistical power and less reliable estimates [@button2013; @szucs2017; @szucs2020].
 At the same time, data preprocessing and analysis methods are highly complex, which introduces many potential sources of error and researcher degrees of freedom.
-Within the fMRI literature, developmental studies are especially prone to these problems because it is more difficult to recruit children (as compared to, e.g., psychology undergraduate students in need of course credit or monetary compensation) and because children tend to show lower levels of compliance and higher levels of head motion, which reduces the amount of data that can be collected as well as its quality.
+Within the fMRI literature, developmental studies are especially prone to these problems because it is more difficult to recruit children as compared to, e.g., psychology undergraduate students in need of course credit or monetary compensation.
+Furthermore, children tend to show lower levels of compliance and higher levels of head motion, which reduces the amount of data that can be collected as well as its quality.
 
 Our goal was therefore to identify and meta-analyze all available fMRI studies on semantic cognition in children, building up on previous fMRI meta-analyses on semantic cognition in adults [@binder2009; @jackson2021; @rodd2015; @vigneau2006; @visser2010] as well as on our own previous fMRI meta-analysis on language processing in children [@enge2020].
 Using three online databases, we identified approximately 1,000 articles based on our keyword search, 45 of which fulfilled all of our inclusion criteria.
@@ -405,25 +414,25 @@ Finally, we used two previously established empirical techniques to examine the 
 These analyses showed that all of our clusters from the main analysis and almost all clusters from the sub-analyses of task types were reliable, even if there were spurious original experiments or strong publication bias.
 
 Taken together, our meta-analysis is the first of fMRI experiments on semantic cognition in children, and showed strong evidence for a reliably activated semantic network that is remarkably similar to those reported in the adult fMRI literature [for meta-analysis, see, e.g., @binder2009; @jackson2021].
-We found that experiments with linguistic materials (semantic world knowledge and relatedness judgments) reliably activated the same regions in the left inferior frontal and bilateral premotor cortices, whereas visual object categorization experiments activated a distinct set of regions in posterior brain areas (bilateral fusiform and right occipital cortices).^[Potentially casting doubt on our decision to lump the latter type of experiments together with the former into one meta-analysis, as visual object category processing may be based purely on differences in lower-level visual features and may not necessarily engage higher-level semantic processing].
-Despite the large overlap between our meta-analytic results and previous meta-analytic results in adults [@jackson2021], there were a few reliable differences.
+We found that experiments with linguistic materials (semantic world knowledge and relatedness judgments) reliably activated the same regions in the left inferior frontal and bilateral premotor cortices, whereas visual object categorization experiments activated a distinct set of regions in posterior brain areas (bilateral fusiform and right occipital cortices).^[Potentially casting doubt on our decision to lump the latter type of experiments together with the former into one meta-analysis, as visual object category processing may be based purely on differences in lower-level visual features and may not necessarily engage higher-level semantic processing.]
+Despite the large overlap between our meta-analytic results and previous meta-analytic results in adults [@jackson2021], there were a few statistically significant differences.
 The most striking of these was that there was significantly less reliable activation in children in the anterior part of the left temporal lobe, an area associated with very high-level and amodal semantic processing in adults [e.g., @lambonralph2017; @patterson2007].
-This difference may point to the fact that this "semantic hub" may not yet be fully developed in children at the typical age included in our meta-analysis (mostly 8--12 years; see Figure~3 in the original paper).
+This difference may point to the fact that this "semantic hub" may not yet be fully developed in children at the typical age included in our meta-analysis (mostly 8--12 years; see Figure 3 in the original paper).
 
-We have shared the data and analysis code of our meta-analysis on the Open Science Framework (<https://osf.io/34ry2>) and on GitHub (<https://github.com/SkeideLab/meta_semantics>) so that they can be scrutinized and reused.^[At the time of writing, three new meta-analyses on completely different topics have acknowledged reusing our scripts [@bortolini2024; @cui2022; @yang2024].]
+We have shared the data and analysis code of our meta-analysis on the Open Science Framework (<https://osf.io/34ry2>) and on GitHub (<https://github.com/SkeideLab/meta_semantics>) so that they can be scrutinized and reused.^[At the time of writing, three new meta-analyses have acknowledged reusing our scripts [@bortolini2024; @cui2022; @yang2024].]
 
 ## Tracking the neural correlates of learning to read with dense-sampling fMRI
 
-In this second study [@enge2024], we focused on children's learning to read as one case example for the human brain learning to associate visual shapes with semantic (as well as phonological) information.
-Learning to read is a major step in most people's cognitive development and is of great importance for the rest of our lives (for instance, allowing you to engage with this PhD thesis).
+In this second study [@enge2024], we focused on children's learning to read as one case example for the human brain learning to associate visual shapes with semantic as well as phonological information.
+Learning to read is a major step in most people's cognitive development and is of great importance for the rest of their lives (for instance, allowing you to engage with this PhD thesis).
 Given that from a phylogenetic point of view, reading is a fairly recent phenomenon, it is not at all obvious that most human beings alive nowadays at some point in their lives become able to absorb and transmit semantic information via small and somewhat arbitrary black symbols printed on the page of a book or rendered on a digital screen.
 Yet, this is exactly what happened over the course of the last few millennia, rapidly picking up over the past ~500 years, and in turn fueling many other great achievements of humankind, such as science and technology.
 
 Unlike reading and writing, spoken language has been part of human culture and everyday life for hundreds of thousands of years, which left enough time to evolve dedicated brain hardware and neural mechanisms for spoken language comprehension and production [for review, see, e.g., @fedorenko2024; @ferstl2008; @friederici2017; @hagoort2016; @hickok2007].
-It is therefore unsurprising that human babies pick up spoken language comprehension quickly and relatively effortlessly within typically less than 2 years of age [for review, see @friederici2006; @skeide2016], with certain aspects of speech processing already functioning *in utero* [e.g., @ghio2021].
+It is therefore unsurprising that human infants pick up spoken language comprehension quickly and relatively effortlessly within typically less than 2 years of age [for review, see @friederici2006; @skeide2016], with certain aspects of speech processing already functioning *in utero* [e.g., @ghio2021].
 Reading, on the other hand, requires years of explicit instruction and is typically only learned during the kindergarten and primary school age (typically 5--8 years).
 During the process of learning to read, a child's brain needs to become able to (a) reliably recognize letters and strings of letters in one's own writing system and distinguish them from other visual kinds of visual objects, (b) become able to link individual letters to their corresponding speech sounds to enable decoding of written words, and (c) as the child becomes more proficient, learn to access the meaning of an entire word from its visual word form [@frith1986; @ehri2005].
-While the first aspect (visual word form recognition) has received much attention in the cognitive neuroscience of reading and reading development [e.g., @cohen2000; @dehaene-lambertz2018; @dehaene2011], the latter two aspects (linking visual words to spoken language and linking visual words to word meaning) have received much less attention [but see, e.g., @vin2024].
+While the first aspect (visual word form recognition) has received much attention in the cognitive neuroscience of reading and reading development [e.g., @cohen2000; @dehaene-lambertz2018; @dehaene2011], the two following processes of linking visual words to spoken language and linking visual words to word meaning have received much less attention [but see, e.g., @vin2024].
 
 Studying the neural correlates of learning to read requires to take repeated measurements of brain activity (e.g., using EEG or fMRI) while children are participating in reading instruction.
 Doing so is often difficult for a number of reasons, including the fact that reading instruction is typically confounded with other aspects of schooling and general cognitive development, the difficulty of recruiting children and their families at the right age and for a prolonged period of time, the difficulty of collecting sufficiently large quantities of high-quality data (e.g., due to children's lower attention span and increased head motion during MRI scanning), and a lack of readily available statistical models and toolboxes for longitudinal analysis of neuroimaging data.
@@ -434,10 +443,10 @@ We expected that learning to read would cause an increase in brain activity in b
 We also expected that the multi-voxel response patterns in audio-visual processing areas (e.g., the left posterior temporal sulcus; pSTS) would become more similar between written and spoken words as the brain learns to connect the former to the latter.
 Finally, we expected that responses to written words would become more similar to each other, that is, more stable from one scanning session to the next, as the brain becomes more finely tuned to visual letters.
 
-We acquired fMRI from two groups of children in the region of Uttar Pradesh, India, which had no access to public schooling and received approximately 1.5 years of reading instruction (intervention group) or math instruction (active control group) as part of our study.
+We acquired functional MRI (fMRI) from two groups of children in the region of Uttar Pradesh, India, which had no access to public schooling and received approximately 1.5 years of reading instruction (intervention group) or math instruction (active control group) as part of our study.
 For the purpose of the present paper, only the data from the reading instruction group was analyzed.
 The participants completed up to 6 experimental sessions, spaced at irregular intervals of approximately 2--3 months.
-During these sessions, we acquired a structural MRI scan, a functional MRI (fMRI) scan, and behavioral data on standardized tests of reading skills, maths skills, working memory, and general cognitive ability.
+During these sessions, we acquired a structural MRI scan, an fMRI scan, and behavioral data on standardized tests of reading skills, maths skills, working memory, and general cognitive ability.
 During the fMRI scan, children were presented with short blocks of written words, written pseudowords, and written low-level control stimuli (false fonts), as well as spoken words, spoken pseudowords, and spoken low-level control stimuli (noise-vocoded speech).
 We analyzed these longitudinal data using linear mixed-effects models to test for linear and non-linear changes in behavioral test scores, BOLD activity amplitude, multi-voxel audio-visual pattern similarity, and multi-voxel within-condition pattern stability.
 For this purpose, we created a novel implementation of whole-brain linear mixed-effects model using the high-performance programming language Julia [@bezanson2017], which we hope may be re-used for future longitudinal fMRI studies [for previous implementations of whole-brain linear mixed-effects models using the somewhat slower programming language R, see @chen2013a; @madhyastha2018].
@@ -447,9 +456,9 @@ Additionally, there also was a statistically significant improvement in two subt
 The other subtests of reading skills (picture naming, verbal fluency, and word, pseudoword, and passage reading time) showed no significant change, as did the other subtests of working memory (Corsi block test forward and backward, backward digit span) and the test for general cognitive ability (Raven's Progressive Colored Matrices).
 
 In the analysis of whole-brain BOLD activity amplitudes, we found robust sensory activation in the auditory cortex (bilateral superior temporal gyri and sulci) for all auditory conditions (spoken words, pseudowords, and low-level controls) and in the visual cortex (from early visual cortex to the ventral occipto-temporal cortex) for all visual conditions (written words, pseudowords, and low-level controls).
-However, there were only very few and small clusters that showed a significant change (linear or non-linear) in BOLD activity amplitude over the course of the study.
+However, there were only very few and small clusters that showed a statistically significant change (linear or non-linear) in BOLD activity amplitude over the course of the study.
 There were some non-linear changes for spoken stimuli in the auditory cortex and for written stimuli in the visual cortex, but their shape did not follow a pattern that we had predicted.^[We had predicted a linear increase of BOLD activity or a non-linear, negative quadratic pattern (i.e., an inverted "u" shape), based on a previous study [@dehaene-lambertz2018] and based on the expansion and renormalization model of brain plasticity [@wenger2017]. What we observed in most clusters was a positive quadratic pattern (i.e., a "u" shape), which seems difficult to interpret in the context of brain plasticity and skill development.]
-For the contrast of written words versus written low-level controls, there was one cluster at the ventral posterior cingulate cortex that showed an increase in BOLD activity over the first ~6 months of the study, followed by a decline over the remaining ~10 months, as we had predicted.
+For the contrast of written words versus written low-level controls, there was one cluster at the ventral posterior cingulate cortex that showed an increase in BOLD activity over the first approximately 6 months of the study, followed by a decline over the remaining approximately 10 months, as we had predicted.
 However, this cluster was very small, the individual BOLD activity curves of individual participants in this cluster were very variable, and this anatomical location has typically not been considered as part of the visual word form recognition or language networks, therefore casting doubt on the reliability and meaningfulness of this finding.
 
 In the analysis of multi-voxel audio-visual pattern similarity, we found that over the course of the study, BOLD activity patterns in the left ventral occipito-temporal (vOT) cortex became more similar over time for the pair of contrasts of spoken words versus low-level controls and written words versus low-level controls.
@@ -477,13 +486,16 @@ This latter question has sparked endless debate among cognitive scientists.
 Some argue that perception and cognition are two distinct processing stages and that perception takes place in a feed-forward, modular fashion, and then passes on its outputs to other higher-level systems (e.g., those processing semantic information or emotions) but cannot itself be influenced by them [e.g., @dicarlo2012; @firestone2016; @fodor1983; @fodor1984; @machery2015; @pylyshyn1999].
 Others argue that this distinction between perception and cognition cannot be maintained and/or that cognition interacts with perception in a top-down fashion from the earliest stages of sensory processing on [e.g., @ahissar2004; @churchland1994; @clark2013; @friston2009; @lupyan2020; @thierry2016; @vonhelmholtz1867; @yuille2006].
 Recent empirical evidence by and large supports the latter view.
-It has been shown that emotional, linguistic, and semantic information can change the response to visually identical stimuli in terms of behavioral measures [e.g., @gauthier2003; @phelps2016; @slivac2021], the BOLD response in visual cortex as measured with fMRI [e.g., @clarke2016; @hsieh2010], and early ERP components in the EEG [e.g., abdelrahman2008; @boutonnet2015; @samaha2018].
-The latter type of evidence seems especially informative because the high temporal resolution of the EEG (on the order of microseconds, directly capturing cortical postsynaptic potentials) allows to test how early during processing one can detect high-level (e.g., linguistic or semantic) influences [see @athanasopoulos2020 for an extended version of this argument].
+It has been shown that emotional, linguistic, and semantic information can change the response to visually identical stimuli in terms of behavioral measures [e.g., @gauthier2003; @phelps2016; @slivac2021], the BOLD response in visual cortex [e.g., @clarke2016; @hsieh2010], and early ERP components in the EEG [e.g., @abdelrahman2008; @boutonnet2015; @samaha2018].
+The latter type of evidence seems especially informative because the high temporal resolution of the EEG (on the order of microseconds, directly capturing cortical postsynaptic potentials) allows to test how early during processing one can detect high-level linguistic or semantic influences [see @athanasopoulos2020 for an extended version of this argument].
 For instance, our research group and others have shown that having participants learn semantic information about previously unknown visual stimuli elicits not only differences in relatively late, semantic ERP components (e.g., the N400 component), but also in early ERP components typically associated with visual perception [e.g., the P1 component\; @abdelrahman2008; @boutonnet2015; @maier2019; @samaha2018; @weller2019].
 However, all of these previous studies have used an extensive training phase in which participants learned to associate the visual stimuli with semantic information, whereas the EEG was only measured and analyzed after this learning had taken place.
 
 In our study, we wanted to test if learning semantic information about previously unknown visual objects affects visual perception instantly, that is, directly as this information is being acquired and the function of the object is being understood.
-To this end, we presented participants with images of existing but rare visual objects (e.g., a galvanometer) in three separate phase: First, without any information, to probe if the objects were indeed unknown to participants, second, with a brief verbal description that allowed participants to understand what kind of object they were seeing, and third, again without any information, to test for downstream effects of the understanding acquired in the second phase.
+To this end, we presented participants with images of existing but rare visual objects (e.g., a galvanometer) in three separate phase.
+In the first phase, we presented the objects without any information, to probe if they were indeed unknown to participants.
+In the second phase, we presented a brief verbal description before the object that allowed participants to understand what kind of object they were seeing.
+In the third phase, we again presented the objects without any information, to test for downstream effects of the understanding acquired in the second phase.
 Crucially, in the second phase, we presented half of the objects with the correct, matching verbal descriptions, which typically allowed participants to form a correct understanding of the object, and the other half of the object with an incorrect, non-matching verbal description, which typically precluded such an understanding.^[Note that we used participants' behavioral reports to verify that this manipulation worked as intended, and, on a participant-by-participant basis, we only included those objects in the analysis for which it did.]
 This allowed us to compare responses to the same visual objects with and without a semantic understanding, and to do so before, while, and after this understanding had happened.
 
@@ -545,18 +557,18 @@ In the re-implementation which I created for the @enge2023a paper and subsequent
 
 (5) releasing the code as a package (using the Python Package Index, see <https://pypi.org/project/hu-neuro-pipeline>), instead of as a collection scripts, so that it can be installed and imported more easily,
 
-(5) releasing the code under version control, so that users can examine and install older versions of the package,
+(6) releasing the code under version control, so that users can examine and install older versions of the package,
 
-(6) adding a publicly accessible documentation website (see <https://hu-neuro-pipeline.readthedocs.io>) that explains the installation, usage, and processing details of the pipeline, both for Python and R users, and
+(7) adding a publicly accessible documentation website (see <https://hu-neuro-pipeline.readthedocs.io>) that explains the installation, usage, and processing details of the pipeline, both for Python and R users, and
 
-(7) creating publicly accessible course materials on the pipeline package itself (see <https://github.com/alexenge/hu-neuro-pipeline-workshop>), time frequency analysis (see <https://github.com/alexenge/tfr-workshop>), and EEG analysis in general (see <https://alexenge.github.io/intro-to-eeg>).
+(8) creating publicly accessible course materials on the pipeline package itself (see <https://github.com/alexenge/hu-neuro-pipeline-workshop>), time frequency analysis (see <https://github.com/alexenge/tfr-workshop>), and EEG analysis in general (see <https://alexenge.github.io/intro-to-eeg>).
 
-The pipeline is designed with a user-interface that consists of one high-level function, `pipeline.group_pipeline`, that can be used to process the raw data from an EEG group study up to the point where the data are ready for single trial LMM modeling.
-More precisely, it reads the raw data from each participant, optionally resamples it to a lower sampling rate, optionally interpolates any bad channels (which can also be automatically detected), re-references the data (per default to an average reference), optionally performs eye artifact correction (using the semi-automatic multiple source eye correction procedure or fully automatic independent component analysis [ICA]), filters the data in the frequency domain (per default between 0.1 and 40 Hz), segments the continuous data into epochs based on event markers, reads any accompanying behavioral-experimental log files and matches them to the corresponding EEG epochs, rejects "bad" epochs based on a peak-to-peak amplitude threshold, and computes the single trial amplitudes for any EEG components of interest by averaging across their *a priori* defined time windows and regions of interest.
-At the group level, the pipeline combines the single trial amplitudes from all participants into one large data frame that can be used as-is for LMM modeling, e.g., using the `lmer` function from the `lme4` package in R [@bates2015].
+The pipeline is designed with a user-interface that consists of one high-level function, `pipeline.group_pipeline`, that can be used to process the raw data from an EEG group study up to the point where the data are ready for single trial LMM analysis.
+More precisely, it reads the raw data from each participant, optionally resamples it to a lower sampling rate, optionally interpolates any bad channels (which can also be automatically detected), re-references the data (per default to an average reference), optionally performs eye artifact correction (using the semi-automatic multiple source eye correction procedure or fully automatic independent component analysis), filters the data in the frequency domain (per default between 0.1 and 40 Hz), segments the continuous data into epochs based on event markers, reads any accompanying behavioral-experimental log files and matches them to the corresponding EEG epochs, rejects "bad" epochs based on a peak-to-peak amplitude threshold, and computes the single trial amplitudes for any EEG components of interest by averaging across their *a priori* defined time windows and regions of interest.
+At the group level, the pipeline combines the single trial amplitudes from all participants into one large data frame that can be used as-is for LMM analysis, e.g., using the `lmer` function from the `lme4` package in R [@bates2015].
 Additionally, the pipeline also outputs evoked potentials (i.e., averaged waveforms for all participants, experimental conditions, and channels) that can be used for visualization or to compare the statistical results from LMMs and $t$-tests or rmANOVAs, as well as a metadata file that can be referred to when wanting to check the parameters and software versions that were used when running the pipeline.
 
-In sum, the `hu-neuro-pipeline` package provides a relatively easy to use and state of the art EEG analysis pipeline that can be used for LMM analysis of single trial event-related potentials and time-frequency data.
+In sum, the `hu-neuro-pipeline` package provides a relatively user friendly and state of the art EEG analysis pipeline that can be used for LMM analysis of single trial event-related potentials and time-frequency data.
 Any questions, problems, or improvements to the package can be suggested via the issue tracking system on GitHub (<https://github.com/alexenge/hu-neuro-pipeline/issues>). 
 
 \newpage
@@ -568,7 +580,7 @@ In the first study, we conducted a meta-analysis of fMRI studies to identify the
 In the second study, we tested how learning to read during childhood, that is, learning to associate previously meaningless visual shapes with phonological and semantic information, changes amplitudes and patterns of brain activity in response to written and spoken words.
 In the third study, we tested if learning semantic information about previously unfamiliar visual objects changes early perception-related brain activity in response to these objects in adults.
 As mentioned in the introduction, these three studies had not been designed to strictly build up on each other and they are rather diverse in terms of their participant population, study design, and methods used to probe brain activity.
-Nevertheless, in this discussion I will try briefly to lay out some connections between our main findings and how they may or may not inform future research as wall as everyday life applications.
+Nevertheless, in this discussion I will briefly lay out some connections between our main findings and how they may or may not inform future research as wall as everyday life applications.
 
 ## Visual-semantic procesing in reading and object recognition
 
@@ -600,8 +612,8 @@ To that end, I also presented two original research studies that focused on two 
 In the study on learning to read, we used fMRI to track longitudinal changes in BOLD activity amplitude and BOLD activity patterns in response to written words.
 Children received reading instruction for approximately 1.5 years, during which they learnt to associate written letters (in the Hindi/Devanagari script) with speech sounds and word meaning.
 The design of our fMRI experiment included a comparison between real words, which carry both phonological and semantic information, and pseudowords, which carry the same amount of phonological information but do not carry any semantic information.
-This contrast between words and pseudowords, which is often used to isolate semantic processing [see the adult meta-analysis by @binder2009 and our developmental meta-analysis by @enge2021], did not elicit any reliable BOLD activation in any brain area.
-This is in contrast with our meta-analytic results, which showed a reliable network of regions (e.g., left MTG, left IFG, and bilateral dmPFC/pre-SMA) for this type of task.
+This contrast between words and pseudowords, which is often used to isolate semantic processing [@binder2009; @enge2021], did not elicit any reliable BOLD activation in any brain area.
+This is in contrast with our meta-analytic results, which showed a reliable network of regions for this type of task, including the left MTG, left IFG, and bilateral dmPFC/pre-SMA.
 It is worth noting that we presented all of our stimuli in two modalities (auditory/spoken and visual/written).
 The lack of semantic activation for *written* words versus pseudowords may be explained by the fact that within the 16 months of reading intervention, participants might not have become proficient enough to read and unerstand most of the words in the short period of time for which they were presented.
 However, we also did not observe any semantic activation for *spoken* words versus pseudowords, even though children at this age have typically fully developed spoken language comprehension skills [see, e.g., @skeide2016].
@@ -636,7 +648,7 @@ This does not seem necessary in order to understand most visual objects and act 
 However, more proficient readers rely less on this process of phonological recoding and are able to read visual words as a whole, likely treating them more similar to other visual objects that one has acquired expertise with through repeated presentation and through a reliable association between visual and semantic information.
 
 In our EEG study on object recognition, we found that learning semantic information, namely the function of the object, altered event-related potentials that are associated with visual perception of the object.
-Similar top-down effects of semantic knowledge [e.g., @abdelrahman2008; @maier2019; @samaha2018; @weller2019] and other kinds of non-visual information [e.g., language and emotion\; @boutonnet2015; @eiserbeck2024; @lupyan2020; @phelps2016; @thierry2016] are well established by now and speak for an interactive interplay between visual and higher-level cognitive functions [e.g., @ahissar2004; @churchland1994; @clark2013; @lupyan2015].
+Similar top-down effects of semantic knowledge [e.g., @abdelrahman2008; @maier2019; @samaha2018; @weller2019] and other kinds of non-visual information [e.g., language and emotion\; @boutonnet2015; @eiserbeck2024; @lupyan2020; @phelps2016; @thierry2016] are well established by now and speak for a tight interplay between visual and higher-level cognitive functions [e.g., @ahissar2004; @churchland1994; @clark2013; @lupyan2015].
 In reading research, on the other hand, the contrast between pseudowords and words is often used to isolate semantic processing, but it remains unknown if similar top-down effects exist, that is, if the visual perception of a word changes depending on knowing versus not knowing its meaning.
 
 ## Implications for future research
@@ -650,6 +662,7 @@ This is especially true given that older fMRI experiments (average year of publi
 Including additional (future) studies would also help to conduct more meaningful and sensitive sub-analyses, including the differences between different semantic task types and especially the difference between different age groups, both of which we attempted but were limited by the relatively low sample sizes of the sub-groups.
 Additionally, our classification of experiments into three different categories of semantic tasks (semantic world knowledge, semantic relatedness judgments, and object categorization) was created *ad hoc* based on the currently available studies.
 A more theory- and/or data-driven taxonomy of task types with finer-grained categories would certainly enhance meaningfulness of a future meta-analysis [see @poldrack2011; @poldrack2016 for an attempt to classify cognitive tasks and concepts].
+Finally, hope that with a growing number of shared datasets [e.g., @markiewicz2021] and statistical brain maps [e.g., @gorgolewski2015], future meta-analyses can be conducted in an image-based fashion, thereby taking into account the full whole-brain information from the original studies and overcoming the limitations of ALE and other coordinate-based methods.
 
 Our fMRI study on learning to read could be improved and built up upon in many different ways, most of which are mentioned in the Limitations section of the original paper, including a larger sample size, a longer and more structured reading intervention, and an event-related fMRI task design that reduces head motion and allows for stimulus-level analyses (e.g., representational similarity analysis).
 Two of the main novelties of our studies were (a) probing the influence of learning to read on phonological and semantic processes, not just visual processes [as in previous longitudinal studies\; e.g., @dehaene-lambertz2018], and (b) studying learning to read in a socio-economic setting and writing system (Hindi/Devanagari) that has traditionally been neglected in developmental cognitive neuroscience.
@@ -683,18 +696,19 @@ In part, this is driven by the limitations of non-invasive measurement technique
 While EEG offers excellent temporal resolution, it is only sensitive to the postsynaptic activity of large groups of cortical pyramidal neurons, and even these cannot be precisely localized due to the inverse problem.
 MEG, while offering greater spatial specificity and signal-to-noise ratio, still suffers from the inverse problem and only picks up magnetic fields from neuronal populations close to the skull and with a certain spatial orientation.
 Finally, fMRI relies on blood flow as an indirect proxy of neuronal activity and therefore lacks the temporal resolution to track information processing in real time, while offering a spatial resolution that is much greater than EEG and MEG but still on the order of multiple hundreds of thousands to millions of neurons.
-Invasive recordings (e.g., electrocorticography [ECoG] with grid or depth electrodes) can directly measure local field potentials (LFPs) and therefore offer the best temporal and spatial resolution, but their use is restricted to certain special cases (e.g., presurgical epilepsy patients) and a very limited number of recording sites.
+Invasive recordings (e.g., electrocorticography with grid or depth electrodes) can directly measure local field potentials and therefore offer the best temporal and spatial resolution, but their use is restricted to certain special cases (e.g., presurgical epilepsy patients) and a very limited number of recording sites.
 It is therefore unsurprising that the study of higher-level cognitive functions such as language and semantic processing are not as well developed as, for instance, the study of the visual system [@felleman1991; @vanessen2003], which are somewhat easier to study invasively using animal models.
 
 Three additional obstacles that seem to hamper scientific progress not only in research on visual-semantic processing but in all of cognitive neuroscience are (a) a general lack of theory, (b) the low replicability of research findings, and (c) their limited generalizability.
 
 First, most studies in cognitive neuroscience---and psychological science more broadly---start out with relatively weak predictions that are derived *ad hoc* based on heuristics or in analogy to previous studies, instead of deriving predictions from formal theories [@cummins2000; @vanrooij2020; @vanrooij2021].
 Without formal theories or explicit computational models, and with the limitations of non-invasive brain recordings mentioned above, the best one can usually do is to predict that a certain experimental manipulation will affect brain activity to some unknown degree.^[Note that in fMRI, one is typically interested in an *increase* in local BOLD activity, whereas in EEG, even the polarity of an effect can oftentimes not be predicted *a priori*, as it depends on many un-measurable influence such as cortical folding. In both cases, however, there are little to no studies that make more risky (and therefore scientifically more interesting) predictions of point estimates or ranges of effect sizes.]
-Combined with the pitfalls of null hypothesis significance testing and the "crud factor"^[That is, the notion that in complex systems like the human mind and brain, everything tends to be correlated with everything else to some unknown degree, and that therefore the null hypothesis taken literally will always be false given sufficient statistical power.] [e.g., @orben2020], as well as publication bias that favors the publication of "positive" (i.e., statistically significant) effects, this leads to a literature of many individual "islands" of knowledge that are difficult to integrate into a bigger picture across labs, experimental paradigms, and imaging modalities [see also @forscher1963 and @meehl1978].
+Combined with the pitfalls of null hypothesis significance testing and the "crud factor"^[That is, the notion that in complex systems like the human mind and brain, everything tends to be correlated with everything else to some unknown degree, and that therefore the null hypothesis taken literally will always be false given sufficient statistical power.] [e.g., @orben2020], as well as publication bias that favors the publication of "positive" (i.e., statistically significant) effects, this leads to a literature of many individual "islands" of knowledge that are difficult to integrate into a bigger picture across labs, experimental paradigms, and imaging modalities [see also @forscher1963; @meehl1978].
 
 Second, the last 10--15 years have shown that in the field psychology, results from individual studies cannot be taken at face value, since a substantial proportion of effects (typically > 50%) does not replicate when re-running the same study with a similar or larger sample size [@camerer2018; @opensciencecollaboration2015].
 This is due to a variety of reasons including small sample sizes [@button2013; @ioannidis2005], publication bias [@kuhberger2014; @rosenthal1979], and questionable research practices [@kerr1998; @simmons2011].
-Unfortunately, there have not been any attempts at systematically testing the replicability of findings in cognitive neuroscience [but see @pavlov2021 for an ongoing attempt in EEG research], even though (a) cognitive neuroscience is a directly neighbouring discipline of psychology, (b) sample sizes are even lower in cognitive neuroscience than in psychology [@button2013; @szucs2017; @szucs2020], likely due to higher costs and efforts during data acquisition, and (c) analysis pipelines in cognitive neuroscience are typically highly complex, leading to highly variable results even when the exact same dataset is analyzed by different teams of researchers [@botvinik-nezer2020; @yucel2024].
+Unfortunately, there have not been any attempts at systematically testing the replicability of findings in cognitive neuroscience [but see @pavlov2021 for an ongoing attempt in EEG research].
+This is worrying given that (a) cognitive neuroscience is a directly neighbouring discipline of psychology, (b) sample sizes are even lower in cognitive neuroscience than in psychology [@button2013; @szucs2017; @szucs2020], likely due to higher costs and efforts during data acquisition, and (c) analysis pipelines in cognitive neuroscience are typically highly complex, leading to highly variable results even when the exact same dataset is analyzed by different teams of researchers [@botvinik-nezer2020; @yucel2024].
 It would therefore be an important step to make direct replication of EEG and fMRI studies a common practice, in addition to improving the quality of original studies, e.g., by pre-registering study hypotheses and analysis plans [@nosek2018; @paul2021; @peikert2023], by explicating and testing hidden assumptions about tasks and measurements [@elliott2020; @kragel2021; @noble2019; @scheel2021a], by increasing sample sizes [@marek2022; @szucs2017], and by sharing analysis code and data [@gorgolewski2016; @markiewicz2021; @wilkinson2016].
 
 Finally, most studies in cognitive neuroscience are conducted at research institutions in the Global North that can afford the relevant financial and technological resources, and with very selective convenience samples of participants (typically highly educated young adults).
@@ -706,8 +720,8 @@ In this thesis, I provided different perspectives on how the human brain learns 
 I provided a developmental perspective of the human cortical semantic system, showing that fMRI studies of semantic cognition in children largely engage the same network of regions as known from adults.
 I then used learning to read as an example where children learn to associate previously meaningless visual shapes (letters) with speech sounds and meaning, showing that this leads to local changes in word-related BOLD activity amplitudes and response patterns.
 Finally, I showed that adults can rapidly learn the meaning (i.e., function) of previously unknown real-world objects, and that this learning affects early brain responses to these objects, indicating that semantic knowledge can rapidly affect visual perception.
-Even though I was not able to integrate these findings into an overarching theory of visual-semantic development, I hope that they stimulate future research towards that goal.
-I also hope that some of the methods developed for these projects (e.g., our implementation of bias assessment for MRI-based meta-analysis, our implementation of whole-brain linear mixed-effects models for longitudinal fMRI analysis, and our single trial EEG preprocessing pipeline) can be reused for future projects on these and other topics in the mind and brain sciences.
+Even though the present findings do not integrate into an overarching theory of visual-semantic development, I hope that they stimulate future research towards that goal.
+I also hope that some of the methods developed for these projects such as our implementation of bias assessment for MRI-based meta-analysis, our implementation of whole-brain linear mixed-effects models for longitudinal fMRI analysis, and our single trial EEG preprocessing pipeline can be reused for future projects on these and other topics in the mind and brain sciences.
 
 \newpage
 
@@ -733,7 +747,7 @@ This dissertation is based on the following original research articles:
 1. **Enge, A.**, Abdel Rahman, R., & Skeide, M. A. (2021). A meta-analysis of fMRI studies of semantic cognition in children. *NeuroImage*, 241, 118436. <https://doi.org/10.1016/j.neuroimage.2021.118436>\
 *Published under the terms of the [Creative Commons CC-BY license](https://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.*
 
-2. **Enge, A.** & Skeide, M. A. (2024). Tracking the neural correlates of learning to read with dense-sampling fMRI.\
+2. **Enge, A.** & Skeide, M. A. (2025). Tracking the neural correlates of learning to read with dense-sampling fMRI.\
 *Unpublished manuscript available from first author.*
 
 3. **Enge, A.**, Süß, F., & Abdel Rahman, R. (2023). Instant effects of semantic information on visual perception. *Journal of Neuroscience*, 43(26), 4896–4906. <https://doi.org/10.1523/JNEUROSCI.2038-22.2023>\
@@ -761,12 +775,14 @@ Additional articles published during the dissertation period but not included in
 \includepdf[pages=-,scale=.87,pagecommand={}]{papers/enge2021.pdf}
 
 \newpage
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
 
 \phantomsection
 \addcontentsline{toc}{subsection}{Tracking the neural correlates of learning to read with dense-sampling fMRI}
 \includepdf[pages=-,scale=.88,pagecommand={}]{papers/enge2024.pdf}
 
 \newpage
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
 
 \phantomsection
 \addcontentsline{toc}{subsection}{Instant effects of semantic information on visual perception}
@@ -774,6 +790,8 @@ Additional articles published during the dissertation period but not included in
 \includepdf[pages=-,scale=.92,pagecommand={}]{papers/enge2023_si.pdf}
 
 \newpage
+
+\clearpage\mbox{}\thispagestyle{empty}\clearpage
 
 # Acknowledgements {.unnumbered}
 
@@ -787,7 +805,7 @@ Should you decide to continue on this path, cognitive neuroscience has a bright 
 
 Thank you to all participants who dedicated their time and energy to take part in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
 
-Thank you to Roman Kessler for providing valuable feedback on my thesis, to Rasha Abdel Rahman, Gesa Hartwigsen, Sebastian Markett, Gesa Schaadt, and Peter Weller for dedicating their time and energy to serve on my dissertation committee, and to Rasha Abdel Rahman, Gesa Hartwigsen, and Gesa Schaadt for their written reviews.
+Thank you to Roman Kessler for providing incredibly helpful feedback on my thesis, to Rasha Abdel Rahman, Gesa Hartwigsen, Sebastian Markett, Gesa Schaadt, and Peter Weller for dedicating their time and energy to serve on my dissertation committee, and to Rasha Abdel Rahman, Gesa Hartwigsen, and Gesa Schaadt for their written reviews.
 
 But most of all, thank you to my family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
 Without your love, none of this would have any meaning.
@@ -814,6 +832,6 @@ Without your love, none of this would have any meaning.
 
 \noindent
 Alexander Enge\newline
-Berlin, den XX. Januar 2025
+Berlin, den 16. Februar 2025
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
