@@ -87,7 +87,7 @@ In this stage, written words are probably perceived similar to other types of vi
 
 Through structured training in kindergarten, primary school, or at home, children advance to the second, *alphabetic* stage of reading development,^[Note, however, that as with any model of developmental "stages" or "phases," there typically is no hard and clear-cut boundary between one stage and the next, and there is typically large interindividual variation in the onsets and durations of the stages.] where they are taught that individual letters are associated with individual speech sounds.
 This allows children to process the individual letters of a written word sequentially, convert them to their corresponding speech sounds, and combine those speech sounds to vocalize the entire word.
-Since most healthy children will have become proficient in spoken language comprehension long before learning to read (typically with < 3 years of age), they will also be able to access the meaning of the written word based on its assembled spoken word form.
+Since most children will have become proficient in spoken language comprehension long before learning to read [typically with < 3 years of age\; @skeide2016], they will also be able to access the meaning of the written word based on its assembled spoken word form.
 For this way of reading to be successful, children need to possess the understanding and skill to break down words into their constituent phonemes, typically referred to as "phonological awareness."
 It is therefore unsurprising that phonological skills like first-letter naming, rhyming, and verbal short-term memory are among the best predictors of individual differences in future reading ability [e.g., @melby-lervag2012].
 However, this alphabetic form of reading remains somewhat slow and error-prone due to the sequential conversion of letters into speech sounds.
@@ -104,15 +104,16 @@ Due to its comparatively high spatial resolution (on the order of a few millimet
 One well-replicated finding using this methodology is that processing written words engages a relatively circumscribed region on the left ventral occipito-temporal (vOT) cortex.
 This region, typically referred to as the visual word form area [VWFA\; e.g., @cohen2000; @dehaene2002; @mccandliss2003; @dehaene2011], is thought to be a purely visual and pre-lexical area that identifies written words based on its lower-level visual shapes.
 There is converging evidence that anomalies in, damage to, and stimulation of the VWFA can cause reading difficulties [@hillis2005; @hirshorn2016; @brem2020; but see also @price2003].
-Furthermore, the VWFA is often described as a prime example of the neuronal recycling hypothesis [@dehaene2007], according to which "modern" cognitive functions such as reading,^[The first known scripts appeared approximately 3000--5000 B.C.E,[e.g., @houston2004].] for which not enough evolutionary time has passed to develop dedicated brain circuitry, repurpose brain areas with similar but evolutionarily older functions.
+Furthermore, the VWFA is often described as a prime example of the neuronal recycling hypothesis [@dehaene2007], according to which "modern" cognitive functions such as reading,^[The first known scripts appeared approximately 3000--5000 B.C.E [e.g., @houston2004].] for which not enough evolutionary time has passed to develop dedicated brain circuitry, repurpose brain areas with similar but evolutionarily older functions.
 In the case of reading, the VWFA may reuse regions that had previously been specialized for recognizing other complex visual object categories such as faces, limbs, or tools [@dehaene2015; @kubota2023; @nordt2021; but see also @coltheart2014].
 
 The brain areas involved in reading beyond the early stages of visual word form recognition are less well understood, presumably owing to large differences in task design between studies.
 A meta-analysis of fMRI study [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonological and semantic processing of spoken language.
 However, it remains an open question which brain areas serve as the interface between visual processing (word form recognition in the VWFA) and language processing (phonological and semantic processing in the left perisylvian language network) during reading.
-One candidate for the visual--phonological interface (linking written letters to speech sounds) is the left posterior superior temporal gyrus (pSTS), as it has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, since its "new" skill of linking written letters to speech sounds may stem from its "original" skill of linking lip movements to speech sounds.]
+One candidate for the visual--phonological interface, that is, linking written letters to speech sounds, is the left posterior superior temporal gyrus (pSTS).
+This area has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, since its "new" skill of linking written letters to speech sounds may stem from its "original" skill of linking lip movements to speech sounds.]
 One candidate for the visual--semantic interface is the left middle fusiform cortex (lmFFC), which lies anterior to the high-level visual object recognition areas (including the VWFA) on the ventral surface of the occipital and temporal lobes.
-Using depth electrodes for recording and stimulation in epileptic patients,^[Unfortunately, the depth of this region and the associated signal dropout makes it hard to pick up BOLD activity changes with fMRI [@embleton2010; @liu2016a].] it has been shown that this region is active for lexical retrieval from both auditory (spoken words) and visual (written words and object images) input [e.g., @forseth2018; @woolnough2020; @woolnough2022].
+Using depth electrodes for recording and stimulation in epileptic patients,^[Unfortunately, the depth of this region and the associated signal dropout makes it hard to pick up BOLD activity changes with fMRI [@embleton2010; @liu2016a].] it has been shown that this region is active for lexical retrieval from both auditory input (spoken words) and visual input [written words and object images\; e.g., @forseth2018; @woolnough2020; @woolnough2022].
 
 ## Neural correlates of learning to read
 
@@ -123,7 +124,7 @@ There are multiple reasons for this:
 (c) Accurately tracking the development of brain structure and function in individual children requires a longitudinal study design, which is very costly and demanding for study participants, typically leading to small sample sizes.
 Nevertheless, a few studies exist that have managed to obtain multiple longitudinal scans of children's brain activity as they are learning to read.
 
-@dehaene-lambertz2018 scanned scanned ten 6-year-old children longitudinally throughout the first year of schooling (6--7 scans per child) and presented them with visual objects from different object categories, including written words.
+@dehaene-lambertz2018 scanned ten 6-year-old children longitudinally throughout the first year of schooling (6--7 scans per child) and presented them with visual objects from different object categories, including written words.
 Behaviorally, they found that reading performance (knowledge of grapheme--phoneme relations and number of words read per minutes in a standardized reading test) increased sharply during the first months of schooling.
 In the fMRI, they found that selectivity for words in the VWFA was not present at the beginning of the study but quickly emerged within less than 6 months in most of the children.
 Interestingly, the activation strength in the VWFA and other word-selective areas appeared to follow a curvilinear inverted "u"-shaped pattern, with a quick rise in BOLD activation strength in the first half of the study followed by a slight decline in the second half.
@@ -143,12 +144,12 @@ This restriction of study samples can limit the generalizability of research fin
 
 In reading research, this problem is potentiated by the fact that different cultures developed---sometimes radically---different writing systems.
 Due to the concentration of research funds and technology in the Global North, research on reading, its development, and its neural correlates has almost exclusively been carried out in languages with *alphabetic* writing systems such as English, German, or French.
-In these writing systems, there is a corresponds between individual units of written language (graphemes) and very small units of spoken language (phonemes).^[Though the tightness/reliability of this correspondence differs between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French.]
+In these writing systems, individual units of written language (graphemes) correspond to very small units of spoken language (phonemes).^[Though the tightness/reliability of this correspondence differs between relatively shallow (transparent) orthographies such as Spanish, Italian, or German, and relatively deep (opaque) orthographies such as English and French.]
 On the other end of the spectrum are *logographic* writing systems (such Chinese), in which individual graphemes correspond to large units of spoken languages, namely entire words or concepts (morphemes).
 In between these two extremes sit *syllabic* writing systems, in which individual graphemes correspond to intermediate units of spoken languages, namely sublexical consonant--vowel combinations (syllables).
 A special case are *alphasyllabic* languages (also "abugidas"; such as the Hindi writing system Devanagari), in which individual graphemes correspond to consonants with added diacritical marks above, below, or next to the letter for vowels.
 
-There is an abundance of research findings on different aspects of reading and its neural correlates in alphabetic languages,^[Unfortunately, most studies implicitly claim generalizability/universality of their findings by not explicitly mentioning the writing system in the title, abstract, or conclusion of the paper.] but only very few studies that used logographic writing systems (typically Chinese) and next to none that used syllabic or alphasyllabic writing systems.
+There is an abundance of research findings on different aspects of reading and its neural correlates in alphabetic languages,^[Unfortunately, most studies implicitly claim generalizability/universality of their findings by not explicitly mentioning the writing system in the title, abstract, or conclusion of the paper.] but only very few studies that tested logographic writing systems (typically Chinese) and next to none that tested syllabic or alphasyllabic writing systems.
 These biases clearly limit the scope of empirical findings and current theories on reading and its development to a small set of regions and languages [@frost2012; @share2008; @share2014; @share2021].
 
 ## The present study
@@ -158,8 +159,8 @@ To this end, we conducted a longitudinal fMRI study with children at 5--9 years 
 Children were scanned at relatively short intervals of approximately 2--3 months for a total of up to 6 scanning sessions per child.
 At each scanning session, children were presented with spoken and written words, pseudowords, and low-level sensory control stimuli.
 This allowed us to capture intra-individual changes in BOLD activity (as a proxy for local neuronal activity) in response to stimuli that differed in their sensory, phonological, and semantic content.
-To overcome the bias towards study participants from the Global North and alphabetic writing systems, we worked with children from socio-economically disadvantaged backgrounds in India who received reading instruction in their native language (Hindi) and alphasyllabic writing system (Devanagari).
-Our hypotheses were as follows:
+To overcome the bias towards study participants from the Global North and alphabetic writing systems, we tested children from socio-economically disadvantaged backgrounds in India who received reading instruction in their native language (Hindi) and alphasyllabic writing system (Devanagari).
+Our hypotheses were the following:
 
 * We expected that BOLD activity in response to written (pseudo-)words would increase as children are learning to read, either in a linear or quadratic (inverted "u"-shaped) pattern.
   This was based on previous findings [e.g., @dehaene-lambertz2018] demonstrating the quick emergence of word selectivity in higher-level visual cortex.
@@ -235,7 +236,8 @@ The experiment was programmed and presented using PsychoPy (Version 2021) in Pyt
 
 ## Behavioral testing
 
-At each session, either before or after MRI scanning, children completed a set of behavioral tests (together with one of two local research assistants), assessing their reading skills, mathematics skills, working memory, and general cognitive ability.
+At each session, either before or after MRI scanning, children completed a set of behavioral tests together with a local research assistant.
+These tests were selected to assess children's reading skills, mathematics skills, working memory, and general cognitive ability.
 
 For reading skills, we used the Middle Screening Tool (MST) version of the Dyslexia Assessment for Languages of India (DALI) test [@rao2015a; @rao2021], with the following subtests:
 
@@ -248,10 +250,14 @@ For reading skills, we used the Middle Screening Tool (MST) version of the Dysle
 * Pseudoword reading (number of correctly pronounced pseudowords and time taken [30 pseudowords])
 * Reading comprehension (time taken to read a paragraph of text in Hindi + correct responses to comprehension questions [6 items])
 * Dictation (number of Hindi words spelled correctly [20 words])
+
 For mathematics skills, we used the Wide Range Achievement Test, Fifth Edition -- India [WRAT5 -- INDIA\; @wilkinson2017a], with the following subtests:
+
 * Oral math (number of questions answered correctly [15 items])
 * Math computation (number of math problems solved correctly [40 items])
+
 For working memory, we used the following tests:
+
 * Corsi block-tapping test forward and backward [longest correctly repeated sequence\; @corsi1972; @kessels2000]
 * Digit span test forward and backward [longest correctly repeated sequence\; @miller1956]
 
@@ -297,7 +303,7 @@ Head-motion parameters with respect to the BOLD reference (transformation matric
 The BOLD reference was then co-registered to the T1w reference using `bbregister` (FreeSurfer) which implements boundary-based registration [@bbr].
 Co-registration was configured with six degrees of freedom.
 Several confounding time-series were calculated based on the *preprocessed BOLD*: framewise displacement (FD), DVARS and three region-wise global signals.
-FD was computed using two formulations following Power (absolute sum of relative motions, @power_fd_dvars) and Jenkinson [relative root mean square displacement between affines, @mcflirt].
+FD was computed using two formulations following Power [absolute sum of relative motions, @power_fd_dvars] and Jenkinson [relative root mean square displacement between affines, @mcflirt].
 FD and DVARS are calculated for each functional run, both using their implementations in *Nipype* [following the definitions by @power_fd_dvars].
 The three global signals are extracted within the CSF, the WM, and the whole-brain masks.
 Additionally, a set of physiological regressors were extracted to allow for component-based noise correction [*CompCor*, @compcor].
@@ -340,12 +346,12 @@ At each voxel, the BOLD time series (420 time points) was predicted using a desi
 * A constant term (1 column).
 * One task regressor for each of the six experimental conditions, created by convolving the block design (condition on/off) with the canonical "SPM" hemodynamic response function (HRF) implemented in Nilearn (6 columns).
   These were our regressors of interest.
-* The second and third derivatives of each of the task regressors (12 columns), to capture age- and participant-specific deviations from the canonical HRF. 
+* The first and second derivatives of each task regressor (12 columns), to capture age- and participant-specific deviations from the canonical HRF. 
 * The head motions parameters (translations and rotations in three directions) estimated by *fMRIPrep* during head motion correction (6 columns).
-* Cosine regressors to high-pass filter the data at 128 s ($\approx$ 0.008 Hz), removing slow-frequency scanner drifts (15 columns).
-* The top six anatomical CompCor [@compcor] components estimated by *fMRIPrep* (6 columns).
+* Cosine regressors to high-pass filter the data at 128\ s ($\approx$ 0.008 Hz), removing slow-frequency scanner drifts (15 columns).
+* The top six anatomical CompCor components [@compcor] estimated by *fMRIPrep* (6 columns).
 * Spike regressors for each non-steady state outlier volume at the beginning of the scan as flagged by *fMRIPrep* (0--3 columns, mean = 2.0 columns).
-* Spike regressors for each high-motion outlier volume, defined as framewise displacement \textgreater 0.5 mm and flagged by *fMRIPrep* (0--103 columns, mean = 22.8 columns).
+* Spike regressors for each high-motion outlier volume, defined as framewise displacement \textgreater\ 0.5 mm and flagged by *fMRIPrep* (0--103 columns, mean = 22.8 columns).
 
 For details on how these regressors were computed, see the "Outputs/Confounds" section in *fMRIPrep*'s documentation (<https://fmriprep.org/en/stable/outputs.html#confounds>).
 
@@ -448,7 +454,7 @@ At each session throughout the study, children completed a set of behavioral tes
   CPM = Raven's Colored Progressive Matrices.}
 \end{figure*}
 
-The following (sub-)test showed a significant change in test scores over the course of the study:
+The following (sub-)tests showed a significant change in test scores over the course of the study:
 
 * Word reading accuracy ($b = 0.42$ more correct words per month, $p = .025$)
 * Phoneme replacement ($b = 0.18$ more items correct per month, $p = 0.011$)
@@ -733,7 +739,7 @@ Note that we did not have any *a priori* hypothesis for longitudinal changes in 
 # Discussion
 
 We used dense-sampling fMRI to longitudinally measure changes in children's brain activity as they were learning to read.
-Seventeen children received reading instruction in their native language (Hindi) and writing system (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
+Fifteen children received reading instruction in their native language (Hindi) and writing system (Devanagari) for approximately 16 months, during which they also participated in up to 6 fMRI scanning and behavioral testing sessions.
 In this sample, we found
 (a) some evidence for an improvement in reading performance based on standardized reading skill tests,
 (b) limited evidence for longitudinal increases (linear and non-linear) in BOLD activity in response to spoken and written words, and
@@ -750,9 +756,10 @@ We additionally observed improvements in some non-reading related tests (maths a
 
 We had hypothesized that learning to read would lead to an increase in pseudoword- and word-related BOLD activity amplitude in areas that are associated with reading (e.g., the VWFA in the vOT cortex) and audiovisual integration (e.g., the pSTS).
 We had expected this change to be either linear, that is, increasing from the beginning to the end of the study, or negative quadratic (inverted "u"-shaped), that is, increasing in the beginning of the study and then decreasing towards the end of the study.
-We did not observe such a pattern for any experimental contrast or brain region, except for the contrast between written words and false fonts (see Figure\ \ref{fig:univariate-words-minus-noise}); however, this effect was located at the medial wall of the brain (next to the posterior cingulate cortex), an area that has not typically been described as relevant for reading.
+We did not observe such a pattern for any experimental contrast or brain region, except for the contrast between written words and false fonts (see Figure\ \ref{fig:univariate-words-minus-noise}).
+However, this effect was located at the medial wall of the brain (next to the posterior cingulate cortex), an area that has not typically been described as relevant for reading.
 For some of the other contrasts, a few areas showed evidence for linear and/or quadratic change over the course of the study, but this change typically did not follow the expected pattern (e.g., negative linear change or positive quadratic change) and did not occur in areas that are relevant for reading or audiovisual integration.
-Most importantly, most effects were observed for the baseline contrasts (contrasting one experimental condition against the fixation baseline; see Figures \ref{fig:univariate-noise} to \ref{fig:univariate-words}).
+Most importantly, most effects were observed for the baseline contrasts, contrasting one experimental condition against the fixation baseline (see Figures \ref{fig:univariate-noise} to \ref{fig:univariate-words}).
 These contrasts are difficult to interpret as they capture not only higher-level (e.g., orthographic, phonological, and semantic) processing, but also low-level sensory processing.
 The experimental contrasts (contrasting word-like stimuli with different levels of phonological and semantic information, e.g., written words vs. pseudowords) showed little to no reliable longitudinal change in BOLD activity (see Figures \ref{fig:univariate-pseudo-minus-noise} to \ref{fig:univariate-words-minus-pseudo}).
 There are several factors that could explain these null effects, including the low sample size in our study, an intervention that was too short or too weak, or a lack of sufficient high-quality data per participant and session.
@@ -773,7 +780,7 @@ Finally, it may also be that automatic audio-visual processing of written words 
 Finally, we also tested for longitudinal increases in multi-voxel BOLD response pattern stability, that is, if response patterns to repeated presentations of the same category of stimuli (e.g., written words) became more similar to one another as children learnt to read.
 We did find some evidence for longitudinal changes in pattern stability, but only for spoken pseudowords and spoken words in the bilateral STS.
 Of note, pattern stability for these conditions and areas *decreased* rather than *increased* over the course of the study.
-Since we did not predict any change in pattern stability for these auditory conditions, we prefer to refrain from interpreting these findings.
+Since we did not predict any change in pattern stability for these auditory conditions, we refrain from interpreting these findings.
 
 ## Limitations
 
@@ -806,8 +813,8 @@ First, our overall study design can be seen as a proof of principle for overcomi
 Most previous research on learning to read and its neural correlates has been carried out with participants from the Global North and in languages with alphabetic writing systems.
 In the future, it will be crucial to test if the empirical findings and theories derived from these populations will generalize to different cultures and writing system, or if these require novel hypotheses and theories [@frost2012; @share2008; @share2014; @share2021].
 We have shown that it is indeed possible---though certainly challenging---to collect relatively high-quality neuroimaging data in geographic areas and from socio-economic strata that have traditionally been neglected in cognitive neuroscience [@blasi2022; @henrich2010].
-In the context of learning to read and other learning interventions, such populations can even offer unique advantages, e.g., because illiteracy or lack of public schooling can allow for targeted and controled learning interventions for limited periods of time, as we attempted in the present study^[Note that in collaboration with a local non-governmental organization, we ensured that participants in our study would get enrolled at a public primary school after the conclusion of the study, something they would otherwise most likely never have gotten the opportunity to.]
-We therefore encourage more researchers to engage in cross-cultural collaboration projects, to test the generalizability of empirical findings and theories across different geographic and socio-economic settings, or at the very least to explicitly acknowledge the somewhat limited epistemic scope of findings obtained solely from convenience samples in the Global North.
+In the context of learning to read and other learning interventions, such populations can even offer unique advantages, e.g., because illiteracy or lack of public schooling can allow for targeted and controled learning interventions for limited periods of time, as we attempted in the present study.^[Note that in collaboration with a local non-governmental organization, we ensured that participants in our study would get enrolled at a public primary school after the conclusion of the study, something they would otherwise most likely never have gotten the opportunity to.]
+We therefore encourage more researchers to engage in cross-cultural collaboration projects, to test the generalizability of empirical findings and theories across different geographic and socio-economic settings, or at the very least to explicitly acknowledge the limited epistemic scope of findings obtained solely from convenience samples in the Global North.
 
 Second, we developed a novel computational approach for analyzing longitudinal fMRI data with whole-brain linear mixed-effects models.
 Compared to traditional statistical models for group-level fMRI analysis (typically variants of $t$-tests an analyses of variance [ANOVAs]), linear mixed-effects models come with a number of advantages:
@@ -819,7 +826,7 @@ Compared to traditional statistical models for group-level fMRI analysis (typica
 * They can be used to relate within-individual fMRI effects to between-individual characteristics [i.e., brain--behavior associations\; but note that this typically requires large sample sizes\; @marek2022].
 
 There have been previous implementations of whole-brain linear mixed-effects models, typically using the R programming language [@chen2013a; @madhyastha2018].
-We believe that our implementation using the Julia programming language [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in a mass univariate fashion.
+We believe that our implementation using the Julia programming language [@bezanson2017; @bates2024] provides another step forward towards their wider applicability, as model fitting in Julia is orders of magnitude faster and less prone to convergence errors, both of which is critical when testing the same model on hundreds of thousands of voxels in a mass-univariate fashion.
 We combined this with a recently established method for whole-brain multiple comparison correction that is compatible with the outputs of the linear mixed-effects models to control the whole-brain family-wise error rate [@cox2017a; @cox2017].
 We hope that this analysis approach and our code (available at <https://github.com/SkeideLab/SLANG-analysis/blob/SLANG/scripts/univariate.py>) can be reused for future longitudinal fMRI studies or other studies with complex data acquisition schedules that would benefit from the flexibility provided by linear mixed-effects models.
 
