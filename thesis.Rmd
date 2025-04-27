@@ -801,7 +801,7 @@ Thank you to my PhD supervisors, Rasha Abdel Rahman and Michael Skeide, for enco
 Your trust and guidance throughout my academic career have been a great honor, and you have helped me to learn not only a few little things about the human brain, but also many important things about myself.
 You are great mentors and I wish you continued success and joy in your research and beyond.
 
-Thank you to the lab members of the Research Group "Learning in Early Childhood" at the Max Planck Institute for Human Cognitive and Brain Sciences, especially to Anne-Sophie Kieslinger and Roman Kessler, and to the lab members of the Neurocognitive Psychology Lab at Humboldt-Universität zu Berlin, especially to Julia Baum, Kirsten Stark, and Martin Maier.
+Thank you to the members of the Research Group "Learning in Early Childhood" at the Max Planck Institute for Human Cognitive and Brain Sciences, especially to Anne-Sophie Kieslinger and Roman Kessler, and to the members of the Neurocognitive Psychology Lab at Humboldt-Universität zu Berlin, especially to Julia Baum, Kirsten Stark, and Martin Maier.
 Your support and our countless chats and discussions have made my PhD journey so much easier and so much more enjoyable.
 Should you decide to continue on this path, cognitive neuroscience has a bright future ahead with scientists like you.
 
@@ -822,18 +822,18 @@ Without your love, none of this would have any meaning.
 
 * dass keine Zusammenarbeit mit gewerblichen Promotionsberatern stattfand,
 
-* dass ich die Dissertation auf der Grundlage der angegebenen Hilfsmittel und Hilfen selbstständig angefertigt habe,
+* dass ich die dem angestrebten Verfahren zugrundeliegende Promotionsordnung zur Kenntnis genommen habe,
+
+* dass die Dissertation oder Teile davon nicht bereits bei einer anderen wissenschaftlichen Einrichtung eingereicht, angenommen oder abgelehnt wurden,
 
 * dass ich mich nicht anderwärts um einen Doktorgrad beworben habe bzw. einen entsprechenden Doktorgrad besitze,
 
-* dass mir die dem angestrebten Verfahren zugrunde liegende Promotionsordnung der Lebenswissenschaftlichen Fakultät vom 05. März 2015, veröffentlicht im Amtlichen Mitteilungsblatt der Humboldt-Universität zu Berlin Nr. 12/2015 bekannt ist,
-
-* dass die Dissertation oder Teile davon nicht bereits bei einer anderen wissenschaftlichen Einrichtung eingereicht, angenommen oder abgelehnt wurden und
+* dass die Dissertation auf der Grundlage der angegebenen Hilfsmittel und Hilfen selbstständig angefertigt worden ist und
 
 * dass die Grundsätze der Humboldt-Universität zu Berlin zur Sicherung guter wissenschaftlicher Praxis eingehalten wurden.
 
 \noindent
 Alexander Enge\newline
-Berlin, den 29. März 2025
+Berlin, den 27. April 2025
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
