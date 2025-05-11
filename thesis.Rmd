@@ -1,5 +1,5 @@
 ---
-title             : "Learning to see meaning in visual words and objects"
+title             : "Learning to See Meaning in Visual Words and Objects"
 shorttitle        : "Note: This page and the next should be removed"
 
 author: 
@@ -33,7 +33,7 @@ header-includes:
   - \fancyheadoffset[RO,LE]{0pt}
   - \fancyhead[RO,LE]{\thepage}
   - \fancyhead[LO]{Alexander Enge}
-  - \fancyhead[RE]{Learning to see meaning in visual words and objects}
+  - \fancyhead[RE]{Learning to See Meaning in Visual Words and Objects}
   - \renewcommand{\headrulewidth}{0.4pt}
   - \usepackage{soul}
   - \usepackage{setspace}
@@ -67,7 +67,7 @@ opts_chunk$set(
 \thispagestyle{empty}
 \begin{center}
 \vspace*{25mm}
-\textbf{Learning to see meaning in visual words and objects}\\
+\textbf{Learning to See Meaning in Visual Words and Objects}\\
 \vspace*{10mm}
 \textbf{\textsc{\so{Dissertation}}}\\
 \vspace*{10mm}
@@ -768,7 +768,7 @@ Additional articles published during the dissertation period but not included in
 
 * Kessler, R., **Enge, A.**, & Skeide, M. A. (2024). How EEG preprocessing shapes decoding performance. *arXiv*. <https://doi.org/10.48550/arXiv.2410.14453>
 
-* Knoop, C. A., Nehrlich, T., Aristei, S., Lubrich, O., Stark, K., **Enge, A.**, Sommer, W., & Abdel Rahman, R. (2024). The usual miracles: How narrative style affects the processing of counterintuitive concepts. *Psychology of Aesthetics, Creativity, and the Arts*. Advance online publication. https://doi.org/10.1037/aca0000730
+* Knoop, C. A., Nehrlich, T., Aristei, S., Lubrich, O., Stark, K., **Enge, A.**, Sommer, W., & Abdel Rahman, R. (2024). The usual miracles: How narrative style affects the processing of counterintuitive concepts. *Psychology of Aesthetics, Creativity, and the Arts*. https://doi.org/10.1037/aca0000730
 
 \newpage
 
@@ -797,17 +797,17 @@ Additional articles published during the dissertation period but not included in
 
 # Acknowledgements {.unnumbered}
 
-Thank you to my PhD supervisors, Rasha Abdel Rahman and Michael Skeide, for encouraging me to pursue a doctoral degree and for your continued academic and emotional support.
+Thank you to my supervisors, Rasha Abdel Rahman and Michael Skeide, for encouraging me to pursue a doctoral degree and for your continued academic and emotional support.
 Your trust and guidance throughout my academic career have been a great honor, and you have helped me to learn not only a few little things about the human brain, but also many important things about myself.
-You are great mentors and I wish you continued success and joy in your research and beyond.
+You are great mentors and I wish you continued success in your research and beyond.
 
-Thank you to the members of the Research Group "Learning in Early Childhood" at the Max Planck Institute for Human Cognitive and Brain Sciences, especially to Anne-Sophie Kieslinger and Roman Kessler, and to the members of the Neurocognitive Psychology Lab at Humboldt-Universität zu Berlin, especially to Julia Baum, Kirsten Stark, and Martin Maier.
-Your support and our countless chats and discussions have made my PhD journey so much easier and so much more enjoyable.
+Thank you to the members of the Research Group "Learning in Early Childhood" at the Max Planck Institute for Human Cognitive and Brain Sciences, especially to Roman Kessler and Anne-Sophie Kieslinger, and to the members of the Neurocognitive Psychology Lab at Humboldt-Universität zu Berlin, especially to Julia Baum, Anna Eiserbeck, Martin Maier, and Kirsten Stark.
+Your support and our countless interactions have made my PhD journey so much easier and so much more enjoyable.
 Should you decide to continue on this path, cognitive neuroscience has a bright future ahead with scientists like you.
 
 Thank you to all participants who dedicated their time and energy to take part in my research studies as well as to all collaborators, research assistants, non-scientific staff, and funding agencies who have enabled this research.
 
-Thank you to Roman Kessler for providing incredibly helpful feedback on my thesis, to Rasha Abdel Rahman, Gesa Hartwigsen, Sebastian Markett, Gesa Schaadt, and Peter Weller for dedicating their time and energy to serve on my dissertation committee, and to Rasha Abdel Rahman, Gesa Hartwigsen, and Gesa Schaadt for their written reviews.
+Thank you to Roman Kessler for providing tremendously helpful feedback on my thesis, to Rasha Abdel Rahman, Gesa Hartwigsen, Sebastian Markett, Gesa Schaadt, and Peter Weller for serving on my dissertation committee, and to Rasha Abdel Rahman, Gesa Hartwigsen, and Gesa Schaadt for their written reviews.
 
 But most of all, thank you to my family and friends, especially to my parents and to Gabriele, Julia, Konstantin, Lisa, and Nele.
 Without your love, none of this would have any meaning.
