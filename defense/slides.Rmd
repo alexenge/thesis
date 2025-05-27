@@ -1,0 +1,28 @@
+---
+title: "Learning to See Meaning \\newline in Visual Words and Objects"
+author: "Alexander Enge"
+institute: "Humboldt-Universität zu Berlin"
+date: 2025-XX-XX
+classoption: "t"
+bibliography: "misc/references.bib"
+csl: "misc/template/apa.csl"
+output:
+  beamer_presentation:
+    includes:
+      in_header: "misc/template/hu_template.tex"
+---
+
+## Lalala
+
+```{r, echo=FALSE, message=FALSE}
+figure <- function(path, ...) {
+  require(here)
+  if (file.exists(here(path))) knitr::include_graphics(here(path), ...)
+}
+```
+
+## Thanks
+
+## References
+
+\tiny
