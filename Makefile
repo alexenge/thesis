@@ -9,5 +9,5 @@ papers/enge2024.pdf: papers/enge2024.Rmd
 	Rscript -e "rmarkdown::render('papers/enge2024.Rmd')"
 
 slides: defense/slides.pdf
-defense/slides.pdf:
+defense/slides.pdf: defense/slides.Rmd
 	Rscript -e "rmarkdown::render(input = 'defense/slides.Rmd')"

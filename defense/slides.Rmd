@@ -12,13 +12,36 @@ output:
       in_header: "misc/template/hu_template.tex"
 ---
 
-## Lalala
-
 ```{r, echo=FALSE, message=FALSE}
-figure <- function(path, ...) {
-  require(here)
-  if (file.exists(here(path))) knitr::include_graphics(here(path), ...)
+# Load required packages
+library(here)
+library(knitr)
+
+# Set global chunk options
+opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  out.width = "100%",
+  fig.align = "center"
+)
+
+# Helper function to include figures if they exist
+
+include_figure <- function(filename, dir = here("defense/figures"), ...) {
+  path <- file.path(dir, filename)
+  if (file.exists(path)) include_graphics(here(path), ...)
 }
+```
+
+## Introduction
+
+```{r, out.width="80%"}
+include_figure("intro_examples.png")
+```
+
+```{r, out.width="80%"}
+include_figure("intro_solutions.png")
 ```
 
 ## Thanks
