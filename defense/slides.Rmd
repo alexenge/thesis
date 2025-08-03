@@ -36,12 +36,32 @@ include_figure <- function(filename, dir = here("defense/figures"), ...) {
 
 ## Introduction
 
-```{r, out.width="80%"}
-include_figure("intro_examples.png")
+## Study 1: The Semantic System in Children
+
+* 50 fMRI experiments on semantic cognition in children
+* *N* = 1,018 participants, mean age 5.5--12.8 years
+* 687 peak coordinates (400, left 287 right)
+
+\bigskip
+
+```{r, out.width="100%"}
+include_figure("meta_intro.png")
 ```
 
-```{r, out.width="80%"}
-include_figure("intro_solutions.png")
+\tiny @enge2021
+
+## Study 1: The Semantic System in Children
+
+```{r, out.width="100%"}
+include_figure("meta_acar_2018.png")
+```
+
+\tiny @acar2018
+
+## Study 1: The Semantic System in Children
+
+```{r, out.width="95%"}
+include_figure("meta_results.png")
 ```
 
 ## Thanks
@@ -49,3 +69,30 @@ include_figure("intro_solutions.png")
 ## References
 
 \tiny
+
+::: {#refs}
+:::
+
+## Study 1: The Semantic System in Children
+
+```{r, out.width="55%"}
+include_figure("meta_prisma.png")
+```
+
+## Study 1: The Semantic System in Children
+
+```{r, out.width="60%"}
+include_figure("meta_methods.png")
+```
+
+\tiny @enge2021
+
+## Study 1: The Semantic System in Children
+
+\bigskip
+
+```{r, out.width="100%"}
+include_figure("meta_tasks.png")
+```
+
+\tiny @enge2021

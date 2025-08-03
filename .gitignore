@@ -11,5 +11,6 @@
 
 /admin/
 
+!/defense/misc/template/hu_template.tex
 !/papers/enge2024.pdf
 !/thesis.pdf
