@@ -2,7 +2,7 @@
 title: "Learning to See Meaning \\newline in Visual Words and Objects"
 author: "Alexander Enge"
 institute: "Humboldt-Universität zu Berlin"
-date: 2025-XX-XX
+date: "07.10.2025"
 classoption: "t"
 bibliography: "misc/references.bib"
 csl: "misc/template/apa.csl"
@@ -27,7 +27,6 @@ opts_chunk$set(
 )
 
 # Helper function to include figures if they exist
-
 include_figure <- function(filename, dir = here("defense/figures"), ...) {
   path <- file.path(dir, filename)
   if (file.exists(path)) include_graphics(here(path), ...)
@@ -36,7 +35,9 @@ include_figure <- function(filename, dir = here("defense/figures"), ...) {
 
 ## Introduction
 
-## Study 1: The Semantic System in Children
+* Bla bla blub
+
+## Study 1: The semantic system in children
 
 * 50 fMRI experiments on semantic cognition in children
 * *N* = 1,018 participants, mean age 5.5--12.8 years
@@ -50,7 +51,7 @@ include_figure("meta_intro.png")
 
 \tiny @enge2021
 
-## Study 1: The Semantic System in Children
+## Study 1: The semantic system in children
 
 ```{r, out.width="100%"}
 include_figure("meta_acar_2018.png")
@@ -58,13 +59,97 @@ include_figure("meta_acar_2018.png")
 
 \tiny @acar2018
 
-## Study 1: The Semantic System in Children
+## Study 1: The semantic system in children
 
 ```{r, out.width="95%"}
 include_figure("meta_results.png")
 ```
 
-## Thanks
+## Study 2: Visual semantics in learning to read
+
+* Longitudinal study with 15 children (5--9 years), 6 time points
+* 18 month of reading instruction in Hindi/Devanagari
+* Standardized reading tests + fMRI
+
+```{r, out.width="93%"}
+include_figure("slang_intro.png")
+```
+
+\smallskip
+
+## Study 2: Visual semantics in learning to read
+
+* Mini block design fMRI task
+* Spoken + written non-words, pseudowords, real words
+* Target detection task
+
+\smallskip
+
+```{r, out.width="93%"}
+include_figure("slang_task.png")
+```
+
+\tiny See @dehaene-lambertz2018
+
+## Study 2: Visual semantics in learning to read
+
+* Longitudinal analysis using linear mixed models (LMMs)
+* Whole-brain univariate change in activation strength
+* Multivariate change in audio-visual pattern similarity
+* Multivariate change in within-condition pattern stability
+
+\bigskip
+
+```{r, out.width="50%"}
+include_figure("slang_packages.png")
+```
+
+\bigskip
+
+\tiny See @chen2013a; @madhyastha2018
+\newline<https://github.com/SkeideLab/SLANG-analysis/blob/SLANG/scripts/univariate.py>
+
+## Study 2: Visual semantics in learning to read
+
+```{r, out.width="100%"}
+include_figure("slang_words_vs_baseline.png")
+```
+
+\tiny @enge2024
+
+## Study 2: Visual semantics in learning to read
+
+```{r, out.width="100%"}
+include_figure("slang_multivariate.png")
+```
+
+\tiny @enge2024
+
+## Study 3: Visual semantics in novel objects
+
+```{r, out.width="95%"}
+include_figure("aha_design.png")
+```
+
+\tiny @enge2023a
+
+## Study 3: Visual semantics in novel objects
+
+```{r, out.width="100%"}
+include_figure("aha_results.png")
+```
+
+\tiny @enge2023a
+
+## General discussion
+
+* Bla bla blub
+
+## Thank you
+
+```{r, out.width="100%"}
+include_figure("thanks.png")
+```
 
 ## References
 
@@ -73,13 +158,13 @@ include_figure("meta_results.png")
 ::: {#refs}
 :::
 
-## Study 1: The Semantic System in Children
+## Study 1: The semantic system in children
 
 ```{r, out.width="55%"}
 include_figure("meta_prisma.png")
 ```
 
-## Study 1: The Semantic System in Children
+## Study 1: The semantic system in children
 
 ```{r, out.width="60%"}
 include_figure("meta_methods.png")
@@ -87,7 +172,7 @@ include_figure("meta_methods.png")
 
 \tiny @enge2021
 
-## Study 1: The Semantic System in Children
+## Study 1: The semantic system in children
 
 \bigskip
 
@@ -96,3 +181,31 @@ include_figure("meta_tasks.png")
 ```
 
 \tiny @enge2021
+
+## Study 2: Visual semantics in learning to read
+
+```{r, out.width="60%"}
+include_figure("slang_tests.png")
+```
+
+## Study 3: Visual semantics in novel objects
+
+```{r, out.width="80%"}
+include_figure("aha_control.png")
+```
+
+## Study 3: Visual semantics in novel objects
+
+```{r, out.width="60%"}
+include_figure("aha_tfr_insight.png")
+```
+
+\tiny @enge2023a
+
+## Study 3: Visual semantics in novel objects
+
+```{r, out.width="60.5%"}
+include_figure("aha_tfr_post_insight.png")
+```
+
+\tiny @enge2023a
