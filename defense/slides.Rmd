@@ -35,7 +35,50 @@ include_figure <- function(filename, dir = here("defense/figures"), ...) {
 
 ## Introduction
 
-* Bla bla blub
+\vspace{1em}
+
+```{r, out.width="100%"}
+include_figure("intro_example_blank.png")
+```
+
+## Introduction
+
+\vspace{1em}
+
+```{r, out.width="100%"}
+include_figure("intro_example.png")
+```
+
+## Introduction
+
+```{r, out.width="80%"}
+include_figure("intro_example_solution.png")
+```
+
+## Introduction
+
+* Feed-forward visual system for core object recognition
+* Semantic system based on object categories, linguistic contrasts, distributional statistics
+* **Needs bi-directional interfaces**
+
+\bigskip
+
+```{r, out.width="95%"}
+include_figure("intro_brain.png")
+```
+
+\tiny @binder2009; @deniz2019; @dicarlo2012; @felleman1991; @huth2016
+
+## Introduction
+
+* **Study 1: The semantic system in children**
+  \newline &rarr; Meta-analysis of the developing semantic system
+
+* **Study 2: Visual semantics in learning to read**
+  \newline &rarr; Longitudinal fMRI study of reading acquisition
+
+* **Study 3: Visual semantics in novel objects**
+  \newline &rarr; EEG training study on insight into object function
 
 ## Study 1: The semantic system in children
 
@@ -95,8 +138,18 @@ include_figure("slang_task.png")
 
 * Longitudinal analysis using linear mixed models (LMMs)
 * Whole-brain univariate change in activation strength
-* Multivariate change in audio-visual pattern similarity
-* Multivariate change in within-condition pattern stability
+* Multivariate change in pattern similarity and stability
+
+\bigskip
+
+```{julia, echo=TRUE, eval=FALSE, out.width="60%"}
+using MixedModels
+fm = @formula(beta ~ 1 + time + time2 + (1 + time + time2 | subject))
+mm = fit(MixedModel, fm, df)
+```
+
+\tiny <https://github.com/SkeideLab/SLANG-analysis/blob/SLANG/scripts/univariate.py>
+\newline See also @chen2013a; @madhyastha2018
 
 \bigskip
 
@@ -104,18 +157,13 @@ include_figure("slang_task.png")
 include_figure("slang_packages.png")
 ```
 
-\bigskip
-
-\tiny See @chen2013a; @madhyastha2018
-\newline<https://github.com/SkeideLab/SLANG-analysis/blob/SLANG/scripts/univariate.py>
-
 ## Study 2: Visual semantics in learning to read
 
 ```{r, out.width="100%"}
 include_figure("slang_words_vs_baseline.png")
 ```
 
-\tiny @enge2024
+\tiny @enge2024a
 
 ## Study 2: Visual semantics in learning to read
 
@@ -123,7 +171,26 @@ include_figure("slang_words_vs_baseline.png")
 include_figure("slang_multivariate.png")
 ```
 
-\tiny @enge2024
+\tiny @enge2024a
+
+## Study 3: Visual semantics in novel objects
+
+* *N* = 48 adults, 120 unfamiliar objects
+* Compare informed vs. uninformed perception in each phase (before, during, after insight)
+
+\smallskip
+
+* **P1 (100--150 ms):** Early visual preprocessing
+* **N170 (150--200 ms):** High-level visual preprocessing
+* **N400 (400--700 ms):** Semantic processing
+
+\smallskip
+
+* Exploratory time-frequency analysis
+
+\bigskip
+
+\tiny @enge2023a
 
 ## Study 3: Visual semantics in novel objects
 
@@ -141,6 +208,29 @@ include_figure("aha_results.png")
 
 \tiny @enge2023a
 
+## Bonus: `hu-neuro-pipeline` package
+
+\vspace{-1em}
+
+```{r, out.width="100%"}
+include_figure("pipeline_overview.png")
+```
+
+## Bonus: `hu-neuro-pipeline` package
+
+\vspace{-1.5em}
+
+```{r, out.width="95%"}
+include_figure("pipeline_docs.png")
+```
+
+## Bonus: `hu-neuro-pipeline` package
+
+* **Homepage:** [hu-neuro-pipeline.readthedocs.io](https://hu-neuro-pipeline.readthedocs.io)
+* **Slides:** [github.com/alexenge/hu-neuro-pipeline-workshop](https://github.com/alexenge/hu-neuro-pipeline-workshop)
+* **EEG analysis course:** [alexenge.github.io/intro-to-eeg](https://alexenge.github.io/intro-to-eeg)
+* **Speech artifact correction:** [eeg-ride.readthedocs.io](https://eeg-ride.readthedocs.io)
+
 ## General discussion
 
 * Bla bla blub
@@ -151,7 +241,7 @@ include_figure("aha_results.png")
 include_figure("thanks.png")
 ```
 
-## References
+## References {.allowframebreaks}
 
 \tiny
 
