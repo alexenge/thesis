@@ -1,11 +1,14 @@
 *.aux
 *.log
 *.knit.md
+*.nav
 *.pdf
 *.png
 *.pxd
+*.snm
 *.tex
 *.toc
+*.vrb
 
 .vscode/
 

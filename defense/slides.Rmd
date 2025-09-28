@@ -231,9 +231,50 @@ include_figure("pipeline_docs.png")
 * **EEG analysis course:** [alexenge.github.io/intro-to-eeg](https://alexenge.github.io/intro-to-eeg)
 * **Speech artifact correction:** [eeg-ride.readthedocs.io](https://eeg-ride.readthedocs.io)
 
-## General discussion
+## Discussion
 
-* Bla bla blub
+1. Semantic system in children largely adult-like by age 10
+
+2. Learning to read increases audio-visual response patterns in left vOT cortex (*)
+
+3. Discovering object function alters visual processing within first 200 ms
+
+## Discussion
+
+* No engagement of semantic areas from meta-analysis in reading study
+
+\smallskip
+
+* Difficult to pinpoint top-down EEG effects anatomically
+
+\smallskip
+
+* Similar mechanisms in learning to read and discovering object function?
+  - Both involve linking visual features to meaning and *vice versa*
+  - But: incidental vs. diagnostic visual features
+  - Phylogenetically and ontogenetically very different
+
+## Discussion
+
+* Limitations:
+  - **Meta-analysis:** publication bias, coordinate-based approach
+  - **Reading study:** sample size (!!!), intervention strength and duration, experimental design
+  - **Object study:** ecological validity, localization/neural mechanisms
+
+## Discussion
+
+* Replicability crisis, power, flexibility in cognitive neuroscience
+* Generalizability to real-world tasks and people
+* Need for computationally explicit theories
+* Better methods can't hurt
+
+\smallskip
+
+```{r, out.width="100%"}
+include_figure("discussion_manypipelines.png")
+```
+
+\tiny See @botvinik-nezer2020; @button2013; @cummins2000; @forscher1963; @marek2022; @opensciencecollaboration2015; @pavlov2021; @scheel2021a; @simmons2011; @szucs2017; @szucs2020; @trubutschek2024; @yarkoni2020
 
 ## Thank you
 
@@ -299,3 +340,9 @@ include_figure("aha_tfr_post_insight.png")
 ```
 
 \tiny @enge2023a
+
+## Discussion
+
+```{r, out.width="80%"}
+include_figure("discussion_chinese.png")
+```
