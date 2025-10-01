@@ -393,6 +393,31 @@ include_figure("discussion_chinese.jpg")
 
 ## Discussion
 
+\tiny
+
+"And Nikos Logothetis had a really unique setup at that time in Tubingen and published a paper around 2001 where he recorded simultaneously fMRI local field potentials in single neurons. [...]
+And so we ended up doing a project where we ran patients first in a version of the virtual navigation task using fMRI and then recorded single neurons and local field potentials when they did that task. [...]
+And that ended up being a really complicated, unsatisfying project, because basically what we found was the answer that no one really wanted, that the areas where we saw activation in the patients prior to undergoing implantation didn't match up very well with what we saw with single neurons or the local field potential.
+And really what we found was weak evidence for a correlation in some of the surrounding cortical areas for low frequency oscillation power increasing with the bold signal. [...]
+And that was really all we found.
+**So, if anything, we would conclude that single neurons don't relate well to fMRI, at least in the medial temporal lobe, and there's a weak correlation with the local field potential.**
+And we submitted that paper at Nature.
+It got reviewed and rejected, and just reviewers didn't like it because Logothetis had already solved the problem, right?
+We already know that the bold signal tells us mostly about gamma oscillations in the local field potential, but still a little bit about single neurons.
+We already know that, so why are you trying to tell us something different?
+And even if you are, Logothetis could do it better because he could do it simultaneously.
+**So there just wasn't a lot of enthusiasm, and it was like the result that no one wanted, which is fMRI is really difficult to interpret, and it depends on what brain region you're in, what response you're going to get.**
+**And one thing I've learned in cognitive neuroscience is people don't tend to like complicated answers.** [...]
+The bold signal is not always reflected in electrophysiological activity.
+It's complicated, right?
+And I think it was one of these examples where the story was sort of, it didn't fit with the *zeitgeist*, and we didn't exactly know what to do with it either.
+And so I ended up after my postdoc taking a faculty position at UC Davis, where I didn't end up doing a lot with that line of research, but I continued invasive recordings and then spent a lot more time working with fMRI and then invested a lot more time in studies related to fMRI."
+
+From BJKS Podcast: 97. Arne Ekstrom: Spatial navigation, memory, and invasive recordings in humans, May 24, 2024
+<https://bjks.buzzsprout.com/1390924/episodes/15118255-97-arne-ekstrom-spatial-navigation-memory-and-invasive-recordings-in-humans>
+
+## Discussion
+
 ```{r, out.width="100%"}
 include_figure("discussion_memes.jpg")
 ```
