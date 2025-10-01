@@ -38,7 +38,7 @@ include_figure <- function(filename, dir = here("defense/figures"), ...) {
 \vspace{1em}
 
 ```{r, out.width="100%"}
-include_figure("intro_example_blank.png")
+include_figure("intro_example_blank.jpg")
 ```
 
 ## Introduction
@@ -46,13 +46,15 @@ include_figure("intro_example_blank.png")
 \vspace{1em}
 
 ```{r, out.width="100%"}
-include_figure("intro_example.png")
+include_figure("intro_example.jpg")
 ```
 
 ## Introduction
 
-```{r, out.width="80%"}
-include_figure("intro_example_solution.png")
+\vspace{-1.5em}
+
+```{r, out.width="95%"}
+include_figure("intro_example_solution.jpg")
 ```
 
 ## Introduction
@@ -64,7 +66,7 @@ include_figure("intro_example_solution.png")
 \bigskip
 
 ```{r, out.width="95%"}
-include_figure("intro_brain.png")
+include_figure("intro_brain.jpg")
 ```
 
 \tiny @binder2009; @deniz2019; @dicarlo2012; @felleman1991; @huth2016
@@ -89,7 +91,7 @@ include_figure("intro_brain.png")
 \bigskip
 
 ```{r, out.width="100%"}
-include_figure("meta_intro.png")
+include_figure("meta_intro.jpg")
 ```
 
 \tiny @enge2021
@@ -97,7 +99,7 @@ include_figure("meta_intro.png")
 ## Study 1: The semantic system in children
 
 ```{r, out.width="100%"}
-include_figure("meta_acar_2018.png")
+include_figure("meta_acar_2018.jpg")
 ```
 
 \tiny @acar2018
@@ -105,7 +107,7 @@ include_figure("meta_acar_2018.png")
 ## Study 1: The semantic system in children
 
 ```{r, out.width="95%"}
-include_figure("meta_results.png")
+include_figure("meta_results.jpg")
 ```
 
 ## Study 2: Visual semantics in learning to read
@@ -115,7 +117,7 @@ include_figure("meta_results.png")
 * Standardized reading tests + fMRI
 
 ```{r, out.width="93%"}
-include_figure("slang_intro.png")
+include_figure("slang_intro.jpg")
 ```
 
 \smallskip
@@ -129,7 +131,7 @@ include_figure("slang_intro.png")
 \smallskip
 
 ```{r, out.width="93%"}
-include_figure("slang_task.png")
+include_figure("slang_task.jpg")
 ```
 
 \tiny See @dehaene-lambertz2018
@@ -154,13 +156,13 @@ mm = fit(MixedModel, fm, df)
 \bigskip
 
 ```{r, out.width="50%"}
-include_figure("slang_packages.png")
+include_figure("slang_packages.jpg")
 ```
 
 ## Study 2: Visual semantics in learning to read
 
 ```{r, out.width="100%"}
-include_figure("slang_words_vs_baseline.png")
+include_figure("slang_words_vs_baseline.jpg")
 ```
 
 \tiny @enge2024a
@@ -168,7 +170,7 @@ include_figure("slang_words_vs_baseline.png")
 ## Study 2: Visual semantics in learning to read
 
 ```{r, out.width="100%"}
-include_figure("slang_multivariate.png")
+include_figure("slang_multivariate.jpg")
 ```
 
 \tiny @enge2024a
@@ -195,7 +197,7 @@ include_figure("slang_multivariate.png")
 ## Study 3: Visual semantics in novel objects
 
 ```{r, out.width="95%"}
-include_figure("aha_design.png")
+include_figure("aha_design.jpg")
 ```
 
 \tiny @enge2023a
@@ -203,7 +205,7 @@ include_figure("aha_design.png")
 ## Study 3: Visual semantics in novel objects
 
 ```{r, out.width="100%"}
-include_figure("aha_results.png")
+include_figure("aha_results.jpg")
 ```
 
 \tiny @enge2023a
@@ -213,15 +215,7 @@ include_figure("aha_results.png")
 \vspace{-1em}
 
 ```{r, out.width="100%"}
-include_figure("pipeline_overview.png")
-```
-
-## Bonus: `hu-neuro-pipeline` package
-
-\vspace{-1.5em}
-
-```{r, out.width="95%"}
-include_figure("pipeline_docs.png")
+include_figure("pipeline_overview.jpg")
 ```
 
 ## Bonus: `hu-neuro-pipeline` package
@@ -230,6 +224,26 @@ include_figure("pipeline_docs.png")
 * **Slides:** [github.com/alexenge/hu-neuro-pipeline-workshop](https://github.com/alexenge/hu-neuro-pipeline-workshop)
 * **EEG analysis course:** [alexenge.github.io/intro-to-eeg](https://alexenge.github.io/intro-to-eeg)
 * **Speech artifact correction:** [eeg-ride.readthedocs.io](https://eeg-ride.readthedocs.io)
+
+\vspace{10.5em}
+
+\tiny @enge2023a; @fromer2018; @ouyang2015
+
+## Bonus: `hu-neuro-pipeline` package
+
+\vspace{-1.5em}
+
+```{r, out.width="100%"}
+include_figure("pipeline_docs_code.png")
+```
+
+## Bonus: `hu-neuro-pipeline` package
+
+\vspace{-1.5em}
+
+```{r, out.width="100%"}
+include_figure("pipeline_docs_plot.png")
+```
 
 ## Discussion
 
@@ -271,7 +285,7 @@ include_figure("pipeline_docs.png")
 \smallskip
 
 ```{r, out.width="100%"}
-include_figure("discussion_manypipelines.png")
+include_figure("discussion_manypipelines.jpg")
 ```
 
 \tiny See @botvinik-nezer2020; @button2013; @cummins2000; @forscher1963; @marek2022; @opensciencecollaboration2015; @pavlov2021; @scheel2021a; @simmons2011; @szucs2017; @szucs2020; @trubutschek2024; @yarkoni2020
@@ -279,7 +293,7 @@ include_figure("discussion_manypipelines.png")
 ## Thank you
 
 ```{r, out.width="100%"}
-include_figure("thanks.png")
+include_figure("thanks.jpg")
 ```
 
 ## References {.allowframebreaks}
@@ -292,13 +306,13 @@ include_figure("thanks.png")
 ## Study 1: The semantic system in children
 
 ```{r, out.width="55%"}
-include_figure("meta_prisma.png")
+include_figure("meta_prisma.jpg")
 ```
 
 ## Study 1: The semantic system in children
 
 ```{r, out.width="60%"}
-include_figure("meta_methods.png")
+include_figure("meta_methods.jpg")
 ```
 
 \tiny @enge2021
@@ -308,7 +322,7 @@ include_figure("meta_methods.png")
 \bigskip
 
 ```{r, out.width="100%"}
-include_figure("meta_tasks.png")
+include_figure("meta_tasks.jpg")
 ```
 
 \tiny @enge2021
@@ -316,19 +330,19 @@ include_figure("meta_tasks.png")
 ## Study 2: Visual semantics in learning to read
 
 ```{r, out.width="60%"}
-include_figure("slang_tests.png")
+include_figure("slang_tests.jpg")
 ```
 
 ## Study 3: Visual semantics in novel objects
 
 ```{r, out.width="80%"}
-include_figure("aha_control.png")
+include_figure("aha_control.jpg")
 ```
 
 ## Study 3: Visual semantics in novel objects
 
 ```{r, out.width="60%"}
-include_figure("aha_tfr_insight.png")
+include_figure("aha_tfr_insight.jpg")
 ```
 
 \tiny @enge2023a
@@ -336,13 +350,52 @@ include_figure("aha_tfr_insight.png")
 ## Study 3: Visual semantics in novel objects
 
 ```{r, out.width="60.5%"}
-include_figure("aha_tfr_post_insight.png")
+include_figure("aha_tfr_post_insight.jpg")
 ```
 
 \tiny @enge2023a
 
+## Bonus: `hu-neuro-pipeline` package
+
+```{r, echo=TRUE, eval=FALSE}
+# Load packages
+library("reticulate")
+pipeline <- import("pipeline")
+
+# Download example data
+ucap_files <- pipeline$datasets$get_ucap()
+
+# Run the pipeline
+res <- pipeline$group_pipeline(
+  raw_files = ucap_files$raw_files,
+  log_files = ucap_files$log_files,
+  besa_files = ucap_files$besa_files,
+  output_dir = "output",
+  triggers = c(201:208, 211:218),
+  components = list(
+    "name" = list("N2", "P3b"),
+    "tmin" = list(0.25, 0.4),
+    "tmax" = list(0.35, 0.55),
+    "roi" = list(
+      c("FC1", "FC2", "C1", "C2", "Cz"),
+      c("CP3", "CP1", "CPz", "CP2", "CP4", "P3", "Pz", "P4", "PO3", "POz", "PO4")
+    )
+  ),
+  average_by = list(blurr = "n_b == 'blurr'", normal = "n_b == 'normal'")
+)
+```
+
 ## Discussion
 
 ```{r, out.width="80%"}
-include_figure("discussion_chinese.png")
+include_figure("discussion_chinese.jpg")
 ```
+
+## Discussion
+
+```{r, out.width="100%"}
+include_figure("discussion_memes.jpg")
+```
+
+\tiny <https://jamesheathers.medium.com/i-quit-be062295f638>
+\newline <https://slimemoldtimemold.com>
