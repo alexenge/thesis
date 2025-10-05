@@ -85,7 +85,7 @@ include_figure("intro_brain.jpg")
 ## Study 1: The semantic system in children
 
 * 50 fMRI experiments on semantic cognition in children
-* *N* = 1,018 participants, mean age 5.5--12.8 years
+* *N* = 1018 participants, mean age 5.5--12.8 years
 * 687 peak coordinates (400, left 287 right)
 
 \bigskip
@@ -114,7 +114,7 @@ include_figure("meta_results.jpg")
 
 * Longitudinal study with 15 children (5--9 years), 6 time points
 * 18 month of reading instruction in Hindi/Devanagari
-* Standardized reading tests + fMRI
+* MRI + standardized reading tests
 
 ```{r, out.width="93%"}
 include_figure("slang_intro.jpg")
@@ -210,40 +210,15 @@ include_figure("aha_results.jpg")
 
 \tiny @enge2023a
 
-## Bonus: `hu-neuro-pipeline` package
+## Add-on: `hu-neuro-pipeline` package
 
 \vspace{-1em}
 
-```{r, out.width="100%"}
+```{r, out.width="95%"}
 include_figure("pipeline_overview.jpg")
 ```
 
-## Bonus: `hu-neuro-pipeline` package
-
-* **Homepage:** [hu-neuro-pipeline.readthedocs.io](https://hu-neuro-pipeline.readthedocs.io)
-* **Slides:** [github.com/alexenge/hu-neuro-pipeline-workshop](https://github.com/alexenge/hu-neuro-pipeline-workshop)
-* **EEG analysis course:** [alexenge.github.io/intro-to-eeg](https://alexenge.github.io/intro-to-eeg)
-* **Speech artifact correction:** [eeg-ride.readthedocs.io](https://eeg-ride.readthedocs.io)
-
-\vspace{10.5em}
-
-\tiny @enge2023a; @fromer2018; @ouyang2015
-
-## Bonus: `hu-neuro-pipeline` package
-
-\vspace{-1.5em}
-
-```{r, out.width="100%"}
-include_figure("pipeline_docs_code.png")
-```
-
-## Bonus: `hu-neuro-pipeline` package
-
-\vspace{-1.5em}
-
-```{r, out.width="100%"}
-include_figure("pipeline_docs_plot.png")
-```
+\tiny @fromer2018; [hu-neuro-pipeline.readthedocs.io](https://hu-neuro-pipeline.readthedocs.io)
 
 ## Discussion
 
@@ -265,6 +240,7 @@ include_figure("pipeline_docs_plot.png")
 
 * Similar mechanisms in learning to read and discovering object function?
   - Both involve linking visual features to meaning and *vice versa*
+  - Both are compositional
   - But: incidental vs. diagnostic visual features
   - Phylogenetically and ontogenetically very different
 
@@ -355,7 +331,23 @@ include_figure("aha_tfr_post_insight.jpg")
 
 \tiny @enge2023a
 
-## Bonus: `hu-neuro-pipeline` package
+## Add-on: `hu-neuro-pipeline` package
+
+\vspace{-1.5em}
+
+```{r, out.width="100%"}
+include_figure("pipeline_docs_code.png")
+```
+
+## Add-on: `hu-neuro-pipeline` package
+
+\vspace{-1.5em}
+
+```{r, out.width="100%"}
+include_figure("pipeline_docs_plot.png")
+```
+
+## Add-on: `hu-neuro-pipeline` package
 
 ```{r, echo=TRUE, eval=FALSE}
 # Load packages
@@ -384,6 +376,17 @@ res <- pipeline$group_pipeline(
   average_by = list(blurr = "n_b == 'blurr'", normal = "n_b == 'normal'")
 )
 ```
+
+## Add-on: `hu-neuro-pipeline` package
+
+* **Homepage:** [hu-neuro-pipeline.readthedocs.io](https://hu-neuro-pipeline.readthedocs.io)
+* **Slides:** [github.com/alexenge/hu-neuro-pipeline-workshop](https://github.com/alexenge/hu-neuro-pipeline-workshop)
+* **EEG analysis course:** [alexenge.github.io/intro-to-eeg](https://alexenge.github.io/intro-to-eeg)
+* **Speech artifact correction:** [eeg-ride.readthedocs.io](https://eeg-ride.readthedocs.io)
+
+\vspace{10.5em}
+
+\tiny @enge2023a; @fromer2018; @ouyang2015
 
 ## Discussion
 
