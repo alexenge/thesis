@@ -81,8 +81,7 @@ der Humboldt-Universität zu Berlin\\
 \vspace*{10mm}
 von\\
 \textbf{M.Sc. Alexander Enge}\\
-geboren am 09.11.1996 in Räckelwitz\\
-\vspace*{55mm}
+\vspace*{50mm}
 \end{center}
 \begin{flushleft}
 Präsidentin der Humboldt-Universität zu Berlin\\
@@ -91,9 +90,12 @@ Prof. Dr. Julia von Blumenthal\\
 Dekan der Lebenswissenschaftlichen Fakultät der Humboldt-Universität zu Berlin\\
 Prof. Dr. Dr. Christian Ulrichs\\
 \vspace*{10mm}
-Gutachter*innen:\\
+Gutachter*innen\\
+1. Prof. Dr. Rasha Abdel Rahman\\
+2. Prof. Dr. Gesa Hartwigsen\\
+3. Prof. Dr. Gesa Schaadt\\
 \vspace*{10mm}
-Tag der mündlichen Prüfung:
+Tag der mündlichen Prüfung: 07.10.2025
 \end{flushleft}
 
 \clearpage\mbox{}\thispagestyle{empty}\clearpage
