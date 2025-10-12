@@ -78,7 +78,7 @@ header-includes:
 
 Learning to read is a developmental milestone of lifelong importance.
 Reading and writing enable us to exchange messages across time and space, to remember things we would otherwise forget, to educate ourselves and others, and to enjoy fictional stories.
-Without it, we would likely be missing out on many of humankind's greatest a achievements, including science and technology.
+Without it, we would likely be missing out on many of humankind's greatest achievements, including science and technology.
 It therefore seems fair to say that the process of learning to read, typically taking place during late kindergarten and early primary school education as well as through the help of parents and other caretakers, is a crucial step in children's education and cognitive development.
 
 Children typically pick up knowledge about their first letters informally, for example by being shown how their own name is written or by memorizing the logo of their favorite TV series or cereal brand.
@@ -108,7 +108,7 @@ Furthermore, the VWFA is often described as a prime example of the neuronal recy
 In the case of reading, the VWFA may reuse regions that had previously been specialized for recognizing other complex visual object categories such as faces, limbs, or tools [@dehaene2015; @kubota2023; @nordt2021; but see also @coltheart2014].
 
 The brain areas involved in reading beyond the early stages of visual word form recognition are less well understood, presumably owing to large differences in task design between studies.
-A meta-analysis of fMRI study [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonological and semantic processing of spoken language.
+A meta-analysis of fMRI studies [@murphy2019] found that beyond the VWFA, single word reading reliable engages a left-lateralized set of regions including the left inferior frontal and left superior and middle temporal gyri, all of which are known to be involved in phonological and semantic processing of spoken language.
 However, it remains an open question which brain areas serve as the interface between visual processing (word form recognition in the VWFA) and language processing (phonological and semantic processing in the left perisylvian language network) during reading.
 One candidate for the visual--phonological interface, that is, linking written letters to speech sounds, is the left posterior superior temporal gyrus (pSTS).
 This area has been show to integrate auditory and visual information when both are presented concurrently, e.g., during audio-visual letter perception or lip reading tasks [e.g., @blau2010; @calvert1997; @vanatteveldt2004; @wilson2018].^[Note that if the left pSTS does indeed play a role in reading, this could be viewed as another case of neuronal recycling, since its "new" skill of linking written letters to speech sounds may stem from its "original" skill of linking lip movements to speech sounds.]
@@ -406,7 +406,7 @@ To form clusters, neighboring voxels had to pass the cluster-forming voxel level
 
 We also estimated reading related changes in the between-condition similarity and within-condition stability of BOLD activity patterns using multivariate analysis methods.
 
-First, we investigated if the reading intervention made written word activity patterns more similar to those for spoken word activity patterns.
+First, we investigated if the reading intervention made written word activity patterns more similar to spoken word activity patterns.
 For this, we used the beta maps from these two conditions and extracted the betas for different regions of interest (ROI; defined below).
 We then computed the linear correlation between these vectors and entered these correlations (one value per subject and session) into a linear mixed-effects model, separately for each ROI.
 We specified the linear mixed-effects model in the same way as described above, with fixed and random effects for the intercept, the linear effect of time, and the quadratic effect of time.
@@ -835,7 +835,7 @@ We hope that this analysis approach and our code (available at <https://github.c
 In this longitudinal fMRI study, we repeatedly measured children's brain activity in response to written and spoken words as they were learning to read.
 We found some evidence for non-linear changes in word-related BOLD activity amplitude but not in the direction or anatomical locations that we had hypothesized.
 We also found some evidence that learning to read leads to more similar BOLD activity patterns for visual and auditory stimuli in ventral occipito-temporal cortex.
-We found no evidence that learning to read leads to more stable BOLD activity response patterns in response to words to pseudowords.
+We found no evidence that learning to read leads to more stable BOLD activity response patterns in response to words or pseudowords.
 While this study had a number of limitations, including a very small sample size, future studies might want to reuse our overall study design, including the focus on a participant population and writing system typically neglected in developmental cognitive neuroscience, as well as our analysis methods for longitudinal whole-brain fMRI analysis.
 
 \newpage

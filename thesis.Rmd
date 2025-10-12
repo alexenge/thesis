@@ -589,14 +589,14 @@ The interactions between the visual system and the semantic system of the human 
 From the moment we are born, we are bombarded with visual experiences, but it is only over time that we learn to understand what they mean.
 We learn which faces are important to remember and what to expect from them, what can be done with different kinds of visual objects, and, eventually, how to extract meaning from written letters and other visual symbols.
 The visual system itself of course also develops further after birth [for review, see, e.g., @murphy2024; @siu2018], and part of this may be driven by non-visual influences [e.g., from language and semantics\; see, e.g., @clarke2016; @dehaene2015; @lupyan2020].
-However, compared to the visual system, our semantics is much more dependent on our local environment, language, and culture, and differs more strongly from our evoultionary cousins.
+However, compared to the visual system, our semantics is much more dependent on our local environment, language, and culture, and differs more strongly from our evolutionary cousins.
 The semantic system and the visual-semantic connections are therefore likely to change a lot more radically over the course of human development.
 Given this hypothesis, it was surprising to find very strong convergence between the adult semantic system and the semantic system in children in our meta-analysis of fMRI studies [see Section\ \ref{a-meta-analysis-of-fmri-studies-of-semantic-cognition-in-children} and @enge2021].
 We found that virtually all regions active during semantic processing in adults are already active in children, except potentially the more anterior parts of the left temporal lobe (ATL).
 The ATL is often viewed as an amodal semantic "hub" that dynamically integrates the specific, modal information from the sensory and motor systems [e.g., @chiou2019; @lambonralph2017; @patterson2007].
 The fact that its activity level does not yet seem to be fully developed in the groups of children included in our meta-analysis suggests that this region, unlike other parts of the semantic network, develops relatively late and might continue to do so throughout adolescence.
 
-However, one should also be cautios not to over-interpret any group difference or lack thereof in our meta-analysis, for a number of reasons.
+However, one should also be cautious not to over-interpret any group difference or lack thereof in our meta-analysis, for a number of reasons.
 First, the tasks used to assess semantic processing in adults and children often differ from each other in systematic ways [e.g., it is more typical to use tasks with written rather than spoken materials in adults as compared to children\; for an extended discussion of semantic task effects in meta-analyses, see @binder2009].
 These systematically different tasks might then lead to systematically different results at the meta-analytic level.
 Second, the activation likelihood estimation (ALE) procedure used in our and most other MRI-based meta-analyses only uses the *location* of reported peaks of fMRI activation from the original studies, not their *activation strength* (i.e., effect size).
